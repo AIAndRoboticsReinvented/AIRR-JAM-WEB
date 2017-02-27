@@ -8400,22 +8400,13 @@
     <Content Include="non-essential-files.osx.txt" />
     <Content Include="non-essential-files.txt" />
     <Content Include="protractor.config.js" />
-    <Content Include="src\app\app-routing.module.js" />
     <Content Include="src\app\app.component.css" />
-    <Content Include="src\app\app.component.js" />
-    <Content Include="src\app\app.component.spec.js" />
-    <Content Include="src\app\app.module.js" />
     <Content Include="src\app\dashboard.component.css" />
     <Content Include="src\app\dashboard.component.html" />
-    <Content Include="src\app\dashboard.component.js" />
     <Content Include="src\app\hero-detail.component.css" />
     <Content Include="src\app\hero-detail.component.html" />
-    <Content Include="src\app\hero-detail.component.js" />
-    <Content Include="src\app\hero.js" />
-    <Content Include="src\app\hero.service.js" />
     <Content Include="src\app\heros.component.css" />
     <Content Include="src\app\heros.component.html" />
-    <Content Include="src\app\heros.component.js" />
     <Content Include="src\app\mock-heros.js" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
@@ -12549,15 +12540,6 @@
     <Content Include="node_modules\zone.js\README.md" />
     <Content Include="package.json" />
     <Content Include="README.md" />
-    <Content Include="src\app\app-routing.module.js.map" />
-    <Content Include="src\app\app.component.js.map" />
-    <Content Include="src\app\app.component.spec.js.map" />
-    <Content Include="src\app\app.module.js.map" />
-    <Content Include="src\app\dashboard.component.js.map" />
-    <Content Include="src\app\hero-detail.component.js.map" />
-    <Content Include="src\app\hero.js.map" />
-    <Content Include="src\app\hero.service.js.map" />
-    <Content Include="src\app\heros.component.js.map" />
     <Content Include="src\app\mock-heros.js.map" />
     <Content Include="src\main.js.map" />
     <Content Include="src\tsconfig.json" />
@@ -14235,12 +14217,14 @@
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\header.component.ts" />
     <TypeScriptCompile Include="src\app\hero-detail.component.ts" />
     <TypeScriptCompile Include="src\app\hero.service.ts" />
     <TypeScriptCompile Include="src\app\hero.ts" />
     <TypeScriptCompile Include="src\app\heros.component.ts" />
     <TypeScriptCompile Include="src\app\mock-heros.ts" />
     <TypeScriptCompile Include="src\main.ts" />
+    <Content Include="src\reset.css" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

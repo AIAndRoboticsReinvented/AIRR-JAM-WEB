@@ -3,6 +3,9 @@ import { BrowserModule }        from '@angular/platform-browser';
 import { FormsModule }          from '@angular/forms';
 
 import { AppComponent }         from './app.component';
+import { HeaderComponent } from './header.component';
+
+
 import { DashboardComponent }   from './dashboard.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 import { HerosComponent }       from './heros.component';
@@ -18,7 +21,8 @@ import { AppRoutingModule }     from './app-routing.module';
     AppRoutingModule
  ],
   declarations: [ 
-    AppComponent, 
+      AppComponent,
+      HeaderComponent,
     DashboardComponent,
     HeroDetailComponent, 
     HerosComponent 

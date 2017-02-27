@@ -4,6 +4,7 @@
   styleUrls: [ './app.component.css' ],
   selector: 'my-app',
   template: `
+    <header></header>
     <h1>{{title}}</h1>
     <nav>
       <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
