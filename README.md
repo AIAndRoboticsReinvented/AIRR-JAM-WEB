@@ -3,7 +3,7 @@ White Label WebSite
 ## Application Requirements - In Required Applications Folder.
 -	Node JS - v.0.10.32 or higher - must reboot after install
 -	Angular JS 2.0
--	BootStrap
+-	BootStrap - v.3.3.7 or higher - from CDN (https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css)
 -	HTML5
--	CSS
--	JQuery
+-	CSS3	
+-	JQuery - v.3.1.1 or higher - from CDN (http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js)
