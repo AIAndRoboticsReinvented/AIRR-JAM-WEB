@@ -1,7 +1,41 @@
 ﻿.teammember {
-  background-color:aliceblue;
+  /* color and border */
+  background-color: aliceblue;
+  border: 1px solid #000000;
+
+  /* rounded corners*/
   border-radius: 13px 13px 13px 13px;
   -moz-border-radius: 13px 13px 13px 13px;
   -webkit-border-radius: 13px 13px 13px 13px;
-  border: 0px solid #000000;
+
+  /* drop shadow */
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.teammember h2{
+  color: black;  
+}
+
+.teammember h3 {
+  color: blue;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.teammember h4 {
+  color: black;
+  text-decoration:underline;
+  font-size:smaller;
+}
+
+
+.teammember img{
+  margin-top:5px;
+}
+
+.teammember about{
+  text-align:justify;
+  font-style:italic;  
 }

@@ -15,7 +15,7 @@
 .banner 
 {
     background-color: #FFF;
-    color:red;
+    color:blue;
 
 }
 
@@ -33,7 +33,7 @@ nav{
 
 .banner a:link,
 .banner a:visited{
-  color:red;
+  color:blue;
 }
 
 

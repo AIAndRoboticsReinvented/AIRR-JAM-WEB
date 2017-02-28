@@ -8420,6 +8420,10 @@
     <Content Include="src\app\heros.component.html" />
     <Content Include="src\app\mock-heros.js" />
     <Content Include="src\favicon.ico" />
+    <Content Include="src\images\property\bachelor1.jpg" />
+    <Content Include="src\images\property\extended1.jpg" />
+    <Content Include="src\images\property\family1.jpg" />
+    <Content Include="src\images\property\newlywed1.jpg" />
     <Content Include="src\index.html" />
     <Content Include="src\main.js" />
     <Content Include="src\styles.css" />
@@ -14241,7 +14245,9 @@
     <TypeScriptCompile Include="src\app\home.component.ts" />
     <TypeScriptCompile Include="src\app\investors.component.ts" />
     <TypeScriptCompile Include="src\app\mock-heros.ts" />
+    <TypeScriptCompile Include="src\app\mock-properties.ts" />
     <TypeScriptCompile Include="src\app\pagetitle.component.ts" />
+    <TypeScriptCompile Include="src\app\property.ts" />
     <TypeScriptCompile Include="src\app\sellyourhome.component.ts" />
     <TypeScriptCompile Include="src\app\team.component.ts" />
     <TypeScriptCompile Include="src\app\team.service.ts" />
