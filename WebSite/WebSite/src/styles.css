@@ -12,15 +12,49 @@ h2, h3 {
 }
 
 body {
-  margin: 2em;
 }
 
 body, input[text], button {
   color: #888;
   font-family: Cambria, Georgia;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
 }
 /* . . . */
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+a:link,
+a:visited{
+  color:white;
+  cursor:pointer;
+  
+}
+
+
+.footer {
+  background-color: #025c99;
+  color:white;
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.center {
+  text-align:center;
+  padding: 0 auto 0 auto;
+}
+
+.channel {
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.x { background-color: green;}
+.y { background-color: red;}
+.z { background-color: pink;}

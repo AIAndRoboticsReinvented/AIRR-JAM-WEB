@@ -2,9 +2,21 @@
 import { BrowserModule }        from '@angular/platform-browser';
 import { FormsModule }          from '@angular/forms';
 
+import { AboutComponent }       from './about.component';
 import { AppComponent }         from './app.component';
-import { HeaderComponent } from './header.component';
-
+import { BuyAHomeComponent }    from './buyahome.component';
+import { ContactUsComponent }   from './contactus.component';
+import { FAQComponent }         from './f-a-q.component';
+import { FooterComponent }      from './footer.component';
+import { HeaderComponent }      from './header.component';
+import { HomeComponent }        from './home.component';
+import { InvestorsComponent }   from './investors.component';
+import { PageTitleComponent }   from './pagetitle.component';
+import { SellYourHomeComponent } from './sellyourhome.component';
+import { TeamComponent }        from './team.component';
+import { TeammemberComponent }  from './teammember.component';
+import { TeamService }          from './team.service';
+import { WholesaleComponent }   from './wholesale.component';
 
 import { DashboardComponent }   from './dashboard.component';
 import { HeroDetailComponent }  from './hero-detail.component';
@@ -20,14 +32,26 @@ import { AppRoutingModule }     from './app-routing.module';
     FormsModule,
     AppRoutingModule
  ],
-  declarations: [ 
+  declarations: [
+      AboutComponent,
       AppComponent,
+      BuyAHomeComponent,
+      ContactUsComponent,
+      FAQComponent,
+      FooterComponent,
       HeaderComponent,
+      HomeComponent,
+      InvestorsComponent,
+      PageTitleComponent,
+      SellYourHomeComponent,
+      TeamComponent,
+      TeammemberComponent,
+      WholesaleComponent,
     DashboardComponent,
     HeroDetailComponent, 
     HerosComponent 
 ],
-  providers:    [ HeroService ],
+  providers:    [ HeroService, TeamService ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

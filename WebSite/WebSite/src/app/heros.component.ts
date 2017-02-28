@@ -11,7 +11,7 @@ import { HeroService } from './hero.service';
   selector: 'my-heros',
   styleUrls: ['./heros.component.css'],
   templateUrl: './heros.component.html',
-  providers: [HeroService]
+  providers: [HeroService],
 })
 
 

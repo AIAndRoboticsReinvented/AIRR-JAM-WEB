@@ -5,14 +5,11 @@
   selector: 'my-app',
   template: `
     <header></header>
-    <h1>{{title}}</h1>
-    <nav>
-      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-      <a routerLink="/heros"  routerLinkActive="active">Heros</a>
-    </nav>
     <router-outlet></router-outlet>
+    <div class="clearfix"></div>
+    <footer></footer>
   `
 })
 export class AppComponent {
-  title = 'Tour of Heroes';
+  title = '';
 }

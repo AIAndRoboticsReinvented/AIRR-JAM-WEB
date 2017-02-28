@@ -1,13 +1,11 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿import { Component, Input, OnInit } from '@angular/core';
 
 
 @Component({
     moduleId: module.id,
-    styleUrls: [],
+    styleUrls: [ './header.component.css' ],
     selector: 'header',
-    template: `
-      <h1>Header Goes Here</h1>
-    `,
+    templateUrl: './header.component.html',
 })
 
 
@@ -17,4 +15,9 @@ export class HeaderComponent implements OnInit {
     ngOnInit(): void {
     }
 
+    @Input() title: '';
+
+    onSelect(newtitle: ''): void {
+        this.title = newtitle;
+    };
 }

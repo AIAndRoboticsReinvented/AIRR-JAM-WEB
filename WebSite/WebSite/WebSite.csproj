@@ -54,6 +54,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="src\app\about.controller.html" />
+    <Content Include="src\app\investors.component.html" />
+    <Content Include="src\app\pagetitle.component.css" />
+    <Content Include="src\app\pagetitle.component.html" />
+    <Content Include="src\app\team.component.css" />
+    <Content Include="src\app\team.component.html" />
+    <Content Include="src\app\teammember.component.css" />
+    <Content Include="src\app\teammember.component.html" />
+    <Content Include="src\images\logo.png" />
     <Content Include="karma-test-shim.js" />
     <Content Include="karma.conf.js" />
     <Content Include="node_modules\%40angular\common\bundles\common-testing.umd.js" />
@@ -8403,6 +8412,8 @@
     <Content Include="src\app\app.component.css" />
     <Content Include="src\app\dashboard.component.css" />
     <Content Include="src\app\dashboard.component.html" />
+    <Content Include="src\app\header.component.css" />
+    <Content Include="src\app\header.component.html" />
     <Content Include="src\app\hero-detail.component.css" />
     <Content Include="src\app\hero-detail.component.html" />
     <Content Include="src\app\heros.component.css" />
@@ -14212,23 +14223,38 @@
     <TypeScriptCompile Include="node_modules\zone.js\lib\zone-spec\task-tracking.ts" />
     <TypeScriptCompile Include="node_modules\zone.js\lib\zone-spec\wtf.ts" />
     <TypeScriptCompile Include="node_modules\zone.js\lib\zone.ts" />
+    <TypeScriptCompile Include="src\app\about.component.ts" />
     <TypeScriptCompile Include="src\app\app-routing.module.ts" />
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\buyahome.component.ts" />
+    <TypeScriptCompile Include="src\app\contactus.component.ts" />
     <TypeScriptCompile Include="src\app\dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\f-a-q.component.ts" />
+    <TypeScriptCompile Include="src\app\footer.component.ts" />
     <TypeScriptCompile Include="src\app\header.component.ts" />
     <TypeScriptCompile Include="src\app\hero-detail.component.ts" />
     <TypeScriptCompile Include="src\app\hero.service.ts" />
     <TypeScriptCompile Include="src\app\hero.ts" />
     <TypeScriptCompile Include="src\app\heros.component.ts" />
+    <TypeScriptCompile Include="src\app\home.component.ts" />
+    <TypeScriptCompile Include="src\app\investors.component.ts" />
     <TypeScriptCompile Include="src\app\mock-heros.ts" />
+    <TypeScriptCompile Include="src\app\pagetitle.component.ts" />
+    <TypeScriptCompile Include="src\app\sellyourhome.component.ts" />
+    <TypeScriptCompile Include="src\app\team.component.ts" />
+    <TypeScriptCompile Include="src\app\team.service.ts" />
+    <TypeScriptCompile Include="src\app\teammember.component.ts" />
+    <TypeScriptCompile Include="src\app\teammember.ts" />
+    <TypeScriptCompile Include="src\app\wholesale.component.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <Content Include="src\reset.css" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
