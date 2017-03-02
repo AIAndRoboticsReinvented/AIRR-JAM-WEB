@@ -19,7 +19,7 @@ export const TEAM: Teammember[] = [
         moto: '',
         quote: '',
         region: '',
-        about: 'I have been investing in real estate over the past 16 years. I have been fortunate enough to work almost exclusively in the Tampa Bay market. I have experience in remodeling and retailing 100 plus properties. Also wholesaling 100s more, not excluding a few commercial buildings but mostly residential and even building a handful of homes.The biggest attribute I consider a strength is my ability to communicate with and serve my clients interests, as it pertains to them finding a bargain home to live in or as an investment to profit upon.I enjoy helping people achieve their goals, plus assist someone to finding their new home at an affordable price, one that may not otherwise be able to buy, then that is very rewarding.'
+        about: 'MJ has been investing in real estate since the year 2000 and over the past 16 years has been fortunate enough to buy and sell over 600 homes, almost exclusively in the Tampa Bay market. He has experience in remodeling and retailing over 100 properties, wholesaling over 500 properties, including a few commercial buildings but mostly residential and even building a handful of homes. The biggest attribute he considers a strength is his ability to communicate well and serve his clients’ interests as it pertains to them finding a bargain home to live in or as an investment to profit upon.MJ enjoys helping people achieve their goals and if he can assist someone with finding their new home at an affordable price, one they may not otherwise be able to buy, then that is very rewarding to him.'
     },
     {
         name: 'Russ Brantmyer',
@@ -29,7 +29,7 @@ export const TEAM: Teammember[] = [
         moto: '',
         quote: '',
         region: '',
-        about: 'I am a Tampa native and knew very early on that   sales and marketing would become a true passion of mine in my formative   years.I worked for years in credit repair and the mortgage industry in   a national capacity.With a strong construction background, I was driven   to begin my journey in investing 15 plus years ago.I have always been   an entrepreneur at heart with a strong desire to excel.In the past, I have mentored in the real estate investing business.I   enjoy helping those who want a lot for themselves and strive to become   independently wealthy.Over my years of mentoring I managed to stumble   across a large variety of real estate transaction types. My goal is to be able to develop many long-term purposeful relationships in the real   estate industry that will have an everlasting impact on the upcoming   generations in the Tampa Bay area. I enjoy helping families and other   Real Estate professionals meet in the middle for a transaction that is   conducive to everyone. '
+        about: 'Russ is a Tampa Bay native and knew very early on that sales and marketing would become a true passion of his in his formative years. He worked for years in credit repair and the mortgage industry in a national capacity. With a strong construction background, he was driven to begin his journey in investing 15 plus years ago. Russ have always been an entrepreneur at heart with a strong desire to excel. In the past, he has mentored in the real estate investing business.He enjoys helping those who want a lot for themselves and strive to become independently wealthy.Over his years of mentoring he managed to stumble across a large variety of real estate transaction types. His goal is to be able to develop many long-term purposeful relationships in the real estate industry that will have an everlasting impact on the upcoming generations in the Tampa Bay area. Russ enjoys helping families and other Real Estate professionals meet in the middle for a transaction that is conducive to everyone.'
     },
     {
         name: 'Dave Haro',
@@ -39,7 +39,7 @@ export const TEAM: Teammember[] = [
         moto: '',
         quote: '',
         region: '',
-        about: ''
+        about: 'Dave has over 20 years of sales and marketing experience. He takes pride in gathering and interpreting data to assist in our property acquisitions department. Dave assists with the financial evaluation and negotiations of most acquisitions. He also conducts due diligence on properties to be acquired; may assist in contract negotiations.'
     },
     {
         name: 'Chelsea Nieves',
@@ -49,6 +49,6 @@ export const TEAM: Teammember[] = [
         moto: '',
         quote: '',
         region: '',
-        about: 'I was born in central Florida but made Tampa Bay my home in the early part of 2016. I attended college at the University of Florida where I began the Registered Nursing program and as I reached completion realized the field was not for me. I then began the process of transitioning into a MBA program of which I will complete in the next year. I have a strong background for office management and business administration and have spent the majority of my career managing contractors for IBM until my recent transition into the real estate industry.'
+        about: 'Chelsea was born in central Florida but made Tampa Bay her home in the early part of 2016. She attended college at the University of Florida where she began the Registered Nursing program. As she reached completion, she realized the field was simply not for her. Chelsea then began the process of transitioning into a MBA program of which she will complete in the next year. She has a strong background for office management and business administration and has spent most of her career managing contractors for IBM until her recent transition into the real estate industry.'
     },   
 ];

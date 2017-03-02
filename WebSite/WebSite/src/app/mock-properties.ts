@@ -1,4 +1,5 @@
-﻿import { Property } from './property';
+﻿
+import { PropertyAttributes, Property } from './property';
 
 export const PROPERTIES: Property[] = [
     {
@@ -12,8 +13,9 @@ export const PROPERTIES: Property[] = [
         description: 'A Great Place for a single batchelor.',
         masterimage: '../images/property/bachelor1.jpg',
         images: ['../images/property/bachelor1.jpg'],
-        keys: ['type','sqft'],
-        values: ['studio','300']
+        propertyattributes: [
+            { key: 'type', value: 'studio' },
+            { key: 'sq ft', value: '300' }],
     },
     {
         propertyguid: '',
@@ -26,8 +28,11 @@ export const PROPERTIES: Property[] = [
         description: 'Perfect for the newly weds just getting started on their lives together.',
         masterimage: '../images/property/newlywed1.jpg',
         images: ['../images/property/newlywed1.jpg'],
-        keys: ['rooms','bath','sqft'],
-        values: ['1','1','600']
+        propertyattributes: [
+            { key: 'rooms', value: '1' },
+            { key: 'baths', value: '1' },
+            { key: 'sq ft', value: '600' },
+        ],
     },
     {
         propertyguid: '',
@@ -40,8 +45,12 @@ export const PROPERTIES: Property[] = [
         description: 'Ideal for a family of four. Plenty of storage and parking. And you dont have to share a bathroom with the kids.',
         masterimage: '../images/property/family1.jpg',
         images: ['../images/property/extended1.jpg'],
-        keys: ['rooms','bath','sqft','cars'],
-        values: ['3','2','2000','2']
+        propertyattributes: [
+            { key: 'rooms', value: '3' },
+            { key: 'baths', value: '2' },
+            { key: 'sq ft', value: '2000' },
+            { key: 'cars', value: '2' },
+        ],
     },
     {
         propertyguid: '',
@@ -54,8 +63,12 @@ export const PROPERTIES: Property[] = [
         description: 'A beautiful home with a nice appartment for the mother-in-law. Cozy enough to enjoy each others company and plenty of room to have personal space.',
         masterimage: '../images/property/extended1.jpg',
         images: ['../images/property/extended1.jpg'],
-        keys: ['rooms','bath','sqft','cars','units'],
-        values: ['4','3','2600','3','2']
+        propertyattributes: [
+            { key: 'rooms', value: '4' },
+            { key: 'baths', value: '3' },
+            { key: 'sq ft', value: '2600' },
+            { key: 'cars', value: '3' },
+            { key: 'units', value: '2' },
+        ],
     },
-
 ];

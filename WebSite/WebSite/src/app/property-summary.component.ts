@@ -3,7 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { PropertyService } from './property.service';
-import { Property } from './property';
+import { PropertyAttributes, Property } from './property';
 
 import 'rxjs/add/operator/switchMap';
 
@@ -12,9 +12,10 @@ import 'rxjs/add/operator/switchMap';
     selector: 'property-summary',
     styleUrls: ['./property-summary.component.css'],
     templateUrl: './property-summary.component.html',
+
 })
 
-export class HeroDetailComponent implements OnInit {
+export class PropertySummaryComponent implements OnInit {
     @Input() property: Property;
 
     ngOnInit(): void {

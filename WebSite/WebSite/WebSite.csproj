@@ -55,15 +55,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\app\about.controller.html" />
+    <Content Include="src\app\investors.component.css" />
     <Content Include="src\app\investors.component.html" />
     <Content Include="src\app\pagetitle.component.css" />
     <Content Include="src\app\pagetitle.component.html" />
     <Content Include="src\app\properties.component.css" />
     <Content Include="src\app\properties.component.html" />
+    <Content Include="src\app\property-summary.component.css" />
+    <Content Include="src\app\property-summary.component.html" />
     <Content Include="src\app\team.component.css" />
     <Content Include="src\app\team.component.html" />
     <Content Include="src\app\teammember.component.css" />
     <Content Include="src\app\teammember.component.html" />
+    <Content Include="src\app\terms.component.css" />
+    <Content Include="src\app\terms.component.html" />
     <Content Include="src\images\logo.png" />
     <Content Include="karma-test-shim.js" />
     <Content Include="karma.conf.js" />
@@ -14245,10 +14250,13 @@
     <TypeScriptCompile Include="src\app\hero.ts" />
     <TypeScriptCompile Include="src\app\heros.component.ts" />
     <TypeScriptCompile Include="src\app\home.component.ts" />
+    <TypeScriptCompile Include="src\app\investorrequest.ts" />
     <TypeScriptCompile Include="src\app\investors.component.ts" />
     <TypeScriptCompile Include="src\app\mock-heros.ts" />
     <TypeScriptCompile Include="src\app\mock-properties.ts" />
+    <TypeScriptCompile Include="src\app\mock-team.ts" />
     <TypeScriptCompile Include="src\app\pagetitle.component.ts" />
+    <TypeScriptCompile Include="src\app\privacy.component.ts" />
     <TypeScriptCompile Include="src\app\property-summary.component.ts" />
     <TypeScriptCompile Include="src\app\property.service.ts" />
     <TypeScriptCompile Include="src\app\property.ts" />
@@ -14258,6 +14266,7 @@
     <TypeScriptCompile Include="src\app\team.service.ts" />
     <TypeScriptCompile Include="src\app\teammember.component.ts" />
     <TypeScriptCompile Include="src\app\teammember.ts" />
+    <TypeScriptCompile Include="src\app\terms.component.ts" />
     <TypeScriptCompile Include="src\app\wholesale.component.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <Content Include="src\reset.css" />

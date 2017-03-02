@@ -1,4 +1,9 @@
-﻿
+﻿export class PropertyAttributes {
+    key: string;
+    value: string;
+}
+
+
 export class Property {
     propertyguid: string;
     name: string;
@@ -10,6 +15,5 @@ export class Property {
     description: string;
     masterimage: string;
     images: string[];
-    keys: string[];
-    values: string[];
+    propertyattributes: PropertyAttributes[];
 }

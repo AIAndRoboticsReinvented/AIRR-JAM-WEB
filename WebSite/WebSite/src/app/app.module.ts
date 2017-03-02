@@ -11,11 +11,17 @@ import { FooterComponent }      from './footer.component';
 import { HeaderComponent }      from './header.component';
 import { HomeComponent }        from './home.component';
 import { InvestorsComponent }   from './investors.component';
-import { PageTitleComponent }   from './pagetitle.component';
+import { PageTitleComponent } from './pagetitle.component';
+
+import { PropertiesComponent } from './properties.component';
+import { PropertySummaryComponent } from './property-summary.component';
+
 import { SellYourHomeComponent } from './sellyourhome.component';
+
 import { TeamComponent }        from './team.component';
 import { TeammemberComponent }  from './teammember.component';
 import { TeamService }          from './team.service';
+
 import { WholesaleComponent }   from './wholesale.component';
 
 import { DashboardComponent }   from './dashboard.component';
@@ -43,6 +49,8 @@ import { AppRoutingModule }     from './app-routing.module';
       HomeComponent,
       InvestorsComponent,
       PageTitleComponent,
+      PropertiesComponent,
+      PropertySummaryComponent,
       SellYourHomeComponent,
       TeamComponent,
       TeammemberComponent,
