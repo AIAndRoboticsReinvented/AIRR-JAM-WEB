@@ -2,6 +2,7 @@
 
 export const PROPERTIES: Property[] = [
     {
+        propertyguid: '',
         name: 'Batchelor Pad',
         location: 'Hyde Park',
         address: '744 South Village Cir',
@@ -15,6 +16,7 @@ export const PROPERTIES: Property[] = [
         values: ['studio','300']
     },
     {
+        propertyguid: '',
         name: 'Newly Weds',
         location: 'Carollwood',
         address: '15499 North Dale Mabry',
@@ -28,6 +30,7 @@ export const PROPERTIES: Property[] = [
         values: ['1','1','600']
     },
     {
+        propertyguid: '',
         name: 'Family Domicile',
         location: 'Brandon',
         address: '10921 Causeway Blvd.',
@@ -41,6 +44,7 @@ export const PROPERTIES: Property[] = [
         values: ['3','2','2000','2']
     },
     {
+        propertyguid: '',
         name: 'Extended Family',
         location: 'Cheval',
         address: '4312 Cheval Blvd',

@@ -58,6 +58,8 @@
     <Content Include="src\app\investors.component.html" />
     <Content Include="src\app\pagetitle.component.css" />
     <Content Include="src\app\pagetitle.component.html" />
+    <Content Include="src\app\properties.component.css" />
+    <Content Include="src\app\properties.component.html" />
     <Content Include="src\app\team.component.css" />
     <Content Include="src\app\team.component.html" />
     <Content Include="src\app\teammember.component.css" />
@@ -14247,7 +14249,10 @@
     <TypeScriptCompile Include="src\app\mock-heros.ts" />
     <TypeScriptCompile Include="src\app\mock-properties.ts" />
     <TypeScriptCompile Include="src\app\pagetitle.component.ts" />
+    <TypeScriptCompile Include="src\app\property-summary.component.ts" />
+    <TypeScriptCompile Include="src\app\property.service.ts" />
     <TypeScriptCompile Include="src\app\property.ts" />
+    <TypeScriptCompile Include="src\app\properties.component.ts" />
     <TypeScriptCompile Include="src\app\sellyourhome.component.ts" />
     <TypeScriptCompile Include="src\app\team.component.ts" />
     <TypeScriptCompile Include="src\app\team.service.ts" />

@@ -1,5 +1,6 @@
 ﻿
 export class Property {
+    propertyguid: string;
     name: string;
     location: string;
     address: string;
