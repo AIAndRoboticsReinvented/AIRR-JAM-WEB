@@ -55,14 +55,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\app\about.controller.html" />
+    <Content Include="src\app\footer.component.css" />
+    <Content Include="src\app\footer.component.html" />
+    <Content Include="src\app\home.component.html" />
     <Content Include="src\app\investors.component.css" />
     <Content Include="src\app\investors.component.html" />
     <Content Include="src\app\pagetitle.component.css" />
     <Content Include="src\app\pagetitle.component.html" />
+    <Content Include="src\app\privacy.component.css" />
+    <Content Include="src\app\privacy.component.html" />
     <Content Include="src\app\properties.component.css" />
     <Content Include="src\app\properties.component.html" />
     <Content Include="src\app\property-summary.component.css" />
     <Content Include="src\app\property-summary.component.html" />
+    <Content Include="src\app\sellyourhome.component.html" />
     <Content Include="src\app\team.component.css" />
     <Content Include="src\app\team.component.html" />
     <Content Include="src\app\teammember.component.css" />

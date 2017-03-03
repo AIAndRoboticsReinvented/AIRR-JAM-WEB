@@ -7,7 +7,9 @@ import { ContactUsComponent }   from './contactus.component';
 import { FAQComponent }         from './f-a-q.component';
 import { InvestorsComponent }   from './investors.component';
 import { HomeComponent }        from './home.component';
+import { PrivacyComponent }     from './privacy.component';
 import { SellYourHomeComponent } from './sellyourhome.component';
+import { TermsComponent }       from './terms.component';
 import { WholesaleComponent }   from './wholesale.component';
 
 
@@ -29,7 +31,9 @@ const routes: Routes = [
     { path: 'heros', component: HerosComponent },
     { path: 'home', component: HomeComponent },
     { path: 'investors', component: InvestorsComponent },
+    { path: 'privacy', component: PrivacyComponent },
     { path: 'sell', component: SellYourHomeComponent },
+    { path: 'terms', component: TermsComponent },
     { path: 'wholesale', component: WholesaleComponent },
 ];
 

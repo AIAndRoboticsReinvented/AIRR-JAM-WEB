@@ -6,9 +6,7 @@ import { Location } from '@angular/common';
     moduleId: module.id,
     selector: 'home',
     styleUrls: [],
-    template: `
-      <pagetitle [title]='title'></pagetitle>
-    `,
+    templateUrl: 'home.component.html',
 })
 
 export class HomeComponent implements OnInit {

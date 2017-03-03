@@ -11,9 +11,9 @@ import { FooterComponent }      from './footer.component';
 import { HeaderComponent }      from './header.component';
 import { HomeComponent }        from './home.component';
 import { InvestorsComponent }   from './investors.component';
-import { PageTitleComponent } from './pagetitle.component';
-
-import { PropertiesComponent } from './properties.component';
+import { PageTitleComponent }   from './pagetitle.component';
+import { PrivacyComponent }     from './privacy.component';
+import { PropertiesComponent }  from './properties.component';
 import { PropertySummaryComponent } from './property-summary.component';
 
 import { SellYourHomeComponent } from './sellyourhome.component';
@@ -21,6 +21,8 @@ import { SellYourHomeComponent } from './sellyourhome.component';
 import { TeamComponent }        from './team.component';
 import { TeammemberComponent }  from './teammember.component';
 import { TeamService }          from './team.service';
+
+import { TermsComponent }       from './terms.component';
 
 import { WholesaleComponent }   from './wholesale.component';
 
@@ -49,11 +51,13 @@ import { AppRoutingModule }     from './app-routing.module';
       HomeComponent,
       InvestorsComponent,
       PageTitleComponent,
+      PrivacyComponent,
       PropertiesComponent,
       PropertySummaryComponent,
       SellYourHomeComponent,
       TeamComponent,
       TeammemberComponent,
+      TermsComponent,
       WholesaleComponent,
     DashboardComponent,
     HeroDetailComponent, 

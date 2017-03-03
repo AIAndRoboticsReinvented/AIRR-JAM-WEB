@@ -10,7 +10,7 @@ import { Location } from '@angular/common';
 })
 
 export class TermsComponent implements OnInit {
-    title = "Terms";
+    title = "Terms of Use";
 
     ngOnInit(): void {
     }
