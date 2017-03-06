@@ -12572,6 +12572,7 @@
     <Content Include="src\main.js.map" />
     <Content Include="src\tsconfig.json" />
     <Content Include="tslint.json" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
