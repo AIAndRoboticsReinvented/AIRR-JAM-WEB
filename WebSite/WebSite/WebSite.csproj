@@ -75,7 +75,9 @@
     <Content Include="src\app\teammember.component.html" />
     <Content Include="src\app\terms.component.css" />
     <Content Include="src\app\terms.component.html" />
+    <Content Include="src\images\Blank_World_Banner.png" />
     <Content Include="src\images\logo.png" />
+    <Content Include="src\images\logo_old.png" />
     <Content Include="karma-test-shim.js" />
     <Content Include="karma.conf.js" />
     <Content Include="node_modules\%40angular\common\bundles\common-testing.umd.js" />
@@ -8433,10 +8435,13 @@
     <Content Include="src\app\heros.component.html" />
     <Content Include="src\app\mock-heros.js" />
     <Content Include="src\favicon.ico" />
+    <Content Include="src\images\man.jpg" />
     <Content Include="src\images\property\bachelor1.jpg" />
     <Content Include="src\images\property\extended1.jpg" />
     <Content Include="src\images\property\family1.jpg" />
     <Content Include="src\images\property\newlywed1.jpg" />
+    <Content Include="src\images\team\me.jpg" />
+    <Content Include="src\images\woman.jpg" />
     <Content Include="src\index.html" />
     <Content Include="src\main.js" />
     <Content Include="src\styles.css" />
