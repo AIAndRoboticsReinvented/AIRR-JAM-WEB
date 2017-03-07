@@ -34,11 +34,6 @@ a:visited{
 }
 
 
-.footer {
-  background-color: #025c99;
-  color:white;
-}
-
 .clearfix:after {
   content: " ";
   display: table;

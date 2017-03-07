@@ -6,9 +6,9 @@
   top:0px;
 }
 
-.header
-{
-  background-color: #025c99;
+.header {
+  /*background-color: #025c99;*/
+  background-color: #000;
   color: white;
 }
 
@@ -50,7 +50,7 @@ nav{
 }
 
 .topnav a:hover{
-  color:black;
+  color:white;
   font-weight:bold;
 }
 

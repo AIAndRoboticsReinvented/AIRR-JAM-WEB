@@ -24,7 +24,7 @@ export const TEAM: Teammember[] = [
     {
         name: 'Russ Brantmyer',
         title: 'Acquisitions Director',
-        image: 'man.jpg',
+        image: 'team/russ.jpg',
         passions: '',
         moto: '',
         quote: '',
@@ -34,21 +34,21 @@ export const TEAM: Teammember[] = [
     {
         name: 'Dave Haro',
         title: 'Senior Acquisition Associate',
-        image: 'man.jpg',
-        passions: '',
-        moto: '',
-        quote: '',
-        region: '',
+        image: 'team/daveharo.jpg',
+        passions: 'Loves to travel to new countries and places.',
+        moto: 'Improve yourself every day and help others improve as well.',
+        quote: 'Live in Truth, the Truth never changes.',
+        region: 'Born and raised in California, but considers Florida Home',
         about: 'Dave has over 20 years of sales and marketing experience. He takes pride in gathering and interpreting data to assist in our property acquisitions department. Dave assists with the financial evaluation and negotiations of most acquisitions. He also conducts due diligence on properties to be acquired; may assist in contract negotiations.'
     },
     {
         name: 'Chelsea Nieves',
         title: 'Office Manager and Administration Assistant',
-        image: 'woman.jpg',
-        passions: '',
-        moto: '',
-        quote: '',
-        region: '',
+        image: 'team/chelsea.jpg',
+        passions: 'Family, Education and Travel.',
+        moto: 'Whether you think you can or think you can’t, you’re right.',
+        quote: 'Life is a shipwreck but we must not forget to sing in the lifeboats.',
+        region: 'DC native who now calls Tampa Bay home.',
         about: 'Chelsea was born in central Florida but made Tampa Bay her home in the early part of 2016. She attended college at the University of Florida where she began the Registered Nursing program. As she reached completion, she realized the field was simply not for her. Chelsea then began the process of transitioning into a MBA program of which she will complete in the next year. She has a strong background for office management and business administration and has spent most of her career managing contractors for IBM until her recent transition into the real estate industry.'
     },   
     {

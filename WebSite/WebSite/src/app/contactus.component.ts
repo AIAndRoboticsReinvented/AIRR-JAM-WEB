@@ -5,10 +5,8 @@ import { Location }                   from '@angular/common';
 @Component({
     moduleId: module.id,
     selector: 'contactus',
-    styleUrls: [],
-    template: `
-      <pagetitle [title]='title'></pagetitle>
-    `,
+    styleUrls: [ './contactus.component.css' ],
+    templateUrl: './contactus.component.html',
 })
 
 export class ContactUsComponent implements OnInit {

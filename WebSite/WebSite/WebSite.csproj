@@ -55,6 +55,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\app\about.controller.html" />
+    <Content Include="src\app\contactus.component.css" />
+    <Content Include="src\app\contactus.component.html" />
     <Content Include="src\app\footer.component.css" />
     <Content Include="src\app\footer.component.html" />
     <Content Include="src\app\home.component.html" />
@@ -76,6 +78,7 @@
     <Content Include="src\app\terms.component.css" />
     <Content Include="src\app\terms.component.html" />
     <Content Include="src\images\Blank_World_Banner.png" />
+    <Content Include="src\images\logo.jpg" />
     <Content Include="src\images\logo.png" />
     <Content Include="src\images\logo_old.png" />
     <Content Include="karma-test-shim.js" />
@@ -8440,7 +8443,10 @@
     <Content Include="src\images\property\extended1.jpg" />
     <Content Include="src\images\property\family1.jpg" />
     <Content Include="src\images\property\newlywed1.jpg" />
+    <Content Include="src\images\team\Chelsea.jpg" />
+    <Content Include="src\images\team\daveharo.jpg" />
     <Content Include="src\images\team\me.jpg" />
+    <Content Include="src\images\team\russ.JPG" />
     <Content Include="src\images\woman.jpg" />
     <Content Include="src\index.html" />
     <Content Include="src\main.js" />
