@@ -1,0 +1,9 @@
+﻿.titlepage {
+  background-image: url('../../images/Black_World_Banner.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: white;
+}
+h1 {
+  color:white;
+}

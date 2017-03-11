@@ -1,0 +1,17 @@
+﻿a:link,
+a:visited,
+a {
+  color: white;
+}
+
+.footer {
+  /*background-color: #025c99;*/
+  background-color: #000;
+  color: white;
+}
+
+a:hover {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
