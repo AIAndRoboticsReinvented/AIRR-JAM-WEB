@@ -29,7 +29,10 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "site", "..\site\", "{60027E
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "50454"
+		SlnRelativePath = "..\site\"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{31FFEAE7-E0F5-451D-82D9-E48F6018266A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +48,10 @@ Global
 		{60027EEE-1BD0-4195-A6D9-F941F5B40A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60027EEE-1BD0-4195-A6D9-F941F5B40A1F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{60027EEE-1BD0-4195-A6D9-F941F5B40A1F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{31FFEAE7-E0F5-451D-82D9-E48F6018266A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31FFEAE7-E0F5-451D-82D9-E48F6018266A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31FFEAE7-E0F5-451D-82D9-E48F6018266A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31FFEAE7-E0F5-451D-82D9-E48F6018266A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
