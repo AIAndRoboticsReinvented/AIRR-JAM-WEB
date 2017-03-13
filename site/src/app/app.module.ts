@@ -30,6 +30,7 @@ import { PropertyService } from './property.service';
 import { TermsComponent } from './terms/terms.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { WholesaleComponent } from './wholesale/wholesale.component';
+import { ContactRequestComponent } from './contact-request/contact-request.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { WholesaleComponent } from './wholesale/wholesale.component';
     PropertySummaryComponent,
     TermsComponent,
     PrivacyComponent,
-    WholesaleComponent
+    WholesaleComponent,
+    ContactRequestComponent
     
     
   ],

@@ -24,9 +24,16 @@ export class TeamComponent implements OnInit {
         private teamService: TeamService) { }
 
     getTeam(): void {
-        this.teamService.getTeam().then(team => this.team = team);
-    }
+        this.teamService.getTeam()
+            .subscribe(
+            data => this.team = JSON.parse(data.RequestResult),
+            error => console.log(error),
+            () => {
+                console.log('Team Loaded');
+            });
 
+    }
+     
     ngOnInit(): void {
         this.getTeam();
     }

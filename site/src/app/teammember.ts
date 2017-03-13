@@ -3,7 +3,7 @@
     title: string;
     image: string;
     passions: string;
-    moto: string;
+    motto: string;
     quote: string;
     region: string;
     about: string;

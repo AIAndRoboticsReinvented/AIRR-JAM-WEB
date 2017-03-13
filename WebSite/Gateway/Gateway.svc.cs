@@ -25,10 +25,12 @@ namespace Gateway
             string sResult = "{ERROR}";
             try
             {
+                string ClientIP = HttpContext.Current.Request.UserHostAddress;
                 // Read the Parameter Stream into a string ...
                 StreamReader reader = new StreamReader(JSONDataStream);
                 string JSONdata = reader.ReadToEnd();
-
+                JSONdata = JSONdata.Replace("{\"action", "{\"clientip\":\"" + ClientIP + "\", \"action");
+           
                 // If the parameters were extracted correctly..
                 if (iError == 0)
                 {
@@ -40,7 +42,7 @@ namespace Gateway
 
                     DB.Close();
                 }                
-            }
+            }   
             catch (Exception)
             {
                 iError = -1;
