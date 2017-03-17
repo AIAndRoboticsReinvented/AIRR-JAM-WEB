@@ -16,8 +16,9 @@ import { ContactRequestComponent } from '../contact-request/contact-request.comp
 export class InvestorsComponent implements OnInit {
     title = "Investors";
 
+    // Default contact request for an investor
     contactrequest: ContactRequest = {
-        RequestSource: '',
+        RequestSource: 'I Buy as Is - Investors Page',
         FirstName: '',
         LastName: '',
         EMail: '',
@@ -56,19 +57,19 @@ export class InvestorsComponent implements OnInit {
 
         visibility: {
             RequestSource: '0',
-            FirstName: '0',
-            LastName: '0',
+            FirstName: '1',
+            LastName: '1',
             EMail: '1',
             PhoneHome: '1',
-            PhoneCell: '0',
-            PhoneWork: '0',
-            PhoneFax: '0',
+            PhoneCell: '1',
+            PhoneWork: '1',
+            PhoneFax: '1',
 
-            MailingAddress1: '0',
-            MailingAddress2: '0',
-            MailingCity: '0',
-            MailingState: '0',
-            MailingZip: '0',
+            MailingAddress1: '1',
+            MailingAddress2: '1',
+            MailingCity: '1',
+            MailingState: '1',
+            MailingZip: '1',
 
             PropertyAddress1: '0',
             PropertyAddress2: '0',
@@ -84,8 +85,72 @@ export class InvestorsComponent implements OnInit {
             Terms: '0',
             Payments: '0',
             Learn: '0',
-            Comments: '0',
-        }
+            Comments: '1',
+        },
+        alternate: {
+            RequestSource: '',
+            FirstName: '',
+            LastName: '',
+            EMail: '',
+            PhoneHome: '',
+            PhoneCell: '',
+            PhoneWork: '',
+            PhoneFax: '',
+
+            MailingAddress1: '',
+            MailingAddress2: '',
+            MailingCity: '',
+            MailingState: '',
+            MailingZip: '',
+
+            PropertyAddress1: '',
+            PropertyAddress2: '',
+            PropertyCity: '',
+            PropertyState: '',
+            PropertyZip: '',
+
+            Funds: '',
+            Personal: '',
+            IRA: '',
+            Business: '',
+            Available: '',
+            Terms: '',
+            Payments: '',
+            Learn: '',
+            Comments: '',
+        },
+        required: {
+            RequestSource: '',
+            FirstName: '',
+            LastName: '',
+            EMail: '',
+            PhoneHome: '',
+            PhoneCell: '',
+            PhoneWork: '',
+            PhoneFax: '',
+
+            MailingAddress1: '',
+            MailingAddress2: '',
+            MailingCity: '',
+            MailingState: '',
+            MailingZip: '',
+
+            PropertyAddress1: '',
+            PropertyAddress2: '',
+            PropertyCity: '',
+            PropertyState: '',
+            PropertyZip: '',
+
+            Funds: '',
+            Personal: '',
+            IRA: '',
+            Business: '',
+            Available: '',
+            Terms: '',
+            Payments: '',
+            Learn: '',
+            Comments: '',
+        },
     };
 
     ngOnInit(): void {

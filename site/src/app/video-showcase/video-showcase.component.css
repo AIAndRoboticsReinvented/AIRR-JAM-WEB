@@ -1,0 +1,34 @@
+﻿.videoshowcase {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+.box {
+  background-color: black;
+}
+
+.title {
+  background-image: url('/assets/images/Black_World_Banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font: larger;
+  line-height: 44px;
+}
+
+.innerbox {
+  background-color: white;
+  border: solid 1px darkgray;
+  font:normal;
+  /*-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
+}
+
+h1 {
+  color: black;
+}

@@ -1,93 +1,352 @@
 ﻿
-<div class="row">
-  <div [hidden]="!this.isVisible(contactrequest.visibility.FirstName)" class="col-xs-12 col-sm-6" >
-    <label for="first_name">First Name</label><input [(ngModel)]="contactrequest.FirstName" id="first_name" class="col-xs-12" placeholder="First Name" />
+<div class="row" [hidden]="this.displayresponse">
+  <!--First Name-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.FirstName)" class="col-xs-12 col-md-6" >
+    <label for="first_name">
+      <span [hidden]="isAlternate(contactrequest.alternate.FirstName)">First&nbsp;Name</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.FirstName)">{{contactrequest.alternate.FirstName}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.FirstName)"
+           [(ngModel)]="contactrequest.FirstName" 
+           id="first_name" class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.FirstName) ? contactrequest.alternate.FirstName : 'First Name'" />
   </div> 
-  <div [hidden]="!this.isVisible(contactrequest.visibility.LastName)" class="col-xs-12 col-sm-6">
-    <label for="last_name">Last Name</label><input [(ngModel)]="contactrequest.LastName" id="last_name" class="col-xs-12" placeholder="Last Name" />
-  </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.EMail)" class="col-xs-12 col-sm-6">
-    <label for="email">Email</label><input [(ngModel)]="contactrequest.EMail" id="email" class="col-xs-12" placeholder="Email" />
-  </div>
-  <div class="col-xs-12 col-sm-6"></div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.PhoneHome)" class="col-xs-12 col-sm-6">
-    <label for="phone">Home Phone</label><input [(ngModel)]="contactrequest.PhoneHome" id="phonehome" class="col-xs-12" placeholder="Home Phone" />
-  </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.PhoneCell)" class="col-xs-12 col-sm-6">
-    <label for="phone">Cell Phone</label><input [(ngModel)]="contactrequest.PhoneCell" id="phonecell" class="col-xs-12" placeholder="Cell Phone" />
-  </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.PhoneWork)" class="col-xs-12 col-sm-6">
-    <label for="phone">Work Phone</label><input [(ngModel)]="contactrequest.PhoneWork" id="phonework" class="col-xs-12" placeholder="Work Phone" />
-  </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.PhoneFax)" class="col-xs-12 col-sm-6">
-    <label for="phone">Fax Phone</label><input [(ngModel)]="contactrequest.PhoneFax" id="phonefax" class="col-xs-12" placeholder="Fax Phone" />
+  <!--Last Name-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.LastName)" class="col-xs-12 col-md-6">
+    <label for="last_name">
+      <span [hidden]="isAlternate(contactrequest.alternate.LastName)">Last&nbsp;Name</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.LastName)">{{contactrequest.alternate.FirstName}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.LastName)"
+           [(ngModel)]="contactrequest.LastName" 
+           id="last_name" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.LastName) ? contactrequest.alternate.LastName : 'Last Name'" />
   </div>
 
-
+  <!--EMail-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.EMail)" class="col-xs-12 col-md-6">
+    <label for="email">
+      <span [hidden]="isAlternate(contactrequest.alternate.EMail)">EMail</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.EMail)">{{contactrequest.alternate.EMail}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.EMail)"
+           [(ngModel)]="contactrequest.EMail" 
+           id="email" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.EMail) ? contactrequest.alternate.EMail : 'EMail'" />
+  </div>
+  <!--Phone Home-->
+  <div class="col-xs-12 col-md-6"></div>
+  <div [hidden]="!this.isVisible(contactrequest.visibility.PhoneHome)" class="col-xs-12 col-md-6">
+    <label for="phone">
+      <span [hidden]="isAlternate(contactrequest.alternate.PhoneHome)">Home&nbsp;Phone</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.PhoneHome)">{{contactrequest.alternate.PhoneHome}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.PhoneHome)"
+           [(ngModel)]="contactrequest.PhoneHome" 
+           id="phonehome" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.PhoneHome) ? contactrequest.alternate.PhoneHome : 'Home&nbsp;Phone'" />
+  </div>
+  <!--Phone Cell-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.PhoneCell)" class="col-xs-12 col-md-6">
+    <label for="phone">
+      <span [hidden]="isAlternate(contactrequest.alternate.PhoneCell)">Cell&nbsp;Phone</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.PhoneCell)">{{contactrequest.alternate.PhoneCell}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.PhoneCell)"
+           [(ngModel)]="contactrequest.PhoneCell" 
+           id="phonecell" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.PhoneCell) ? contactrequest.alternate.PhoneCell : 'Cell&nbsp;Phone'" />
+  </div>
+  <!--Phone Work-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.PhoneWork)" class="col-xs-12 col-md-6">
+    <label for="phone">
+      <span [hidden]="isAlternate(contactrequest.alternate.PhoneWork)">Work&nbsp;Phone</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.PhoneWork)">{{contactrequest.alternate.PhoneWork}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.PhoneWork)"
+           [(ngModel)]="contactrequest.PhoneWork" 
+           id="phonework" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.PhoneWork) ? contactrequest.alternate.PhoneWork : 'Work&nbsp;Phone'" />
+  </div>
+  <!--Phone Fax-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.PhoneFax)" class="col-xs-12 col-md-6">
+    <label for="phone">
+      <span [hidden]="isAlternate(contactrequest.alternate.PhoneFax)">Fax&nbsp;Phone</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.PhoneFax)">{{contactrequest.alternate.PhoneFax}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.PhoneFax)"
+           [(ngModel)]="contactrequest.PhoneFax" 
+           id="phonefax" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.PhoneFax) ? contactrequest.alternate.PhoneFax : 'Fax&nbsp;Phone'" />
+  </div>
+  <!--Mailing Address 1-->
   <div [hidden]="!this.isVisible(contactrequest.visibility.MailingAddress1)" class="col-xs-12">
-    <label for="address1">Mailing Address 1</label><input [(ngModel)]="contactrequest.MailingAddress1" id="mailingaddress1" class="col-xs-12" placeholder="Mailing Address 1" />
+    <label for="address1">
+      <span [hidden]="isAlternate(contactrequest.alternate.MailingAddress1)">Mailing&nbsp;Address&nbsp;1</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.MailingAddress1)">{{contactrequest.alternate.MailingAddress1}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.MailingAddress1)"
+           [(ngModel)]="contactrequest.MailingAddress1" 
+           id="mailingaddress1" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.MailingAddress1) ? contactrequest.alternate.MailingAddress1 : 'Mailing&nbsp;Address&nbsp;1'" />
   </div>
+  <!--Mailing Address 2-->
   <div [hidden]="!this.isVisible(contactrequest.visibility.MailingAddress2)" class="col-xs-12">
-    <label for="address2">Mailing Address 2</label><input [(ngModel)]="contactrequest.MailingAddress2" id="mailingaddress2" class="col-xs-12" placeholder="Mailing Address 2" />
+    <label for="address2">
+      <span [hidden]="isAlternate(contactrequest.alternate.MailingAddress2)">Mailing&nbsp;Address&nbsp;2</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.MailingAddress2)">{{contactrequest.alternate.MailingAddress2}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.MailingAddress2)"
+           [(ngModel)]="contactrequest.MailingAddress2" 
+           id="mailingaddress2" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.MailingAddress2) ? contactrequest.alternate.MailingAddress2 : 'Mailing&nbsp;Address&nbsp;2'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.MailingCity)" class="col-xs-6 col-sm-4">
-    <label for="city">Mailing City</label><input [(ngModel)]="contactrequest.MailingCity" id="mailingcity" class="col-xs-12" placeholder="Mailing City" />
+  <!--Mailing City-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.MailingCity)" class="col-xs-6 col-md-4">
+    <label for="city">
+      <span [hidden]="isAlternate(contactrequest.alternate.MailingCity)">Mailing&nbsp;City</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.MailingCity)">{{contactrequest.alternate.MailingCity}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.MailingCity)"
+           [(ngModel)]="contactrequest.MailingCity" 
+           id="mailingcity" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.MailingCity) ? contactrequest.alternate.MailingCity : 'Mailing&nbsp;City'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.MailingState)" class="col-xs-6 col-sm-4">
-    <label for="state">Mailing State</label><input [(ngModel)]="contactrequest.MailingState" id="mailingstate" class="col-xs-12" placeholder="Mailing State" />
+  <!--Mailing State-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.MailingState)" class="col-xs-6 col-md-4">
+    <label for="state">
+      <span [hidden]="isAlternate(contactrequest.alternate.MailingState)">Mailing&nbsp;State</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.MailingState)">{{contactrequest.alternate.MailingState}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.MailingState)"
+           [(ngModel)]="contactrequest.MailingState" 
+           id="mailingstate" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.MailingState) ? contactrequest.alternate.MailingState : 'Mailing&nbsp;State'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.MailingZip)" class="col-xs-6 col-sm-4">
-    <label for="zip">Mailing Zip Code</label><input [(ngModel)]="contactrequest.MailingZip" id="mailingzip" class="col-xs-12" placeholder="Mailing Zip" />
+  <!--Mailing Zip Code-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.MailingZip)" class="col-xs-6 col-md-4">
+    <label for="zip">
+      <span [hidden]="isAlternate(contactrequest.alternate.MailingZip)">Mailing&nbsp;Zip&nbsp;Code</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.MailingZip)">{{contactrequest.alternate.MailingZip}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.MailingZip)"
+           [(ngModel)]="contactrequest.MailingZip" 
+           id="mailingzip" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.MailingZip) ? contactrequest.alternate.MailingZip : 'Mailing&nbsp;Zip'" />
   </div>
-
+  <!--Property Address 1-->
   <div [hidden]="!this.isVisible(contactrequest.visibility.PropertyAddress1)" class="col-xs-12">
-    <label for="address1">Property Address 1</label><input [(ngModel)]="contactrequest.PropertyAddress1" id="propertyaddress1" class="col-xs-12" placeholder="Property Address 1" />
+    <label for="address1">
+      <span [hidden]="isAlternate(contactrequest.alternate.PropertyAddress1)">Property&nbsp;Address&nbsp;1</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.PropertyAddress1)">{{contactrequest.alternate.PropertyAddress1}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.PropertyAddress1)"
+           [(ngModel)]="contactrequest.PropertyAddress1" 
+           id="propertyaddress1" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.PropertyAddress1) ? contactrequest.alternate.PropertyAddress1 : 'Property&nbsp;Address&nbsp;1'" />
   </div>
+  <!--Property Address 2-->
   <div [hidden]="!this.isVisible(contactrequest.visibility.PropertyAddress2)" class="col-xs-12">
-    <label for="address2">Property Address 2</label><input [(ngModel)]="contactrequest.PropertyAddress2" id="propertyaddress2" class="col-xs-12" placeholder="Property Address 2" />
+    <label for="address2">
+      <span [hidden]="isAlternate(contactrequest.alternate.PropertyAddress2)">Property&nbsp;Address&nbsp;2</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.PropertyAddress2)">{{contactrequest.alternate.PropertyAddress2}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.PropertyAddress2)"
+           [(ngModel)]="contactrequest.PropertyAddress2" 
+           id="propertyaddress2" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.PropertyAddress2) ? contactrequest.alternate.PropertyAddress2 : 'Property&nbsp;Address&nbsp;2'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.PropertyCity)" class="col-xs-6 col-sm-4">
-    <label for="city">Property City</label><input [(ngModel)]="contactrequest.PropertyCity" id="propertycity" class="col-xs-12" placeholder="Property City" />
+  <!--Property City-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.PropertyCity)" class="col-xs-6 col-md-4">
+    <label for="city">
+      <span [hidden]="isAlternate(contactrequest.alternate.PropertyCity)">Property&nbsp;City</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.PropertyCity)">{{contactrequest.alternate.PropertyCity}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.PropertyCity)"
+           [(ngModel)]="contactrequest.PropertyCity" 
+           id="propertycity" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.PropertyCity) ? contactrequest.alternate.PropertyCity : 'Property&nbsp;City'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.PropertyState)" class="col-xs-6 col-sm-4">
-    <label for="state">Property State</label><input [(ngModel)]="contactrequest.PropertyState" id="propertystate" class="col-xs-12" placeholder="Property State" />
+  <!--Property State-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.PropertyState)" class="col-xs-6 col-md-4">
+    <label for="state">
+      <span [hidden]="isAlternate(contactrequest.alternate.PropertyState)">Property&nbsp;State</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.PropertyState)">{{contactrequest.alternate.PropertyState}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.PropertyState)"
+           [(ngModel)]="contactrequest.PropertyState" 
+           id="propertystate" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.PropertyState) ? contactrequest.alternate.PropertyState : 'Property&nbsp;State'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.PropertyZip)" class="col-xs-6 col-sm-4">
-    <label for="zip">Property Zip Code</label><input [(ngModel)]="contactrequest.PropertyZip" id="propertyzip" class="col-xs-12" placeholder="Property Zip" />
+  <!--Property Zip Code-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.PropertyZip)" class="col-xs-6 col-md-4">
+    <label for="zip">
+      <span [hidden]="isAlternate(contactrequest.alternate.PropertyZip)">Property&nbsp;Zip&nbsp;Code</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.PropertyZip)">{{contactrequest.alternate.PropertyZip}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.PropertyZip)"
+           [(ngModel)]="contactrequest.PropertyZip" 
+           id="propertyzip" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.PropertyZip) ? contactrequest.alternate.PropertyZip : 'Property&nbsp;Zip'" />
   </div>
 
 
-
+  <!--Funds I have Available-->
   <div [hidden]="!this.isVisible(contactrequest.visibility.Funds)" class="col-xs-12">
-    <label for="funds">*Funds I have available</label><input [(ngModel)]="contactrequest.Funds" id="funds" class="col-xs-12" placeholder="funds" />
+    <label for="funds">
+      <span [hidden]="isAlternate(contactrequest.alternate.Funds)">Funds&nbsp;I&nbsp;have&nbsp;available</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.Funds)">{{contactrequest.alternate.Funds}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.Funds)"
+           [(ngModel)]="contactrequest.Funds" 
+           id="funds" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.Funds) ? contactrequest.alternate.Funds : 'Funds'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.Personal)" class="col-xs-12 col-sm-4">
-    <label for="personal">Personal Funds</label><input [(ngModel)]="contactrequest.Personal" id="personal" class="col-xs-12" placeholder="Personal Funds" />
+  <!--Personal Funds-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.Personal)" class="col-xs-12 col-md-4">
+    <label for="personal">
+      <span [hidden]="isAlternate(contactrequest.alternate.Personal)">Personal&nbsp;Funds</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.Personal)">{{contactrequest.alternate.Personal}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.Personal)"
+           [(ngModel)]="contactrequest.Personal" 
+           id="personal" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.Personal) ? contactrequest.alternate.Personal : 'Personal Funds'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.IRA)" class="col-xs-12 col-sm-4">
-    <label for="ira">IRA Funds</label><input [(ngModel)]="contactrequest.IRA" id="ira" class="col-xs-12" placeholder="IRA Funds" />
+  <!--IRA Funds-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.IRA)" class="col-xs-12 col-md-4">
+    <label for="ira">
+      <span [hidden]="isAlternate(contactrequest.alternate.IRA)">IRA&nbsp;Funds</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.IRA)">{{contactrequest.alternate.IRA}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.IRA)"
+           [(ngModel)]="contactrequest.IRA" 
+           id="ira" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.IRA) ? contactrequest.alternate.IRA : 'IRA&nbsp;Funds'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.Business)" class="col-xs-12 col-sm-4">
-    <label for="business">Business Funds</label><input [(ngModel)]="contactrequest.Business" id="business" class="col-xs-12" placeholder="Business Funds" />
+  <!--Business Funds-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.Business)" class="col-xs-12 col-md-4">
+    <label for="business">
+      <span [hidden]="isAlternate(contactrequest.alternate.Business)">Business&nbsp;Funds</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.Business)">{{contactrequest.alternate.Business}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.Business)"
+           [(ngModel)]="contactrequest.Business" 
+           id="business" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.Business) ? contactrequest.alternate.Business : 'Business&nbsp;Funds'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.Available)" class="col-xs-12 col-sm-4">
-    <label for="available">Date Funds Available</label><input [(ngModel)]="contactrequest.Available" id="available" class="col-xs-12" placeholder="available" />
+  <!--Date Funds Available-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.Available)" class="col-xs-12 col-md-4">
+    <label for="available">
+      <span [hidden]="isAlternate(contactrequest.alternate.Available)">Date&nbsp;funds&nbsp;available</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.Available)">{{contactrequest.alternate.Available}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.Available)"
+           [(ngModel)]="contactrequest.Available" 
+           id="available" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.Available) ? contactrequest.alternate.Available : 'Available'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.Terms)" class="col-xs-12 col-sm-4">
-    <label for="terms">Length Terms</label><input [(ngModel)]="contactrequest.terms" id="Terms" class="col-xs-12" placeholder="terms" />
+  <!--Length Terms-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.Terms)" class="col-xs-12 col-md-4">
+    <label for="terms">
+      <span [hidden]="isAlternate(contactrequest.alternate.Terms)">Length&nbsp;Terms</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.Terms)">{{contactrequest.alternate.Terms}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.Terms)"
+           [(ngModel)]="contactrequest.terms" 
+           id="Terms" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.Terms) ? contactrequest.alternate.Terms : 'Terms'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.Payments)" class="col-xs-12 col-sm-4">
-    <label for="payments">Payment Preference</label><input [(ngModel)]="contactrequest.Payments" id="payments" class="col-xs-12" placeholder="Payment Preference" />
+  <!--Payment Preference-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.Payments)" class="col-xs-12 col-md-4">
+    <label for="payments">
+      <span [hidden]="isAlternate(contactrequest.alternate.Payments)">Payment Preference</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.Payments)">{{contactrequest.alternate.Payments}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.Payments)"
+           [(ngModel)]="contactrequest.Payments" 
+           id="payments" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.Payments) ? contactrequest.alternate.Payments : 'Payment&nbsp;Preference'" />
   </div>
-  <div [hidden]="!this.isVisible(contactrequest.visibility.Learn)" class="col-xs-12 col-sm-4">
-    <label for="learn">Learn About Self Directed IRAs</label><input [(ngModel)]="contactrequest.Learn" id="learn" class="col-xs-12" placeholder="Self Directed IRAs" />
+  <!--Learn About Self Directed IRAs-->
+  <div [hidden]="!this.isVisible(contactrequest.visibility.Learn)" class="col-xs-12 col-md-4">
+    <label for="learn">Learn About Self Directed IRAs
+      <span [hidden]="isAlternate(contactrequest.alternate.Learn)">Learn&nbsp;about&nbsp;self&nbsp;directed&nbsp;IRAs</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.Learn)">{{contactrequest.alternate.Learn}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.Learn)"
+           [(ngModel)]="contactrequest.Learn" 
+           id="learn" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.Learn) ? contactrequest.alternate.Learn : 'Self&nbsp;Directed&nbsp;IRAs'" />
   </div>
+  <!--Comments-->
   <div [hidden]="!this.isVisible(contactrequest.visibility.Comments)" class="col-xs-12">
-    <label for="comments">Comments</label><input [(ngModel)]="contactrequest.Comments" id="comments" class="col-xs-12" placeholder="Comments" />
+    <label for="comments">Comments
+      <span [hidden]="isAlternate(contactrequest.alternate.Comments)">Comments</span>
+      <span [hidden]="!isAlternate(contactrequest.alternate.Comments)">{{contactrequest.alternate.Comments}}</span>
+    </label>
+    <input 
+           [required]="isRequired(contactrequest.required.Comments)"
+           [(ngModel)]="contactrequest.Comments" 
+           id="comments" 
+           class="col-xs-12" 
+           [placeholder]="isAlternate(contactrequest.alternate.Comments) ? contactrequest.alternate.Comments : 'Comments'" />
   </div>
   <div class="col-xs-12">
     <br />
-    <button>Contact Me</button>
+    <button (click)="onRequestClick()">Contact Me</button>
   </div>
 
+</div>
+<div class="row" [hidden]="!this.displayresponse" >
+  {{response.message}}
 </div>

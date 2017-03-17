@@ -10,9 +10,7 @@ import { TeamService } from '../team.service';
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.css'],
   providers: [TeamService],
-
 })
-
 
 export class TeamComponent implements OnInit {
 

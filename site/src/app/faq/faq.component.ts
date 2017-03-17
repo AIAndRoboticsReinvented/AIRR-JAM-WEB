@@ -6,7 +6,7 @@
   styleUrls: ['./faq.component.css']
 })
 export class FaqComponent implements OnInit {
-  title = "FAQ";
+    title = "Frequently Asked Questions";
   constructor() { }
   
   ngOnInit() {

@@ -8,8 +8,13 @@
 
 .header {
   /*background-color: #025c99;*/
+  /*background-image: url('/assets/images/Black_World_Banner.jpg');*/
+  background-repeat: no-repeat;
+  background-size: cover;
+
   background-color: #000;
   color: white;
+  font-weight:bold;
 }
 
 .banner {
@@ -51,4 +56,6 @@ nav {
 
 .phone {
   font-size: larger;
+  color:red;
+  font-weight:bold;
 }

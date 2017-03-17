@@ -4,6 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 
+import { TeamService } from './team.service';
+import { ContactRequestService } from './contact-request.service';
+import { SqueezePageService } from './squeeze-page.service';
+
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +23,7 @@ import { TeamComponent } from './team/team.component';
 import { TeammemberComponent } from './teammember/teammember.component';
 
 
-import { TeamService } from './team.service';
+
 import { SellyourhomeComponent } from './sellyourhome/sellyourhome.component';
 import { BuyahomeComponent } from './buyahome/buyahome.component';
 import { PropertiesComponent } from './properties/properties.component';
@@ -31,6 +35,9 @@ import { TermsComponent } from './terms/terms.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { WholesaleComponent } from './wholesale/wholesale.component';
 import { ContactRequestComponent } from './contact-request/contact-request.component';
+import { HtmlComponent } from './html/html.component';
+import { VideoShowcaseComponent } from './video-showcase/video-showcase.component';
+import { VideaComponent } from './videa/videa.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +59,10 @@ import { ContactRequestComponent } from './contact-request/contact-request.compo
     TermsComponent,
     PrivacyComponent,
     WholesaleComponent,
-    ContactRequestComponent
+    ContactRequestComponent,
+    HtmlComponent,
+    VideoShowcaseComponent,
+    VideaComponent
     
     
   ],
@@ -62,7 +72,7 @@ import { ContactRequestComponent } from './contact-request/contact-request.compo
     FormsModule,
     HttpModule
   ],
-  providers: [TeamService, PropertyService],
+  providers: [TeamService, PropertyService, ContactRequestService, SqueezePageService],
   bootstrap: [AppComponent]
 })
 
