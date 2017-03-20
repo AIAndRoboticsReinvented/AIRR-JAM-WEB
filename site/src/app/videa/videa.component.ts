@@ -54,7 +54,7 @@ export class VideaComponent implements OnInit {
         Image3: '',
         Image4: '',
         contactrequest: {
-            RequestSource: 'HTML Squeeze Page',
+            RequestSource: 'Video Squeeze Page',
             FirstName: '',
             LastName: '',
             EMail: '',
