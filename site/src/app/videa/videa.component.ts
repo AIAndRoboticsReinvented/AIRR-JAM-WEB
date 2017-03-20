@@ -21,9 +21,6 @@ export class VideaComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        //this.route.params.switchMap((params: Params) =>
-        //    this.squeezePageService.getSqueezePage(+params['id']))
-        //    .subscribe(squeezepage => this.squeezepage = squeezepage);
     }
 
     squeezepage: SqueezePage = {
@@ -31,7 +28,7 @@ export class VideaComponent implements OnInit {
         PageType: '',
         Heading1: 'Headline Goes Here',
         Heading2: 'Enter your call to action headline here',
-        Heading3: '',
+        Heading3: 'Another Call to action Heading.',
         Heading4: '',
         SubHeading1: 'Underneath the headline you will want a smaller subheading that leads them into the bullet points or the moain body of the squeeze page.',
         SubHeading2: 'Stress the main benefit to Sign Up.',
@@ -49,8 +46,8 @@ export class VideaComponent implements OnInit {
         CallToAction2: 'We will never share your information with anyone.',
         CallToAction3: '',
         CallToAction4: '',
-        Image1: 'assets/images/Charity.jpg',
-        Image2: '',
+        Image1: 'assets/videos/IBuyAsIs3.mp4',
+        Image2: 'assets/images/Charity.jpg',
         Image3: '',
         Image4: '',
         contactrequest: {
@@ -125,9 +122,9 @@ export class VideaComponent implements OnInit {
             },
             alternate: {
                 RequestSource: '',
-                FirstName: '',
+                FirstName: 'Name',
                 LastName: '',
-                EMail: '',
+                EMail: 'EMail Adress',
                 PhoneHome: '',
                 PhoneCell: '',
                 PhoneWork: '',

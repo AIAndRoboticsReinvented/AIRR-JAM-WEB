@@ -1,37 +1,52 @@
 ﻿<div class="container-fluid top">
-    <!--Tip Top-->
-    <div class="row">
-      <div class="container center">
-        {{squeezepage.Heading1}}
+  <!--Tip Top-->
+  <div class="row">
+    <div class="container center">
+      {{squeezepage.Heading1}}
+    </div>
+  </div>
+  <!--Section 2-->
+  <div class="row">
+    <div class="col-xs-12  content_wrapper">
+      <div class="col-xs-12 col-sm-2"></div>
+      <div class="col-xs-12 col-sm-5">
+        <div class="col-xs-12 center">
+          <h1>{{squeezepage.Heading2}}</h1>
+          <em>{{squeezepage.SubHeading2}}</em>
+        </div>
+        <div class="col-xs-12 center">
+          <div class="col-xs-8">
+            <video [src]="squeezepage.Image1" autoplay [poster]="squeezepage.Image1">
+              Sorry, your browser doesn't support embedded videos,
+              but don't worry, you can
+              <a [href]="squeezepage.Image1">download it</a>
+              and watch it with your favorite video player!
+            </video>
+          </div>
+        </div>
+        <div class="col-xs-12 primary_text">
+          <p>{{squeezepage.Content2}}</p>
+          <ul>
+            <li>{{squeezepage.Description1}}</li>
+            <li>{{squeezepage.Description2}}</li>
+            <li>{{squeezepage.Description3}}</li>
+          </ul>
+        </div>
       </div>
+      <div class="col-xs-12 col-sm-3 sidebar">
+        <img alt="arrow" class="col-xs-12 red_arrow" src="/assets/images/red_arrow.png">
+        <p>{{squeezepage.SubHeading1}}</p>
+        <hr />
+        <h2>{{squeezepage.Heading3}}</h2>
+        <img alt="sign up" class="col-xs-12" src="/assets/images/trans_image.png" />
+        <app-contact-request [contactrequest]="squeezepage.contactrequest"></app-contact-request>
+      </div>
+      <div class="col-xs-12 col-sm-2"></div>
     </div>
-    <!--Section 2-->
-    <div class="row">
-      <div class="col-xs-12  content_wrapper">
-          <div class="col-xs-12 col-sm-2"></div>
-          <div class="col-xs-12 col-sm-5">
-            <div class="col-xs-12 center">
-              <h1>{{squeezepage.Heading2}}</h1>
-              <em>{{squeezepage.SubHeading2}}</em>
-            </div>
-            <div class="col-xs-12 center">
-              <div class="col-xs-8">
-                Video Goes Here
-              </div>
-            </div>
-            <div class="col-xs-12 primary_text">
-              <p>{{squeezepage.Content2}}</p>
-              <ul>
-                <li>{{squeezepage.Description1}}</li>
-                <li>{{squeezepage.Description2}}</li>
-                <li>{{squeezepage.Description3}}</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-3 sidebar center">
-            <img alt="arrow" class="red_arrow" src="/assets/images/red_arrow.png">
-          </div>
-        <div class="col-xs-12 col-sm-2"></div>
-        </div>      
+  </div>
+  <div class="row">
+    <div class="col-xs-12  content_wrapper">
+
     </div>
+  </div>
 </div>
