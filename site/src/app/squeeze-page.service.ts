@@ -20,6 +20,7 @@ export class SqueezePageService {
         this.request.pageid = PageID;
         // Build the full request
         this.therequest = JSON.stringify(this.request);
+        console.log(this.therequest);
         // Send the request to the server
         return this.http.post(this.url, this.therequest)
             .map(res => res.json());

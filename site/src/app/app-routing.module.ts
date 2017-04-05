@@ -13,7 +13,7 @@ import { SellyourhomeComponent }    from './sellyourhome/sellyourhome.component'
 import { TermsComponent }           from './terms/terms.component';
 import { VideaComponent }           from './videa/videa.component';
 import { WholesaleComponent }       from './wholesale/wholesale.component';
-
+import { ProspectPropertyComponent }         from './prospect-property/prospect-property.component';
 
 
 
@@ -31,6 +31,7 @@ const routes: Routes = [
     { path: 'terms', component: TermsComponent },
     { path: 'videa/:id', component: VideaComponent },
     { path: 'wholesale', component: WholesaleComponent },
+    { path: 'prospect', component: ProspectPropertyComponent }
 ];
 
 @NgModule({

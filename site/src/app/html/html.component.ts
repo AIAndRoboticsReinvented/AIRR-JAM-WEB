@@ -11,51 +11,41 @@ import { SqueezePageService } from '../squeeze-page.service';
 @Component({
   selector: 'app-html',
   templateUrl: './html.component.html',
-  styleUrls: ['./html.component.css']
+  styleUrls: ['./html.component.css'],
+  providers: [SqueezePageService]
 })
 export class HtmlComponent implements OnInit {
 
-    constructor(
-        private squeezePageService: SqueezePageService,
-        private route: ActivatedRoute,
-        private location: Location
-    ) { }
-
-    ngOnInit() {
-        //this.route.params.switchMap((params: Params) =>
-        //    this.squeezePageService.getSqueezePage(+params['id']))
-        //    .subscribe(squeezepage => this.squeezepage = squeezepage);
-    }
-
-    squeezepage: SqueezePage = {
+    squeezepage: SqueezePage
+     = {
         PageID: '',
         PageType: '',
-        Heading1: 'Headline Goes Here',
-        Heading2: 'Enter your call to action headline here',
+        Heading1: '',
+        Heading2: '',
         Heading3: '',
         Heading4: '',
-        SubHeading1: 'Underneath the headline you will want a smaller subheading that leads them into the bullet points or the moain body of the squeeze page.',
-        SubHeading2: 'Stress the main benefit to Sign Up.',
+        SubHeading1: '',
+        SubHeading2: '',
         SubHeading3: '',
         SubHeading4: '',
-        Description1: 'Bullet One Headline',
-        Description2: 'Bullet Two Headline',
-        Description3: 'Bullet Three Headline',
-        Description4: 'Bullet Four Headline',
-        Content1: 'Bullet point one text goes here.',
-        Content2: 'Bullet point two text goes here.',
-        Content3: 'Bullet point three text goes here.',
-        Content4: 'Bullet point four text goes here.',
-        CallToAction1: 'Your privacy is safe with us!',
-        CallToAction2: 'We will never share your information with anyone.',
+        Description1: '',
+        Description2: '',
+        Description3: '',
+        Description4: '',
+        Content1: '',
+        Content2: '',
+        Content3: '',
+        Content4: '',
+        CallToAction1: '',
+        CallToAction2: '',
         CallToAction3: '',
         CallToAction4: '',
-        Image1: 'assets/images/Charity.jpg',
+        Image1: '',
         Image2: '',
         Image3: '',
         Image4: '',
         contactrequest: {
-            RequestSource: 'HTML Squeeze Page',
+            RequestSource: '',
             FirstName: '',
             LastName: '',
             EMail: '',
@@ -190,6 +180,38 @@ export class HtmlComponent implements OnInit {
             },
 
         }
-    };
+      };
+
+
+    constructor(
+        private squeezePageService: SqueezePageService,
+        private route: ActivatedRoute,
+        private location: Location
+    ) { }
+
+    getSqueezePage(): void {
+        console.log("Before");
+        console.log(this.squeezepage);
+        this.route.params.switchMap((params: Params) =>
+            this.squeezePageService.getSqueezePage(+params['id']))
+            .subscribe(
+            data => {
+                this.squeezepage = JSON.parse("[ " + data.RequestResult + "]" )[0];
+                  console.log("The Data");
+                  console.log(JSON.parse("[ " + data.RequestResult + "]" )[0]);
+                },
+            error => console.log(error),
+            () => {
+                console.log('Page Loaded');
+            });
+        console.log("After");
+        console.log(this.squeezepage);
+
+    }
+
+    ngOnInit() {
+        this.getSqueezePage();
+    }
+
 
 }

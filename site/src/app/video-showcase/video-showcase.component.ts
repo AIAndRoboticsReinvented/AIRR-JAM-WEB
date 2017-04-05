@@ -33,7 +33,7 @@ export class VideoShowcaseComponent implements OnInit {
 
   // Default contact request for an investor
   contactrequest: ContactRequest = {
-      RequestSource: 'I Buy as Is - Investors Page',
+      RequestSource: this.title,
       FirstName: '',
       LastName: '',
       EMail: '',

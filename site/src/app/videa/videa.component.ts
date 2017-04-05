@@ -14,14 +14,7 @@ import { SqueezePageService } from '../squeeze-page.service';
 })
 export class VideaComponent implements OnInit {
 
-    constructor(
-        private squeezePageService: SqueezePageService,
-        private route: ActivatedRoute,
-        private location: Location
-    ) { }
 
-    ngOnInit() {
-    }
 
     squeezepage: SqueezePage = {
         PageID: '',
@@ -187,6 +180,38 @@ export class VideaComponent implements OnInit {
 
         }
     };
+
+    constructor(
+        private squeezePageService: SqueezePageService,
+        private route: ActivatedRoute,
+        private location: Location
+    ) { }
+
+
+    getSqueezePage(): void {
+        console.log("Before");
+        console.log(this.squeezepage);
+        this.route.params.switchMap((params: Params) =>
+            this.squeezePageService.getSqueezePage(+params['id']))
+            .subscribe(
+            data => {
+                this.squeezepage = JSON.parse("[ " + data.RequestResult + "]")[0];
+                console.log("The Data");
+                console.log(JSON.parse("[ " + data.RequestResult + "]")[0]);
+            },
+            error => console.log(error),
+            () => {
+                console.log('Page Loaded');
+            });
+        console.log("After");
+        console.log(this.squeezepage);
+
+    }
+
+    ngOnInit() {
+        this.getSqueezePage();
+    }
+
 
 }
 

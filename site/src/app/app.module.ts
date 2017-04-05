@@ -3,6 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+/// Image Uploader
+import { ImageUploadModule } from 'angular2-image-upload'
+
+/// Google maps.
+import { AgmCoreModule } from 'angular2-google-maps/core';
+
 
 import { TeamService } from './team.service';
 import { ContactRequestService } from './contact-request.service';
@@ -38,6 +44,10 @@ import { ContactRequestComponent } from './contact-request/contact-request.compo
 import { HtmlComponent } from './html/html.component';
 import { VideoShowcaseComponent } from './video-showcase/video-showcase.component';
 import { VideaComponent } from './videa/videa.component';
+import { ProspectPropertyComponent } from './prospect-property/prospect-property.component';
+import { GoogleMapComponent } from './google-map/google-map.component';
+
+
 
 @NgModule({
   declarations: [
@@ -62,15 +72,19 @@ import { VideaComponent } from './videa/videa.component';
     ContactRequestComponent,
     HtmlComponent,
     VideoShowcaseComponent,
-    VideaComponent
+    VideaComponent,
+    ProspectPropertyComponent,
+    GoogleMapComponent
     
     
   ],
   imports: [
-    AppRoutingModule,
-    BrowserModule,
-    FormsModule,
-    HttpModule
+      AppRoutingModule,
+      BrowserModule,
+      FormsModule,
+      HttpModule,
+      AgmCoreModule.forRoot({ apiKey: 'AIzaSyCkiDx9O54GaP1FG2eOzXOjZB-ffqAbEzg'}),  /// Google Maps
+      ImageUploadModule.forRoot(),     /// Image Uploader
   ],
   providers: [TeamService, PropertyService, ContactRequestService, SqueezePageService],
   bootstrap: [AppComponent]
