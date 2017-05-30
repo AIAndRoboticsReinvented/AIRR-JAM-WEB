@@ -22,7 +22,9 @@
     "@angular/router": "^3.4.0",
     "angular2-google-maps": "^0.17.0",
     "angular2-image-upload": "^0.4.1",
+    "browser-location": "^1.0.1",
     "core-js": "^2.4.1",
+    "ng2-location-autocomplete": "^1.0.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.7.6"
   },

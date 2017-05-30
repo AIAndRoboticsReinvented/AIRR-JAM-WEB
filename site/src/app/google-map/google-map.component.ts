@@ -7,8 +7,8 @@
 })
 export class GoogleMapComponent implements OnInit {
 
-  @Input() lng: '';
-  @Input() lat: '';
+  @Input() lng;
+  @Input() lat;
 
   constructor() { }
 

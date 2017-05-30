@@ -12,6 +12,7 @@ export class Property {
     city: string;
     state: string;
     zip: string;
+    zillow: string;
     description: string;
     masterimage: string;
     images: string[];

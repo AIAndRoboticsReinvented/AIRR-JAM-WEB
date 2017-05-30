@@ -2,11 +2,12 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+//import { LocationAutocompleteComponent } from 'ng2-location-autocomplete';
 
 /// Image Uploader
 import { ImageUploadModule } from 'angular2-image-upload'
 
-/// Google maps.
+/// Google maps. 
 import { AgmCoreModule } from 'angular2-google-maps/core';
 
 
@@ -74,9 +75,8 @@ import { GoogleMapComponent } from './google-map/google-map.component';
     VideoShowcaseComponent,
     VideaComponent,
     ProspectPropertyComponent,
-    GoogleMapComponent
-    
-    
+    GoogleMapComponent,
+  //  LocationAutocompleteComponent,
   ],
   imports: [
       AppRoutingModule,
