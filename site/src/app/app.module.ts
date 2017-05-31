@@ -8,7 +8,7 @@ import { HttpModule } from '@angular/http';
 import { ImageUploadModule } from 'angular2-image-upload'
 
 /// Google maps. 
-import { AgmCoreModule } from 'angular2-google-maps/core';
+///import { AgmCoreModule } from 'angular2-google-maps/core';
 
 
 import { TeamService } from './team.service';
@@ -45,8 +45,15 @@ import { ContactRequestComponent } from './contact-request/contact-request.compo
 import { HtmlComponent } from './html/html.component';
 import { VideoShowcaseComponent } from './video-showcase/video-showcase.component';
 import { VideaComponent } from './videa/videa.component';
-import { ProspectPropertyComponent } from './prospect-property/prospect-property.component';
-import { GoogleMapComponent } from './google-map/google-map.component';
+///import { ProspectPropertyComponent } from './prospect-property/prospect-property.component';
+///import { GoogleMapComponent } from './google-map/google-map.component';
+import { LoginComponent } from './login/login.component';
+//import { MemberHeaderComponent } from './member-header/member-header.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+///import { DashboardComponent } from './dashboard/dashboard.component';
+
+import { DashboardRoutingModule } from './dashboard/dashboard-routing.module';
 
 
 
@@ -74,17 +81,22 @@ import { GoogleMapComponent } from './google-map/google-map.component';
     HtmlComponent,
     VideoShowcaseComponent,
     VideaComponent,
-    ProspectPropertyComponent,
-    GoogleMapComponent,
+///    ProspectPropertyComponent,
+///    GoogleMapComponent,
+    LoginComponent,
+//    MemberHeaderComponent,
+    
   //  LocationAutocompleteComponent,
+      PageNotFoundComponent,
   ],
-  imports: [
-      AppRoutingModule,
+  imports: [      
       BrowserModule,
       FormsModule,
       HttpModule,
-      AgmCoreModule.forRoot({ apiKey: 'AIzaSyCkiDx9O54GaP1FG2eOzXOjZB-ffqAbEzg'}),  /// Google Maps
-      ImageUploadModule.forRoot(),     /// Image Uploader
+///      AgmCoreModule.forRoot({ apiKey: 'AIzaSyCkiDx9O54GaP1FG2eOzXOjZB-ffqAbEzg'}),  /// Google Maps
+///      ImageUploadModule.forRoot(),     /// Image Uploader
+      DashboardRoutingModule,
+      AppRoutingModule,     /// <--- This MUST be last
   ],
   providers: [TeamService, PropertyService, ContactRequestService, SqueezePageService],
   bootstrap: [AppComponent]

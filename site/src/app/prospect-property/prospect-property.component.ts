@@ -1,6 +1,6 @@
 ﻿import { Component, OnInit } from '@angular/core';
 
-import { GoogleMapComponent } from '../google-map/google-map.component';
+//import { GoogleMapComponent } from '../google-map/google-map.component';
 import { Observable } from 'rxjs/Observable';
 
 @Component({

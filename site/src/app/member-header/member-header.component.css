@@ -1,0 +1,60 @@
+﻿body {
+}
+
+.logo {
+  position: relative;
+  top: 0px;
+}
+
+.header {
+  /*background-color: #025c99;*/
+  /*background-image: url('/assets/images/Black_World_Banner.jpg');*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+}
+
+.banner {
+  background-color: #FFF;
+  color: blue;
+}
+
+.topmenu {
+  height: 100%;
+}
+
+nav {
+  padding-top: 10px;
+}
+
+.banner div {
+  display: table;
+}
+
+.banner a:link,
+.banner a:visited {
+  color: blue;
+}
+
+
+.topnav {
+}
+
+  .topnav a,
+  .topnav a:link,
+  .topnav a:visited {
+    color: white;
+  }
+
+    .topnav a:hover {
+      color: white;
+      font-weight: bold;
+    }
+
+.phone {
+  font-size: larger;
+  color: red;
+  font-weight: bold;
+}
