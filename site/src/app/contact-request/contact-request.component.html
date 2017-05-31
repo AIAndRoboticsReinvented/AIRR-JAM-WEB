@@ -1,6 +1,6 @@
 ﻿
 <div class="row" [hidden]="this.displayresponse">
-  <!--First Name-->
+ <!--First Name-->
   <div [hidden]="!this.isVisible(contactrequest.visibility.FirstName)" class="col-xs-12 col-md-6" >
     <label for="first_name">
       <span [hidden]="isAlternate(contactrequest.alternate.FirstName)">First&nbsp;Name</span>
@@ -317,7 +317,7 @@
   </div>
   <!--Learn About Self Directed IRAs-->
   <div [hidden]="!this.isVisible(contactrequest.visibility.Learn)" class="col-xs-12 col-md-4">
-    <label for="learn">Learn About Self Directed IRAs
+    <label for="learn">Learn about self directed IRAs
       <span [hidden]="isAlternate(contactrequest.alternate.Learn)">Learn&nbsp;about&nbsp;self&nbsp;directed&nbsp;IRAs</span>
       <span [hidden]="!isAlternate(contactrequest.alternate.Learn)">{{contactrequest.alternate.Learn}}</span>
     </label>

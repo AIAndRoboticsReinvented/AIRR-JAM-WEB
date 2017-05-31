@@ -6,12 +6,10 @@
   /* color and border */
   background-color: aliceblue;
   border: 1px solid #000000;
-
   /* rounded corners*/
   /*border-radius: 13px 13px 13px 13px;
   -moz-border-radius: 13px 13px 13px 13px;
   -webkit-border-radius: 13px 13px 13px 13px;*/
-
   /* drop shadow */
   /*-webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
@@ -20,7 +18,8 @@
 }
 
 
-input:required:invalid {
-  /*background-color: palevioletred !important;*/
-  border: 1px solid #FF0000 !important;
+  input:required:invalid {
+    /*background-color: palevioletred !important;*/
+
+
 }

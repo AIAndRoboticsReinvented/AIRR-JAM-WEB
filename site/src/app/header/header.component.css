@@ -49,10 +49,10 @@ nav {
     color: white;
   }
 
-    .topnav a:hover {
-      color: white;
-      font-weight: bold;
-    }
+  .topnav a:hover {
+    color: #f64c4c;
+    font-weight: bold;
+  }
 
 .phone {
   font-size: larger;
