@@ -3,7 +3,7 @@
 
 .logo {
   position: relative;
-  top: 0px;
+  top: 5px;
 }
 
 .header {
@@ -18,8 +18,8 @@
 }
 
 .banner {
-  background-color: #FFF;
-  color: blue;
+  background-color: #333333;
+  color: #fff;
 }
 
 .topmenu {
@@ -28,6 +28,7 @@
 
 nav {
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .banner div {
@@ -36,7 +37,7 @@ nav {
 
 .banner a:link,
 .banner a:visited {
-  color: blue;
+  color: white;
 }
 
 

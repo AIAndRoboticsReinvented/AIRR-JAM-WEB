@@ -4,22 +4,56 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 
   /* color and border */
-  background-color: aliceblue;
-  border: 1px solid #000000;
+  /background-color: white;
+  border: 0px solid #000000;
   /* rounded corners*/
   /*border-radius: 13px 13px 13px 13px;
   -moz-border-radius: 13px 13px 13px 13px;
   -webkit-border-radius: 13px 13px 13px 13px;*/
-  /* drop shadow */
-  /*-webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);*/
+  /*drop shadow */
+ /* -webkit-box-shadow: 23px 23px 23px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 23px 23px 23px 03px rgba(0,0,0,1); */
+  box-shadow: 0px 0px 0px 3px #cc3333;
 
 }
+ /*Letter Color*/
+.row {
+  color: #141313;
 
+}
+/* letter styling*/
+
+.col-xs-12 {
+  font-family: 'Franklin Gothic';
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  align-content: space-between;
+}
 
   input:required:invalid {
     /*background-color: palevioletred !important;*/
-
-
+  
+  }
+  /*button styling*/
+button {
+  font-size:large;
+  border: 10px solid #cc3333;
+  border-radius: 1px;
+  background-color: #cc3333;
+  color: white;
+  cursor: pointer;
 }
+
+  button:after {
+    content: "";
+  }
+
+  button:hover,
+  button:focus {
+    outline: none;
+    background: #350505;
+    color: white;
+    font-size: large;
+    border: 10px solid #350505;
+  }
