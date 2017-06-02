@@ -60,3 +60,7 @@ nav {
   color:red;
   font-weight:bold;
 }
+
+.nav nav-pills {
+  color: rebeccapurple;
+}
