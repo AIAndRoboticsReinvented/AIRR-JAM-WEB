@@ -1,4 +1,4 @@
-# AIRR-JAM-WEB
+-# AIRR-JAM-WEB
 White Label WebSite
 ## Application Requirements - In Required Applications Folder.
 -	Node JS - v.0.10.32 or higher - must reboot after install
@@ -8,3 +8,5 @@ White Label WebSite
 -	CSS3	
 -	JQuery - v.3.1.1 or higher - from CDN (http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js)
 - Ruby 2.3.3 - https://rubyinstaller.org/downloads/
+-               execute the following command after install to append SASS  
+-               gem install sass  
