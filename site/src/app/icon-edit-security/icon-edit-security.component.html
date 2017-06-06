@@ -1,0 +1,118 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg"
+     version="1.1"
+     viewBox="0 0 700 240"
+     class="icon">
+  <title> Edit Security Level Button</title>
+  <desc> Button to edit security level, pencil moves over lock on hover.</desc>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop class="ba1-2" offset="0%" />
+      <stop class="ba1-1" offset="30%" />
+    </linearGradient>
+    <linearGradient id="secondary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop class="ba2-2" offset="0%" />
+      <stop class="ba2-1" offset="30%" />
+    </linearGradient>
+
+    <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop class="ba3-2" offset="0%" />
+      <stop class="ba3-1" offset="30%" />
+    </linearGradient>
+
+    <linearGradient id="pencil" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop class="ba4-2" offset="0%" />
+      <stop class="ba4-1" offset="50%" />
+    </linearGradient>
+
+    <linearGradient id="pencilpoint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop class="ba4-1" offset="0%" />
+      <stop class="ba4-2" offset="50%" />
+    </linearGradient>
+
+    <linearGradient id="pencileraser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop class="ba5-1" offset="0%" />
+      <stop class="ba5-2" offset="50%" />
+    </linearGradient>
+
+
+  </defs>
+  <g class="padlocks" transform="translate(20,20)">
+    <g class="padlock">
+      <rect transform="translate(25,100)"
+            class="lock lockbody secondary"
+            height="100"
+            width="150"
+            rx="5" ry="5" />
+      <path transform="translate(25,0)"
+            class="locklines primary"
+            d="M10 110 L149 110
+					M10 130 L149 130
+					M10 150 L149 150
+					M10 170 L149 170
+					M10 190 L149 190 Z" />
+
+      <path transform="translate(25,0)"
+            class="locklines secondary"
+            d="M1 120 L149 120
+					M1 140 L149 140
+					M1 160 L149 160
+					M1 180 L149 180 Z" />
+
+      <path transform="translate(25,0)"
+            class="lock locklatch secondary"
+            d="M10 100
+					Q0 0 75 0
+					Q150 0 140 100
+					L120 100
+					Q130 20 75 20
+					Q20 20 30 100 Z" />
+
+      <path transform="translate(80,80) rotate(-10,180,180) scale(.5)"
+            class="secondary initials"
+            d="M175 175
+				L170 150
+				M165 160
+				Q200 130 170 165
+				Q200 130 165 160
+				M170 160
+				L190 175
+				M180 175
+				L180 150
+				M180 150
+				L195 175
+				M200 150
+				L185 185
+				Q130 170 200 165
+				Q130 170 185 185
+				Z" />
+    </g>
+
+    <g class="pencilfull">
+      <path transform="translate(20,-20) scale(.8)"
+            class="secondary pencilshaft"
+            d="M160 0
+                L170 10
+                L50 170
+                L40 160
+                Z" />
+      <path transform="translate(20,-20) scale(.8)"
+            class="secondary pencilpoint"
+            d="M40 160
+                  L50 170
+                  L25 185
+                  Z" />
+
+      <path transform="translate(20,-20) scale(.8)"
+            class="secondary pencileraser"
+            d="M160 0
+                     L170 10
+                     L162 20
+                     L152 10
+                     Z" />
+    </g>
+    <text x="50" y="10" transform="scale(5,7)">Edit Security</text>
+    <text x="70" y="30" transform="scale(5,7)"> Level</text>
+  </g>
+</svg>

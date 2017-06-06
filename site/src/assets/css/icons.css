@@ -1,0 +1,96 @@
+﻿.icon {
+  height: 32px;
+  width: auto;
+  margin: 0 auto 0 auto;
+  padding: 1px 5px 1px 5px;
+  /*border:1px solid transparent;*/
+  border-top: 1px inset antiquewhite;
+  border-right: 1px outset lightgray;
+  border-bottom: 1px outset lightgray;
+  border-left: 1px inset antiquewhite;
+}
+
+  .icon:hover {
+    border: 1px solid red;
+    cursor: pointer;
+  }
+
+.devicon {
+  height: 256px !important;
+  width: auto !important;
+  margin: 0 auto 0 auto;
+  border: 1px solid transparent;
+}
+
+  .devicon:hover {
+    border: 1px solid blue !important;
+    cursor: pointer;
+  }
+
+
+/*Icon Colors can be changed here*/
+
+
+/*.ba1-1 { stop-color: blue; }
+.ba1-2 { stop-color: lightblue; }
+.primary { stroke : blue; }*/
+
+/*.ba1-1 { stop-color: red; }
+.ba1-2 { stop-color: lightcoral; }
+.primary { stroke : red; }*/
+
+.ba1-1 {
+  stop-color: red;
+}
+
+.ba1-2 {
+  stop-color: indianred;
+}
+
+.primary {
+  stroke: red;
+}
+
+
+.ba2-1 {
+  stop-color: black;
+}
+
+.ba2-2 {
+  stop-color: gray;
+}
+
+.secondary {
+  stroke: black;
+}
+
+
+.ba3-1 {
+  stop-color: silver;
+}
+
+.ba3-2 {
+  stop-color: lightsteelblue;
+}
+
+/*.ba4-1 { stop-color:blue; }
+.ba4-2 { stop-color:sandybrown; }*/
+
+/*.ba4-1 { stop-color:red; }
+.ba4-2 { stop-color:sandybrown; }*/
+
+.ba4-1 {
+  stop-color: indianred;
+}
+
+.ba4-2 {
+  stop-color: red;
+}
+
+.ba5-1 {
+  stop-color: indigo;
+}
+
+.ba5-2 {
+  stop-color: lightgray;
+}

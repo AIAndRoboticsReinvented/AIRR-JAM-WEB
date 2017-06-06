@@ -1,0 +1,95 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg"
+     version="1.1"
+     viewBox="0 0 700 240"
+     class="icon">
+  <title> Add Task Button</title>
+  <desc> Button adds a Task to the system. When hovering the task divides into two tasks.</desc>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop class="ba1-2" offset="0%" />
+      <stop class="ba1-1" offset="30%" />
+    </linearGradient>
+    <linearGradient id="secondary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop class="ba2-2" offset="0%" />
+      <stop class="ba2-1" offset="30%" />
+    </linearGradient>
+
+    <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop class="ba3-2" offset="0%" />
+      <stop class="ba3-1" offset="30%" />
+    </linearGradient>
+  </defs>
+  <g class="tasks" transform="translate(-50,20) scale(1.5)">
+    <g class="taskcopy">
+      <rect transform="translate(70,70)"
+            class="lock lockbody secondary"
+            height="50"
+            width="50"
+            rx="5" ry="5" />
+
+      <path class="check"
+            d="M75 75
+                  L95 125
+                  L200 70
+                  L105 105
+                  Z" />
+    </g>
+
+    <g class="task">
+      <rect transform="translate(70,70)"
+            class="lock lockbody secondary"
+            height="50"
+            width="50"
+            rx="5" ry="5" />
+
+      <path class="check"
+            d="M75 75
+                  L95 125
+                  L200 70
+                  L105 105
+                  Z" />
+
+      <path transform="translate(30,5) rotate(-10,180,180) scale(.5)"
+            class="secondary initials"
+            d="M175 175
+				L170 150
+				M165 160
+				Q200 130 170 165
+				Q200 130 165 160
+				M170 160
+				L190 175
+				M180 175
+				L180 150
+				M180 150
+				L195 175
+				M200 150
+				L185 185
+				Q130 170 200 165
+				Q130 170 185 185
+				Z" />
+    </g>
+
+  </g>
+
+  <path transform="translate(60,0) scale(.8)"
+        class="secondary plus"
+        d="M100 50
+              L120 50
+              L120 100
+              L170 100
+              L170 120
+              L120 120
+              L120 170
+              L100 170
+              L100 120
+              L50 120
+              L50 100
+              L100 100
+              Z" />
+
+  <text x="60" y="20" transform="scale(5,7)">Add Task</text>
+
+</svg>
+
