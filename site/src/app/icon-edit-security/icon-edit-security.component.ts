@@ -5,6 +5,7 @@
   templateUrl: './icon-edit-security.component.html',
   styleUrls: [
       '../../assets/css/icons.css',
+      './icon-edit-security.component.min.css',
       './icon-edit-security.component.css',
   ]
 })
@@ -13,6 +14,7 @@ export class IconEditSecurityComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

@@ -5,7 +5,8 @@
   templateUrl: './icon-add-component.component.html',
   styleUrls: [
       '../../assets/css/icons.css',
-      './icon-add-component.component.css'
+      './icon-add-component.component.min.css',
+      './icon-add-component.component.css',
   ]
 })
 export class IconAddComponentComponent implements OnInit {

@@ -5,6 +5,7 @@
   templateUrl: './icon-add-security.component.html',
   styleUrls: [
       '../../assets/css/icons.css',
+      './icon-add-security.component.min.css',
       './icon-add-security.component.css',
   ]
 })

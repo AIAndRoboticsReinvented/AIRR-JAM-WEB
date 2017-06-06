@@ -5,7 +5,8 @@
   templateUrl: './icon-delete-security.component.html',
   styleUrls: [
       '../../assets/css/icons.css',
-      './icon-delete-security.component.css'
+      './icon-delete-security.component.min.css',
+      './icon-delete-security.component.css',
   ]
 })
 export class IconDeleteSecurityComponent implements OnInit {
