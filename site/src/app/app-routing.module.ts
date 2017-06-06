@@ -8,6 +8,7 @@ import { FaqComponent }                       from './faq/faq.component';
 import { InvestorsComponent }                 from './investors/investors.component';
 import { HomeComponent }                      from './home/home.component';
 import { HtmlComponent }                      from './html/html.component';
+import { LandyComponent }                     from './landy/landy.component';
 import { PrivacyComponent }                   from './privacy/privacy.component';
 import { SellyourhomeComponent }              from './sellyourhome/sellyourhome.component';
 import { TermsComponent }                     from './terms/terms.component';
@@ -26,6 +27,7 @@ const routes: Routes = [
     { path: 'home',                   component: HomeComponent },
     { path: 'html/:id',               component: HtmlComponent },
     { path: 'investors',              component: InvestorsComponent },
+    { path: 'landy',                  component: LandyComponent},
     { path: 'login',                  component: LoginComponent },
     { path: 'privacy',                component: PrivacyComponent },
     { path: 'sell',                   component: SellyourhomeComponent },

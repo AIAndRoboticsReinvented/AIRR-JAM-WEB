@@ -1,0 +1,47 @@
+﻿.cls-1 {
+  fill: crimson;
+  animation: sun-moon 3.2s;
+}
+@keyframes sun-moon {
+  0% {
+    transform: translateY(-55px);
+    fill: #fff800;
+  }
+  100% {
+    transform: translateY(0px);
+    fill: crimson;
+  }
+}
+.cls-2 {
+  font-size: 97px;
+}
+
+.cls-2, .cls-3 {
+  fill: #ffffff;
+  font-family: Haettenschweiler, Haettenschweiler;
+  letter-spacing: 5px;
+}
+
+.cls-3 {
+  font-size: 72px;
+}
+
+.cls-4 {
+  fill: #e10022;
+}
+.cls-strike2 {
+  fill:lightgray;
+}
+.cls-strike {
+  animation: swoosh 2s ease alternate;
+}
+@keyframes swoosh {
+  0% {
+  transform: translate(210.5px,210.5px);
+  /*transform: rotate(270deg);*/
+  }
+  100% {
+    transform: translate(210.5px,210.5px);
+    transform: rotate(0eg);
+  }
+}
