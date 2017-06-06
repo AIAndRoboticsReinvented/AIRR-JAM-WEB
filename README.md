@@ -7,3 +7,4 @@ White Label WebSite
 -	HTML5
 -	CSS3	
 -	JQuery - v.3.1.1 or higher - from CDN (http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js)
+- Ruby 2.3.3 - https://rubyinstaller.org/downloads/
