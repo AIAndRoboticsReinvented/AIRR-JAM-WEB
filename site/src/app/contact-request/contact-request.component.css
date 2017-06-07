@@ -52,8 +52,8 @@ button {
   button:hover,
   button:focus {
     outline: none;
-    background: #350505;
+    background: #811111;
     color: white;
     font-size: large;
-    border: 10px solid #350505;
+    border: 10px solid #811111;
   }

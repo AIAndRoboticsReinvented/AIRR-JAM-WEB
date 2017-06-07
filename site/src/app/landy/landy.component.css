@@ -1,15 +1,21 @@
 ﻿.cls-1 {
-  fill: crimson;
-  animation: sun-moon 3.2s;
+  fill: #fff800;
+  animation: sun-moon 3s;
+  transform:translateY(-15px);
 }
 @keyframes sun-moon {
   0% {
-    transform: translateY(-55px);
-    fill: #fff800;
+    transform: translate(0);
+    fill: #cc1111;
+  }
+  50% {
+    transform-origin: 2px;
+    transform-origin: bottom;
+    transform:scale3d(200px);
   }
   100% {
-    transform: translateY(0px);
-    fill: crimson;
+    transform: translateY(-15px);
+    fill: #fff800;
   }
 }
 .cls-2 {
@@ -19,7 +25,7 @@
 .cls-2, .cls-3 {
   fill: #ffffff;
   font-family: Haettenschweiler, Haettenschweiler;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 .cls-3 {
@@ -30,18 +36,12 @@
   fill: #e10022;
 }
 .cls-strike2 {
-  fill:lightgray;
+  fill: #272424;
+  animation: strike2 1s reverse;
+}
+@keyframes strike2 {
+
 }
 .cls-strike {
-  animation: swoosh 2s ease alternate;
-}
-@keyframes swoosh {
-  0% {
-  transform: translate(210.5px,210.5px);
-  /*transform: rotate(270deg);*/
-  }
-  100% {
-    transform: translate(210.5px,210.5px);
-    transform: rotate(0eg);
-  }
+  fill:crimson;
 }
