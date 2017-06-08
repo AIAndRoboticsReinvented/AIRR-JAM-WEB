@@ -1,25 +1,26 @@
 ﻿.propertysummary {
   /* color and border */
-  background-color: aliceblue;
+  background-color: #ffffff;
   border: 0px solid #000000;
   /* rounded corners*/
   /*border-radius: 13px 13px 13px 13px;
   -moz-border-radius: 13px 13px 13px 13px;
   -webkit-border-radius: 13px 13px 13px 13px;*/
   /* drop shadow */
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  /*-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
 }
 
   .propertysummary h2 {
     color: black;
+    /*border-top: 2px solid #000;
+    border-bottom: 2px solid #000;*/
   }
 
   .propertysummary h3 {
-    color: blue;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    color: darkred;
+    font-weight: bold;
   }
 
   .propertysummary h4 {
