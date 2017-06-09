@@ -56,6 +56,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DashboardRoutingModule } from './dashboard/dashboard-routing.module';
 
 import { LandyComponent } from './landy/landy.component';
+import { FeaturedComponent } from './featured/featured.component';
 
 @NgModule({
   declarations: [
@@ -82,6 +83,7 @@ import { LandyComponent } from './landy/landy.component';
     VideoShowcaseComponent,
     VideaComponent,
     LandyComponent,
+    FeaturedComponent,
 ///    ProspectPropertyComponent,
 ///    GoogleMapComponent,
     LoginComponent,

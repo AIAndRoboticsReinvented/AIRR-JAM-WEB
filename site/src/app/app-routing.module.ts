@@ -5,6 +5,7 @@ import { AboutComponent }                     from './about/about.component';
 import { BuyahomeComponent }                  from './buyahome/buyahome.component';
 import { ContactusComponent }                 from './contactus/contactus.component';
 import { FaqComponent }                       from './faq/faq.component';
+import { FeaturedComponent }                  from './featured/featured.component';
 import { InvestorsComponent }                 from './investors/investors.component';
 import { HomeComponent }                      from './home/home.component';
 import { HtmlComponent }                      from './html/html.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
     { path: 'buy',                    component: BuyahomeComponent },
     { path: 'contactus',              component: ContactusComponent },
     { path: 'faq',                    component: FaqComponent },
+    { path: 'featured',               component: FeaturedComponent },
     { path: 'home',                   component: HomeComponent },
     { path: 'html/:id',               component: HtmlComponent },
     { path: 'investors',              component: InvestorsComponent },

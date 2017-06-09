@@ -1,6 +1,7 @@
 ﻿.cls-1 {
   fill: #fff800;
   animation: sun-moon 3s;
+  -webkit-animation: sun-moon 3s;
   transform:translateY(-15px);
 }
 @keyframes sun-moon {
@@ -15,6 +16,23 @@
   }
   100% {
     transform: translateY(-15px);
+    fill: #fff800;
+  }
+}
+@-webkit-keyframes sun-moon {
+  0% {
+    -webkit-transform: translate(0);
+    fill: #cc1111;
+  }
+
+  50% {
+    -webkit-transform-origin: 2px;
+    -webkit-transform-origin: bottom;
+    -webkit-transform: scale3d(200px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-15px);
     fill: #fff800;
   }
 }
@@ -37,10 +55,6 @@
 }
 .cls-strike2 {
   fill: #272424;
-  animation: strike2 1s reverse;
-}
-@keyframes strike2 {
-
 }
 .cls-strike {
   fill:crimson;

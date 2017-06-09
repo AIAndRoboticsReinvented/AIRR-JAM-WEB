@@ -9,24 +9,27 @@
 }
 
 .title {
-  background-image: url('/assets/images/Black_World_Banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-
-  background-color: black;
   color: white;
   font-weight: bold;
-  font: larger;
+  font: x-large;
+  font-size:x-large;
   line-height: 44px;
+  text-align: center;
 }
 
 .innerbox {
   background-color: white;
-  border: solid 1px darkgray;
-  font:normal;
+  border: solid 1px white;
+  font: normal;
   /*-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+  box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.75);*/
+  border-radius: 35px;
+  background: white;
+  padding: 20px;
+
 }
 
 h1 {

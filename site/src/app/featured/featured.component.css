@@ -1,0 +1,17 @@
+﻿
+.button {
+  display: inline-block;
+  padding-top:2px;
+  padding-bottom:50px;
+}
+
+.mySlides {
+  margin: 2px;
+  outline: 2px;
+  outline-color: #ff0000;
+  width: 100%;
+}
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
