@@ -58,4 +58,8 @@
 }
 .cls-strike {
   fill:crimson;
+
+}
+#roof, #house, #house-overfill2, #house-overfill {
+  fill: #b41e1e !important;
 }
