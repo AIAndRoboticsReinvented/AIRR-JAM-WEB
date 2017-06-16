@@ -1,0 +1,32 @@
+﻿
+.cls-1 {
+  fill: #2c618d;
+}
+
+.cls-2 {
+  font-size: 17px;
+  font-family: MyriadPro-Bold, Myriad Pro;
+  font-weight: 700;
+}
+
+.cls-2, .cls-5 {
+  fill: #fff;
+}
+
+.cls-3 {
+  letter-spacing: 0.01em;
+}
+
+.cls-4 {
+  fill: none;
+}
+
+.cls-4,
+.cls-5 {
+  stroke: #fff;
+  stroke-width: 0.5px;
+}
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

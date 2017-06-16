@@ -1,5 +1,13 @@
 ﻿a:link,
 a:visited,
 h3 {
-  color: blue;
+  color: #9b3434;
+  font-weight: bold;
+}
+i{
+  color:crimson;
+}
+p {
+  color:black;
+
 }

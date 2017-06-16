@@ -37,7 +37,7 @@ nav {
 
 .banner a:link,
 .banner a:visited {
-  color: white;
+  color: #ffffff;
 }
 
 
@@ -47,20 +47,29 @@ nav {
   .topnav a,
   .topnav a:link,
   .topnav a:visited {
-    color: white;
+    color: #ffffff;
   }
 
   .topnav a:hover {
     color: #f64c4c;
-    font-weight: bold;
+    font-weight: bold
   }
-
+.nav a:hover {
+  background-color: #b41e1e;
+  font-weight: bold;
+}
 .phone {
   font-size: larger;
   color:red;
   font-weight:bold;
 }
 
-.nav nav-pills {
-  color: rebeccapurple;
+.head {
+  margin: 0px auto 0px auto;
+}
+.center {
+  fill:aqua;
+}
+.col-xs-1 a:hover{
+  color:blue;
 }

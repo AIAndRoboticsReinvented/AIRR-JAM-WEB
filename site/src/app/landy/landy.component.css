@@ -1,0 +1,66 @@
+﻿.cls-1 {
+  fill: #fff800;
+  animation: sun-moon 3s;
+  -webkit-animation: sun-moon 3s;
+  transform:translateY(-15px);
+}
+@keyframes sun-moon {
+  0% {
+    transform: translate(0);
+    fill: #cc1111;
+  }
+  50% {
+    transform-origin: 2px;
+    transform-origin: bottom;
+    transform:scale3d(200px);
+  }
+  100% {
+    transform: translateY(-15px);
+    fill: #fff800;
+  }
+}
+@-webkit-keyframes sun-moon {
+  0% {
+    -webkit-transform: translate(0);
+    fill: #cc1111;
+  }
+
+  50% {
+    -webkit-transform-origin: 2px;
+    -webkit-transform-origin: bottom;
+    -webkit-transform: scale3d(200px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-15px);
+    fill: #fff800;
+  }
+}
+.cls-2 {
+  font-size: 97px;
+}
+
+.cls-2, .cls-3 {
+  fill: #ffffff;
+  font-family: Haettenschweiler, Haettenschweiler;
+  letter-spacing: 3px;
+  font-style: italic;
+}
+
+.cls-3 {
+  font-size: 72px;
+}
+
+.cls-4 {
+  fill: #e10022;
+}
+.cls-strike2 {
+  fill: #272424;
+}
+.cls-strike {
+  fill:crimson;
+
+}
+#roof, #house, #house-overfill2, #house-overfill {
+  fill: #b41e1e !important;
+}

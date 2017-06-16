@@ -11,10 +11,10 @@
   -moz-border-radius: 13px 13px 13px 13px;
   -webkit-border-radius: 13px 13px 13px 13px;*/
   /*drop shadow */
- /* -webkit-box-shadow: 23px 23px 23px 0px rgba(0,0,0,0.75);
+  /* -webkit-box-shadow: 23px 23px 23px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 23px 23px 23px 03px rgba(0,0,0,1); */
-  box-shadow: 0px 0px 0px 3px #cc3333;
-
+  /*box-shadow: 0px 0px 0px 1px #808080;*/
+  border-radius: 5px;
 }
  /*Letter Color*/
 .row {
@@ -37,12 +37,15 @@
   }
   /*button styling*/
 button {
-  font-size:large;
+  font-size: large;
   border: 10px solid #cc3333;
-  border-radius: 1px;
+  border-radius: 0px;
   background-color: #cc3333;
   color: white;
   cursor: pointer;
+  border-radius: 10px;
+  margin: 0 auto;
+  
 }
 
   button:after {
@@ -52,8 +55,8 @@ button {
   button:hover,
   button:focus {
     outline: none;
-    background: #350505;
+    background: #811111;
     color: white;
     font-size: large;
-    border: 10px solid #350505;
+    border: 10px solid #811111;
   }

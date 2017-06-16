@@ -12,7 +12,9 @@ export class PropertyService {
   getProperties(): Promise<Property[]> {
       return Promise.resolve(PROPERTIES);
   }
-
+    getFeaturedProperties(): Promise<Property[]> {
+        return Promise.resolve(PROPERTIES);
+    }
   getProperty(guid: string): Promise<Property> {
       return this.getProperties()
           .then(properties => properties.find(properties => properties.propertyguid === guid));
