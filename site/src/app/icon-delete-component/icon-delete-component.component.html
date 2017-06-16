@@ -1,6 +1,6 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg"
      version="1.1"
-     viewBox="0 0 800 240"
+     viewBox="0 0 700 240"
      class="icon">
   <title> Delete Security Level Button</title>
   <desc> Button to delete security level, lock is thrown into trash can.</desc>
@@ -38,39 +38,47 @@
 
 
   </defs>
-  <g class="padlocks" transform="translate(20,20)">
-    <g class="padlock">
-      <rect transform="translate(25,100)"
-            class="lock lockbody secondary"
-            height="100"
-            width="150"
-            rx="5" ry="5" />
-      <path transform="translate(25,0)"
-            class="locklines primary"
-            d="M10 110 L149 110
-					M10 130 L149 130
-					M10 150 L149 150
-					M10 170 L149 170
-					M10 190 L149 190 Z" />
+  <g class="padlock">
+    <g class="tasks" transform="translate(-50,20) scale(1.5)">
+      <g class="component">
+        <rect transform="translate(70,70)"
+              class="lock"
+              height="50"
+              width="50"
+              rx="5" ry="5" />
 
-      <path transform="translate(25,0)"
-            class="locklines secondary"
-            d="M1 120 L149 120
-					M1 140 L149 140
-					M1 160 L149 160
-					M1 180 L149 180 Z" />
+        <path class="check"
+              d="M75 75
+                  L95 125
+                  L200 70
+                  L105 105
+                  Z" />
+      </g>
 
-      <path transform="translate(25,0)"
-            class="lock locklatch secondary"
-            d="M10 100
-					Q0 0 75 0
-					Q150 0 140 100
-					L120 100
-					Q130 20 75 20
-					Q20 20 30 100 Z" />
-
+      <g class="task">
+        <path transform="translate(30,5) rotate(-10,180,180) scale(.5)"
+              class="initials"
+              d="M175 175
+				L170 150
+				M165 160
+				Q200 130 170 165
+				Q200 130 165 160
+				M170 160
+				L190 175
+				M180 175
+				L180 150
+				M180 150
+				L195 175
+				M200 150
+				L185 185
+				Q130 170 200 165
+				Q130 170 185 185
+				Z" />
+      </g>
     </g>
+  </g>
 
+  <g class="padlocks" transform="translate(20,20)">
     <g class="garbagecanfull">
       <path class="secondary garbagecan lock"
             d="M100 100
@@ -123,7 +131,7 @@
 
     </g>
   </g>
-  <text x="50" y="13" transform="scale(5,7)">Delete Security</text>
-  <text x="70" y="33" transform="scale(5,7)"> Level</text>
+  <text x="65" y="13" transform="scale(5,7)">Delete</text>
+  <text x="50" y="33" transform="scale(5,7)">Component</text>
 
 </svg>

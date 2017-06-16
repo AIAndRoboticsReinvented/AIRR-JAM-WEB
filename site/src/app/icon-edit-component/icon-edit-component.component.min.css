@@ -1,0 +1,85 @@
+.devicon:hover .pencilfull,
+.icon:hover .pencilfull {
+  -webkit-animation-name: trace-check;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-direction: normal;
+  animation-name: trace-check;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: normal;
+  -moz-animation: trace-check;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px); }
+
+/*CHROME*/
+@-webkit-keyframes trace-check {
+  0% {
+    -webkit-transform: translate(25px, 20px);
+    -ms-transform: translate(25px, 20px);
+    transform: translate(25px, 20px); }
+  20% {
+    -webkit-transform: translate(50px, 85px);
+    -ms-transform: translate(50px, 85px);
+    transform: translate(50px, 85px); }
+  60% {
+    -webkit-transform: translate(210px, 0px);
+    -ms-transform: translate(210px, 0px);
+    transform: translate(210px, 0px); }
+  85% {
+    -webkit-transform: translate(75px, 50px);
+    -ms-transform: translate(75px, 50px);
+    transform: translate(75px, 50px); }
+  100% {
+    -webkit-transform: translate(-5px, 0px);
+    -ms-transform: translate(-5px, 0px);
+    transform: translate(-5px, 0px); } }
+/*EDGE*/
+@keyframes trace-check {
+  0% {
+    -webkit-transform: translate(25px, 20px);
+    -ms-transform: translate(25px, 20px);
+    transform: translate(25px, 20px); }
+  20% {
+    -webkit-transform: translate(50px, 85px);
+    -ms-transform: translate(50px, 85px);
+    transform: translate(50px, 85px); }
+  60% {
+    -webkit-transform: translate(210px, 0px);
+    -ms-transform: translate(210px, 0px);
+    transform: translate(210px, 0px); }
+  85% {
+    -webkit-transform: translate(75px, 50px);
+    -ms-transform: translate(75px, 50px);
+    transform: translate(75px, 50px); }
+  100% {
+    -webkit-transform: translate(-5px, 0px);
+    -ms-transform: translate(-5px, 0px);
+    transform: translate(-5px, 0px); } }
+.lock {
+  fill: url(#silver); }
+
+.initials {
+  stroke: black; }
+
+.check {
+  stroke: black;
+  fill: url(#primary); }
+
+.pencilshaft {
+  stroke: black;
+  fill: url(#pencil); }
+
+.pencilpoint {
+  stroke: black;
+  fill: url(#pencilpoint); }
+
+.pencileraser {
+  stroke: black;
+  fill: url(#pencileraser); }
+
+/*# sourceMappingURL=icon-edit-component.component.min.css.map */
