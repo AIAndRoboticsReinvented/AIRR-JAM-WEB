@@ -57,6 +57,7 @@ import { DashboardRoutingModule } from './dashboard/dashboard-routing.module';
 
 import { LandyComponent } from './landy/landy.component';
 import { FeaturedComponent } from './featured/featured.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component'
 
 @NgModule({
   declarations: [
@@ -84,6 +85,7 @@ import { FeaturedComponent } from './featured/featured.component';
     VideaComponent,
     LandyComponent,
     FeaturedComponent,
+    TestimonialsComponent,
 ///    ProspectPropertyComponent,
 ///    GoogleMapComponent,
     LoginComponent,

@@ -1,0 +1,16 @@
+﻿.innerbox {
+  background-color: white;
+  border: solid 1px white;
+  font: normal;
+  /*-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+  box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.75);*/
+  border-radius: 35px;
+  background: #e8e8e8;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: black;
+}

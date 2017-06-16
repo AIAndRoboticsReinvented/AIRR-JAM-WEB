@@ -1,7 +1,7 @@
 ﻿import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { Property } from '../property';
+import { Property } from '../property'; 
 import { PropertyService } from '../property.service';
 
 @Component({

@@ -64,12 +64,12 @@ nav {
   font-weight:bold;
 }
 
-.nav nav-pills {
-  color: green;
-}
 .head {
   margin: 0px auto 0px auto;
 }
 .center {
   fill:aqua;
+}
+.col-xs-1 a:hover{
+  color:blue;
 }

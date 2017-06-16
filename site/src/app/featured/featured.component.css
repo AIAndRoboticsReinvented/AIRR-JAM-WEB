@@ -1,15 +1,30 @@
 ﻿
-.button {
-  display: inline-block;
-  padding-top:2px;
-  padding-bottom:50px;
+.cls-1 {
+  fill: #2c618d;
 }
 
-.mySlides {
-  margin: 2px;
-  outline: 2px;
-  outline-color: #ff0000;
-  width: 100%;
+.cls-2 {
+  font-size: 17px;
+  font-family: MyriadPro-Bold, Myriad Pro;
+  font-weight: 700;
+}
+
+.cls-2, .cls-5 {
+  fill: #fff;
+}
+
+.cls-3 {
+  letter-spacing: 0.01em;
+}
+
+.cls-4 {
+  fill: none;
+}
+
+.cls-4,
+.cls-5 {
+  stroke: #fff;
+  stroke-width: 0.5px;
 }
 .container {
   padding-top: 20px;

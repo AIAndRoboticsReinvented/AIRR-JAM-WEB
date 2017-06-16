@@ -56,10 +56,10 @@ export class WholesaleComponent implements OnInit {
           FirstName: '1',
           LastName: '1',
           EMail: '1',
-          PhoneHome: '1',
+          PhoneHome: '0',
           PhoneCell: '1',
-          PhoneWork: '1',
-          PhoneFax: '1',
+          PhoneWork: '0',
+          PhoneFax: '0',
 
           MailingAddress1: '0',
           MailingAddress2: '0',
@@ -113,7 +113,7 @@ export class WholesaleComponent implements OnInit {
           Terms: '',
           Payments: '',
           Learn: '',
-          Comments: 'Purchasing Criteria',
+          Comments: 'Comments',
       },
       required: {
           RequestSource: '',

@@ -75,8 +75,8 @@ export class VideoShowcaseComponent implements OnInit {
           FirstName: '1',
           LastName: '1',
           EMail: '1',
-          PhoneHome: '1',
-          PhoneCell: '0',
+          PhoneHome: '0',
+          PhoneCell: '1',
           PhoneWork: '0',
           PhoneFax: '0',
 

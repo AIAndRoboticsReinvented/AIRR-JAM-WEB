@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+
+import { PropertyService } from '../property.service';
+import { PropertyAttributes, Property } from '../property';
+
 
 @Component({
   selector: 'app-featured',
@@ -6,10 +12,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./featured.component.css']
 })
 export class FeaturedComponent implements OnInit {
+    properties: Property[];
+    constructor(
+        private router: Router,
+        private propertyService:PropertyService) { }
 
-  constructor() { }
+    getFeatured(): void {
+        this.propertyService.getFeaturedProperties().then(properties => this.properties = properties);
+    }
 
-  ngOnInit() {
+
+
+
+    ngOnInit(): void {
+        this.getFeatured();
   }
 
 }

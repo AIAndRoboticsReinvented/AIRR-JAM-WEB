@@ -13,6 +13,7 @@ import { LandyComponent }                     from './landy/landy.component';
 import { PrivacyComponent }                   from './privacy/privacy.component';
 import { SellyourhomeComponent }              from './sellyourhome/sellyourhome.component';
 import { TermsComponent }                     from './terms/terms.component';
+import { TestimonialsComponent }              from './testimonials/testimonials.component'
 import { VideaComponent }                     from './videa/videa.component';
 import { WholesaleComponent }                 from './wholesale/wholesale.component';
 //import { ProspectPropertyComponent }          from './prospect-property/prospect-property.component';
@@ -34,6 +35,7 @@ const routes: Routes = [
     { path: 'privacy',                component: PrivacyComponent },
     { path: 'sell',                   component: SellyourhomeComponent },
     { path: 'terms',                  component: TermsComponent },
+    { path: 'testimonials',           component: TestimonialsComponent },
     { path: 'videa/:id',              component: VideaComponent },
     { path: 'wholesale',              component: WholesaleComponent },
     { path: '**',                     component: PageNotFoundComponent },
