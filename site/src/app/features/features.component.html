@@ -1,0 +1,32 @@
+﻿<div class="col-md-1"></div>
+<div class="col-xs-12 col-md-2 box">
+  <div class="row ">
+      <img class="col-xs-12" src="assets/images/property/{{property.masterimage}}" />
+
+    <div class="col-xs-12 col-sm-12 center">
+      <h2>{{property.name}}</h2>
+       <div class="col-xs-12 col-sm-12 center">
+      <p class="about">
+        {{property.address}},
+        {{property.city}}, {{property.state}}
+        {{property.zip}}
+      </p>
+    </div>
+      <h3>{{property.location}}</h3>
+      <div class="row">
+        <div *ngFor="let propertyattribute of property.propertyattributes"
+             class="col-xs-6 col-sm-4">
+          <h4>{{propertyattribute.key}}</h4>
+          {{propertyattribute.value}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+   
+    <div class="col-xs-12">
+      &nbsp;
+    </div>
+  </div>
+</div>
+<div class="col-md-1"></div>

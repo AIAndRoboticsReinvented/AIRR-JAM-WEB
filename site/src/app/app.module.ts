@@ -33,8 +33,6 @@ import { TeammemberComponent } from './teammember/teammember.component';
 
 import { SellyourhomeComponent } from './sellyourhome/sellyourhome.component';
 import { BuyahomeComponent } from './buyahome/buyahome.component';
-import { PropertiesComponent } from './properties/properties.component';
-import { PropertySummaryComponent } from './property-summary/property-summary.component';
 
 
 import { PropertyService } from './property.service';
@@ -59,7 +57,10 @@ import { LandyComponent } from './landy/landy.component';
 import { FeaturedComponent } from './featured/featured.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component'
 import { TopnavComponent } from './topnav/topnav.component';
-import { SocialComponent } from './social/social.component'
+import { SocialComponent } from './social/social.component';
+import { PropertiesComponent } from './properties/properties.component';
+import { PropertySummaryComponent } from './property-summary/property-summary.component';
+import { FeaturesComponent } from './features/features.component'
 
 @NgModule({
   declarations: [
@@ -103,6 +104,8 @@ import { SocialComponent } from './social/social.component'
     
   //  LocationAutocompleteComponent,
       PageNotFoundComponent,
+
+      FeaturesComponent,
 
 
   ],

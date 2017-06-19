@@ -1,0 +1,25 @@
+﻿h2 {
+  color:#000000;
+}
+h3 {
+  color: #811919;
+  font-weight: bold;
+}
+h4 {
+  color: #000000;
+}
+p {
+  color: #000000;
+}
+.box {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 5px 10px #572705;
+  padding: 0px 0px 0px 0px;
+}
+img {
+  margin: 0px 0px 0px 0px !important;
+}
+.center {
+  text-align:center;
+}

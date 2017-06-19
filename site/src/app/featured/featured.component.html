@@ -1,18 +1,17 @@
-﻿<h1>Featured Homes</h1>
+﻿<div class="col-xs-12 featured">
+  <h1>Featured Homes</h1>
+  <app-features [property]="property" *ngFor="let property of properties"></app-features>
 
-<div class="container">
-  <app-properties></app-properties>
+  <div class="col-xs-12 col-sm-12 col-md-12 button">
+    <a href="./buy">
+      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179 49" height="50px" width="auto">
+        <title>button</title>
+        <rect class="cls-1" width="179" height="48" rx="12" ry="12" />
+        <text class="cls-2" transform="translate(39.25 28.82)">VI<tspan class="cls-3" x="15.66" y="0">E</tspan><tspan x="24.85" y="0">W MORE</tspan></text>
+        <line class="cls-4" x1="141.69" y1="12.88" x2="154.64" y2="22.44" />
+        <line class="cls-5" x1="141.93" y1="31.86" x2="154.82" y2="22.28" />
+      </svg>
+    </a>
+  </div>
 </div>
 <div class="clearfix"></div>
-
-
-
-<div class="col-xs-12 col-sm-12 col-md-12 button">
-    <a href="./buy">
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179 49" height="50px" width="auto">
-      <title>button</title>
-      <rect class="cls-1" width="179" height="48" rx="12" ry="12"/>
-      <text class="cls-2" transform="translate(39.25 28.82)">VI<tspan class="cls-3" x="15.66" y="0">E</tspan><tspan x="24.85" y="0">W MORE</tspan></text>
-      <line class="cls-4" x1="141.69" y1="12.88" x2="154.64" y2="22.44"/>
-      <line class="cls-5" x1="141.93" y1="31.86" x2="154.82" y2="22.28"/></svg></a>
-  </div>
