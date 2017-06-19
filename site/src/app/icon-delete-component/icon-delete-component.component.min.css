@@ -41,4 +41,8 @@
 .hole {
   fill: url(#primary); }
 
+.check {
+  stroke: black;
+  fill: url(#primary); }
+
 /*# sourceMappingURL=icon-delete-component.component.min.css.map */

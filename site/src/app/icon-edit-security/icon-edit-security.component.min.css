@@ -1,3 +1,79 @@
-/* line 5, C:/Repos/AIRR-JAM-WEB/site/src/app/icon-edit-security/icon-edit-security.component.scss */.devicon:hover .pencilfull,.icon:hover .pencilfull{-webkit-animation-name:grow-it;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1;-webkit-animation-timing-function:linear;-webkit-animation-delay:0s;-webkit-animation-direction:normal;-webkit-transform-origin:50%;animation-name:grow-it;animation-duration:1s;animation-iteration-count:1;animation-timing-function:linear;animation-delay:0;animation-direction:normal;transform-origin:50%;-moz-animation:none;-webkit-transform:scale(1) translateX(50px);transform:scale(1) translateX(50px)}@-webkit-keyframes grow-it{0%{-webkit-transform:scale(0.8)}100%{-webkit-transform:scale(1) translateX(50px)}}@keyframes grow-it{0%{transform:scale(0.8)}100%{transform:scale(1) translateX(50px)}}/* line 48, C:/Repos/AIRR-JAM-WEB/site/src/app/icon-edit-security/icon-edit-security.component.scss */.devicon:hover .padlock,.icon:hover .padlock{-webkit-animation-name:slide-left;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1;-webkit-animation-timing-function:linear;-webkit-animation-delay:0s;-webkit-animation-direction:normal;-webkit-transform-origin:50%;animation-name:slide-left;animation-duration:1s;animation-iteration-count:1;animation-timing-function:linear;animation-delay:0;animation-direction:normal;transform-origin:50%;-moz-animation:none;-webkit-transform:translateX(-25px);transform:translateX(-25px)}@-webkit-keyframes slide-left{0%{-webkit-transform:translateX(0px)}100%{-webkit-transform:translateX(-25px)}}@keyframes slide-left{0%{transform:translateX(0px)}100%{transform:translateX(-25px)}}/* line 102, C:/Repos/AIRR-JAM-WEB/site/src/app/icon-edit-security/icon-edit-security.component.scss */.lock{fill:url(#silver)}/* line 106, C:/Repos/AIRR-JAM-WEB/site/src/app/icon-edit-security/icon-edit-security.component.scss */.initials{stroke:black}/* line 110, C:/Repos/AIRR-JAM-WEB/site/src/app/icon-edit-security/icon-edit-security.component.scss */.pencilshaft{stroke:black;fill:url(#pencil)}/* line 116, C:/Repos/AIRR-JAM-WEB/site/src/app/icon-edit-security/icon-edit-security.component.scss */.pencilpoint{stroke:black;fill:url(#pencilpoint)}/* line 121, C:/Repos/AIRR-JAM-WEB/site/src/app/icon-edit-security/icon-edit-security.component.scss */.pencileraser{stroke:black;fill:url(#pencileraser)}
+.devicon:hover .pencilfull,
+.icon:hover .pencilfull {
+  -webkit-animation-name: grow-it;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-direction: normal;
+  -webkit-transform-origin: 50%;
+  animation-name: grow-it;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: normal;
+  transform-origin: 50%;
+  -moz-animation: none;
+  -webkit-transform: scale(1) translateX(50px);
+  transform: scale(1) translateX(50px); }
 
-/*# sourceMappingURL=icon-edit-security.component.css.map */
+@-webkit-keyframes grow-it {
+  0% {
+    -webkit-transform: scale(0.8); }
+  100% {
+    -webkit-transform: scale(1) translateX(50px); } }
+@keyframes grow-it {
+  0% {
+    transform: scale(0.8); }
+  100% {
+    transform: scale(1) translateX(50px); } }
+.devicon:hover .padlock,
+.icon:hover .padlock {
+  -webkit-animation-name: slide-left;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-direction: normal;
+  -webkit-transform-origin: 50%;
+  animation-name: slide-left;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: normal;
+  transform-origin: 50%;
+  -moz-animation: none;
+  -webkit-transform: translateX(-25px);
+  transform: translateX(-25px); }
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(-25px); } }
+@keyframes slide-left {
+  0% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(-25px); } }
+.lock {
+  fill: url(#silver); }
+
+.initials {
+  stroke: black; }
+
+.pencilshaft {
+  stroke: black;
+  fill: url(#pencil); }
+
+.pencilpoint {
+  stroke: black;
+  fill: url(#pencilpoint); }
+
+.pencileraser {
+  stroke: black;
+  fill: url(#pencileraser); }
+
+/*# sourceMappingURL=icon-edit-security.component.min.css.map */

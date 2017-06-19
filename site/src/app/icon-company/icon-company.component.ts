@@ -5,6 +5,7 @@
   templateUrl: './icon-company.component.html',
   styleUrls: [
       '../../assets/css/icons.css',
+      './icon-company.component.min.css',
       './icon-company.component.css',
   ]
 })

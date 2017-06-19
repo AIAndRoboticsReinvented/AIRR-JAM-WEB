@@ -1,3 +1,71 @@
-/* line 4, C:/Repos/AIRR-JAM-WEB/site/src/app/icon-add-security/icon-add-security.component.scss */.devicon:hover .padlockcopy,.icon:hover .padlockcopy{-webkit-animation-name:slide-left;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1;-webkit-animation-timing-function:linear;-webkit-animation-delay:0s;-webkit-animation-direction:normal;-webkit-transform-origin:50%;animation-name:slide-left;animation-duration:1s;animation-iteration-count:1;animation-timing-function:linear;animation-delay:0;animation-direction:normal;transform-origin:50%;-moz-animation:none;-webkit-transform:translateX(-25px);transform:translateX(-25px)}@-webkit-keyframes slide-left{0%{-webkit-transform:translateX(0px)}100%{-webkit-transform:translateX(-25px)}}@keyframes slide-left{0%{transform:translateX(0px)}100%{transform:translateX(-25px)}}/* line 46, C:/Repos/AIRR-JAM-WEB/site/src/app/icon-add-security/icon-add-security.component.scss */.devicon:hover .padlock,.icon:hover .padlock{-webkit-animation-name:slide-right;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1;-webkit-animation-timing-function:linear;-webkit-animation-delay:0s;-webkit-animation-direction:normal;-webkit-transform-origin:50%;animation-name:slide-right;animation-duration:1s;animation-iteration-count:1;animation-timing-function:linear;animation-delay:0;animation-direction:normal;transform-origin:50%;-moz-animation:none;-webkit-transform:translateX(25px);transform:translateX(25px)}@-webkit-keyframes slide-right{0%{-webkit-transform:translateX(0px)}100%{-webkit-transform:translateX(25px)}}@keyframes slide-right{0%{transform:translateX(0px)}100%{transform:translateX(25px)}}/* line 99, C:/Repos/AIRR-JAM-WEB/site/src/app/icon-add-security/icon-add-security.component.scss */.lock{fill:url(#silver)}/* line 103, C:/Repos/AIRR-JAM-WEB/site/src/app/icon-add-security/icon-add-security.component.scss */.initials{stroke:black}/* line 107, C:/Repos/AIRR-JAM-WEB/site/src/app/icon-add-security/icon-add-security.component.scss */.plus{stroke:black;fill:url(#primary)}
+.devicon:hover .padlockcopy,
+.icon:hover .padlockcopy {
+  -webkit-animation-name: slide-left;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-direction: normal;
+  -webkit-transform-origin: 50%;
+  animation-name: slide-left;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: normal;
+  transform-origin: 50%;
+  -moz-animation: none;
+  -webkit-transform: translateX(-25px);
+  transform: translateX(-25px); }
 
-/*# sourceMappingURL=icon-add-security.component.css.map */
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(-25px); } }
+@keyframes slide-left {
+  0% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(-25px); } }
+.devicon:hover .padlock,
+.icon:hover .padlock {
+  -webkit-animation-name: slide-right;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-direction: normal;
+  -webkit-transform-origin: 50%;
+  animation-name: slide-right;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: normal;
+  transform-origin: 50%;
+  -moz-animation: none;
+  -webkit-transform: translateX(25px);
+  transform: translateX(25px); }
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(25px); } }
+@keyframes slide-right {
+  0% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(25px); } }
+.lock {
+  fill: url(#silver); }
+
+.initials {
+  stroke: black; }
+
+.plus {
+  stroke: black;
+  fill: url(#primary); }
+
+/*# sourceMappingURL=icon-add-security.component.min.css.map */
