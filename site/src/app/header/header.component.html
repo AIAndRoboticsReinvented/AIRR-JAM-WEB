@@ -1,90 +1,14 @@
-﻿<div class="container-fluid col-xs-12 header">
-  <div class="container col-xs-12">
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 right channel"></div>
-      <div class="col-xs-12 col-sm-4 right channel">
-        <div class="row">
-          <nav class="topnav">
-            <a routerLink="/faq" (click)="onSelect()" class="col-xs-4 center" routerLinkActive="active">FAQ</a>
-            <a routerLink="/investors" class="col-xs-4 center" routerLinkActive="active">INVESTORS</a>
-            <a routerLink="/contactus" class="col-xs-4 center" routerLinkActive="active">CONTACT&nbsp;US</a>
-          </nav>
-        </div>
-      </div>
-        <div class="col-xs-12 col-sm-3 center channel">
-          <div class="row">
-            <nav>
-              <div class="col-xs-3"></div>
-              <a href="https://www.facebook.com/IBuyAsIs/" target="_blank"><div class="col-xs-1"><i class="fa fa-facebook col-xs-1 fa-2x" style="color:#3B5998"></i></div></a>&nbsp;
-              <a href="https://twitter.com/ibuyasis" target="_blank"><div class="col-xs-1"><i class="fa fa-twitter col-xs-1 fa-2x" style="color:#00aced"></i></div></a>&nbsp;
-              <a href="https://www.linkedin.com/in/russ-brantmyer-a874015/?ppe=1" target="_blank"><div class="col-xs-1 "><i class="fa fa-linkedin col-xs-1 fa-2x" style="color:#007bb6"></i></div></a>&nbsp;
-              <a href="https://plus.google.com/+RussBrantmyerIBuyAsIs" target="_blank"><div class="col-xs-1"><i class="fa fa-google-plus col-xs-1 fa-2x" style="color:#dd4b39"></i></div></a>&nbsp;
-              <a href="https://www.youtube.com/channel/UCdUxeSAgoCbwroNu5OyEpLQ" target="_blank"><div class="col-xs-1"><i class="fa fa-youtube-play col-xs-1 fa-2x" style="color:#bb0000"></i></div></a>&nbsp;
-              <!--<div class="col-xs-1"><a href="" target="_blank"><i class="fa fa-instagram col-xs-1"></i></a></div>-->
-              <!--<div class="col-xs-1"><a href="" target="_blank"><i class="fa fa-pinterest col-xs-1"></i></a></div>-->
-              <div class="col-xs-2"></div>
-            </nav>
-          </div>
-          <!---
-                    <i class="fa fa-bitbucket"></i>
-                    <i class="fa fa-digg"></i>
-                    <i class="fa fa-dropbox"></i>
-                    <i class="fa fa-flickr"></i>
-                    <i class="fa fa-foursquare"></i>
-                    <i class="fa fa-github"></i>
-                    <i class="fa fa-google"></i>
-                    <i class="fa fa-jsfiddle"></i>
-                    <i class="fa fa-reddit"></i>
-                    <i class="fa fa-skype"></i>
-                    <i class="fa fa-soundcloud"></i>
-                    <i class="fa fa-spotify"></i>
-                    <i class="fa fa-stack-exchange"></i>
-                    <i class="fa fa-stack-overflow"></i>
-                    <i class="fa fa-steam"></i>
-                    <i class="fa fa-stumbleupon"></i>
-                    <i class="fa fa-tumblr"></i>
-                    <i class="fa fa-vimeo-square"></i>
-                    <i class="fa fa-vine"></i>
-                    <i class="fa fa-windows"></i>
-                    <i class="fa fa-wordpress"></i>
-                    <i class="fa fa-yahoo"></i>
-      -->
-
-        </div>
-        <div class="col-xs-12 col-sm-2 center channel">
-          <div class="row">
-            <div class="col-xs-12">
-              <nav class="topnav">
-                (813) 444-4567 / <a routerLink="/login" routerLinkActive="active">Login</a>
-              </nav>
-            </div>
-          </div>
-        </div>
+﻿<app-topnav></app-topnav>
+<div class="container-fluid col-xs-12 banner">
+  <div class="row col-xs-12 banner">
+      <app-landy></app-landy>
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <a routerLink="/home" class="col-xs-4 col-sm-2 center" routerLinkActive="active">HOME</a>
+          <a routerLink="/about" class="col-xs-4 col-sm-2 center" routerLinkActive="active">ABOUT</a>
+          <a routerLink="/buy" class="col-xs-4 col-sm-2 center" routerLinkActive="active">BUY&nbsp;A&nbsp;HOME</a>
+          <a routerLink="/wholesale" class="col-xs-4 col-sm-2 center" routerLinkActive="active">WHOLESALE</a>
+          <a routerLink="/sell" class="col-xs-4 col-sm-2 center" routerLinkActive="active">SELL&nbsp;YOUR&nbsp;HOME</a>
+          <a href="http://blog.ibuyasis.com" class="col-xs-4 col-sm-2 center">BLOG</a>
       </div>
   </div>
-</div>
-<div class="container-fluid col-xs-12 banner">
-  <!--<div class="container col-xs-12">-->
-    <div class="row col-xs-12">
-      <div class="col-xs-12 head">
-      <div class="col-xs-12 col-sm-12 col-md-12">
-        <!--<div class="col-xs-3"></div>-->
-        <!--<img src="assets/images/logob.png" class="col-xs-12 col-sm-12 logo" />-->
-        <app-landy></app-landy>
-        <!--<div class="col-xs-3"></div>-->
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-md-offset-4">
-        <ul class="nav nav-pills">
-          <li role="presentation"><a routerLink="/home" class="center" routerLinkActive="active">HOME</a></li>
-          <li role="presentation"><a routerLink="/about" class="center" routerLinkActive="active">ABOUT</a></li>
-          <li role="presentation"><a routerLink="/buy" class="center" routerLinkActive="active">BUY&nbsp;A&nbsp;HOME</a></li>
-          <li role="presentation"><a routerLink="/wholesale" class="center" routerLinkActive="active">WHOLESALE</a></li>
-          <li role="presentation"><a routerLink="/sell" class="center" routerLinkActive="active">SELL&nbsp;YOUR&nbsp;HOME</a></li>
-          <li role="presentation"><a href="http://blog.ibuyasis.com" class="center">BLOG</a></li>
-        </ul>
-
-      </div>
-        </div>
-    </div>
-  <!--</div>-->
 </div>

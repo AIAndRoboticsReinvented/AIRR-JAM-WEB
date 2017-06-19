@@ -1,0 +1,35 @@
+﻿
+.header {
+  /*background-color: #025c99;*/
+  /*background-image: url('/assets/images/Black_World_Banner.jpg');*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+}
+
+.lowertext {
+  margin: 5px 0px 0px 0px;
+}
+
+.login {
+  text-align:center;
+}
+
+.topnav {
+  margin: 0px 5px 0px 5px;
+}
+
+.topnav a,
+.topnav a:link,
+.topnav a:visited {
+  color: #ffffff;
+}
+
+.topnav a:hover {
+  color: #f64c4c;
+  font-weight: bold;
+
+}
+

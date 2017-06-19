@@ -58,41 +58,53 @@ import { DashboardRoutingModule } from './dashboard/dashboard-routing.module';
 import { LandyComponent } from './landy/landy.component';
 import { FeaturedComponent } from './featured/featured.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component'
+import { TopnavComponent } from './topnav/topnav.component';
+import { SocialComponent } from './social/social.component'
 
 @NgModule({
   declarations: [
-    AppComponent,
-    FooterComponent,
-    HeaderComponent,
-    HomeComponent,
-    PagetitleComponent,
-    FaqComponent,
-    InvestorsComponent,
-    ContactusComponent,
-    AboutComponent,
-    TeamComponent,
-    TeammemberComponent,
-    SellyourhomeComponent,
-    BuyahomeComponent,
-    PropertiesComponent,
-    PropertySummaryComponent,
-    TermsComponent,
-    PrivacyComponent,
-    WholesaleComponent,
-    ContactRequestComponent,
-    HtmlComponent,
-    VideoShowcaseComponent,
-    VideaComponent,
-    LandyComponent,
-    FeaturedComponent,
-    TestimonialsComponent,
+      AboutComponent,
+      AppComponent,
+      BuyahomeComponent,
+      ContactRequestComponent,
+      ContactusComponent,
+      FaqComponent,
+      FeaturedComponent,
+      FooterComponent,
+
+      HeaderComponent,
+      HomeComponent,
+      HtmlComponent,
+
+      InvestorsComponent,
+      LandyComponent,
+      LoginComponent,
+
+      PagetitleComponent,
+      PrivacyComponent,
+      PropertiesComponent,
+      PropertySummaryComponent,
+
+      SellyourhomeComponent,
+      SocialComponent,
+      TeamComponent,
+      TeammemberComponent,
+      TermsComponent,
+      TestimonialsComponent,
+      TopnavComponent,
+      VideaComponent,
+      VideoShowcaseComponent,
+
+      WholesaleComponent,
+
 ///    ProspectPropertyComponent,
 ///    GoogleMapComponent,
-    LoginComponent,
 //    MemberHeaderComponent,
     
   //  LocationAutocompleteComponent,
       PageNotFoundComponent,
+
+
   ],
   imports: [      
       BrowserModule,

@@ -17,3 +17,11 @@ a:hover {
   font-weight: bold;
   cursor: pointer;
 }
+
+.lowertext {
+  margin: 5px 0px 0px 0px;
+}
+
+.centertext {
+  text-align: center;
+}

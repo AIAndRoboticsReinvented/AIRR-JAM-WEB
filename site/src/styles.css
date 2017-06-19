@@ -34,14 +34,14 @@ a:visited {
 
 
 .clearfix:after {
-  content: " ";
+  content: "";
   display: table;
   clear: both;
 }
 
 .center {
   text-align: center;
-  padding: 0 auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .channel {

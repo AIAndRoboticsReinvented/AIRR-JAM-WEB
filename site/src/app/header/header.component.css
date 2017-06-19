@@ -2,7 +2,7 @@
 }
 
 .logo {
-  position: relative;
+  /*position: relative;*/
 }
 
 .header {
@@ -10,17 +10,24 @@
   /*background-image: url('/assets/images/Black_World_Banner.jpg');*/
   background-repeat: no-repeat;
   background-size: cover;
-
   background-color: #000;
   color: white;
-  font-weight:bold;
+  font-weight: bold;
 }
+
+
 
 .banner {
   background-color: #333333;
   color: #fff;
+  padding-left : 0px !important;
+  padding-right: 0px !important; 
 }
 
+.red {background:red;}
+.green { background:green;}
+.blue { background:blue;}
+.orange {background: orange;}
 .topmenu {
   height: 100%;
 }
@@ -40,19 +47,6 @@ nav {
 }
 
 
-.topnav {
-}
-
-  .topnav a,
-  .topnav a:link,
-  .topnav a:visited {
-    color: #ffffff;
-  }
-
-  .topnav a:hover {
-    color: #f64c4c;
-    font-weight: bold
-  }
 .nav a:hover {
   background-color: #b41e1e;
   font-weight: bold;
@@ -64,7 +58,7 @@ nav {
 }
 
 .head {
-  margin: 0px auto 0px auto;
+  margin: 0px auto 0px auto; /* Center left to right*/
 }
 .center {
   fill:aqua;
