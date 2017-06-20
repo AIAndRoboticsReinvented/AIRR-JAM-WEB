@@ -60,9 +60,9 @@ nav {
 .head {
   margin: 0px auto 0px auto; /* Center left to right*/
 }
-.center {
-  fill:aqua;
-}
 .col-xs-1 a:hover{
   color:blue;
+}
+.center:hover {
+  font-weight:bold;
 }
