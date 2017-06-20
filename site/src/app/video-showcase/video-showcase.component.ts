@@ -13,6 +13,7 @@ import { ContactRequestComponent } from '../contact-request/contact-request.comp
 export class VideoShowcaseComponent implements OnInit {
     @Input() background: '';
     @Input() video: '';
+    @Input() poster: '';
     @Input() title: '';   
 
     url: SafeResourceUrl;
