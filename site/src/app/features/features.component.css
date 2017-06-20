@@ -17,6 +17,9 @@ p {
   box-shadow: 2px 5px 10px #572705;
   padding: 0px 0px 0px 0px;
 }
+ .box:hover {
+    box-shadow: 1px 1px 30px crimson;
+  }
 img {
   margin: 0px 0px 0px 0px !important;
 }

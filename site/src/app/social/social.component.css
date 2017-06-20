@@ -1,0 +1,30 @@
+﻿.fa-facebook {
+  color: #3B5998;
+}
+  .fa-facebook:hover {
+    color: #0c57f5;
+  }
+.fa-twitter {
+  color: #00aced;
+}
+  .fa-twitter:hover {
+  color: #43cbff;
+  }
+.fa-linkedin {
+  color: #007bb6;
+}
+.fa-linkedin:hover {
+  color: #00acff;
+}
+.fa-google-plus {
+  color: #dd4b39;
+}
+.fa-google-plus:hover {
+  color: #ff1c00;
+}
+.fa-youtube-play {
+  color: #bb0000;
+}
+.fa-youtube-play:hover{
+  color:crimson;
+}
