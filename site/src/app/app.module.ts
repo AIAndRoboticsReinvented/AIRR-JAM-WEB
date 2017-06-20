@@ -60,7 +60,8 @@ import { TopnavComponent } from './topnav/topnav.component';
 import { SocialComponent } from './social/social.component';
 import { PropertiesComponent } from './properties/properties.component';
 import { PropertySummaryComponent } from './property-summary/property-summary.component';
-import { FeaturesComponent } from './features/features.component'
+import { FeaturesComponent } from './features/features.component';
+
 
 @NgModule({
   declarations: [
@@ -106,6 +107,7 @@ import { FeaturesComponent } from './features/features.component'
       PageNotFoundComponent,
 
       FeaturesComponent,
+
 
 
   ],

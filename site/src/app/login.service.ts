@@ -22,4 +22,11 @@ export class LoginService {
             .map(res => res.json());
     }
 
+    getUserName(visitorid) {
+        this.request = { action: 'UserName', visitorid: visitorid };
+        this.therequest = JSON.stringify(this.request);
+        return this.http.post(this.url, this.therequest)
+            .map(res => res.json());
+    }
+
 }

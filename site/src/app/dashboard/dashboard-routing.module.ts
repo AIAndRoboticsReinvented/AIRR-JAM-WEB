@@ -1,8 +1,8 @@
-﻿import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+﻿import { NgModule }                     from '@angular/core';
+import { RouterModule, Routes }         from '@angular/router';
 
 /// Icons.....
-import { IconCompanyComponent } from '../icon-company/icon-company.component';
+import { IconCompanyComponent }         from '../icon-company/icon-company.component';
 
     /// Security
 import { IconAddSecurityComponent }     from '../icon-add-security/icon-add-security.component';
@@ -15,19 +15,20 @@ import { IconDeleteComponentComponent } from '../icon-delete-component/icon-dele
 import { IconEditComponentComponent }   from '../icon-edit-component/icon-edit-component.component';
 
 /// Components....
-import { DashboardComponent }       from './dashboard.component';
-import { MemberHeaderComponent }    from '../member-header/member-header.component';
-import { DashWelcomeComponent }     from '../dash-welcome/dash-welcome.component';
-import { PrivacyComponent }         from '../privacy/privacy.component';
+import { DashboardComponent }           from './dashboard.component';
+import { DashNavComponent }             from '../dash-nav/dash-nav.component';
+import { MemberHeaderComponent }        from '../member-header/member-header.component';
+import { DashWelcomeComponent }         from '../dash-welcome/dash-welcome.component';
+import { PrivacyComponent }             from '../privacy/privacy.component';
 
 const dashboardRoutes: Routes = [
     {
-        path: 'dashboard',
+        path: 'dashboard/:visitorid',
         component: DashboardComponent,
-        children: [
-            { path: '', redirectTo: '/home', pathMatch:'full' },
-            { path: ':id', component: DashWelcomeComponent }
-        ],
+        //children: [
+        //    { path: '', redirectTo: '/home', pathMatch:'full' },
+        //    { path: 'other', component: DashWelcomeComponent }
+        //],
     },
 ];
 
@@ -47,9 +48,11 @@ const dashboardRoutes: Routes = [
         IconEditComponentComponent,
 
 /// Components
-        MemberHeaderComponent,
         DashWelcomeComponent,
         DashboardComponent,
+        MemberHeaderComponent,
+        DashNavComponent,
+
     ],
     imports: [RouterModule.forChild(dashboardRoutes)],
     exports: [RouterModule]

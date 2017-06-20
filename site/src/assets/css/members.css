@@ -1,0 +1,15 @@
+﻿.body {
+  background:#ffffff;
+  color:#000000;
+}
+
+.primary {
+  background:#ff0000;
+  color:#000000;
+}
+
+.secondary {
+  background: #000000;
+  color: #ff0000;
+}
+
