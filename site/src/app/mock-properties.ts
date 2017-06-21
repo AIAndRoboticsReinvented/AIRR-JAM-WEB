@@ -1,7 +1,7 @@
 ﻿import { PropertyAttributes, Property } from './property';
-////////////////////////
 
 export const PROPERTIES: Property[] = [
+
     {
         propertyguid: '',
         name: 'Single Family Home',
@@ -60,7 +60,8 @@ export const PROPERTIES: Property[] = [
         propertyguid: '',
         name: 'Single Family Home',
         location: 'Northwest Tampa',
-        address: '2907 W Dewey St'        city: 'Tampa',
+        address: '2907 W Dewey St',
+        city: 'Tampa',
         state: 'FL',
         zip: '33607',
         zillow: 'https://www.zillow.com/homes/2907-W-Dewey-St,-Tampa,-FL-33607_rb/',
@@ -112,23 +113,23 @@ export const PROPERTIES: Property[] = [
     {
         propertyguid: '',
         name: 'Single Family Home',
-        location: 'Wellswood and Hillsborough River
+        location: 'Wellswood and Hillsborough River',
         address: '4038 N Riverwood Ave',
         city: 'Tampa,',
         state: 'FL',
         zip: '33607',
         zillow: 'https://www.zillow.com/homedetails/4038-N-River-View-Ave-Tampa-FL-33607/45044423_zpid/',
-        description: 'Hme located in the sought after Wellswood section of Tampa, blocks from the Hillsborough River/Close to city it is being totally rehabed from floor to roof evertyhing brand new.
+        description: 'Hme located in the sought after Wellswood section of Tampa, blocks from the Hillsborough River/Close to city it is being totally rehabed from floor to roof evertyhing brand new.',
         masterimage: 'IMG_0864.JPG',
-        images: [ ,
+        images: [],
         propertyattributes: [
             { key: 'Structure Type ', value: 'Contemporary' },
-            { key: 'Last Remodel', value: '2017
-            { key: 'Bedrooms', value: '5' } ),
-            { key: 'Sq Ft', value: '3010 ,
+            { key: 'Last Remodel', value: '2017' },
+            { key: 'Bedrooms', value: '5' },
+            { key: 'Sq Ft', value: '3010' },
             { key: 'total rooms', value: '14' },
             { key: 'Lot Size', value: '9,750 Sq Ft' },
-            { key: 'Sale Price', value: 'open' ,
+            { key: 'Sale Price', value: 'open' },
         ],
     },
     {
@@ -140,9 +141,9 @@ export const PROPERTIES: Property[] = [
         state: 'FL',
         zip: '33511',
         zillow: 'https://www.zillow.com/homes/1001-Calumet-Way,-Brandon,-FL-33511-_rb/',
-        description: ' Total remodel home Brandon maintained community. Located off Kings Rd. and minutes away from Hwy. 60, I-75, Hwy 301 and the crosstown Expressway.  Pull into your end covered parking spot then walk  50ft to your front paved patio  then enter your single story end unit villa with 2 bedrooms and 2  bathrooms, with no stairs to climb. The HOA maintains the exterior, including paint, lawn care and roof which was just replaced in March 2016. The kitchen opens to the dining/great room combo with a wood burning fireplace a sliding glass door front and the one in back opens to your rear covered screened in porch with plenty of seating space. Which overlooks a large meticulously kept POOL just 50ft from your back door. Easy in and out that’s comfort Florida style.     ',
+        description: 'Total remodel home Brandon maintained community. Located off Kings Rd. and minutes away from Hwy. 60, I-75, Hwy 301 and the crosstown Expressway.  Pull into your end covered parking spot then walk  50ft to your front paved patio  then enter your single story end unit villa with 2 bedrooms and 2  bathrooms, with no stairs to climb. The HOA maintains the exterior, including paint, lawn care and roof which was just replaced in March 2016. The kitchen opens to the dining/great room combo with a wood burning fireplace a sliding glass door front and the one in back opens to your rear covered screened in porch with plenty of seating space. Which overlooks a large meticulously kept POOL just 50ft from your back door. Easy in and out that’s comfort Florida style.     ',
         masterimage: 'IMG_2.jpg',
-        images: ['2017 - 05 - 02 12.39.06.jpg','IMG_0567.JPG','2017-05-02 12.44.27.jpg','2017-05-02 12.53.07.jpg',' IMG_0561.JPG',' IMG_0564.JPG ]'],
+        images: ['2017 - 05 - 02 12.39.06.jpg', 'IMG_0567.JPG', '2017-05-02 12.44.27.jpg', '2017-05-02 12.53.07.jpg', ' IMG_0561.JPG', ' IMG_0564.JPG ]'],
         propertyattributes: [
             { key: 'Construction', value: 'Block, Stucco' },
             { key: 'Villa', value: ' End Unit, 1 Story' },
@@ -161,9 +162,9 @@ export const PROPERTIES: Property[] = [
         state: 'FL',
         zip: '34689',
         zillow: 'https://www.zillow.com/homes/1128-Elmendorf-Trace,-Tarpon-Springs,-FL-34689-_rb/',
-        description: 'Fantastic 4 bedrooms, 2 bath home in family oriented neighborhood. The kitchen and living/dining rooms have tiled floors and wall to wall carpeting in all bedrooms. Mature landscaping in private fenced backyard. Close to beaches, shopping and schools makes this an even better purchase. Sold As Is. https://www.zillow.com/homedetails/1128-Elmendorf-Trce-Tarpon-Springs-FL-34689/47069052_zpid/', 
-        masterimage:'Photo Apr 12, 8 45 36 AM.jpg',
-        images: ['  Photo Apr 12, 8 48 14 AM.jpg','Photo Apr 12, 8 48 22 AM.jpg  ','Photo Apr 12, 8 49 04 AM.jpg ',' Photo Apr 12, 8 50 14 AM.jpg  ',' Photo Apr 12, 8 50 34 AM.jpg  ',' Photo Apr 12, 8 54 45 AM.jpg  ',' Photo Apr 12, 8 53 38 AM.jpg  ','Photo Apr 12, 8 53 53 AM.jpg '],
+        description: 'Fantastic 4 bedrooms, 2 bath home in family oriented neighborhood. The kitchen and living/dining rooms have tiled floors and wall to wall carpeting in all bedrooms. Mature landscaping in private fenced backyard. Close to beaches, shopping and schools makes this an even better purchase. Sold As Is. https://www.zillow.com/homedetails/1128-Elmendorf-Trce-Tarpon-Springs-FL-34689/47069052_zpid/',
+        masterimage: 'Photo Apr 12, 8 45 36 AM.jpg',
+        images: ['  Photo Apr 12, 8 48 14 AM.jpg', 'Photo Apr 12, 8 48 22 AM.jpg  ', 'Photo Apr 12, 8 49 04 AM.jpg ', ' Photo Apr 12, 8 50 14 AM.jpg  ', ' Photo Apr 12, 8 50 34 AM.jpg  ', ' Photo Apr 12, 8 54 45 AM.jpg  ', ' Photo Apr 12, 8 53 38 AM.jpg  ', 'Photo Apr 12, 8 53 53 AM.jpg '],
         propertyattributes: [
             { key: 'Structure Type ', value: 'Concrete Block' },
             { key: 'Last Remodel', value: '2015' },
@@ -174,26 +175,32 @@ export const PROPERTIES: Property[] = [
             { key: 'Lot Size', value: '8,050 Sq Ft' },
             { key: 'Sale Price', value: 'inquire.' },
         ],
-         {
+    },
+    {
         propertyguid: '',
         name: 'Single Family Home',
-        location: '',
-        address: '7103 W Creek Dr ',
-        city: 'Tampa,',
+        location: 'Tampa',
+        address: '7103 W Creek Dr',
+        city: 'Tampa',
         state: 'FL',
         zip: '34615',
         zillow: 'https://www.zillow.com/homes/for_sale/fsba,fsbo,new_lt/44868838_zpid/globalrelevanceex_sort/28.016678,-82.589057,28.014225,-82.592721_rect/17_zm/0_mmm/?view=public',
-        description: ' is a single family home that contains 1,247 sq ft and was built in 1963. It contains 3 bedrooms and 1 bathroom.', 
-        masterimage:''            
+        description: 'A single family home that contains 1,247 sq ft and was built in 1963. It contains 3 bedrooms and 1 bathroom.',
+        masterimage: 'DEFAULT.jpg',
+        images: [' '],
+        propertyattributes: [
             { key: 'Structure Type ', value: 'Concrete Block' },
-            { key: 'Last Remodel', 
+            { key: 'Last Remodel', value: '' },
             { key: 'Bedrooms', value: '3' },
             { key: 'Bathrooms', value: '1' },
             { key: 'Sq Ft', value: '1,247' },
             { key: 'total rooms', value: '8' },
-            { key: 'Lot Size', value: '11,088 sq ft' },
+            { key: 'Lot Size', value: '11,088 Sq Ft' },
             { key: 'Sale Price', value: 'inquire.' },
+        ],
+    },
 ]
+
 export const FEATUREDPROPERTIES: Property[] = [
     {
         propertyguid: '',

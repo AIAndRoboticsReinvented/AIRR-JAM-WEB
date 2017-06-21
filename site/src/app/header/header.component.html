@@ -2,13 +2,25 @@
 <div class="container-fluid col-xs-12 banner">
   <div class="row col-xs-12 banner">
       <app-landy></app-landy>
-      <div class="col-xs-12 col-md-8 col-md-offset-2">
-          <a routerLink="/home" class="col-xs-4 col-sm-2 center" routerLinkActive="active">HOME</a>
-          <a routerLink="/about" class="col-xs-4 col-sm-2 center" routerLinkActive="active">ABOUT</a>
-          <a routerLink="/buy" class="col-xs-4 col-sm-2 center" routerLinkActive="active">BUY&nbsp;A&nbsp;HOME</a>
-          <a routerLink="/wholesale" class="col-xs-4 col-sm-2 center" routerLinkActive="active">WHOLESALE</a>
-          <a routerLink="/sell" class="col-xs-4 col-sm-2 center" routerLinkActive="active">SELL&nbsp;YOUR&nbsp;HOME</a>
-          <a href="http://blog.ibuyasis.com" class="col-xs-4 col-sm-2 center">BLOG</a>
+      <div class="col-xs-12 col-md-8 col-md-offset-2 desktop">
+          <a routerLink="/home" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center" routerLinkActive="active">HOME</a>
+          <a routerLink="/about" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center" routerLinkActive="active">ABOUT</a>
+          <a routerLink="/buy" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center" routerLinkActive="active">BUY&nbsp;A&nbsp;HOME</a>
+          <a routerLink="/wholesale" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center" routerLinkActive="active">WHOLESALE</a>
+          <a routerLink="/sell" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center" routerLinkActive="active">SELL&nbsp;YOUR&nbsp;HOME</a>
+          <a href="http://blog.ibuyasis.com" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center">&nbsp;BLOG</a>
       </div>
-  </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="col-xs-12 icon-bar col-xs-12">
+      <a routerLink="/home" class="col-sm-3 col-sm-1 hidden-md hidden-lg" routerLinkActive ="active"><i class="fa fa-home micon fa-2x"></i><br />Home</a>
+      <a routerLink="/about" class="col-sm-3 col-sm-1 hidden-md hidden-lg" routerLinkActive="active"><i class="fa fa-id-card micon fa-2x"></i><br />About</a>
+      <a routerLink="/buy" class="col-sm-3 col-sm-1 hidden-md hidden-lg" routerLinkActive="active"><i class="fa fa-shopping-cart micon fa-2x"></i><br />Buy</a>
+      <a routerLink="/wholesale" class="col-sm-3 col-sm-1 hidden-md hidden-lg" routerLinkActive="active"><i class="fa fa-shopping-bag micon fa-2x"></i><br />Wholesale</a>
+      <a routerLink="/sell" class="col-sm-3 col-sm-1 hidden-md hidden-lg" routerLinkActive="active"><i class="fa fa-money micon fa-2x"></i><br />Sell</a>
+      <a href="http://blog.ibuyasis.com" class="col-sm-3 col-sm-1 hidden-md hidden-lg" routerLinkActive="active"><i class="fa fa-comments-o micon fa-2x"></i><br />Blog</a>
+
+
+
+    </div>
+    </div>
 </div>

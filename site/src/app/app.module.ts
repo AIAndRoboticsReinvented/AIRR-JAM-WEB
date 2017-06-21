@@ -61,6 +61,7 @@ import { SocialComponent } from './social/social.component';
 import { PropertiesComponent } from './properties/properties.component';
 import { PropertySummaryComponent } from './property-summary/property-summary.component';
 import { FeaturesComponent } from './features/features.component';
+import { HomeweareComponent } from './homeweare/homeweare.component';
 
 
 @NgModule({
@@ -107,6 +108,8 @@ import { FeaturesComponent } from './features/features.component';
       PageNotFoundComponent,
 
       FeaturesComponent,
+
+      HomeweareComponent,
 
 
 
