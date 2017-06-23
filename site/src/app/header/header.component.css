@@ -45,7 +45,10 @@ nav {
 .banner a:visited {
   color: #ffffff;
 }
-
+.iconnav a
+{
+  margin-top:15px;
+}
 
 .nav a:hover {
   background-color: #b41e1e;
@@ -65,39 +68,4 @@ nav {
 }
 .center:hover {
   font-weight:bold;
-}
-.icon-bar {
-  width: 100%; /* Full-width */
-}
-
-  .icon-bar a {
-    float: left; /* Float links side by side */
-    text-align: center; /* Center-align text */
-    width: 20%; /* Equal width (5 icons with 20% width each = 100%)
-    padding: 12px 0; /* Some top and bottom padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
-    color: white; /* White text color */
-    font-size: 36px; /* Increased font size */
-  }
-
-.active {
-  background-color: #4CAF50; /* Add an active/current color */
-}
-.icon-bar {
-  display: none;
-}
-/* Smartphone Portrait and Landscape */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .icon-bar {
-    display: inline;
-  }
-}
-.desktop {
-  display: inline;
-}
-/* Smartphone Portrait and Landscape */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .desktop {
-    display: none;
-  }
 }
