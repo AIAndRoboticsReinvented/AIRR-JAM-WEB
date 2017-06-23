@@ -15,18 +15,34 @@ import { LoginService } from '../login.service';
 export class MemberHeaderComponent implements OnInit {
 
     username: '';
-
+    answer = {};
     parentRouter = Router;
 
   @Input() visitorid: '';
-  
+  @Input() navState: '';
+
   constructor(
       private router: Router,
       private loginService: LoginService,
   ) { }
 
   ngOnInit() {
+      this.loginService.getUserName(this.visitorid)
+          .subscribe(
+          data => this.answer = JSON.parse(data.RequestResult),
+          error => {
+              console.log(error);
+          }, 
+          () => {
+              
+              //this.displayresponse = true;
+              //this.response.message = this.answer[0].response;
+              //if (this.response.message == 'OK') {
+              //    this.router.navigate(['/dashboard', this.answer[0].visitorid])
+              //}
+              this.username = this.answer[0].username;
+          });    
 
-  }
+    }
 
 }

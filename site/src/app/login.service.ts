@@ -13,6 +13,7 @@ export class LoginService {
     private url = 'http://24.173.148.67/gateway/gateway.svc/Request';
     private request = {};
     private therequest = "";
+
     private answer;
 
     getLogin(login, password) {
@@ -23,7 +24,7 @@ export class LoginService {
     }
 
     getUserName(visitorid) {
-        this.request = { action: 'UserName', visitorid: visitorid };
+        this.request = { action: 'Get User Name', visitorid: visitorid };
         this.therequest = JSON.stringify(this.request);
         return this.http.post(this.url, this.therequest)
             .map(res => res.json());

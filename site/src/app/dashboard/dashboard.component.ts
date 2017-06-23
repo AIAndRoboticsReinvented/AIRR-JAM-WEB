@@ -18,6 +18,7 @@ import 'rxjs/add/operator/switchMap';
 export class DashboardComponent implements OnInit {
 
     visitorid: {};
+    navState: 'hidden';
 
     constructor(
         private route: ActivatedRoute,
