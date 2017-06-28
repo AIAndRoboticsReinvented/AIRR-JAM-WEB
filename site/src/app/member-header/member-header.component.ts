@@ -11,21 +11,22 @@ import { LoginService } from '../login.service';
       './member-header.component.css'
   ],
   providers: [LoginService],
-})
+  })
 export class MemberHeaderComponent implements OnInit {
 
     username: '';
     answer = {};
     parentRouter = Router;
 
-  @Input() visitorid: '';
-  @Input() navState: '';
+    @Input() visitorid: {};
+  @Input() navState: {};
 
   constructor(
       private router: Router,
       private loginService: LoginService,
   ) { }
 
+  
   ngOnInit() {
       this.loginService.getUserName(this.visitorid)
           .subscribe(
@@ -45,4 +46,19 @@ export class MemberHeaderComponent implements OnInit {
 
     }
 
-}
+  switchNav(): void {
+      if (this.navState == 'Show')
+      {
+          this.navState = 'Hide';
+      }
+      else
+      {
+          this.navState = 'Show';
+      }
+  }
+  isNavState(state): boolean {
+      return (state == this.navState);
+  }
+
+
+ }

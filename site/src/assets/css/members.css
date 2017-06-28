@@ -13,6 +13,15 @@
   color: #ffffff;
 }
 
+.clicklink {
+  cursor:default;
+}
+
+.clicklink:hover {
+  cursor:pointer;
+}
+
+
 .center {
   text-align:center;
 }
