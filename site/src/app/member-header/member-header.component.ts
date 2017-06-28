@@ -1,4 +1,4 @@
-﻿import { Component, Input, OnInit } from '@angular/core';
+﻿import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 import { LoginService } from '../login.service';
 
@@ -19,7 +19,10 @@ export class MemberHeaderComponent implements OnInit {
     parentRouter = Router;
 
     @Input() visitorid: {};
-  @Input() navState: {};
+    @Input() navState: {};
+    @Output() newNavState: EventEmitter<any> = new EventEmitter<any>(); // Provide a method to send the value to the parent.
+
+
 
   constructor(
       private router: Router,
@@ -55,6 +58,7 @@ export class MemberHeaderComponent implements OnInit {
       {
           this.navState = 'Show';
       }
+      this.newNavState.emit(this.navState);   /// Send the new value back up the line.
   }
   isNavState(state): boolean {
       return (state == this.navState);

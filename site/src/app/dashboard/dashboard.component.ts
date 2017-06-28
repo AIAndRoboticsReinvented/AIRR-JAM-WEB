@@ -37,4 +37,9 @@ export class DashboardComponent implements OnInit {
             .subscribe(data => { });        
     }
 
+    navStateChange(newValue) {
+        this.navState = newValue;
+    }
+
+
 }

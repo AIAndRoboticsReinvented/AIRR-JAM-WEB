@@ -1,5 +1,5 @@
 ﻿<div class="body">
-  <app-member-header [(navState)]="navState" [visitorid]="visitorid"></app-member-header>
-  <app-dash-nav></app-dash-nav>
+  <app-member-header [navState]="navState" (newNavState)="navStateChange($event)"  [visitorid]="visitorid"></app-member-header>
+  <app-dash-nav [navState]="navState" [visitorid]="visitorid"></app-dash-nav>
   <router-outlet></router-outlet>
 </div>

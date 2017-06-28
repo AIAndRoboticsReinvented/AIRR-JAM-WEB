@@ -25,10 +25,10 @@ const dashboardRoutes: Routes = [
     {
         path: 'dashboard/:visitorid',
         component: DashboardComponent,
-        //children: [
+        children: [
         //    { path: '', redirectTo: '/home', pathMatch:'full' },
-        //    { path: 'other', component: DashWelcomeComponent }
-        //],
+            { path: '', component: DashWelcomeComponent },
+        ],
     },
 ];
 

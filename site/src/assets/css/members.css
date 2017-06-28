@@ -27,9 +27,25 @@
 }
 
 .titlebar {
-  border-bottom:3px groove #808080;
+  border-bottom:2px inset #808080;
 }
 
 .hidden {
   visibility:hidden;
+}
+
+.navbar {
+  background:lightblue;
+  border-right: inset 3px #808080;
+
+}
+
+.navitem {
+  background: #ffffff;
+  border-bottom: solid 1px #000000;
+}
+
+
+.maindisplay {
+  background:#ffffff;
 }
