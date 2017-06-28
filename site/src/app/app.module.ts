@@ -1,4 +1,5 @@
 ﻿import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -125,8 +126,10 @@ import { LPUXComponent } from './lp-ux/lp-ux.component';
   ],
   imports: [      
       BrowserModule,
+      CommonModule,
       FormsModule,
       HttpModule,
+  
 ///      AgmCoreModule.forRoot({ apiKey: 'AIzaSyCkiDx9O54GaP1FG2eOzXOjZB-ffqAbEzg'}),  /// Google Maps
 ///      ImageUploadModule.forRoot(),     /// Image Uploader
       DashboardRoutingModule,
