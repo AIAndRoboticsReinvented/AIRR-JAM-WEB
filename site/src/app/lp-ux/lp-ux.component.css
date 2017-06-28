@@ -1,0 +1,145 @@
+﻿body {
+  background: url(/assets/images/bg.png);
+}
+
+p {
+  color: #1f1f1f;
+  line-height: 1.4em;
+  padding-bottom: 20px;
+}
+
+.wrapper {
+  background-color: black;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+}
+
+
+.top {
+  background-color:#ffffff;
+  height: 100%;
+}
+
+
+.content_wrapper {
+ 
+}
+video {
+  margin-left:0px !important;
+  margin-right:0px !important;
+  margin-bottom:10px;
+}
+
+.main_content {
+  width: 960px;
+  margin: auto;
+}
+
+.primary {
+}
+
+
+h1 {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight:bold;
+  width:100%;
+  text-align:center;
+}
+
+h2 {
+  font-size: 20px;
+  color: #ff0022;
+  margin-bottom: 10px;
+}
+
+
+.sidebar {
+  background-color: lightgrey;
+  background-size: cover;
+  border-radius: 25px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+.alert-danger {
+  margin-top: 10px;
+  text-align:center;
+}
+
+.btn-danger {
+
+  margin-top: 30px;
+ text-align:center;
+}
+
+.sellyourhome {
+  margin-top:20px;
+  text-align:center;
+  background-color: #ffffff;
+  width:100%;
+}
+.bottombar {
+  margin-top:60px;
+}
+.center{
+  text-align:center;
+} 
+
+.fa-facebook {
+  color: #3B5998;
+}
+
+  .fa-facebook:hover {
+    color: #0c57f5;
+    text-shadow: 0px 0px 5px #598cf6;
+  }
+
+.fa-twitter {
+  color: #00aced;
+}
+
+  .fa-twitter:hover {
+    color: #43cbff;
+    text-shadow: 0px 0px 5px white;
+  }
+
+.fa-linkedin {
+  color: #007bb6;
+}
+
+  .fa-linkedin:hover {
+    color: #00acff;
+    text-shadow: 0px 0px 5px #43c2ff;
+  }
+
+.fa-google-plus {
+  color: #dd4b39;
+}
+
+  .fa-google-plus:hover {
+    color: #ff1c00;
+    text-shadow: 0px 0px 5px #fb5b47;
+  }
+
+.fa-youtube-play {
+  color: #bb0000;
+}
+
+  .fa-youtube-play:hover {
+    color: crimson;
+    text-shadow: 0px 0px 5px #ff4d71;
+  }
+app-social {
+  text-align:center;
+}
+img {
+  height:150px;
+  width:auto;
+}

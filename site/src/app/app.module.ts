@@ -64,6 +64,8 @@ import { PropertySummaryComponent } from './property-summary/property-summary.co
 import { FeaturesComponent } from './features/features.component';
 import { HomeweareComponent } from './homeweare/homeweare.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { ModalComponent } from './modal/modal.component';
+import { LPUXComponent } from './lp-ux/lp-ux.component';
 
 
 @NgModule({
@@ -114,6 +116,10 @@ import { CarouselComponent } from './carousel/carousel.component';
       HomeweareComponent,
 
       CarouselComponent,
+
+      ModalComponent,
+
+      LPUXComponent,
 
 
 

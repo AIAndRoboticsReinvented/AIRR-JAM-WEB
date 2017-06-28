@@ -215,7 +215,7 @@ export const FEATUREDPROPERTIES: Property[] = [
         masterimage: 'IMG_2.jpg',
         images: ['2017 - 05 - 02 12.39.06.jpg', 'IMG_0567.JPG', '2017-05-02 12.44.27.jpg', '2017-05-02 12.53.07.jpg', ' IMG_0561.JPG', ' IMG_0564.JPG ]'],
         propertyattributes: [
-            { key: 'Construction', value: 'Block, Stucco' },
+            { key: 'Structure Type', value: 'Block, Stucco' },
             { key: 'Villa', value: ' End Unit, 1 Story' },
             { key: 'Bedrooms', value: '2' },
             { key: 'Bathrooms', value: '2' },
