@@ -19,7 +19,9 @@ import { WholesaleComponent }                 from './wholesale/wholesale.compon
 //import { ProspectPropertyComponent }          from './prospect-property/prospect-property.component';
 import { LoginComponent }                     from './login/login.component';
 import { PageNotFoundComponent }              from './page-not-found/page-not-found.component';
-import { HomeweareComponent }                 from './homeweare/homeweare.component'
+import { HomeweareComponent }                 from './homeweare/homeweare.component';
+import { ModalComponent }                     from './modal/modal.component';
+import { LPUXComponent }                     from './lp-ux/lp-ux.component';
 
 const routes: Routes = [
     { path: '',                       redirectTo: '/home',                                pathMatch: 'full' },
@@ -39,8 +41,10 @@ const routes: Routes = [
     { path: 'testimonials',           component: TestimonialsComponent },
     { path: 'videa/:id',              component: VideaComponent },
     { path: 'wholesale',              component: WholesaleComponent },
-    { path: '**',                     component: PageNotFoundComponent },
     { path: 'homeweare',              component: HomeweareComponent },
+    { path: 'modal',                  component: ModalComponent },
+    { path: 'lp-ux/:id',              component: LPUXComponent },
+    { path: '**',                     component: PageNotFoundComponent },
 //    { path: 'prospect', component: ProspectPropertyComponent }
 ];
 

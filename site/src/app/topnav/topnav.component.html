@@ -4,9 +4,15 @@
     <a routerLink="/investors" class="col-xs-4 col-sm-5" routerLinkActive="active">INVESTORS</a>
     <a routerLink="/contactus" class="col-xs-5 col-sm-5" routerLinkActive="active">CONTACT&nbsp;US</a>
   </div>
+  <div class="col-xs-12 col-sm-4">
+    <app-social [facebook]="facebook"
+                [twitter]="twitter"
+                [linkedin]="linkedin"
+                [googleplus]="googleplus"
+                [youtube]="youtube">
 
-  <app-social></app-social>
-
+    </app-social>
+  </div>
   <div class="col-xs-12 col-sm-3 col-sm-offset-1 lowertext login">
     (813) 444-4567 / <a routerLink="/login" routerLinkActive="active">Login</a>
   </div>

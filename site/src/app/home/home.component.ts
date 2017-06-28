@@ -13,10 +13,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
       this.tiles = [
-          { img: 'assets/images/slideshow/CharitySlide.jpg', caption: 'Test1', slide: 0 },
-          { img: 'assets/images/slideshow/familyslide.jpg', caption: 'Test2', slide: 1 },
-          { img: 'assets/images/slideshow/MoreSlide.jpg', caption: '4th5', slide: 2 },
-          { img: 'assets/images/slideshow/TeamSlide.jpg', caption: '4therh', slide: 3 }
+          { img: 'assets/images/slideshow/Charity-2.jpg', caption: '', slide: 0 },
+          { img: 'assets/images/slideshow/Family-2.jpg', caption: '', slide: 1 },
+          { img: 'assets/images/slideshow/sale-2.jpg', caption: '', slide: 2 },
+          { img: 'assets/images/slideshow/Team-2.jpg', caption: '', slide: 3 }
       ];
  
   }

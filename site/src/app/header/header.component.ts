@@ -10,7 +10,7 @@
    ]
 
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit { 
 
   @Input() title: '';
 

@@ -1,0 +1,77 @@
+﻿<div class="container top">
+  <!--Tip Top-->
+  <div class="col-xs-12 center">
+    <img [src]="squeezepage.Image2" />
+  </div>
+
+  <!--Section 2-->
+  <div class="row">
+    <div class="col-xs-12  content_wrapper"  style="background:url(/assets/images/wood.jpg)">
+
+      <div class="alert alert-danger alert-dismissable fade in col-xs-12">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        {{squeezepage.Heading4}}
+      </div>
+
+      <!--Video/Heading1-->
+        <div class="col-xs-12 center">
+          <h1>{{squeezepage.Heading1}}</h1>
+        </div>
+  
+            <video class="col-xs-12 col-sm-12 col-md-6" [src]="squeezepage.Image1" controls autoplay [poster]="squeezepage.Image1">
+              Sorry, your browser doesn't support embedded videos,
+              but don't worry, you can
+              <a [href]="squeezepage.Image1">download it</a>
+              and watch it with your favorite video player!
+            </video>        
+
+
+        <div class="col-xs-12 sm-6 col-md-6 sidebar curl">
+          <h2>{{squeezepage.Heading3}}</h2>
+          <app-contact-request [contactrequest]="squeezepage.contactrequest"></app-contact-request>
+        </div>
+    </div>
+ </div>
+      
+      <!--Contact Request/Image-->
+     
+      <div class="col-xs-12 col-sm-2"></div>
+    </div>
+  <!--Steps-->
+  <div class=" col-xs-12 sellyourhome ">
+    <h2>{{squeezepage.Heading2}}</h2>
+    <div class="col-md-3">
+      <i class="fa fa-pencil-square-o fa-5x" aria-hidden="true" style="color:#ff6a00"></i>
+      <p>
+        Step 1: {{squeezepage.SubHeading1}}
+      </p>
+    </div>
+    <div class="col-md-3">
+      <i class="fa fa-mobile fa-5x" aria-hidden="true" style="color:crimson"></i>
+      <p>
+        Step 2: {{squeezepage.SubHeading2}}
+      </p>
+    </div>
+    <div class="col-md-3">
+      <i class="fa fa-thumbs-up fa-5x" aria-hidden="true" style="color:black"></i>
+      <p>
+        Step 3: {{squeezepage.SubHeading3}}
+      </p>
+    </div>
+    <div class="col-md-3">
+      <i class="fa fa-money fa-5x" aria-hidden="true" style="color:#3a9713"></i>
+      <p>
+        Step 4: {{squeezepage.SubHeading4}}
+      </p>
+    </div>
+    <div class="col-xs-12 bottombar"></div>
+    <p>&copy; {{squeezepage.CallToAction1}} </p>
+    </div>
+  <div class="col-xs-12 col-sm-5 col-sm-offset-4">
+    <app-social [facebook]="squeezepage.Description1"
+                [twitter]="squeezepage.Description2"
+                [linkedin]="squeezepage.Description3"
+                [googleplus]="squeezepage.Description4"
+                [youtube]="squeezepage.CallToAction3">
+    </app-social>
+  </div>
