@@ -1,9 +1,8 @@
 ﻿.titlepage {
-  background-image: url('/assets/images/Black_World_Banner.jpg');
-  background-repeat: no-repeat;
+  /*background-image: url('/assets/images/Black_World_Banner.jpg');
+  background-repeat: no-repeat;*/
   background-size:cover;
-  color: white;
-  
+  background-color: #40404b;
 }
 h1 {
   color:white;

@@ -66,6 +66,7 @@ import { HomeweareComponent } from './homeweare/homeweare.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
 import { LPUXComponent } from './lp-ux/lp-ux.component';
+import { TtnavComponent } from './ttnav/ttnav.component';
 
 
 @NgModule({
@@ -120,6 +121,8 @@ import { LPUXComponent } from './lp-ux/lp-ux.component';
       ModalComponent,
 
       LPUXComponent,
+
+      TtnavComponent,
 
 
 
