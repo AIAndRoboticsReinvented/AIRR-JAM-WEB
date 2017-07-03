@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 //import { LocationAutocompleteComponent } from 'ng2-location-autocomplete';
 
 /// Image Uploader
-import { ImageUploadModule } from 'angular2-image-upload'
+//import { ImageUploadModule } from 'angular2-image-upload'
 
 /// Google maps. 
 ///import { AgmCoreModule } from 'angular2-google-maps/core';
@@ -66,7 +66,6 @@ import { HomeweareComponent } from './homeweare/homeweare.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
 import { LPUXComponent } from './lp-ux/lp-ux.component';
-import { TtnavComponent } from './ttnav/ttnav.component';
 
 
 @NgModule({
@@ -110,23 +109,14 @@ import { TtnavComponent } from './ttnav/ttnav.component';
 //    MemberHeaderComponent,
     
   //  LocationAutocompleteComponent,
-      PageNotFoundComponent,
-
       FeaturesComponent,
-
       HomeweareComponent,
-
       CarouselComponent,
-
       ModalComponent,
-
       LPUXComponent,
 
-      TtnavComponent,
-
-
-
-  ],
+      PageNotFoundComponent,
+    ],
   imports: [      
       BrowserModule,
       CommonModule,

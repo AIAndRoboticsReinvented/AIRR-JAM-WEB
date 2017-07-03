@@ -1,6 +1,10 @@
 ﻿body {
 }
 
+.logo {
+  /*position: relative;*/
+}
+
 .header {
   /*background-color: #025c99;*/
   /*background-image: url('/assets/images/Black_World_Banner.jpg');*/
@@ -16,8 +20,10 @@
 .banner {
   background-color: #30303c;
   color: #fff;
-  width: 100%;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
+
 .red {background:red;}
 .green { background:green;}
 .blue { background:blue;}
@@ -27,7 +33,7 @@
 }
 
 nav {
-  padding-top:10px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
