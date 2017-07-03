@@ -13,11 +13,11 @@ import { ContactRequestService } from '../contact-request.service';
 })
 export class ContactRequestComponent implements OnInit {
   
-    private response = { message: 'Waiting for user submittion.' };
-    private displayresponse = false;
+    public response = { message: 'Waiting for user submittion.' };
+    public displayresponse = false;
 
     constructor(
-      private contactRequestService: ContactRequestService ) { }
+      public contactRequestService: ContactRequestService ) { }
 
   @Input() contactrequest : ContactRequest;
 

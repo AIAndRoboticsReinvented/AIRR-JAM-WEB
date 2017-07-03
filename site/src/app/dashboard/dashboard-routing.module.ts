@@ -17,8 +17,11 @@ import { IconEditComponentComponent }   from '../icon-edit-component/icon-edit-c
 /// Components....
 import { DashboardComponent }           from './dashboard.component';
 import { DashNavComponent }             from '../dash-nav/dash-nav.component';
-import { MemberHeaderComponent }        from '../member-header/member-header.component';
 import { DashWelcomeComponent }         from '../dash-welcome/dash-welcome.component';
+
+import { MemberAboutComponent }         from '../member-about/member-about.component';
+import { MemberHeaderComponent }        from '../member-header/member-header.component';
+
 import { PrivacyComponent }             from '../privacy/privacy.component';
 
 const dashboardRoutes: Routes = [
@@ -27,6 +30,8 @@ const dashboardRoutes: Routes = [
         component: DashboardComponent,
         children: [
         //    { path: '', redirectTo: '/home', pathMatch:'full' },
+            
+            { path: 'about', component: MemberAboutComponent },
             { path: '', component: DashWelcomeComponent },
         ],
     },
@@ -48,10 +53,11 @@ const dashboardRoutes: Routes = [
         IconEditComponentComponent,
 
 /// Components
-        DashWelcomeComponent,
         DashboardComponent,
-        MemberHeaderComponent,
         DashNavComponent,
+        DashWelcomeComponent,
+        MemberAboutComponent,
+        MemberHeaderComponent,
 
     ],
     imports: [RouterModule.forChild(dashboardRoutes)],

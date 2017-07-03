@@ -1,4 +1,6 @@
-﻿import { Component, Input, OnInit } from '@angular/core';
+﻿import { Component, Input, OnInit }             from '@angular/core';
+import { ActivatedRoute, Router, Params }       from '@angular/router';
+
 
 @Component({
   selector: 'app-dash-nav',
@@ -10,13 +12,30 @@
 })
 export class DashNavComponent implements OnInit {
 
+    parentRouter = Router;
 
-  @Input() visitorid: {};
-  @Input() navState: {};
+    @Input() visitorid: {};
+    @Input() navState: {};
 
-  constructor() { }
+    constructor(
+        private router: Router,
+        private location: ActivatedRoute,
+    ) { }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
+
+    Show(Feature): void {
+
+        if (Feature == 'Dashboard')
+        {
+            this.router.navigate(['/dashboard', this.visitorid]);
+        }
+        if (Feature == 'About') {
+            this.router.navigate(['/dashboard', this.visitorid, 'about']);
+        }
+
+
+    }
 
 }

@@ -1,6 +1,8 @@
 ﻿<div class="container-liquid col-xs-12 col-sm-4 col-md-3 col-lg-2"  [hidden]="navState=='Show'">
     <div class="navbar row">
       <div class="col-xs-12 titlebar">Administration</div>
-      <div class="col-xs-12 navitem"><i class="fa fa-th"></i> Dashboard</div>
+      <div class="col-xs-12 navitem clicklink" (click)="Show('Dashboard')"><i class="fa fa-th"></i> Dashboard</div>
+      <div class="col-xs-12 navitem clicklink" (click)="Show('About')"><i class="fa fa-question-circle-o"></i> About</div>
+      <div class="col-xs-12 titlebar">&nbsp;</div>
     </div>
 </div>
