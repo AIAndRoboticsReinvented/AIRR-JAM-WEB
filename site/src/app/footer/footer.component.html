@@ -4,15 +4,42 @@
     &copy;2017 - I Buy As Is, Inc.
   </div>
   <div class="col-xs-12 col-sm-4">
-  <app-social [facebook]="facebook"
-              [twitter]="twitter"
-              [linkedin]="linkedin"
-              [googleplus]="googleplus"
-              [youtube]="youtube">
-  </app-social>
+    <app-social [facebook]="facebook"
+                [twitter]="twitter"
+                [linkedin]="linkedin"
+                [googleplus]="googleplus"
+                [youtube]="youtube">
+    </app-social>
   </div>
   <div class="col-xs-12 col-sm-3 col-sm-offset-1 lowertext centertext">
-    <a routerLink="/terms" class="center" routerLinkActive="active">Terms</a> |
+
+    <a routerLink="/terms" class="center" routerLinkActive="active">Terms</a>
     <a routerLink="/privacy" class="center" routerLinkActive="active">Privacy</a>
+
+  </div>
+  <div class="hidden-xs col-sm-6 col-sm-offset-3 footmenu">
+    <div class="col-xs-4 col-sm-3 center">
+      <h3>About</h3>
+      <ul>
+        <li> <a routerLink="/about" class="center" routerLinkActive="active" style="color:#6d6d6d">About</a> </li>
+        <li> <a href="http://blog.ibuyasis.com/" class="center" style="color:#6d6d6d">Blog</a> </li>
+      </ul>
+    </div>
+    <div class="col-xs-4 col-sm-4 center">
+      <h3>Buy/Sell</h3>
+      <ul>
+        <li> <a routerLink="/sell" class="center" routerLinkActive="active" style="color:#6d6d6d">Sell Your Home</a> </li>
+        <li> <a routerLink="/buy" class="center" routerLinkActive="active" style="color:#6d6d6d">Buy A Home</a> </li>
+        <li> <a routerLink="/wholesale" class="center" routerLinkActive="active" style="color:#6d6d6d">Wholesale</a> </li>
+      </ul>
+    </div>
+    <div class="col-xs-4 col-sm-3 center">
+      <h3>Contact Us</h3>
+      <ul>
+        <li> <a routerLink="/contactus" class="center" routerLinkActive="active" style="color:#6d6d6d">Contact Us</a> </li>
+        <li> <a routerLink="/faq" class="center" routerLinkActive="active" style="color:#6d6d6d">FAQs</a> </li>
+        <li> <a routerLink="/investors" class="center" routerLinkActive="active" style="color:#6d6d6d">Investors</a> </li>
+      </ul>
+    </div>
   </div>
 </div>

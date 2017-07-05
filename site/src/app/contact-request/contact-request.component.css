@@ -27,8 +27,8 @@
 .col-xs-12 {
   font-family: 'Franklin Gothic';
   letter-spacing: 1px;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  margin-top:1px;
+  margin-bottom: 0px !important;
   align-content: space-between;
 }
 

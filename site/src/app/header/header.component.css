@@ -1,71 +1,33 @@
-﻿body {
-}
-
-.logo {
-  /*position: relative;*/
-}
-
-.header {
-  /*background-color: #025c99;*/
-  /*background-image: url('/assets/images/Black_World_Banner.jpg');*/
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #000;
-  color: white;
-  font-weight: bold;
-}
-
-
-
-.banner {
+﻿.ttnav {
   background-color: #30303c;
   color: #fff;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  width: 100%;
 }
 
-.red {background:red;}
-.green { background:green;}
-.blue { background:blue;}
-.orange {background: orange;}
-.topmenu {
-  height: 100%;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-nav {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #606075;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
 }
 
-.banner div {
-  display: table;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.banner a:link,
-.banner a:visited {
-  color: #ffffff;
-}
-.iconnav a
-{
-  margin-top:15px;
+.banner {
+  margin-top: 25px;
+  letter-spacing: 2px;
 }
 
-.nav a:hover {
-  background-color: #b41e1e;
+.nav:hover {
   font-weight: bold;
-}
-.phone {
-  font-size: larger;
-  color:red;
-  font-weight:bold;
-}
-
-.head {
-  margin: 0px auto 0px auto; /* Center left to right*/
-}
-.col-xs-1 a:hover{
-  color:blue;
-}
-.center:hover {
-  font-weight:bold;
 }
