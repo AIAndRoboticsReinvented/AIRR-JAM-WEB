@@ -1,26 +1,34 @@
 ﻿<app-topnav></app-topnav>
-<div class="container-fluid col-xs-12 ttnav hidden-xs hidden-sm">
-  <div class="col-xs-12 col-md-4">
-    <a routerLink="/home" class="hidden-xs hidden-sm center" routerLinkActive="active"> <app-landy></app-landy></a>
+<div class="col-xs-12 col-sm-12 hidden-md hidden-lg iconnav">
+ <a routerLink="/home" class="col-xs-4 col-sm-4 hidden-md hidden-lg center" routerLinkActive="active"><i class="fa fa-home fa-2x"></i><div class="col-xs-12">Home</div></a>
+ <a routerLink="/about" class="col-xs-4 col-sm-4 hidden-md hidden-lg center" routerLinkActive="active"><i class="fa fa-id-card fa-2x"></i><div class="col-xs-12">About</div></a>
+ <a routerLink="/buy" class="col-xs-4 col-sm-4 hidden-md hidden-lg center" routerLinkActive="active"><i class="fa fa-shopping-cart fa-2x"></i><div class="col-xs-12">Buy</div></a>
+ <a routerLink="/wholesale" class="col-xs-4 col-sm-4 hidden-md hidden-lg center" routerLinkActive="active"><i class="fa fa-shopping-bag fa-2x"></i><div class="col-xs-12">Wholesale</div></a>
+ <a routerLink="/sell" class="col-xs-4 col-sm-4 hidden-md hidden-lg center" routerLinkActive="active"><i class="fa fa-money fa-2x"></i><br /><div class="col-xs-12">Sell</div></a>
+ <a href="http://blog.ibuyasis.com" class="col-xs-4 col-sm-4 hidden-md hidden-lg center" routerLinkActive="active"><i class="fa fa-comments-o fa-2x"></i><div class="col-xs-12">Blog</div></a>
   </div>
-  <div class="col-md-8 banner">
+  <div class="container-fluid col-xs-12 ttnav hidden-xs hidden-sm">
+    <div class="col-xs-12 col-md-4">
+      <a routerLink="/home" class="hidden-xs hidden-sm center" routerLinkActive="active"> <app-landy></app-landy></a>
+    </div>
+    <div class="col-md-8 banner">
 
-    <a routerLink="/sell" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Sell</a>
-    <a routerLink="/about" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">About</a>
-    <a href="http://blog.ibuyasis.com/" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav">Blog</a>
-    <div class="dropdown hidden-xs hidden-sm col-xs-4 col-sm-2 center nav">
-      <span>Buy</span>
-      <div class="dropdown-content">
-        <div class="col-xs-12">
-          <a routerLink="/buy" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Buy&nbsp;A&nbsp;Home</a>
-        </div>
-        <br />
-        &nbsp;
-        <div class="col-xs-12">
-          <a routerLink="/wholesale" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Wholesale</a>
+      <a routerLink="/sell" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Sell</a>
+      <a routerLink="/about" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">About</a>
+      <a href="http://blog.ibuyasis.com/" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav">Blog</a>
+      <div class="dropdown hidden-xs hidden-sm col-xs-4 col-sm-2 center nav">
+        <span>Buy</span>
+        <div class="dropdown-content">
+          <div class="col-xs-12">
+            <a routerLink="/buy" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Buy&nbsp;A&nbsp;Home</a>
+          </div>
+          <br />
+          &nbsp;
+          <div class="col-xs-12">
+            <a routerLink="/wholesale" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Wholesale</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!--<a routerLink="/home" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center" routerLinkActive="active">HOME</a>-->
+  <!--<a routerLink="/home" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center" routerLinkActive="active">HOME</a>-->
