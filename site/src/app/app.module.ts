@@ -66,6 +66,7 @@ import { HomeweareComponent } from './homeweare/homeweare.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
 import { LPUXComponent } from './lp-ux/lp-ux.component';
+import { TestdeskComponent } from './testdesk/testdesk.component';
 
 
 @NgModule({
@@ -116,6 +117,8 @@ import { LPUXComponent } from './lp-ux/lp-ux.component';
       LPUXComponent,
 
       PageNotFoundComponent,
+
+      TestdeskComponent,
     ],
   imports: [      
       BrowserModule,

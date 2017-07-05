@@ -21,7 +21,9 @@ import { LoginComponent }                     from './login/login.component';
 import { PageNotFoundComponent }              from './page-not-found/page-not-found.component';
 import { HomeweareComponent }                 from './homeweare/homeweare.component';
 import { ModalComponent }                     from './modal/modal.component';
-import { LPUXComponent }                     from './lp-ux/lp-ux.component';
+import { LPUXComponent }                      from './lp-ux/lp-ux.component';
+import { TestdeskComponent }                  from './testdesk/testdesk.component';
+
 
 const routes: Routes = [
     { path: '',                       redirectTo: '/home',                                pathMatch: 'full' },
@@ -38,6 +40,7 @@ const routes: Routes = [
     { path: 'privacy',                component: PrivacyComponent },
     { path: 'sell',                   component: SellyourhomeComponent },
     { path: 'terms',                  component: TermsComponent },
+    { path: 'testdesk',               component: TestdeskComponent}, 
     { path: 'testimonials',           component: TestimonialsComponent },
     { path: 'videa/:id',              component: VideaComponent },
     { path: 'wholesale',              component: WholesaleComponent },

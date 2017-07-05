@@ -1,7 +1,6 @@
 ﻿.propertysummary {
   /* color and border */
   background-color: #e8e8e8;
-  border-radius: 25px;
   padding: 20px;
   /* rounded corners*/
   /*border-radius: 13px 13px 13px 13px;
@@ -14,14 +13,14 @@
 }
 
   .propertysummary h2 {
-    color: black;
+    color: #ff6a00;
+    font-weight: bold;
     /*border-top: 2px solid #000;
     border-bottom: 2px solid #000;*/
   }
 
   .propertysummary h3 {
-    color: #ff6a00;
-    font-weight: bold;
+    color: #9d4d13;
   }
 
   .propertysummary h4 {
