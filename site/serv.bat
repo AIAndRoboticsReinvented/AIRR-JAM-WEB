@@ -1,2 +1,1 @@
-cd \work\Repos\AIRR-JAM-WEB\site
-ng serve
+ng serve --poll 2000
