@@ -1,7 +1,7 @@
-﻿<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+﻿<div id="{{id}}" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" [attr.data-slide-to]="i" *ngFor="let slide of tiles; let i = index"></li>
+    <li [attr.data-target]="fullid()" [attr.data-slide-to]="i" *ngFor="let slide of tiles; let i = index"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -14,13 +14,12 @@
       </div>
     </div>
   </div>
-
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+ <a [ngClass]="showcontrols()" class="left carousel-control" [href]="fullid()" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+  <a [ngClass]="showcontrols()" class="right carousel-control" [href]="fullid()" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>

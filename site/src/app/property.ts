@@ -2,10 +2,16 @@
     key: string;
     value: string;
 }
+export class PropertyImgAttributes {
+    img: string;
+    title: string;
+    caption: string;
+    slide: number;
 
+}
 
 export class Property {
-    propertyguid: string;
+    propertyid: string;
     name: string;
     location: string;
     address: string;
@@ -15,6 +21,6 @@ export class Property {
     zillow: string;
     description: string;
     masterimage: string;
-    images: string[];
+    images: PropertyImgAttributes[];
     propertyattributes: PropertyAttributes[];
 }

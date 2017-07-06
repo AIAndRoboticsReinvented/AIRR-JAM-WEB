@@ -29,7 +29,7 @@ export class PropertiesComponent implements OnInit {
     }
 
     gotoDetail(): void {
-        this.router.navigate(['/propertydetail', this.selectedProperty.propertyguid]);
+        this.router.navigate(['/propertydetail', this.selectedProperty.propertyid]);
     }
 
     ngOnInit(): void {

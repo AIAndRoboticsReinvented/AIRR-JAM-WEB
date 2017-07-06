@@ -7,10 +7,17 @@
 })
 export class CarouselComponent implements OnInit {
     @Input() tiles: {};
+    @Input() id: {};
   constructor() { }
 
   ngOnInit() {   
       console.log(this.tiles);
   }
-
+  showcontrols() {
+      if (this.tiles[1]) return '';
+      return 'hidden'; 
+  }
+  fullid() {
+      return '#' + this.id;
+  }
 }

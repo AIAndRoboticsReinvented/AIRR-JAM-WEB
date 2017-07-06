@@ -1,7 +1,11 @@
 ﻿<div class="propertysummary col-xs-12 col-md-12 ">
+
   <div class="col-md-6">
-    <div class="col-xs-12">
+    <!--<div class="col-xs-12">
       <img class="col-xs-12" src="src/userassets/images/properties/{{property.masterimage}}" />
+    </div>-->
+    <div class="col-xs-12">
+      <app-carousel [id]="property.propertyid" [tiles]="property.images"></app-carousel>
     </div>
     <div class="col-xs-12 col-sm-9 center">
       <h2>{{property.name}}</h2>
@@ -40,3 +44,8 @@
 </div>
 <div class="clearfix"></div>
 <br />
+<script>
+  $('.jcarousel').jcarousel('reload', {
+    animation: 'slow'
+  });
+</script>

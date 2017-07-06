@@ -40,3 +40,10 @@
   p {
     color:black;
   }
+@media (max-width: 767px) {
+  .carousel-indicators,
+  .carousel-indicators li {
+    cursor: default;
+    pointer-events: none;
+  }
+}

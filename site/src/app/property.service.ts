@@ -17,6 +17,6 @@ export class PropertyService {
     }
   getProperty(guid: string): Promise<Property> {
       return this.getProperties()
-          .then(properties => properties.find(properties => properties.propertyguid === guid));
+          .then(properties => properties.find(properties => properties.propertyid === guid));
   }
 }
