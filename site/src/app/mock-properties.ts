@@ -1,5 +1,5 @@
 ﻿import { PropertyAttributes, Property } from './property';
-import {}
+
 export const PROPERTIES: Property[] = [
 
     {
@@ -39,8 +39,8 @@ export const PROPERTIES: Property[] = [
         images: [
             { img: 'src/userassets/images/properties/IMG_45.jpg', title: '', caption: '', slide: 0 },
             { img:'src/userassets/images/properties/IMG_46.jpg', title:'', caption:'', slide:1},
-            { img:'src/userassets/images/properties/IMG_47.jpg', title:'', caption:'', slide:2},
-            { img:'src/userassets/images/properties/IMG_48.jpg',title:'',  slide:3}
+            { img: 'src/userassets/images/properties/IMG_47.jpg', title: '', caption: '', slide: 2 },
+            { img: 'src/userassets/images/properties/IMG_48.jpg', title: '', caption:'',  slide:3}
                 ],
         propertyattributes: [
             { key: 'rooms', value: '4' },
@@ -60,7 +60,7 @@ export const PROPERTIES: Property[] = [
         description: 'Hme located in the sought after Wellswood section of Tampa, blocks from the Hillsborough River/Close to city it is being totally rehabed from floor to roof evertyhing brand new.',
         masterimage: 'IMG_0864.JPG',
         images: [
-            { img:'src/userassets/images/properties/IMG_0864.JPG', title:'',  slide:0}
+            { img:'src/userassets/images/properties/IMG_0864.JPG', title:'',caption:'',  slide:0}
         ],
         propertyattributes: [
             { key: 'Structure Type ', value: 'Contemporary' },
