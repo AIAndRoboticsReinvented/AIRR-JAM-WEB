@@ -1,9 +1,9 @@
-﻿import { PropertyAttributes, Property } from './property';
+﻿import { PropertyAttributes, PropertyImgAttributes, Property } from './property';
 
 export const FEATURED: Property[] = [
 
     {
-        propertyguid: '',
+        propertyid: '',
         name: 'Single Family Home',
         location: 'Crisp Park',
         address: '334 36th Ave',
@@ -21,7 +21,7 @@ export const FEATURED: Property[] = [
         ],
     },
     {
-        propertyguid: '',
+        propertyid: '',
         name: 'Multi Family Home',
         location: 'River Oaks',
         address: '8514 Briar Grove Cir',
@@ -39,7 +39,7 @@ export const FEATURED: Property[] = [
         ],
     },
     {
-        propertyguid: '',
+        propertyid: '',
         name: 'Single Family Home',
         location: 'Clearwater',
         address: '1800 Magnolia Dr.',
@@ -57,7 +57,7 @@ export const FEATURED: Property[] = [
         ],
     },
     {
-        propertyguid: '',
+        propertyid: '',
         name: 'Single Family Home',
         location: 'Northwest Tampa',
         address: '2907 W Dewey St',
@@ -75,7 +75,7 @@ export const FEATURED: Property[] = [
         ],
     },
     {
-        propertyguid: '',
+        propertyid: '',
         name: 'Single Family Home',
         location: 'Beach Park',
         address: '116 S Lauber Way',
@@ -93,7 +93,7 @@ export const FEATURED: Property[] = [
         ],
     },
     {
-        propertyguid: '',
+        propertyid: '',
         name: 'Single Family Home',
         location: 'Madeira Beach',
         address: '14052 Vivian Dr.',
@@ -111,7 +111,7 @@ export const FEATURED: Property[] = [
         ],
     },
     {
-        propertyguid: '',
+        propertyid: '',
         name: 'Single Family Home',
         location: 'Wellswood and Hillsborough River',
         address: '4038 N Riverwood Ave',
@@ -133,7 +133,7 @@ export const FEATURED: Property[] = [
         ],
     },
     {
-        propertyguid: '',
+        propertyid: '',
         name: 'Single Family Home',
         location: 'Brandon',
         address: '1001 Calumet Way',
@@ -154,7 +154,7 @@ export const FEATURED: Property[] = [
         ],
     },
     {
-        propertyguid: '',
+        propertyid: '',
         name: 'Single Family Home',
         location: 'Tarpon Springs',
         address: '1128 Elmendorf Trace',
@@ -177,7 +177,7 @@ export const FEATURED: Property[] = [
         ],
     },
     {
-        propertyguid: '',
+        propertyid: '',
         name: 'Single Family Home',
         location: 'Tampa',
         address: '7103 W Creek Dr',
