@@ -1,1 +1,1 @@
-ng serve --poll 2000
+ng serve --poll 200

@@ -10,9 +10,12 @@ import { ActivatedRoute, Router, Params }       from '@angular/router';
       './dash-nav.component.css'
   ]
 })
+
 export class DashNavComponent implements OnInit {
 
     parentRouter = Router;
+
+    displayState : {}
 
     @Input() visitorid: {};
     @Input() navState: {};
@@ -23,6 +26,10 @@ export class DashNavComponent implements OnInit {
     ) { }
 
     ngOnInit() {
+        this.displayState = {
+            AdminPanel: 1,
+        };
+
     }
 
     Show(Feature): void {

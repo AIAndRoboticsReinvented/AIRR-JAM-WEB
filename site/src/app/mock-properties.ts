@@ -1,4 +1,4 @@
-﻿import { PropertyAttributes, Property } from './property';
+﻿import { PropertyAttributes, PropertyImgAttributes, Property } from './property';
 
 export const PROPERTIES: Property[] = [
 
@@ -14,10 +14,10 @@ export const PROPERTIES: Property[] = [
         description: 'This sleek & modern remodeled home is located in a well-established neighborhood and is conveniently located just minutes away from Downtown Tampa, South Tampa, International Plaza and Westshore Malls, Raymond James Stadium, Tampa International Airport, I-275, and St. Josephs Hospital.Stepping inside the front door your are graced by soaring ceilings and ornate crown molding.Beautiful new laminate floors throughout, brand new kitchen featuring Stainless Steel appliances, real wood cabinets, Granite countertops with decorative glass & metal backsplash. The master suite has its own private bath plus a huge walk-in closet, All three bathrooms boast new ceramic tile along with custom inlays, decorative tile, brand new vanities with Granite countertops and new commodes. Freshly painted inside and out, new interior doors, new lighting & ceiling fans throughout. Outdoor entertaining is a breeze on the covered patio (there is also an uncovered patio).',
         masterimage: 'IMG_9.jpg',
         images: [
-            { img: 'src/userassets/images/properties/IMG_9.jpg', title: '', caption: '', slide: 0 },
-            {img:'src/userassets/images/properties/IMG_8.jpg' , title:'', caption:'', slide:1},
-            { img:'src/userassets/images/properties/IMG_10.jpg', title:'', caption:'',slide:2},
-            { img:'src/userassets/images/properties/IMG_11.jpg', title:'', caption:'',slide:3}
+            { img:'assets/userassets/images/properties/IMG_9.jpg', title: '', caption: '', slide: 0 },
+            { img:'assets/userassets/images/properties/IMG_8.jpg' , title:'', caption:'', slide:1},
+            { img:'assets/userassets/images/properties/IMG_10.jpg', title:'', caption:'',slide:2},
+            { img:'assets/userassets/images/properties/IMG_11.jpg', title:'', caption:'',slide:3}
                 ],
         propertyattributes: [
             { key: 'rooms', value: '3' },
@@ -37,10 +37,10 @@ export const PROPERTIES: Property[] = [
         description: 'Single family home built in 1959.',
         masterimage: 'IMG_45.jpg',
         images: [
-            { img: 'src/userassets/images/properties/IMG_45.jpg', title: '', caption: '', slide: 0 },
-            { img:'src/userassets/images/properties/IMG_46.jpg', title:'', caption:'', slide:1},
-            { img:'src/userassets/images/properties/IMG_47.jpg', title:'', caption:'', slide:2},
-            { img:'src/userassets/images/properties/IMG_48.jpg',title:'',  slide:3}
+            { img:'assets/userassets/images/properties/IMG_45.jpg', title: '', caption: '', slide: 0 },
+            { img:'assets/userassets/images/properties/IMG_46.jpg', title:'', caption:'', slide:1},
+            { img:'assets/userassets/images/properties/IMG_47.jpg', title:'', caption:'', slide:2},
+            { img:'assets/userassets/images/properties/IMG_48.jpg',title:'',  caption:'', slide:3}
                 ],
         propertyattributes: [
             { key: 'rooms', value: '4' },
@@ -60,7 +60,7 @@ export const PROPERTIES: Property[] = [
         description: 'Hme located in the sought after Wellswood section of Tampa, blocks from the Hillsborough River/Close to city it is being totally rehabed from floor to roof evertyhing brand new.',
         masterimage: 'IMG_0864.JPG',
         images: [
-            { img:'src/userassets/images/properties/IMG_0864.JPG', title:'',  slide:0}
+            { img:'assets/userassets/images/properties/IMG_0864.JPG', title:'',caption:'',  slide:0}
         ],
         propertyattributes: [
             { key: 'Structure Type ', value: 'Contemporary' },
@@ -84,7 +84,7 @@ export const PROPERTIES: Property[] = [
         description: 'Total remodel home Brandon maintained community. Located off Kings Rd. and minutes away from Hwy. 60, I-75, Hwy 301 and the crosstown Expressway.  Pull into your end covered parking spot then walk  50ft to your front paved patio  then enter your single story end unit villa with 2 bedrooms and 2  bathrooms, with no stairs to climb. The HOA maintains the exterior, including paint, lawn care and roof which was just replaced in March 2016. The kitchen opens to the dining/great room combo with a wood burning fireplace a sliding glass door front and the one in back opens to your rear covered screened in porch with plenty of seating space. Which overlooks a large meticulously kept POOL just 50ft from your back door. Easy in and out that’s comfort Florida style.     ',
         masterimage: 'IMG_1030.jpg',
         images: [
-            { img: 'src/userassets/images/properties/IMG_1030.jpg', title: '', caption: '', slide: 0 },
+            { img: 'assets/userassets/images/properties/IMG_1030.jpg', title: '', caption: '', slide: 0 },
         ],
         propertyattributes: [
             { key: 'Construction', value: 'Block, Stucco' },
@@ -107,7 +107,7 @@ export const PROPERTIES: Property[] = [
         description: 'A single family home that contains 1,247 sq ft and was built in 1963. It contains 3 bedrooms and 1 bathroom.',
         masterimage: 'IMG_F1.JPG',
         images: [
-            { img: 'src/userassets/images/properties/IMG_F1.JPG', title: '', caption: '', slide: 0 }
+            { img: 'assets/userassets/images/properties/IMG_F1.JPG', title: '', caption: '', slide: 0 }
         ],
         propertyattributes: [
             { key: 'Structure Type ', value: 'Concrete Block' },
@@ -132,8 +132,8 @@ export const PROPERTIES: Property[] = [
         description: 'SOLD! Remarkable value, unbeatable location to build your dream home in Madeira Beach. Just 2 blocks to the Gulf of Mexicos pristine beaches, restaurants, Johns Pass Village and a beautiful new multi-million dollar project coming soon that will put our Island on the map.',
         masterimage: 'IMG_0474.jpg',
         images: [
-            { img: 'src/userassets/images/properties/IMG_0474.jpg', title: '', caption: '', slide: 0 },
-            { img:'src/userassets/images/properties/IMG_0473.jpg',title:'', caption:'', slide:1 }
+            { img: 'assets/userassets/images/properties/IMG_0474.jpg', title: '', caption: '', slide: 0 },
+            { img:'assets/userassets/images/properties/IMG_0473.jpg',title:'', caption:'', slide:1 }
                 ],
         propertyattributes: [
             { key: 'rooms', value: '2' },
@@ -153,11 +153,11 @@ export const PROPERTIES: Property[] = [
         description: 'SOLD! This beautifully renovated home sits steps away from the water and popular Crisp Park, which has access to a public boat ramp. An open floor plan invites you into this stylish home. Beautiful new bamboo floors throughout, brand new kitchen featuring stainless steel appliances, real wood cabinets, granite countertops with decorative glass and metal backsplash. You will notice ceramic tile along with custom inlays, decorative tile, brand new vanities with granite countertops and new commodes in both bathrooms. Freshly painted inside and out, new interior doors, new lighting throughout, new 30-year dimensional shingle roof, new water heater, all windows have been upgraded to the new low-E standard with storm shutters, new HVAC air handler and condenser and even a new garage door with opener. Large creened back porch off of garage with alley access. All work was permitted and done by licensed contractors. Remodeled home in a prime location. 10 minutes to downtown St. Pete.',
         masterimage: 'IMG_2.jpg',
         images: [
-            { img: 'src/userassets/images/properties/IMG_1.jpg', title: '', caption: '', slide: 0 },
-            {img:'src/userassets/images/properties/IMG_3.jpg',title:'', caption:'', slide:1},
-            {img:'src/userassets/images/properties/IMG_4.jpg',title:'', caption:'', slide:2},
-            {img:'src/userassets/images/properties/IMG_5.jpg',title:'', caption:'', slide:3},
-            { img: 'src/userassets/images/properties/IMG_6.jpg', title: '', caption: '', slide: 4 }
+            { img: 'assets/userassets/images/properties/IMG_1.jpg', title: '', caption: '', slide: 0 },
+            { img: 'assets/userassets/images/properties/IMG_3.jpg',title:'', caption:'', slide:1},
+            { img: 'assets/userassets/images/properties/IMG_4.jpg',title:'', caption:'', slide:2},
+            { img: 'assets/userassets/images/properties/IMG_5.jpg',title:'', caption:'', slide:3},
+            { img: 'assets/userassets/images/properties/IMG_6.jpg', title: '', caption: '', slide: 4 }
         ],
         propertyattributes: [
             { key: 'rooms', value: '3' },
@@ -177,11 +177,11 @@ export const PROPERTIES: Property[] = [
         description: 'SOLD',
         masterimage: 'IMG_2458.jpg',
         images: [
-            { img: 'src/userassets/images/properties/IMG_2458.jpg', title: '', caption: '', slide: 0 },
-            {img:'src/userassets/images/properties/IMG_2462.jpg', title:'', caption:'', slide:1},
-            {img:'src/userassets/images/properties/IMG_2463.jpg', title:'', caption:'', slide:2},
-            {img:'src/userassets/images/properties/IMG_2464.jpg', title:'', caption:'', slide:3},
-            { img:'src/userassets/images/properties/IMG_2467.jpg', title:'', caption:'', slide:4}
+            { img: 'assets/userassets/images/properties/IMG_2458.jpg', title: '', caption: '', slide: 0 },
+            { img: 'assets/userassets/images/properties/IMG_2462.jpg', title:'', caption:'', slide:1},
+            { img: 'assets/userassets/images/properties/IMG_2463.jpg', title:'', caption:'', slide:2},
+            { img: 'assets/userassets/images/properties/IMG_2464.jpg', title:'', caption:'', slide:3},
+            { img: 'assets/userassets/images/properties/IMG_2467.jpg', title:'', caption:'', slide:4}
         ],
         propertyattributes: [
             { key: 'rooms', value: '3' },
@@ -201,10 +201,10 @@ export const PROPERTIES: Property[] = [
         description: 'SOLD! Just minutes from shopping, restaurants, and Clearwater Beach, this exquisite home feels like you stepped into true Florida living. Natural light soars through this house making it bright & airy. Fabulous layout with all the right spaces-entertain in either the living room or the Florida room; cook for 2 or 20 in the well-appointed kitchen; or take the gathering outdoors to your secluded backyard. Relax & unwind in the master suite whether it is reading a book or taking a shower in spa inspired master bath. Impressive upgrades make this the perfect family home. Plenty of room to store your RV/boat/recreational vehicle in the fenced-in backyard.',
         masterimage: 'IMG_0.jpg',
         images: [
-            { img: 'src/userassets/images/properties/IMG_0.jpg', title: '', caption: '', slide: 0 },
-            {img:'src/userassets/images/properties/IMG_01.jpg', title:'', caption:'', slide:1},
-            {img:'src/userassets/images/properties/IMG_02.jpg', title:'', caption:'', slide:2},
-            { img:'src/userassets/images/properties/IMG_03.jpg', title:'', caption:'', slide:3}
+            { img: 'assets/userassets/images/properties/IMG_0.jpg', title: '', caption: '', slide: 0 },
+            { img: 'assets/userassets/images/properties/IMG_01.jpg', title:'', caption:'', slide:1},
+            { img: 'assets/userassets/images/properties/IMG_02.jpg', title:'', caption:'', slide:2},
+            { img: 'assets/userassets/images/properties/IMG_03.jpg', title:'', caption:'', slide:3}
         ],
         propertyattributes: [
             { key: 'rooms', value: '3' },
@@ -227,7 +227,7 @@ export const FEATUREDPROPERTIES: Property[] = [
         description: 'Total remodel home Brandon maintained community. Located off Kings Rd. and minutes away from Hwy. 60, I-75, Hwy 301 and the crosstown Expressway.  Pull into your end covered parking spot then walk  50ft to your front paved patio  then enter your single story end unit villa with 2 bedrooms and 2  bathrooms, with no stairs to climb. The HOA maintains the exterior, including paint, lawn care and roof which was just replaced in March 2016. The kitchen opens to the dining/great room combo with a wood burning fireplace a sliding glass door front and the one in back opens to your rear covered screened in porch with plenty of seating space. Which overlooks a large meticulously kept POOL just 50ft from your back door. Easy in and out that’s comfort Florida style.     ',
         masterimage: 'IMG_1030.jpg',
         images: [
-            { img: 'src/userassets/images/properties/IMG_1030.jpg', title: '', caption: '', slide: 0 },
+            { img: 'assets/userassets/images/properties/IMG_1030.jpg', title: '', caption: '', slide: 0 },
         ],
         propertyattributes: [
             { key: 'Structure Type', value: 'Block, Stucco' },
@@ -250,7 +250,7 @@ export const FEATUREDPROPERTIES: Property[] = [
         description: 'A single family home that contains 1,247 sq ft and was built in 1963. It contains 3 bedrooms and 1 bathroom.',
         masterimage: 'IMG_F1.JPG',
         images: [
-            { img: 'src/userassets/images/properties/IMG_F1.JPG', title: '', caption: '', slide: 0 }
+            { img: 'assets/userassets/images/properties/IMG_F1.JPG', title: '', caption: '', slide: 0 }
         ],
         propertyattributes: [
             { key: 'Structure Type ', value: 'Concrete Block' },
@@ -275,10 +275,10 @@ export const FEATUREDPROPERTIES: Property[] = [
         description: 'This sleek & modern remodeled home is located in a well-established neighborhood and is conveniently located just minutes away from Downtown Tampa, South Tampa, International Plaza and Westshore Malls, Raymond James Stadium, Tampa International Airport, I-275, and St. Josephs Hospital.Stepping inside the front door your are graced by soaring ceilings and ornate crown molding.Beautiful new laminate floors throughout, brand new kitchen featuring Stainless Steel appliances, real wood cabinets, Granite countertops with decorative glass & metal backsplash. The master suite has its own private bath plus a huge walk-in closet, All three bathrooms boast new ceramic tile along with custom inlays, decorative tile, brand new vanities with Granite countertops and new commodes. Freshly painted inside and out, new interior doors, new lighting & ceiling fans throughout. Outdoor entertaining is a breeze on the covered patio (there is also an uncovered patio).',
         masterimage: 'IMG_9.jpg',
         images: [
-            { img: 'src/userassets/images/properties/IMG_9.jpg', title: '', caption: '', slide: 0 },
-            { img: 'src/userassets/images/properties/IMG_8.jpg', title: '', caption: '', slide: 1 },
-            { img: 'src/userassets/images/properties/IMG_10.jpg', title: '', caption: '', slide: 2 },
-            { img: 'src/userassets/images/properties/IMG_11.jpg', title: '', caption: '', slide: 3 }
+            { img: 'assets/userassets/images/properties/IMG_9.jpg', title: '', caption: '', slide: 0 },
+            { img: 'assets/userassets/images/properties/IMG_8.jpg', title: '', caption: '', slide: 1 },
+            { img: 'assets/userassets/images/properties/IMG_10.jpg', title: '', caption: '', slide: 2 },
+            { img: 'assets/userassets/images/properties/IMG_11.jpg', title: '', caption: '', slide: 3 }
         ],
         propertyattributes: [
             { key: 'rooms', value: '3' },
