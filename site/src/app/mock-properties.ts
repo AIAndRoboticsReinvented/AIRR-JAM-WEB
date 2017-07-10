@@ -1,4 +1,4 @@
-﻿import { PropertyAttributes, Property } from './property';
+﻿import { PropertyAttributes, PropertyImgAttributes, Property } from './property';
 
 export const PROPERTIES: Property[] = [
 
