@@ -25,5 +25,9 @@ img {
   width:100%
 }
 .carousel-control {
-  color:red;
+  color: white;
 }
+  .carousel-control:hover {
+    background:white;
+    color:#212128;
+  }
