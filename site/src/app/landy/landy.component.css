@@ -1,4 +1,5 @@
 ﻿svg{
+
 }
 
 .cls-1 {
@@ -45,7 +46,7 @@
 
 .cls-2, .cls-3 {
   fill: #ffffff;
-  font-family: Haettenschweiler, Haettenschweiler;
+  font-family: 'Oswald', sans-serif;
   letter-spacing: 3px;
   font-style: italic;
 }
@@ -67,3 +68,4 @@
 #roof, #house, #house-overfill2, #house-overfill {
   fill: #b41e1e !important;
 }
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');

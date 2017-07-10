@@ -17,7 +17,7 @@ export const PROPERTIES: Property[] = [
             { img: 'src/userassets/images/properties/IMG_9.jpg', title: '', caption: '', slide: 0 },
             {img:'src/userassets/images/properties/IMG_8.jpg' , title:'', caption:'', slide:1},
             { img:'src/userassets/images/properties/IMG_10.jpg', title:'', caption:'',slide:2},
-            { img:'src/userassets/images/properties/IMG_11.jpg', title:'', caption:'',slide:3}
+            { img: 'src/userassets/images/properties/IMG_11.jpg', title: '', caption: '', slide: 3 }
                 ],
         propertyattributes: [
             { key: 'rooms', value: '3' },
