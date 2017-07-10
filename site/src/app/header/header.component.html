@@ -1,5 +1,6 @@
 ﻿<app-topnav></app-topnav>
 <div class="col-xs-12 col-sm-12 hidden-md hidden-lg iconnav">
+  <a routerLink="/home" class="col-xs-12 hidden-md hidden-lg center landy" routerLinkActive="active"> <app-landy></app-landy></a>
  <a routerLink="/home" class="col-xs-4 hidden-md hidden-lg center mobi" routerLinkActive="active"><i class="fa fa-home fa-2x"></i><div class="col-xs-12">Home</div></a>
  <a routerLink="/about" class="col-xs-4 col-sm-4 hidden-md hidden-lg center mobi" routerLinkActive="active"><i class="fa fa-users fa-2x"></i><div class="col-xs-12">About</div></a>
  <a routerLink="/buy" class="col-xs-4 col-sm-4 hidden-md hidden-lg center mobi" routerLinkActive="active"><i class=" fa fa-map-signs fa-2x"></i><div class="col-xs-12">Buy</div></a>
@@ -16,10 +17,8 @@
       <a routerLink="/sell" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Sell</a>
       <a routerLink="/about" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">About</a>
       <a href="http://blog.ibuyasis.com/" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav">Blog</a>
-      <div class="dropdown hidden-xs hidden-sm col-xs-4 col-sm-2 center nav">
-        <a routerLink="/buy" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Buy&nbsp;A&nbsp;Home</a>  
-        <a routerLink="/wholesale" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Wholesale</a>
-      </div>
+      <a routerLink="/wholesale" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Wholesale</a>
+      <a routerLink="/buy" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Buy&nbsp;A&nbsp;Home</a>
     </div>
   </div>
   <!--<a routerLink="/home" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center" routerLinkActive="active">HOME</a>-->
