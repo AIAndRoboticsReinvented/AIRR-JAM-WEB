@@ -1,14 +1,36 @@
-﻿<div class="container-liquid col-xs-12 col-sm-4 col-md-3 col-lg-2"  [hidden]="navState=='Show'">
+﻿<div class="container-liquid col-xs-12"  [hidden]="navState==='Show'">
     <div class="navbar row">
+
+<!--- Administration Section -->
       <div class="col-xs-12 titlebar">
-        Administration {{displayState.AdminPanel}}
-        <span class="fa fa-angle-up" [hidden]="displaystate.AdminPanel==0" (click)="displayState.AdminPanel=0"></span>
-        <span class="fa fa-angle-down" [hidden]="displaystate.AdminPanel==1" (click)="displayState.AdminPanel=1"></span>
+        Administration
+        <span class="collapser fa fa-angle-up" [hidden]="Compare(displayState.AdminPanel,'0')" (click)="SetPanel('Admin',false)"></span>
+        <span class="collapser fa fa-angle-down" [hidden]="Compare(displayState.AdminPanel,'1')" (click)="SetPanel('Admin',true)"></span>
       </div>
-      <div class="col-cs-12 navsection" [hidden]="displaystate.AdminPanel==0">
+      <div class="col-cs-12 navsection" [hidden]="Compare(displayState.AdminPanel,'0')">
         <div class="col-xs-12 navitem clicklink" (click)="Show('Dashboard')"><i class="fa fa-th"></i> Dashboard</div>
-        <div class="col-xs-12 navitem clicklink" (click)="Show('About')"><i class="fa fa-question-circle-o"></i> About</div>
       </div>
-      <div class="col-xs-12 titlebar">&nbsp;</div>
+<!--- Views Section -->
+      <div class="col-xs-12 titlebar">
+        Views
+        <span class="collapser fa fa-angle-up" [hidden]="Compare(displayState.ViewsPanel,'0')" (click)="SetPanel('Views',false)"></span>
+        <span class="collapser fa fa-angle-down" [hidden]="Compare(displayState.ViewsPanel,'1')" (click)="SetPanel('Views',true)"></span>
+      </div>
+      <div class="col-cs-12 navsection" [hidden]="Compare(displayState.ViewsPanel,'0')">
+        <!--<div class="col-xs-12 navitem clicklink" (click)="Show('Dashboard')"><i class="fa fa-th"></i> Dashboard</div>-->
+      </div>
+
+<!--- Reports Section -->
+      <div class="col-xs-12 titlebar">
+        Reports
+        <span class="collapser fa fa-angle-up" [hidden]="Compare(displayState.ReportsPanel,'0')" (click)="SetPanel('Reports',false)"></span>
+        <span class="collapser fa fa-angle-down" [hidden]="Compare(displayState.ReportsPanel,'1')" (click)="SetPanel('Reports',true)"></span>
+      </div>
+      <div class="col-cs-12 navsection" [hidden]="Compare(displayState.ReportsPanel,'0')">
+        <div class="col-xs-12 navitem clicklink" (click)="Show('SMS Responses')"><i class="fa fa-mobile"></i> SMS Responses</div>
+      </div>
+
+      <div class="col-xs-12 seperatorbar">&nbsp;</div>
+      <div class="col-xs-12 navitem clicklink" (click)="Show('About')"><i class="fa fa-question-circle-o"></i> About</div>
     </div>
 </div> 

@@ -1,5 +1,7 @@
 ﻿import { NgModule }                     from '@angular/core';
 import { RouterModule, Routes }         from '@angular/router';
+import { BrowserModule }                from '@angular/platform-browser';
+import { CommonModule }                 from '@angular/common';
 
 /// Icons.....
 import { IconCompanyComponent }         from '../icon-company/icon-company.component';
@@ -24,6 +26,8 @@ import { MemberHeaderComponent }        from '../member-header/member-header.com
 
 import { PrivacyComponent }             from '../privacy/privacy.component';
 
+import { ReportSmsResponsesComponent }  from '../report-sms-responses/report-sms-responses.component';
+
 const dashboardRoutes: Routes = [
     {
         path: 'dashboard/:visitorid',
@@ -31,8 +35,10 @@ const dashboardRoutes: Routes = [
         children: [
         //    { path: '', redirectTo: '/home', pathMatch:'full' },
             
-            { path: 'about', component: MemberAboutComponent },
-            { path: '', component: DashWelcomeComponent },
+            { path: 'about',                        component: MemberAboutComponent },
+            { path: 'reportsmsresponses',           component: ReportSmsResponsesComponent },
+
+            { path: '',                             component: DashWelcomeComponent },
         ],
     },
 ];
@@ -58,9 +64,13 @@ const dashboardRoutes: Routes = [
         DashWelcomeComponent,
         MemberAboutComponent,
         MemberHeaderComponent,
-
+        ReportSmsResponsesComponent,
     ],
-    imports: [RouterModule.forChild(dashboardRoutes)],
+    imports: [
+        BrowserModule,
+        CommonModule,
+        RouterModule.forChild(dashboardRoutes)
+    ],
     exports: [RouterModule]
 })
 

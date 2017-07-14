@@ -1,3 +1,19 @@
-﻿span {
-  float:right;
+﻿.titlebar {
+  background-color: lightgray;
+}
+
+
+.seperatorbar {
+  line-height:3px;
+  background-color: black;
+}
+
+.collapser:hover {
+    cursor:pointer;
+    font-weight:bold;
+}
+
+
+span {
+  float: right;
 }

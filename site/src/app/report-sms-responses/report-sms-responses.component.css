@@ -1,0 +1,17 @@
+﻿.report {
+  background-color: #ffffff;
+}
+.record {
+  border: solid 1px #000;
+}
+
+.columnheader
+{
+  background-color:gray;
+  color:white;
+  font-weight:bold;
+}
+
+.message{
+  background-color:lightblue;
+}
