@@ -26,6 +26,8 @@ import { MemberHeaderComponent }        from '../member-header/member-header.com
 
 import { PrivacyComponent }             from '../privacy/privacy.component';
 
+import { ReportSmsBlockedComponent } from '../report-sms-blocked/report-sms-blocked.component';
+import { ReportSmsBlockreasonsComponent } from '../report-sms-blockreasons/report-sms-blockreasons.component';
 import { ReportSmsResponsesComponent }  from '../report-sms-responses/report-sms-responses.component';
 
 const dashboardRoutes: Routes = [
@@ -37,7 +39,8 @@ const dashboardRoutes: Routes = [
             
             { path: 'about',                        component: MemberAboutComponent },
             { path: 'reportsmsresponses',           component: ReportSmsResponsesComponent },
-
+            { path: 'reportsmsblocked',             component: ReportSmsBlockedComponent },
+            { path: 'reportsmsblockreasons',        component: ReportSmsBlockreasonsComponent },
             { path: '',                             component: DashWelcomeComponent },
         ],
     },
@@ -64,6 +67,8 @@ const dashboardRoutes: Routes = [
         DashWelcomeComponent,
         MemberAboutComponent,
         MemberHeaderComponent,
+        ReportSmsBlockedComponent,
+        ReportSmsBlockreasonsComponent,
         ReportSmsResponsesComponent,
     ],
     imports: [

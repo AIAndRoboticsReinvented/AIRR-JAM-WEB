@@ -10,20 +10,20 @@
       On
     </div>
     <div class="col-xs-12 col-sm-6">
-      Said
+      Response
     </div>
   </div>
-  <div class="row record" *ngFor="let response of report">
+  <div class="row record" *ngFor="let row of report">
     <div class="col-xs-4 col-sm-2">
-      {{response.Received}}
+      {{row.Received}}
     </div>
     <div class="col-xs-4 col-sm-2">
-      {{response.PhoneFrom}}
+      {{row.PhoneFrom}}
     </div>
     <div class="col-xs-4 col-sm-2">
-      {{response.PhoneIn}}
+      {{row.PhoneIn}}
     </div>
     <div class="col-xs-12 col-sm-6 message">
-      {{response.Body}}
+      {{row.Body}}
     </div></div>
 </div>

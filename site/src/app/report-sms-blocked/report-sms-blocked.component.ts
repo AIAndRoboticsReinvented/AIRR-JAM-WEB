@@ -3,20 +3,20 @@
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
-
+//import { SMSBlocked } from '../datatypes/sms';
 import { ReportService } from '../report.service';
 
 import 'rxjs/add/operator/switchMap';
 
 @Component({
-  selector: 'app-report-sms-responses',
-  templateUrl: './report-sms-responses.component.html',
+  selector: 'app-report-sms-blocked',
+  templateUrl: './report-sms-blocked.component.html',
   styleUrls: [
       '../../assets/css/members.css',
-      './report-sms-responses.component.css'
+      './report-sms-blocked.component.css'
   ]
 })
-export class ReportSmsResponsesComponent implements OnInit {
+export class ReportSmsBlockedComponent implements OnInit {
 
     report: {};
 
@@ -31,7 +31,7 @@ export class ReportSmsResponsesComponent implements OnInit {
     ) { }
 
     getSMSResponses(): void {
-        this.reportService.getSMSResponses(this.visitorid)
+        this.reportService.getSMSBlocked(this.visitorid)
             .subscribe(
             data => this.report = JSON.parse(data.RequestResult),
             error => console.log(error),
@@ -53,10 +53,11 @@ export class ReportSmsResponsesComponent implements OnInit {
             this.setVisitorId(params['visitorid']))
             .subscribe(data => { });
         //console.log(this.route.firstChild.params);
-        //console.log('Requesting Responses Now!!!');
         this.getSMSResponses();
     }
 
 
-
 }
+
+
+

@@ -12,6 +12,29 @@ export class ReportService {
     private answer;
 
 
+
+
+
+    getSMSBlocked(visitorid) {
+        this.request.action = 'Report SMS Blocked';
+        this.request.requested = new Date().getTime().toString();
+        this.request.visitorid = visitorid;
+        this.therequest = JSON.stringify(this.request);
+        return this.http.post(this.url, this.therequest)
+            .map(res => res.json());
+    }
+
+    
+    getSMSBlockReasons(visitorid) {
+        this.request.action = 'Report SMS Block Reasons';
+        this.request.requested = new Date().getTime().toString();
+        this.request.visitorid = visitorid;
+        this.therequest = JSON.stringify(this.request);
+        return this.http.post(this.url, this.therequest)
+            .map(res => res.json());
+    }
+
+
     getSMSResponses(visitorid) {
         this.request.action = 'Report SMS Responses';
         this.request.requested = new Date().getTime().toString();

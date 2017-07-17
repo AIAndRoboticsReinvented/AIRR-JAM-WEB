@@ -27,6 +27,12 @@
         <span class="collapser fa fa-angle-down" [hidden]="Compare(displayState.ReportsPanel,'1')" (click)="SetPanel('Reports',true)"></span>
       </div>
       <div class="col-cs-12 navsection" [hidden]="Compare(displayState.ReportsPanel,'0')">
+        <div class="col-xs-12 navitem clicklink" (click)="Show('SMS Block Reasons')"><i class="fa fa-question-circle-o"></i> SMS Block Reasons</div>
+      </div>
+      <div class="col-cs-12 navsection" [hidden]="Compare(displayState.ReportsPanel,'0')">
+        <div class="col-xs-12 navitem clicklink" (click)="Show('SMS Blocked')"><i class="fa fa-ban"></i> SMS Blocked</div>
+      </div>
+      <div class="col-cs-12 navsection" [hidden]="Compare(displayState.ReportsPanel,'0')">
         <div class="col-xs-12 navitem clicklink" (click)="Show('SMS Responses')"><i class="fa fa-mobile"></i> SMS Responses</div>
       </div>
 

@@ -58,6 +58,12 @@ export class DashNavComponent implements OnInit {
         else if (Feature == 'About') {
             this.router.navigate(['/dashboard', this.visitorid, 'about']);
         }
+        else if (Feature == 'SMS Blocked') {
+            this.router.navigate(['/dashboard', this.visitorid, 'reportsmsblocked']);
+        }
+        else if (Feature == 'SMS Block Reasons') {
+            this.router.navigate(['/dashboard', this.visitorid, 'reportsmsblockreasons']);
+        }
         else if (Feature == 'SMS Responses')
         {
             this.router.navigate(['/dashboard', this.visitorid, 'reportsmsresponses']);
