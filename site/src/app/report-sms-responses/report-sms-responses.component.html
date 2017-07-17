@@ -1,0 +1,29 @@
+﻿<div class="container report">
+  <div class="row record columnheader">
+    <div class="col-xs-4 col-sm-2">
+      Date
+    </div>
+    <div class="col-xs-4 col-sm-2">
+      From
+    </div>
+    <div class="col-xs-4 col-sm-2">
+      On
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      Response
+    </div>
+  </div>
+  <div class="row record" *ngFor="let row of report">
+    <div class="col-xs-4 col-sm-2">
+      {{row.Received}}
+    </div>
+    <div class="col-xs-4 col-sm-2">
+      {{row.PhoneFrom}}
+    </div>
+    <div class="col-xs-4 col-sm-2">
+      {{row.PhoneIn}}
+    </div>
+    <div class="col-xs-12 col-sm-6 message">
+      {{row.Body}}
+    </div></div>
+</div>

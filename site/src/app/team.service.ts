@@ -10,12 +10,13 @@ export class TeamService {
     constructor(private http: Http) { }
 
     private url = 'http://24.173.148.67/gateway/gateway.svc/Request';
-    private request =  {action: 'Get Team Members'};
+    private request =  {action: 'Get Team Members', requested: ''};
     private therequest = "";
     private answer;
 
 
     getTeam() {
+        this.request.requested = new Date().getTime().toString();
         this.therequest = JSON.stringify(this.request);
         return this.http.post(this.url, this.therequest)
             .map(res => res.json());
