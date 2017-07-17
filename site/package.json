@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@agm/core": "^1.0.0-beta.0",
     "@angular/common": "^2.4.10",
     "@angular/compiler": "^2.4.10",
     "@angular/core": "^2.4.10",
@@ -30,6 +31,7 @@
     "jasmine-spec-reporter": "^3.3.0",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.2.0",
+    "ng2-file-upload": "^1.2.1",
     "ng2-location-autocomplete": "^1.0.0",
     "rxjs": "^5.4.2",
     "ts-node": "^2.1.2",

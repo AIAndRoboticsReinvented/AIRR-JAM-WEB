@@ -1,0 +1,76 @@
+﻿<!--<!--Head-->
+  <ul>
+    <li><a routerLink="/home" class="active fa fa-home" routerLinkActive="active">&nbsp;<b>Home</b></a></li>
+    <li><h1>View/Add a Home</h1></li>
+  </ul>
+  <!--Map-->
+  <agm-map [latitude]="lat"
+           [longitude]="lng"
+           [zoom]="zoom"
+           [disableDefaultUI]=false
+           [zoomControl]=true
+           (mapClick)="mapClicked($event)">
+    <agm-marker *ngFor="let m of markers;let i = index"
+                (markerClick)="clickedMarker(m, i)"
+                [latitude]="m.lat"
+                [longitude]="m.lng"
+                [markerDraggable]="m.draggable"
+                (dragEnd)="markerDragEnd(m, $event)">
+    </agm-marker>
+  </agm-map>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Add a Home</h3>
+        </div>
+        <div class="panel-body">
+          <form (submit)="addMarker()">
+            <label>Location Name</label>
+            <input type="text" [(ngModel)]="markerName" name="markerName"
+                   />
+            <label>Latitude</label>
+            <input type="text" [(ngModel)]="markerLat" name="markerLat"
+                   />
+            <label>Longitude</label>
+            <input type="text" [(ngModel)]="markerLng" name="markerLng"
+                   />
+            <label>Draggable</label>
+            <select [ngModel] (ngModel)="markerDraggable" name="markerDraggable">
+              <option value="no">No</option>
+              <option value="yex">Yes</option>
+            </select>
+            <input type="submit" value="Submit Location!" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="how-to">
+    <p class="fa fa-hand-o-up">&nbsp;Pinch to zoom.</p>
+    &nbsp;&nbsp;&nbsp;
+    <p class="fa fa-plus-circle">&nbsp;Add your home.</p>
+    &nbsp;&nbsp;&nbsp;
+    <p class="fa fa-eye">&nbsp;See it here.</p>
+  </div>
+  <div class="col-xs-12 submit center">
+    <h1 class="title">Submit a Home</h1>
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      If used on Desktop or dragged photos from Tablets/Phones you will need to enter the address manually. Thank You!
+    </div>
+    <form action="/action_page.php">
+      <div class="col-md-4 col-md-offset-4">
+        <image-upload></image-upload>
+      </div>
+      <div class="col-md-12">
+        Address: <input type="text" name="fname">
+        City: <input type="text" name="fname">
+        State: <input type="text" name="fname">
+        <input class="button" type="submit" value="Submit" />
+      </div>
+    </form>
+  </div>
+  <div class="col-xs-12 agreement">
+    By using our services you agree to the <a class="agreement" routerLink="/terms" routerLinkActive="Active">Terms</a> and <a class="agreement" routerLink="/privacy" routerLinkActive="Active">Privacy</a> Agreements.
+  </div>-->
