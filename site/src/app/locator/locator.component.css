@@ -1,14 +1,6 @@
 ﻿agm-map {
   height: 600px;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #2d9dde;
-}
-
 li {
   float: left;
 }
@@ -57,7 +49,7 @@ li {
   }
 
   .title {
-    margin-top: 0px !important;
+    margin-top: 10px;
     color:#073048;
     font-weight:bolder;
     font-size:xx-large;
@@ -70,7 +62,7 @@ li {
   color: white;
   cursor: pointer;
   border-radius: 5px;
-  margin: 0 auto;
+  margin-top: 10px;
 }
 
   .button:after {
@@ -93,9 +85,14 @@ li {
     text-align:center;
   }
 }
-
-.agreement {
-  margin-top:20px;
-  text-align: center;
-  color:grey;
+.submit {
+  background-color: #80caf5;
+  margin-top: 10px;
+}
+.fill {
+  margin-top:10px;
+}
+.formon {
+  margin-bottom: 10px;
+  color: #073048;
 }

@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 ///Google Maps Component//
 import { AgmCoreModule } from '@agm/core';
 //import { LocationAutocompleteComponent } from 'ng2-location-autocomplete';
+//Google Maps API 
+//import { } from '@types/google-maps';
 
 /// Image Uploader
 import { ImageUploadModule } from 'angular2-image-upload'
@@ -120,17 +122,12 @@ import { LocatorComponent } from './locator/locator.component';
       CarouselComponent,
       ModalComponent,
       LPUXComponent,
-
       PageNotFoundComponent,
-
       TestdeskComponent,
-
       ProspectComponent,
-
       ImageUploadComponent,
-
       LocatorComponent,
-    ],
+  ],
   imports: [      
       BrowserModule,
       CommonModule,
@@ -147,7 +144,7 @@ import { LocatorComponent } from './locator/locator.component';
       DashboardRoutingModule,
       AppRoutingModule,     /// <--- This MUST be last
   ],
-  providers: [TeamService, PropertyService, ContactRequestService, SqueezePageService], ReportService,],
+  providers: [TeamService, PropertyService, ContactRequestService, SqueezePageService, ReportService],
   bootstrap: [AppComponent]
 })
 

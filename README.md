@@ -10,3 +10,6 @@ White Label WebSite
 - Ruby 2.3.3 - https://rubyinstaller.org/downloads/
 -               execute the following command after install to append SASS  
 -               gem install sass  
+
+Angular Google Maps API Typings
+-      execute command:    npm install @agm/core --save

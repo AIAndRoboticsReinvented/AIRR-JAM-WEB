@@ -9,10 +9,10 @@ import { MarkerService } from '../locator-services/marker.service';
 })
 export class LocatorComponent implements OnInit {
     // Zoom Level //
-    zoom: number = 10;
+    zoom: number = 5;
     // Start Position //
-    lat: number = 27.916766641249065;
-    lng: number = -82.5732421875;
+    lat: number = 35.950218;
+    lng: number = -97.976074;
     //values
     markerName: string;
     markerLat: string;
