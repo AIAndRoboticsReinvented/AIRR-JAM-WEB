@@ -9,7 +9,7 @@ export class ContactRequestService {
     constructor(private http: Http) { }
 
     postRequest(contactrequest) {
-        var url = 'http://24.173.148.67/gateway/gateway.svc/Request';
+        var url = 'http://209.34.232.74/gateway/gateway.svc/Request';
         var therequest = "";
         var request: any = Object.assign({action : 'Contact Request'},contactrequest);
 

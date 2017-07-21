@@ -13,6 +13,10 @@
   color: #ffffff;
 }
 
+.alternate {
+  background-color: lightblue;
+}
+
 .clicklink {
   cursor:default;
 }
@@ -45,6 +49,10 @@
   border-bottom: solid 1px #000000;
 }
 
+.subnavitem {
+  background:#faf2ad;
+  border-bottom: solid 1px #000000;
+}
 
 .maindisplay {
   background:#ffffff;
@@ -63,3 +71,65 @@
   color: white;
   font-weight: bold;
 }
+
+.delete {
+  color:red;
+}
+
+
+/* Extra Small Devices, .visible-xs-* */
+@media (max-width: 767px) {
+  .xs-hide,
+  .xs-hide-up,
+  .xs-hide-down,
+  .sm-hide-down,
+  .md-hide-down,
+  .lg-hide-down{
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/* Small Devices, .visible-sm-* */
+@media (min-width: 768px) and (max-width: 991px) {
+  .sm-hide,
+  .sm-hide-up,
+  .xs-hide-up,
+  .sm-hide-down,
+  .md-hide-down,
+  .lg-hide-down
+  {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/* Medium Devices, .visible-md-* */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .md-hide,
+  .md-hide-up,
+  .sm-hide-up,
+  .xs-hide-up,
+  .md-hide-down,
+  .lg-hide-down{
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/* Large Devices, .visible-lg-* */
+@media (min-width: 1200px) {
+  .lg-hide
+  .lg-hide-up,
+  .xs-hide-up,
+  .sm-hide-up,
+  .md-hide-up,
+  .lg-hide-down{
+    visibility:hidden;
+    display:none;
+  }
+}
+
+
+
+

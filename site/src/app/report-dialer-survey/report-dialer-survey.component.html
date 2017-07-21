@@ -1,0 +1,52 @@
+﻿<p>*May take a moment to load</p>
+<div class="container report">
+  <div class="row record columnheader">
+    <div class="col-xs-3">
+      Sell
+    </div>
+    <div class="col-xs-3">
+      Call
+    </div>
+    <div class="col-xs-6">
+      When
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      Name
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      Phone
+    </div>
+    <div class="col-xs-12">
+      Address
+    </div>
+  </div>
+  <div class="row record" *ngFor="let row of report">
+    <div class="col-xs-3">
+      {{row.sell}}
+    </div>
+    <div class="col-xs-3">
+      {{row.call}}
+    </div>
+    <div class="col-xs-6">
+      {{row.entry_time}}
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      {{row.first_name}} {{row.last_name}}
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      {{row.Phone}}
+    </div>
+    <div class="address col-xs-12 col-sm-6">
+      {{row.address1}} 
+    </div>
+    <div class="address col-xs-6 col-sm-3">
+      {{row.city}}
+    </div>
+    <div class="address col-xs-2 col-sm-1">
+      {{row.state}}
+    </div>
+    <div class="address col-xs-4 col-sm-2">
+      {{row.postal_code}}
+    </div>
+  </div>
+</div>

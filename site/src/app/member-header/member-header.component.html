@@ -1,15 +1,31 @@
 ﻿<div class="secondary titlebar col-xs-12" >
-  <div class="col-xs-12 col-sm-4">
+  <div class="xs-hide col-sm-4">
     <div class="clicklink" (click)="switchNav()">        
-        <div [hidden]="isNavState('Show')"><i class="fa fa-list"></i> {{navState}} Navbar</div>
-        <div [hidden]="isNavState('Hide')"><i class="fa fa-align-justify"></i> {{navState}} Navbar</div>
-    
+      <div [hidden]="isNavState('Show')">
+        <i class="fa fa-list"></i> {{navState}} Navbar
+      </div>
+      <div [hidden]="isNavState('Hide')">
+        <i class="fa fa-align-justify"></i> {{navState}} Navbar
+      </div>
     </div>
   </div>
+
   <div class="col-xs-12 col-sm-4 center">
     [{{username}}] - ({{visitorid}})
   </div>
-  <div class="col-xs-12 col-sm-4 center">
+
+  <div class="col-xs-6 sm-hide-up">
+    <div class="clicklink" (click)="switchNav()">
+      <div [hidden]="isNavState('Show')">
+        <i class="fa fa-list"></i> {{navState}} Navbar
+      </div>
+      <div [hidden]="isNavState('Hide')">
+        <i class="fa fa-align-justify"></i> {{navState}} Navbar
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 center">
     <a routerLink="/home" routerLinkActive="active">
       <i class="fa fa-sign-out"></i> Logout      
     </a>

@@ -10,7 +10,7 @@ export class LoginService {
 
     constructor(private http: Http) { }
 
-    private url = 'http://24.173.148.67/gateway/gateway.svc/Request';
+    private url = 'http://209.34.232.74/gateway/gateway.svc/Request';
     private request = {};
     private therequest = "";
 

@@ -8,7 +8,7 @@ import { SqueezePage } from './squeeze-page';
 export class SqueezePageService {
     constructor(private http: Http) { }
 
-    private url = 'http://24.173.148.67/gateway/gateway.svc/Request';
+    private url = 'http://209.34.232.74/gateway/gateway.svc/Request';
     private request = { action: 'Get Squeeze Page', pageid:0 };
     private therequest = "";
     private answer;

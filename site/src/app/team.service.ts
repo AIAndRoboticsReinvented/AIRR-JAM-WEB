@@ -9,11 +9,11 @@ import { Teammember } from './teammember';
 export class TeamService {
     constructor(private http: Http) { }
 
-    private url = 'http://24.173.148.67/gateway/gateway.svc/Request';
+    private url = 'http://209.34.232.74/gateway/gateway.svc/Request';
     private request =  {action: 'Get Team Members', requested: ''};
     private therequest = "";
     private answer;
-
+     
 
     getTeam() {
         this.request.requested = new Date().getTime().toString();

@@ -1,7 +1,8 @@
 ﻿import { NgModule }                     from '@angular/core';
 import { RouterModule, Routes }         from '@angular/router';
 import { BrowserModule }                from '@angular/platform-browser';
-import { CommonModule }                 from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 /// Icons.....
 import { IconCompanyComponent }         from '../icon-company/icon-company.component';
@@ -26,9 +27,11 @@ import { MemberHeaderComponent }        from '../member-header/member-header.com
 
 import { PrivacyComponent }             from '../privacy/privacy.component';
 
-import { ReportSmsBlockedComponent } from '../report-sms-blocked/report-sms-blocked.component';
+import { ReportDialerSurveyComponent }  from '../report-dialer-survey/report-dialer-survey.component';
+import { ReportSmsBlockedComponent }    from '../report-sms-blocked/report-sms-blocked.component';
 import { ReportSmsBlockreasonsComponent } from '../report-sms-blockreasons/report-sms-blockreasons.component';
-import { ReportSmsResponsesComponent }  from '../report-sms-responses/report-sms-responses.component';
+import { ReportSmsResponsesComponent } from '../report-sms-responses/report-sms-responses.component';
+import { ReportSmsSendStatsComponent } from '../report-sms-send-stats/report-sms-send-stats.component';
 
 const dashboardRoutes: Routes = [
     {
@@ -38,9 +41,11 @@ const dashboardRoutes: Routes = [
         //    { path: '', redirectTo: '/home', pathMatch:'full' },
             
             { path: 'about',                        component: MemberAboutComponent },
+            { path: 'reportdialersurvey',           component: ReportDialerSurveyComponent},          
             { path: 'reportsmsresponses',           component: ReportSmsResponsesComponent },
             { path: 'reportsmsblocked',             component: ReportSmsBlockedComponent },
             { path: 'reportsmsblockreasons',        component: ReportSmsBlockreasonsComponent },
+            { path: 'reportsmssendstats',           component: ReportSmsSendStatsComponent },          
             { path: '',                             component: DashWelcomeComponent },
         ],
     },
@@ -67,11 +72,14 @@ const dashboardRoutes: Routes = [
         DashWelcomeComponent,
         MemberAboutComponent,
         MemberHeaderComponent,
+        ReportDialerSurveyComponent,
         ReportSmsBlockedComponent,
         ReportSmsBlockreasonsComponent,
         ReportSmsResponsesComponent,
+        ReportSmsSendStatsComponent,
     ],
     imports: [
+        FormsModule,
         BrowserModule,
         CommonModule,
         RouterModule.forChild(dashboardRoutes)
@@ -80,3 +88,4 @@ const dashboardRoutes: Routes = [
 })
 
 export class DashboardRoutingModule { }
+

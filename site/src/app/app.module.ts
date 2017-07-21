@@ -16,6 +16,7 @@ import { TeamService } from './team.service';
 import { ContactRequestService } from './contact-request.service';
 import { SqueezePageService } from './squeeze-page.service';
 import { ReportService } from './report.service';
+import { IUDService } from './iud.service';
 
 
 import { AppComponent } from './app.component';
@@ -68,6 +69,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
 import { LPUXComponent } from './lp-ux/lp-ux.component';
 import { TestdeskComponent } from './testdesk/testdesk.component';
+
+
 
 
 
@@ -137,7 +140,14 @@ import { TestdeskComponent } from './testdesk/testdesk.component';
       DashboardRoutingModule,
       AppRoutingModule,     /// <--- This MUST be last
   ],
-  providers: [TeamService, PropertyService, ContactRequestService, SqueezePageService, ReportService,],
+  providers: [
+      TeamService,
+      PropertyService,
+      ContactRequestService,
+      SqueezePageService,
+      ReportService,
+      IUDService,
+  ],
   bootstrap: [AppComponent]
 })
 

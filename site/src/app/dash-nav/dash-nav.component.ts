@@ -19,6 +19,7 @@ export class DashNavComponent implements OnInit {
         AdminPanel: string,
         ViewsPanel: string,
         ReportsPanel: string,
+        ReportsSMS:string
     }
 
     @Input() visitorid: {};
@@ -34,6 +35,7 @@ export class DashNavComponent implements OnInit {
             AdminPanel: '1',
             ViewsPanel: '1',
             ReportsPanel: '1',
+            ReportsSMS: '0',
         };
 
     }
@@ -44,6 +46,10 @@ export class DashNavComponent implements OnInit {
             if (state) this.displayState.AdminPanel = '1'; else this.displayState.AdminPanel = '0';
         if (panel == 'Reports')
             if (state) this.displayState.ReportsPanel = '1'; else this.displayState.ReportsPanel = '0';
+            if (panel == 'ReportsSMS')
+                if (state) this.displayState.ReportsSMS = '1'; else this.displayState.ReportsSMS = '0';
+
+
         if (panel == 'Views')
             if (state) this.displayState.ViewsPanel = '1'; else this.displayState.ViewsPanel = '0';
     }
@@ -58,6 +64,9 @@ export class DashNavComponent implements OnInit {
         else if (Feature == 'About') {
             this.router.navigate(['/dashboard', this.visitorid, 'about']);
         }
+        else if (Feature == 'Dialer Survey') {
+            this.router.navigate(['/dashboard', this.visitorid, 'reportdialersurvey']);
+        }
         else if (Feature == 'SMS Blocked') {
             this.router.navigate(['/dashboard', this.visitorid, 'reportsmsblocked']);
         }
@@ -67,6 +76,9 @@ export class DashNavComponent implements OnInit {
         else if (Feature == 'SMS Responses')
         {
             this.router.navigate(['/dashboard', this.visitorid, 'reportsmsresponses']);
+        }
+        else if (Feature == 'SMS Send Stats') {
+            this.router.navigate(['/dashboard', this.visitorid, 'reportsmssendstats']);
         }
 
 

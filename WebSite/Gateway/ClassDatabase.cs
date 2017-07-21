@@ -24,7 +24,7 @@ namespace Gateway
         /// <summary>
         /// Database server to connect to
         /// </summary>
-        private string Server = "10.0.90.172"; //"192.168.1.102"; //"209.34.232.75"; // "192.168.1.102";
+        private string Server = "192.168.1.101"; //"192.168.1.102"; //"209.34.232.75"; // "192.168.1.102";
                                                             /// <summary>
                                                             /// Database instance to connect to on the server
                                                             /// </summary>

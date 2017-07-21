@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';       // Required to use map function
 export class ReportService {
     constructor(private http: Http) { }
 
-    private url = 'http://24.173.148.67/gateway/gateway.svc/Request';
+    private url = 'http://209.34.232.74/gateway/gateway.svc/Request';
     private request = { action: '', requested: '', visitorid: '' };
     private therequest = "";
     private answer;
@@ -43,5 +43,25 @@ export class ReportService {
         return this.http.post(this.url, this.therequest)
             .map(res => res.json());
     }
+
+    getSMSSendStats(visitorid) {
+        this.request.action = 'Report SMS Send Stats';
+        this.request.requested = new Date().getTime().toString();
+        this.request.visitorid = visitorid;
+        this.therequest = JSON.stringify(this.request);
+        return this.http.post(this.url, this.therequest)
+            .map(res => res.json());
+    }
+
+
+    getDialerSurvey(visitorid) {
+        this.request.action = 'Report Dialer Survey';
+        this.request.requested = new Date().getTime().toString();
+        this.request.visitorid = visitorid;
+        this.therequest = JSON.stringify(this.request);
+        return this.http.post(this.url, this.therequest)
+            .map(res => res.json());
+    }
+
 
 }
