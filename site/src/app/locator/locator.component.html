@@ -1,0 +1,50 @@
+﻿<!--<!--Head-->
+  <!--Map-->
+  <agm-map [latitude]="lat"
+           [longitude]="lng"
+           [zoom]="zoom"
+           [disableDefaultUI]= "false"
+           [zoomControl]="false"
+           (mapClick)="mapClicked($event)">
+    <agm-marker *ngFor="let m of markers;let i = index"
+                (markerClick)="clickedMarker(m, i)"
+                [latitude]="m.lat"
+                [longitude]="m.lng"
+                [markerDraggable]="m.draggable"
+                (dragEnd)="markerDragEnd(m, $event)">
+    </agm-marker>
+  </agm-map>
+  <div class="how-to">
+    <p class="fa fa-hand-o-up">&nbsp;Pinch to zoom.</p>
+    &nbsp;&nbsp;&nbsp;
+    <p class="fa fa-plus-circle">&nbsp;Add your home.</p>
+    &nbsp;&nbsp;&nbsp;
+    <p class="fa fa-eye">&nbsp;See it here.</p>
+  </div>
+ <!--<div class="col-xs-12 submit center">
+    <h1 class="title">Submit a Home</h1>
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      At the moment please fill the form below. Thank You!
+    </div>
+   <div class="row formon">
+     <form action="/action_page.php">
+       <div class="col-md-12">
+         <image-upload></image-upload>
+       </div>
+       <div class="col-md-12 fill">
+         <div class="col-xs-12 col-md-6 col-lg-4">
+         Address: <input type="text" name="fname">
+         </div>
+         <div class="col-xs-12 col-md-6 col-lg-4">
+                City: <input type="text" name="city">
+         </div>
+         <div class="col-xs-12 col-md-6 col-lg-4">
+                  State: <input type="text" name="state">
+         </div>
+         <input class="button" type="submit" value="Submit" />
+       </div>
+     </form>
+   </div>
+ 
+  </div>-->

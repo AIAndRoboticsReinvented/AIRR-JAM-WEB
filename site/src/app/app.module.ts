@@ -3,10 +3,14 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+///Google Maps Component//
+import { AgmCoreModule } from '@agm/core';
 //import { LocationAutocompleteComponent } from 'ng2-location-autocomplete';
+//Google Maps API 
+//import { } from '@types/google-maps';
 
 /// Image Uploader
-//import { ImageUploadModule } from 'angular2-image-upload'
+import { ImageUploadModule } from 'angular2-image-upload'
 
 /// Google maps. 
 ///import { AgmCoreModule } from 'angular2-google-maps/core';
@@ -17,7 +21,6 @@ import { ContactRequestService } from './contact-request.service';
 import { SqueezePageService } from './squeeze-page.service';
 import { ReportService } from './report.service';
 import { IUDService } from './iud.service';
-
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -69,10 +72,9 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
 import { LPUXComponent } from './lp-ux/lp-ux.component';
 import { TestdeskComponent } from './testdesk/testdesk.component';
-
-
-
-
+import { ProspectComponent } from './prospect/prospect.component';
+import { ImageUploadComponent } from './image-upload/image-upload.component';
+import { LocatorComponent } from './locator/locator.component';
 
 
 @NgModule({
@@ -121,19 +123,22 @@ import { TestdeskComponent } from './testdesk/testdesk.component';
       CarouselComponent,
       ModalComponent,
       LPUXComponent,
-
       PageNotFoundComponent,
-
       TestdeskComponent,
-
-
-
-    ],
+      ProspectComponent,
+      ImageUploadComponent,
+      LocatorComponent,
+  ],
   imports: [      
       BrowserModule,
       CommonModule,
       FormsModule,
       HttpModule,
+      ///GoogleMaps///
+      AgmCoreModule.forRoot({
+          apiKey: 'AIzaSyCyubuZfrveaznNqBOpts8dHEIGsR0vhj0'
+      }),
+      ImageUploadModule.forRoot(),
   
 ///      AgmCoreModule.forRoot({ apiKey: 'AIzaSyCkiDx9O54GaP1FG2eOzXOjZB-ffqAbEzg'}),  /// Google Maps
 ///      ImageUploadModule.forRoot(),     /// Image Uploader

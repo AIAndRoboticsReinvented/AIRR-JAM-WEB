@@ -23,6 +23,8 @@ import { HomeweareComponent }                 from './homeweare/homeweare.compon
 import { ModalComponent }                     from './modal/modal.component';
 import { LPUXComponent }                      from './lp-ux/lp-ux.component';
 import { TestdeskComponent }                  from './testdesk/testdesk.component';
+import { ProspectComponent }                  from './prospect/prospect.component';
+import { LocatorComponent }                   from './locator/locator.component' ;
 
 
 const routes: Routes = [
@@ -38,6 +40,7 @@ const routes: Routes = [
     { path: 'landy',                  component: LandyComponent},
     { path: 'login',                  component: LoginComponent },
     { path: 'privacy',                component: PrivacyComponent },
+    { path:'prospect',                component: ProspectComponent },  
     { path: 'sell',                   component: SellyourhomeComponent },
     { path: 'terms',                  component: TermsComponent },
     { path: 'testdesk',               component: TestdeskComponent}, 
@@ -46,6 +49,7 @@ const routes: Routes = [
     { path: 'wholesale',              component: WholesaleComponent },
     { path: 'homeweare',              component: HomeweareComponent },
     { path: 'modal',                  component: ModalComponent },
+    {path:  'locator',                component: LocatorComponent },
     { path: 'lp-ux/:id',              component: LPUXComponent },
     { path: '**',                     component: PageNotFoundComponent },
 //    { path: 'prospect', component: ProspectPropertyComponent }

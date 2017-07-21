@@ -13,12 +13,12 @@ h3 {
   font-size: 50px;
   color: crimson;
   background-color: white;
-  opacity:1;
+  opacity:.8;
 }
 p{
   color: #000000;
   background-color:white;
-  opacity:1;
+  opacity:.8;
 }
 img {
   max-height:450px;

@@ -5,7 +5,7 @@
   templateUrl: './google-map.component.html',
   styleUrls: ['./google-map.component.css']
 })
-export class GoogleMapComponent implements OnInit {
+export class GLocateComponent implements OnInit {
 
   @Input() lng;
   @Input() lat;

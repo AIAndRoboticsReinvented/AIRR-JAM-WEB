@@ -1,0 +1,98 @@
+﻿agm-map {
+  height: 600px;
+}
+li {
+  float: left;
+}
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:15px;
+  }
+ h1{
+   font-size:24px;
+   color:white;
+   text-align:center;
+ }
+/* The alert message box */
+.alert {
+  background-color: dodgerblue; /* Red */
+  text-align:center;
+  color: white;
+  margin-bottom: 15px;
+  outline:0px !important;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: #073048;
+  }
+
+  .addressform {
+    margin-top:10px;
+  }
+
+  .title {
+    margin-top: 10px;
+    color:#073048;
+    font-weight:bolder;
+    font-size:xx-large;
+  }
+.button {
+  font-size: large;
+  border: 5px solid #2d9dde;
+  border-radius: 0px;
+  background-color: #2d9dde;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+  .button:after {
+    content: "";
+  }
+
+  .button:hover,
+  .button:focus {
+    outline: none;
+    background: #14699b;
+    color: white;
+    font-size: large;
+    border: 5px solid #14699b;
+  }
+  @media screen and (max-width: 500px) {
+  agm-map {
+    height: 300px;
+  }
+  .how-to {
+    text-align:center;
+  }
+}
+.submit {
+  background-color: #80caf5;
+  margin-top: 10px;
+}
+.fill {
+  margin-top:10px;
+}
+.formon {
+  margin-bottom: 10px;
+  color: #073048;
+}

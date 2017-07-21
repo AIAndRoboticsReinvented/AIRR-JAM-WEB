@@ -3,61 +3,15 @@
 export const PROPERTIES: Property[] = [
 
     {
-        propertyid: '1',
-        name: 'Single Family Home',
-        location: 'Northwest Tampa',
-        address: '2907 W Dewey St',
-        city: 'Tampa',
-        state: 'FL',
-        zip: '33607',
-        zillow: 'https://www.zillow.com/homes/2907-W-Dewey-St,-Tampa,-FL-33607_rb/',
-        description: 'This sleek & modern remodeled home is located in a well-established neighborhood and is conveniently located just minutes away from Downtown Tampa, South Tampa, International Plaza and Westshore Malls, Raymond James Stadium, Tampa International Airport, I-275, and St. Josephs Hospital.Stepping inside the front door your are graced by soaring ceilings and ornate crown molding.Beautiful new laminate floors throughout, brand new kitchen featuring Stainless Steel appliances, real wood cabinets, Granite countertops with decorative glass & metal backsplash. The master suite has its own private bath plus a huge walk-in closet, All three bathrooms boast new ceramic tile along with custom inlays, decorative tile, brand new vanities with Granite countertops and new commodes. Freshly painted inside and out, new interior doors, new lighting & ceiling fans throughout. Outdoor entertaining is a breeze on the covered patio (there is also an uncovered patio).',
-        masterimage: 'IMG_9.jpg',
-        images: [
-            { img: 'assets/userassets/images/properties/IMG_9.jpg', title: '', caption: '', slide: 0 },
-            {img:'assets/userassets/images/properties/IMG_8.jpg' , title:'', caption:'', slide:1},
-            { img:'assets//userassets/images/properties/IMG_10.jpg', title:'', caption:'',slide:2},
-            { img: 'assets/userassets/images/properties/IMG_11.jpg', title: '', caption: '', slide: 3 }
-                ],
-        propertyattributes: [
-            { key: 'rooms', value: '3' },
-            { key: 'baths', value: '3' },
-            { key: 'sq ft', value: '1380' },
-        ],
-    },
-    {
-        propertyid:'2',
-        name: 'Single Family Home',
-        location: 'Beach Park',
-        address: '116 S Lauber Way',
-        city: 'Tampa',
-        state: 'FL',
-        zip: '33609',
-        zillow: 'https://www.zillow.com/homes/116-S-Lauber-Way,-Tampa,-FL-33609-_rb/',
-        description: 'Single family home built in 1959.',
-        masterimage: 'IMG_45.jpg',
-        images: [
-            { img: 'assets/userassets/images/properties/IMG_45.jpg', title: '', caption: '', slide: 0 },
-            { img:'assets/userassets/images/properties/IMG_46.jpg', title:'', caption:'', slide:1},
-            { img: 'assets/userassets/images/properties/IMG_47.jpg', title: '', caption: '', slide: 2 },
-            { img: 'assets/userassets/images/properties/IMG_48.jpg', title: '', caption:'',  slide:3}
-                ],
-        propertyattributes: [
-            { key: 'rooms', value: '4' },
-            { key: 'baths', value: '2' },
-            { key: 'sq ft', value: '1877' },
-        ],
-    },
-    {
         propertyid: '3',
         name: 'Single Family Home',
-        location: 'Wellswood and Hillsborough River',
+        location: 'Riverwood and Hillsborough River',
         address: '4038 N Riverwood Ave',
         city: 'Tampa,',
         state: 'FL',
         zip: '33607',
         zillow: 'https://www.zillow.com/homedetails/4038-N-River-View-Ave-Tampa-FL-33607/45044423_zpid/',
-        description: 'Hme located in the sought after Wellswood section of Tampa, blocks from the Hillsborough River/Close to city it is being totally rehabed from floor to roof evertyhing brand new.',
+        description: 'Home located in the sought after Riverwood section of Tampa, blocks from the Hillsborough River/Close to city it is being totally rehabed from floor to roof evertyhing brand new.',
         masterimage: 'IMG_0864.JPG',
         images: [
             { img: 'assets/userassets/images/properties/wellshills.jpg', title: '', caption: '', slide: 0 },
@@ -119,6 +73,52 @@ export const PROPERTIES: Property[] = [
             { key: 'total rooms', value: '8' },
             { key: 'Lot Size', value: '11,088 Sq Ft' },
             { key: 'Sale Price', value: 'inquire.' },
+        ],
+    },
+    {
+        propertyid: '1',
+        name: 'Single Family Home',
+        location: 'Northwest Tampa',
+        address: '2907 W Dewey St',
+        city: 'Tampa',
+        state: 'FL',
+        zip: '33607',
+        zillow: 'https://www.zillow.com/homes/2907-W-Dewey-St,-Tampa,-FL-33607_rb/',
+        description: ' SOLD This sleek & modern remodeled home is located in a well-established neighborhood and is conveniently located just minutes away from Downtown Tampa, South Tampa, International Plaza and Westshore Malls, Raymond James Stadium, Tampa International Airport, I-275, and St. Josephs Hospital.Stepping inside the front door your are graced by soaring ceilings and ornate crown molding.Beautiful new laminate floors throughout, brand new kitchen featuring Stainless Steel appliances, real wood cabinets, Granite countertops with decorative glass & metal backsplash. The master suite has its own private bath plus a huge walk-in closet, All three bathrooms boast new ceramic tile along with custom inlays, decorative tile, brand new vanities with Granite countertops and new commodes. Freshly painted inside and out, new interior doors, new lighting & ceiling fans throughout. Outdoor entertaining is a breeze on the covered patio (there is also an uncovered patio).',
+        masterimage: 'IMG_9.jpg',
+        images: [
+            { img: 'assets/userassets/images/properties/IMG_9.jpg', title: '', caption: '', slide: 0 },
+            { img: 'assets/userassets/images/properties/IMG_8.jpg', title: '', caption: '', slide: 1 },
+            { img: 'assets//userassets/images/properties/IMG_10.jpg', title: '', caption: '', slide: 2 },
+            { img: 'assets/userassets/images/properties/IMG_11.jpg', title: '', caption: '', slide: 3 }
+        ],
+        propertyattributes: [
+            { key: 'rooms', value: '3' },
+            { key: 'baths', value: '3' },
+            { key: 'sq ft', value: '1380' },
+        ],
+    },
+    {
+        propertyid: '2',
+        name: 'Single Family Home',
+        location: 'Beach Park',
+        address: '116 S Lauber Way',
+        city: 'Tampa',
+        state: 'FL',
+        zip: '33609',
+        zillow: 'https://www.zillow.com/homes/116-S-Lauber-Way,-Tampa,-FL-33609-_rb/',
+        description: ' SOLD Single family home built in 1959.',
+        masterimage: 'IMG_45.jpg',
+        images: [
+            { img: 'assets/userassets/images/properties/IMG_45.jpg', title: '', caption: '', slide: 0 },
+            { img: 'assets/userassets/images/properties/IMG_46.jpg', title: '', caption: '', slide: 1 },
+            { img: 'assets/userassets/images/properties/IMG_47.jpg', title: '', caption: '', slide: 2 },
+            { img: 'assets/userassets/images/properties/IMG_48.jpg', title: '', caption: '', slide: 3 }
+        ],
+        propertyattributes: [
+            { key: 'rooms', value: '4' },
+            { key: 'baths', value: '2' },
+            { key: 'sq ft', value: '1877' },
         ],
     },
     {
