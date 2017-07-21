@@ -14,6 +14,14 @@ export class ReportService {
 
 
 
+    getSiteContactRequests(visitorid) {
+        this.request.action = 'Report Contact Requests';
+        this.request.requested = new Date().getTime().toString();
+        this.request.visitorid = visitorid;
+        this.therequest = JSON.stringify(this.request);
+        return this.http.post(this.url, this.therequest)
+            .map(res => res.json());
+    }
 
     getSMSBlocked(visitorid) {
         this.request.action = 'Report SMS Blocked';

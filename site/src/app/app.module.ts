@@ -10,11 +10,11 @@ import { AgmCoreModule } from '@agm/core';
 //import { } from '@types/google-maps';
 
 /// Image Uploader
-import { ImageUploadModule } from 'angular2-image-upload'
+//import { ImageUploadModule } from 'angular2-image-upload'
 
 /// Google maps. 
 ///import { AgmCoreModule } from 'angular2-google-maps/core';
-
+ 
 
 import { TeamService } from './team.service';
 import { ContactRequestService } from './contact-request.service';
@@ -72,9 +72,9 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
 import { LPUXComponent } from './lp-ux/lp-ux.component';
 import { TestdeskComponent } from './testdesk/testdesk.component';
-import { ProspectComponent } from './prospect/prospect.component';
-import { ImageUploadComponent } from './image-upload/image-upload.component';
-import { LocatorComponent } from './locator/locator.component';
+//import { ProspectComponent } from './prospect/prospect.component';
+//import { ImageUploadComponent } from './image-upload/image-upload.component';
+//import { LocatorComponent } from './locator/locator.component';
 
 
 @NgModule({
@@ -125,9 +125,9 @@ import { LocatorComponent } from './locator/locator.component';
       LPUXComponent,
       PageNotFoundComponent,
       TestdeskComponent,
-      ProspectComponent,
-      ImageUploadComponent,
-      LocatorComponent,
+      //ProspectComponent,
+      //ImageUploadComponent,
+      //LocatorComponent,
   ],
   imports: [      
       BrowserModule,
@@ -138,7 +138,7 @@ import { LocatorComponent } from './locator/locator.component';
       AgmCoreModule.forRoot({
           apiKey: 'AIzaSyCyubuZfrveaznNqBOpts8dHEIGsR0vhj0'
       }),
-      ImageUploadModule.forRoot(),
+      //ImageUploadModule.forRoot(),
   
 ///      AgmCoreModule.forRoot({ apiKey: 'AIzaSyCkiDx9O54GaP1FG2eOzXOjZB-ffqAbEzg'}),  /// Google Maps
 ///      ImageUploadModule.forRoot(),     /// Image Uploader
@@ -156,4 +156,4 @@ import { LocatorComponent } from './locator/locator.component';
   bootstrap: [AppComponent]
 })
 
-export class AppModule { }
+export class AppModule { } 

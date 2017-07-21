@@ -30,8 +30,8 @@
       <div class="navsection" [hidden]="Compare(displayState.ReportsPanel,'0')">
         <div class="col-xs-12 navitem clicklink" (click)="Show('Dialer Survey')"><i class="fa fa-comments"></i> Dialer Survey</div>
 
-
-        <div class="col-xs-12 titlebar">
+<!-- SMS Reports -->    
+        <div class="col-xs-12 subtitlebar">
           SMS Reports
           <span class="collapser fa fa-angle-up" [hidden]="Compare(displayState.ReportsSMS,'0')" (click)="SetPanel('ReportsSMS',false)"></span>
           <span class="collapser fa fa-angle-down" [hidden]="Compare(displayState.ReportsSMS,'1')" (click)="SetPanel('ReportsSMS',true)"></span>
@@ -44,6 +44,22 @@
           <div class="col-xs-12 subnavitem clicklink" (click)="Show('SMS Send Stats')"><i class="fa fa-line-chart"></i> SMS Send Stats</div>
 
         </div>
+<!--- Web Site Reports -->
+        <div class="col-xs-12 subtitlebar">
+          Site Reports
+          <span class="collapser fa fa-angle-up" [hidden]="Compare(displayState.ReportsSite,'0')" (click)="SetPanel('ReportsSite',false)"></span>
+          <span class="collapser fa fa-angle-down" [hidden]="Compare(displayState.ReportsSite,'1')" (click)="SetPanel('ReportsSite',true)"></span>
+        </div>
+
+        <div class="navsection" [hidden]="Compare(displayState.ReportsSite,'0')">
+          <div class="col-xs-12 subnavitem clicklink" (click)="Show('Site Contact Requests')"><i class="fa fa-user"></i> Site Contact Requests</div>
+
+        </div>
+
+
+
+
+
       </div>
 
       <div class="col-xs-12 seperatorbar">&nbsp;</div>

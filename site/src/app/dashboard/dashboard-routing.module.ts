@@ -27,7 +27,8 @@ import { MemberHeaderComponent }        from '../member-header/member-header.com
 
 import { PrivacyComponent }             from '../privacy/privacy.component';
 
-import { ReportDialerSurveyComponent }  from '../report-dialer-survey/report-dialer-survey.component';
+import { ReportDialerSurveyComponent } from '../report-dialer-survey/report-dialer-survey.component';
+import { ReportSiteContactrequestsComponent } from '../report-site-contactrequests/report-site-contactrequests.component';
 import { ReportSmsBlockedComponent }    from '../report-sms-blocked/report-sms-blocked.component';
 import { ReportSmsBlockreasonsComponent } from '../report-sms-blockreasons/report-sms-blockreasons.component';
 import { ReportSmsResponsesComponent } from '../report-sms-responses/report-sms-responses.component';
@@ -41,7 +42,8 @@ const dashboardRoutes: Routes = [
         //    { path: '', redirectTo: '/home', pathMatch:'full' },
             
             { path: 'about',                        component: MemberAboutComponent },
-            { path: 'reportdialersurvey',           component: ReportDialerSurveyComponent},          
+            { path: 'reportdialersurvey',           component: ReportDialerSurveyComponent },          
+            { path: 'reportsitecontactrequests',    component: ReportSiteContactrequestsComponent},
             { path: 'reportsmsresponses',           component: ReportSmsResponsesComponent },
             { path: 'reportsmsblocked',             component: ReportSmsBlockedComponent },
             { path: 'reportsmsblockreasons',        component: ReportSmsBlockreasonsComponent },
@@ -73,6 +75,7 @@ const dashboardRoutes: Routes = [
         MemberAboutComponent,
         MemberHeaderComponent,
         ReportDialerSurveyComponent,
+        ReportSiteContactrequestsComponent,
         ReportSmsBlockedComponent,
         ReportSmsBlockreasonsComponent,
         ReportSmsResponsesComponent,

@@ -30,7 +30,8 @@
   text-align:center;
 }
 
-.titlebar {
+.titlebar,
+.subtitlebar {
   border-bottom:2px inset #808080;
 }
 

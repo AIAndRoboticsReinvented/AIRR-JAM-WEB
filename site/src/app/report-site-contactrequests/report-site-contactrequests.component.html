@@ -1,0 +1,62 @@
+﻿<div class="container report">
+  <div class="row record columnheader">
+    <div class="col-xs-6">
+      Requested
+    </div>
+    <div class="col-xs-6">
+      Request Source
+    </div>
+    <div class="col-xs-6">
+       Name
+    </div>
+    <div class="col-xs-6">
+      EMail
+    </div>
+    <div class="col-xs-12">
+      Phones
+    </div>
+    <div class="col-xs-12">
+      Mailing
+    </div>
+    <div class="col-xs-12">
+      Property
+    </div>
+    <div class="col-xs-12">
+      Comments
+    </div>
+  </div>
+  <div class="row record" *ngFor="let row of report">
+    <div class="col-xs-6">
+      {{row.RequestedDate}}&nbsp;
+    </div>
+    <div class="col-xs-6 alternate">
+      {{row.RequestSource}}&nbsp;
+    </div>
+    <div class="col-xs-6">
+      {{row.FirstName}} {{row.LastName}}&nbsp;
+    </div>
+    <div class="col-xs-6">
+      {{row.EMail}}&nbsp;
+    </div>
+    <div class="col-xs-12">
+      {{row.PhoneHome}} {{row.PhoneCell}} {{row.PhoneWork}} {{row.PhoneFax}}&nbsp;
+    </div>
+    <div class="col-xs-12">
+      {{row.MailingAddress1}}
+      {{row.MailingAddress2}}
+      {{row.MailingCity}}
+      {{row.MailingState}}
+      {{row.MailingZip}}&nbsp;
+    </div>
+    <div class="col-xs-12">
+      {{row.PropertyAddress1}}
+      {{row.PropertyAddress2}}
+      {{row.PropertyCity}}
+      {{row.PropertyState}}
+      {{row.PropertyZip}}&nbsp;
+    </div>
+    <div class="col-xs-12">
+      {{row.Comments}}&nbsp;
+    </div>
+  </div>
+</div>
