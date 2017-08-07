@@ -2,39 +2,54 @@
     <div class="navbar row">
 
 <!--- Administration Section -->
-      <div class="col-xs-12 titlebar">
+      <div class="collapser col-xs-12 titlebar" [hidden]="Compare(displayState.AdminPanel,'1')" (click)="SetPanel('Admin',true)">
         Administration
-        <span class="collapser fa fa-angle-up" [hidden]="Compare(displayState.AdminPanel,'0')" (click)="SetPanel('Admin',false)"></span>
-        <span class="collapser fa fa-angle-down" [hidden]="Compare(displayState.AdminPanel,'1')" (click)="SetPanel('Admin',true)"></span>
+        <span class="fa fa-angle-down"></span>
       </div>
+      <div class="collapser col-xs-12 titlebar"  [hidden]="Compare(displayState.AdminPanel,'0')" (click)="SetPanel('Admin',false)">
+        Administration
+        <span class="fa fa-angle-up"></span>
+      </div>
+
       <div class="navsection" [hidden]="Compare(displayState.AdminPanel,'0')">
         <div class="col-xs-12 navitem clicklink" (click)="Show('Dashboard')"><i class="fa fa-th"></i> Dashboard</div>
       </div>
 <!--- Views Section -->
-      <div class="col-xs-12 titlebar">
+      <div class="collapser col-xs-12 titlebar" [hidden]="Compare(displayState.ViewsPanel,'0')" (click)="SetPanel('Views',false)">
         Views
-        <span class="collapser fa fa-angle-up" [hidden]="Compare(displayState.ViewsPanel,'0')" (click)="SetPanel('Views',false)"></span>
-        <span class="collapser fa fa-angle-down" [hidden]="Compare(displayState.ViewsPanel,'1')" (click)="SetPanel('Views',true)"></span>
+        <span class="fa fa-angle-up"></span>
+      </div>
+      <div class="collapser col-xs-12 titlebar" [hidden]="Compare(displayState.ViewsPanel,'1')" (click)="SetPanel('Views',true)">
+        Views
+        <span class="fa fa-angle-down"></span>
       </div>
       <div class="navsection" [hidden]="Compare(displayState.ViewsPanel,'0')">
         <!--<div class="col-xs-12 navitem clicklink" (click)="Show('Dashboard')"><i class="fa fa-th"></i> Dashboard</div>-->
       </div>
 
 <!--- Reports Section -->
-      <div class="col-xs-12 titlebar">
+      <div class="collapser col-xs-12 titlebar" [hidden]="Compare(displayState.ReportsPanel,'0')" (click)="SetPanel('Reports',false)">
         Reports
-        <span class="collapser fa fa-angle-up" [hidden]="Compare(displayState.ReportsPanel,'0')" (click)="SetPanel('Reports',false)"></span>
-        <span class="collapser fa fa-angle-down" [hidden]="Compare(displayState.ReportsPanel,'1')" (click)="SetPanel('Reports',true)"></span>
+        <span class="fa fa-angle-up"></span>
       </div>
+      <div class="collapser col-xs-12 titlebar" [hidden]="Compare(displayState.ReportsPanel,'1')" (click)="SetPanel('Reports',true)">
+        Reports
+        <span class="fa fa-angle-down"></span>
+      </div>
+
+
 
       <div class="navsection" [hidden]="Compare(displayState.ReportsPanel,'0')">
         <div class="col-xs-12 navitem clicklink" (click)="Show('Dialer Survey')"><i class="fa fa-comments"></i> Dialer Survey</div>
 
 <!-- SMS Reports -->    
-        <div class="col-xs-12 subtitlebar">
+        <div class="collapser col-xs-12 subtitlebar" [hidden]="Compare(displayState.ReportsSMS,'1')" (click)="SetPanel('ReportsSMS',true)">
           SMS Reports
-          <span class="collapser fa fa-angle-up" [hidden]="Compare(displayState.ReportsSMS,'0')" (click)="SetPanel('ReportsSMS',false)"></span>
-          <span class="collapser fa fa-angle-down" [hidden]="Compare(displayState.ReportsSMS,'1')" (click)="SetPanel('ReportsSMS',true)"></span>
+          <span class="fa fa-angle-down"></span>
+        </div>
+        <div class="collapser col-xs-12 subtitlebar" [hidden]="Compare(displayState.ReportsSMS,'0')" (click)="SetPanel('ReportsSMS',false)">
+          SMS Reports
+          <span class="fa fa-angle-up"></span>
         </div>
 
         <div class="navsection" [hidden]="Compare(displayState.ReportsSMS,'0')">
@@ -45,20 +60,19 @@
 
         </div>
 <!--- Web Site Reports -->
-        <div class="col-xs-12 subtitlebar">
+        <div class="collapser col-xs-12 subtitlebar" [hidden]="Compare(displayState.ReportsSite,'1')" (click)="SetPanel('ReportsSite',true)">
           Site Reports
-          <span class="collapser fa fa-angle-up" [hidden]="Compare(displayState.ReportsSite,'0')" (click)="SetPanel('ReportsSite',false)"></span>
-          <span class="collapser fa fa-angle-down" [hidden]="Compare(displayState.ReportsSite,'1')" (click)="SetPanel('ReportsSite',true)"></span>
+          <span class="fa fa-angle-down"></span>
+        </div>
+        <div class="collapser col-xs-12 subtitlebar" [hidden]="Compare(displayState.ReportsSite,'0')" (click)="SetPanel('ReportsSite',false)">
+          Site Reports
+          <span class="fa fa-angle-up"></span>
         </div>
 
         <div class="navsection" [hidden]="Compare(displayState.ReportsSite,'0')">
           <div class="col-xs-12 subnavitem clicklink" (click)="Show('Site Contact Requests')"><i class="fa fa-user"></i> Site Contact Requests</div>
 
         </div>
-
-
-
-
 
       </div>
 

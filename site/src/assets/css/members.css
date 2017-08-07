@@ -48,11 +48,28 @@
 .navitem {
   background: #ffffff;
   border-bottom: solid 1px #000000;
+  color:black;
+  font-style:normal;
+}
+
+.navitem:hover {
+  background: #ffffff;
+  border-bottom: solid 1px #000000;
+  color:blue;
+  font-style:italic;
 }
 
 .subnavitem {
-  background:#faf2ad;
+  background: #faf2ad;
+  color:black;
   border-bottom: solid 1px #000000;
+  font-style: normal;
+}
+.subnavitem:hover {
+  background: #faf2ad;
+  color:blue;
+  border-bottom: solid 1px #000000;
+  font-style: italic;
 }
 
 .maindisplay {

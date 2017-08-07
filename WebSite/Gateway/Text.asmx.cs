@@ -37,5 +37,28 @@ namespace Gateway
 
             return "OK";
         }
+
+
+        [WebMethod]        
+        public string Receive(
+                string name,
+                string number,
+                string content
+            )
+        {
+            ClassDatabase DB = new ClassDatabase();
+
+            string SQL = "texts.Received "
+                + "'" + name + "'" 
+                + ",'" + number + "'"
+                 + ",'" + content.Replace("'", "''") + "'";
+
+            DB.Execute(SQL);
+
+            DB.Close();
+
+            return "OK";
+        }
+
     }
 }
