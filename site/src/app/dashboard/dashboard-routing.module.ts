@@ -17,6 +17,10 @@ import { IconAddComponentComponent }    from '../icon-add-component/icon-add-com
 import { IconDeleteComponentComponent } from '../icon-delete-component/icon-delete-component.component';
 import { IconEditComponentComponent }   from '../icon-edit-component/icon-edit-component.component';
 
+
+/// VALOR-SOFTWARE NG2-CHARTS
+import { ChartsModule }                 from 'ng2-charts';
+
 /// Components....
 import { DashboardComponent }           from './dashboard.component';
 import { DashNavComponent }             from '../dash-nav/dash-nav.component';
@@ -24,6 +28,8 @@ import { DashWelcomeComponent }         from '../dash-welcome/dash-welcome.compo
 
 import { MemberAboutComponent }         from '../member-about/member-about.component';
 import { MemberHeaderComponent }        from '../member-header/member-header.component';
+
+import { PieTextingComponent }         from '../pie-texting/pie-texting.component';
 
 import { PrivacyComponent }             from '../privacy/privacy.component';
 
@@ -74,6 +80,7 @@ const dashboardRoutes: Routes = [
         DashWelcomeComponent,
         MemberAboutComponent,
         MemberHeaderComponent,
+        PieTextingComponent,
         ReportDialerSurveyComponent,
         ReportSiteContactrequestsComponent,
         ReportSmsBlockedComponent,
@@ -85,6 +92,7 @@ const dashboardRoutes: Routes = [
         FormsModule,
         BrowserModule,
         CommonModule,
+        ChartsModule,
         RouterModule.forChild(dashboardRoutes)
     ],
     exports: [RouterModule]

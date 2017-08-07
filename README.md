@@ -13,3 +13,7 @@ White Label WebSite
 
 Angular Google Maps API Typings
 -      execute command:    npm install @agm/core --save
+Valor-Software.com/ng2-charts
+-		execute command:   npm install ng2-charts --save
+-		execute command:   npm install chart.js --save
+

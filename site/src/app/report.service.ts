@@ -61,6 +61,16 @@ export class ReportService {
             .map(res => res.json());
     }
 
+    getSMSSendStatsToday(visitorid) {
+        this.request.action = 'Report SMS Send Stats Today';
+        this.request.requested = new Date().getTime().toString();
+        this.request.visitorid = visitorid;
+        this.therequest = JSON.stringify(this.request);
+        console.log(this.therequest);
+        return this.http.post(this.url, this.therequest)
+            .map(res => res.json());
+    }
+
 
     getDialerSurvey(visitorid) {
         this.request.action = 'Report Dialer Survey';

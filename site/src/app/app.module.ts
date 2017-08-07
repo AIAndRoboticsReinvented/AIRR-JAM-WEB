@@ -72,6 +72,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
 import { LPUXComponent } from './lp-ux/lp-ux.component';
 import { TestdeskComponent } from './testdesk/testdesk.component';
+//import { PieTextingComponent } from './pie-texting/pie-texting.component';
 //import { ProspectComponent } from './prospect/prospect.component';
 //import { ImageUploadComponent } from './image-upload/image-upload.component';
 //import { LocatorComponent } from './locator/locator.component';
@@ -125,6 +126,7 @@ import { TestdeskComponent } from './testdesk/testdesk.component';
       LPUXComponent,
       PageNotFoundComponent,
       TestdeskComponent,
+      //PieTextingComponent,
       //ProspectComponent,
       //ImageUploadComponent,
       //LocatorComponent,
