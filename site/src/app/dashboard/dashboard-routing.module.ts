@@ -37,8 +37,10 @@ import { ReportDialerSurveyComponent } from '../report-dialer-survey/report-dial
 import { ReportSiteContactrequestsComponent } from '../report-site-contactrequests/report-site-contactrequests.component';
 import { ReportSmsBlockedComponent }    from '../report-sms-blocked/report-sms-blocked.component';
 import { ReportSmsBlockreasonsComponent } from '../report-sms-blockreasons/report-sms-blockreasons.component';
-import { ReportSmsResponsesComponent } from '../report-sms-responses/report-sms-responses.component';
-import { ReportSmsSendStatsComponent } from '../report-sms-send-stats/report-sms-send-stats.component';
+import { ReportSmsResponsesComponent }  from '../report-sms-responses/report-sms-responses.component';
+import { ReportSmsSendStatsComponent }  from '../report-sms-send-stats/report-sms-send-stats.component';
+
+import { ToolBarComponent }             from '../tool-bar/tool-bar.component';
 
 const dashboardRoutes: Routes = [
     {
@@ -87,6 +89,7 @@ const dashboardRoutes: Routes = [
         ReportSmsBlockreasonsComponent,
         ReportSmsResponsesComponent,
         ReportSmsSendStatsComponent,
+        ToolBarComponent,
     ],
     imports: [
         FormsModule,

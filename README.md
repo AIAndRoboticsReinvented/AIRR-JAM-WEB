@@ -16,4 +16,7 @@ Angular Google Maps API Typings
 Valor-Software.com/ng2-charts
 -		execute command:   npm install ng2-charts --save
 -		execute command:   npm install chart.js --save
+momentjs.com
+		execute command:   npm install moment --save
+
 

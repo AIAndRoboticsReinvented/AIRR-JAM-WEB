@@ -1,8 +1,9 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿import { Component, Input, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { ReportService } from '../report.service';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-pie-texting',
@@ -18,18 +19,29 @@ export class PieTextingComponent implements OnInit {
     public report: {};
     public visitorid: {};
 
+    public barChartOptions: any = {
+        legend: { position: 'left', display: false, }
+    }
+
 
     public pieChartLabels: string[] = []
     public pieChartData: number[] = [];
     public pieChartType: string = 'pie';
 
-    // events
+    public thedate: string = moment().format('YYYY-MM-DD');
+
+    // events 
     public chartClicked(e: any): void {
         console.log(e);
     }
 
     public chartHovered(e: any): void {
         console.log(e);
+    }
+
+
+    public datechange(): void {
+        this.getSMSSendStatsToday();
     }
 
 
@@ -48,7 +60,7 @@ export class PieTextingComponent implements OnInit {
 
 
     getSMSSendStatsToday(): void {
-        this.reportService.getSMSSendStatsToday(this.visitorid)
+        this.reportService.getSMSSendStatsToday(this.visitorid, this.thedate)
             .subscribe(
             data => this.report = JSON.parse(data.RequestResult),
             error => console.log(error),
@@ -57,10 +69,19 @@ export class PieTextingComponent implements OnInit {
                 var labels: string[] = [];
                 var values: number[] = [];
 
-                for (var i in this.report) {
-                    values.push(this.report[i].Messages);
-                    labels.push('M' + this.report[i].ModemID.toString() + ' [' + this.report[i].Messages.toString() + ']');
+
+                try {
+                    for (var i in this.report) {
+                        values.push(this.report[i].Messages);
+                        labels.push('M' + this.report[i].ModemID.toString() + ' [' + this.report[i].Messages.toString() + ']');
+                    }
                 }
+                catch (err) {
+                    labels = ['NONE'];
+                    values = [100];
+                }
+
+
 
                 this.pieChartData = values;
 
@@ -90,3 +111,4 @@ export class PieTextingComponent implements OnInit {
   }
 
 }
+0

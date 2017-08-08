@@ -33,6 +33,7 @@
     "jasmine-spec-reporter": "^3.3.0",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.2.0",
+    "moment": "^2.18.1",
     "ng2-charts": "^1.6.0",
     "ng2-file-upload": "^1.2.1",
     "ng2-location-autocomplete": "^1.0.0",

@@ -7,7 +7,7 @@ export class ReportService {
     constructor(private http: Http) { }
 
     private url = 'http://209.34.232.74/gateway/gateway.svc/Request';
-    private request = { action: '', requested: '', visitorid: '' };
+    private request = { action: '', requested: '', visitorid: '', thedate: '' };
     private therequest = "";
     private answer;
 
@@ -61,10 +61,11 @@ export class ReportService {
             .map(res => res.json());
     }
 
-    getSMSSendStatsToday(visitorid) {
+    getSMSSendStatsToday(visitorid, thedate) {
         this.request.action = 'Report SMS Send Stats Today';
-        this.request.requested = new Date().getTime().toString();
+        this.request.requested = new Date().getTime().toString();        
         this.request.visitorid = visitorid;
+        this.request.thedate = thedate;
         this.therequest = JSON.stringify(this.request);
         console.log(this.therequest);
         return this.http.post(this.url, this.therequest)
