@@ -1,10 +1,10 @@
-﻿<div class="body">
+﻿<div class="container-liquid body">  
   <app-member-header [navState]="navState" (newNavState)="navStateChange($event)"  [visitorid]="visitorid"></app-member-header>
-  <div>
-    <div class="col-xs-12 col-sm-2">
+  <div class="row">
+    <div class="col-xs-12" [ngClass]="{'col-sm-2' : navState != 'Show'}">
       <app-dash-nav [navState]="navState" [visitorid]="visitorid"></app-dash-nav>
     </div>
-    <div class="col-xs-12 col-sm-10">
+    <div class="col-xs-12" [ngClass]="{'col-sm-10' : navState != 'Show'}">
       <router-outlet></router-outlet>
     </div>
   </div>

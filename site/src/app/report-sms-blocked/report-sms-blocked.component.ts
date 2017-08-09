@@ -6,6 +6,8 @@ import { Location } from '@angular/common';
 //import { SMSBlocked } from '../datatypes/sms';
 import { ReportService } from '../report.service';
 
+import * as moment from 'moment';
+
 import 'rxjs/add/operator/switchMap';
 
 @Component({
@@ -23,6 +25,16 @@ export class ReportSmsBlockedComponent implements OnInit {
     visitorid: {};
 
 
+    public thedate: string = moment().format('YYYY-MM-DD');
+
+
+    thedateChange(newValue) {
+        this.thedate = newValue;
+        this.getSMSBlocked();
+    }
+
+
+
     constructor(
         private router: Router,
         private reportService: ReportService,
@@ -30,8 +42,8 @@ export class ReportSmsBlockedComponent implements OnInit {
         private location: Location,
     ) { }
 
-    getSMSResponses(): void {
-        this.reportService.getSMSBlocked(this.visitorid)
+    getSMSBlocked(): void {
+        this.reportService.getSMSBlocked(this.visitorid, this.thedate)
             .subscribe(
             data => this.report = JSON.parse(data.RequestResult),
             error => console.log(error),
@@ -39,7 +51,6 @@ export class ReportSmsBlockedComponent implements OnInit {
                 //console.log('Responses Loaded');
                 //console.log(this.report);
             });
-
     }
 
     setVisitorId(newVisitorID): any {
@@ -53,7 +64,7 @@ export class ReportSmsBlockedComponent implements OnInit {
             this.setVisitorId(params['visitorid']))
             .subscribe(data => { });
         //console.log(this.route.firstChild.params);
-        this.getSMSResponses();
+        this.getSMSBlocked();
     }
 
 

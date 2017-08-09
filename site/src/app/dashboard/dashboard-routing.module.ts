@@ -40,6 +40,7 @@ import { ReportSmsBlockreasonsComponent } from '../report-sms-blockreasons/repor
 import { ReportSmsResponsesComponent }  from '../report-sms-responses/report-sms-responses.component';
 import { ReportSmsSendStatsComponent }  from '../report-sms-send-stats/report-sms-send-stats.component';
 
+import { TitleComponent }               from '../title/title.component';
 import { ToolBarComponent }             from '../tool-bar/tool-bar.component';
 
 const dashboardRoutes: Routes = [
@@ -89,6 +90,7 @@ const dashboardRoutes: Routes = [
         ReportSmsBlockreasonsComponent,
         ReportSmsResponsesComponent,
         ReportSmsSendStatsComponent,
+        TitleComponent,
         ToolBarComponent,
     ],
     imports: [

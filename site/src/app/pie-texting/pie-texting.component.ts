@@ -15,6 +15,7 @@ import * as moment from 'moment';
 })
 export class PieTextingComponent implements OnInit {
 
+    @Input() public thedate: string = moment().format('YYYY-MM-DD');
 
     public report: {};
     public visitorid: {};
@@ -28,20 +29,25 @@ export class PieTextingComponent implements OnInit {
     public pieChartData: number[] = [];
     public pieChartType: string = 'pie';
 
-    public thedate: string = moment().format('YYYY-MM-DD');
+    
 
     // events 
     public chartClicked(e: any): void {
-        console.log(e);
+        //console.log(e);
     }
 
     public chartHovered(e: any): void {
-        console.log(e);
+        //console.log(e);
+    }
+
+
+    ngOnChanges() {
+        this.getSMSSendStatsToday();
     }
 
 
     public datechange(): void {
-        this.getSMSSendStatsToday();
+        //this.getSMSSendStatsToday();
     }
 
 

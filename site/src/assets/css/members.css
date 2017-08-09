@@ -1,5 +1,5 @@
 ﻿.body {
-  background:#faf2ad;
+  background:#fff;
   color:#000000;
 }
 
@@ -93,6 +93,42 @@
 .delete {
   color:red;
 }
+
+
+.title {
+  background-color:blue;
+  font-size:small;
+  font-weight:bold;
+  color:white;
+  text-align:center;
+}
+
+.toolbar {
+  background-color: darkgray;
+  border-bottom: solid 1px black;
+  vertical-align: middle
+}
+
+.tool {
+  /*display:table-cell;
+  vertical-align:middle;*/  
+  display:flex;
+  align-items:center;
+}
+
+.tool label, 
+.tool input{
+  font-weight:normal;
+  font-size:small;
+  /*background-color:pink;*/
+  margin: auto 0px auto 0px;
+}
+
+
+  .tool label
+  {
+    
+  }
 
 
 /* Extra Small Devices, .visible-xs-* */

@@ -23,10 +23,11 @@ export class ReportService {
             .map(res => res.json());
     }
 
-    getSMSBlocked(visitorid) {
+    getSMSBlocked(visitorid, thedate) {
         this.request.action = 'Report SMS Blocked';
         this.request.requested = new Date().getTime().toString();
         this.request.visitorid = visitorid;
+        this.request.thedate = thedate;
         this.therequest = JSON.stringify(this.request);
         return this.http.post(this.url, this.therequest)
             .map(res => res.json());

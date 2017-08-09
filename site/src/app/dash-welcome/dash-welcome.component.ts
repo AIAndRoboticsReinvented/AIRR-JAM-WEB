@@ -1,4 +1,6 @@
 ﻿import { Component, OnInit } from '@angular/core';
+import * as moment from 'moment';
+
 
 @Component({
   selector: 'app-dash-welcome',
@@ -12,7 +14,14 @@ export class DashWelcomeComponent implements OnInit {
 
   constructor() { }
 
+  public thedate: string = moment().format('YYYY-MM-DD');
+
   ngOnInit() {
   }
+
+  thedateChange(newValue) {
+      this.thedate = newValue;
+  }
+
 
 }
