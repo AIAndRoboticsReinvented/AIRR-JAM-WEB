@@ -96,7 +96,19 @@
 
 
 .title {
-  background-color:blue;
+  background-color: #6c9df9;
+  /* IE9, iOS 3.2+ */
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMwMDQzZjQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2Q4ZjZmZSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%,color-stop(0, rgb(0, 67, 244)),color-stop(1, rgb(216, 246, 254)));
+  /* Android 2.3 */
+  background-image: -webkit-repeating-linear-gradient(top left,rgb(0, 67, 244) 0%,rgb(216, 246, 254) 100%);
+  /* IE10+ */
+  background-image: repeating-linear-gradient(to bottom right,rgb(0, 67, 244) 0%,rgb(216, 246, 254) 100%);
+  background-image: -ms-repeating-linear-gradient(top left,rgb(0, 67, 244) 0%,rgb(216, 246, 254) 100%);
+
+
+
+  /*background-color:blue;*/
   font-size:small;
   font-weight:bold;
   color:white;
@@ -104,7 +116,19 @@
 }
 
 .toolbar {
-  background-color: darkgray;
+
+  background-color: #e3e3e3;
+  /* IE9, iOS 3.2+ */
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBzdG9wLWNvbG9yPSIjZTJlMmUyIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNkYmRiZGIiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjUiLz48c3RvcCBzdG9wLWNvbG9yPSIjZDFkMWQxIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMC41MTMiLz48c3RvcCBzdG9wLWNvbG9yPSIjZmVmZWZlIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN2c2dnKSIgLz48L3N2Zz4=);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,color-stop(0, rgb(226, 226, 226)),color-stop(0.5, rgb(219, 219, 219)),color-stop(0.513, rgb(209, 209, 209)),color-stop(1, rgb(254, 254, 254)));
+  /* Android 2.3 */
+  background-image: -webkit-repeating-linear-gradient(top,rgb(226, 226, 226) 0%,rgb(219, 219, 219) 50%,rgb(209, 209, 209) 51.3%,rgb(254, 254, 254) 100%);
+  /* IE10+ */
+  background-image: repeating-linear-gradient(to bottom,rgb(226, 226, 226) 0%,rgb(219, 219, 219) 50%,rgb(209, 209, 209) 51.3%,rgb(254, 254, 254) 100%);
+  background-image: -ms-repeating-linear-gradient(top,rgb(226, 226, 226) 0%,rgb(219, 219, 219) 50%,rgb(209, 209, 209) 51.3%,rgb(254, 254, 254) 100%);
+
+
+  /*background-color: darkgray;*/
   border-bottom: solid 1px black;
   vertical-align: middle
 }
@@ -123,6 +147,10 @@
   /*background-color:pink;*/
   margin: auto 0px auto 0px;
 }
+
+  .tool input:focus {
+    background-color: #272B2E;
+  }
 
 
   .tool label

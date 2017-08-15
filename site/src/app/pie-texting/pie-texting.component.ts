@@ -3,7 +3,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { ReportService } from '../report.service';
-import * as moment from 'moment';
+//import * as moment from 'moment';
 
 @Component({
   selector: 'app-pie-texting',
@@ -15,7 +15,7 @@ import * as moment from 'moment';
 })
 export class PieTextingComponent implements OnInit {
 
-    @Input() public thedate: string = moment().format('YYYY-MM-DD');
+    @Input() public thedate: string = '1900-01-01'; //moment().format('YYYY-MM-DD');
 
     public report: {};
     public visitorid: {};
@@ -41,7 +41,7 @@ export class PieTextingComponent implements OnInit {
     }
 
 
-    ngOnChanges() {
+    ngOnChanges(changes: any) {
         this.getSMSSendStatsToday();
     }
 
