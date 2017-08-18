@@ -1,7 +1,27 @@
-﻿<h1>Hi</h1>
+﻿<app-header></app-header>
+<app-pagetitle [title]='title'></app-pagetitle>
+<div class="col-md-6 coors">
+  <h1>Coordinates</h1>
+  <p>Lat:{{this.latitude}}</p>
+  <p>Lng:{{this.longitude}}</p>
+</div>
 
-<!-- this creates a google map on the page with the given lat/lng from -->
-<!-- the component as the initial center of the map: -->
-<agm-map [latitude]="lat" [longitude]="lng">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
+<div class="contactform col-xs-12 col-md-6">
+  <div class="col-md-12">
+    <image-upload></image-upload>
+  </div>
+  <div class="col-md-4 a">
+    <label for="address">Address:</label> <input type="url" name="address" placeholder="123 W Street St." />
+  </div>
+  <div class="col-md-4 a">
+    <label for="city">City:</label> <input type="url" name="address" placeholder="City" />
+  </div>
+  <div class="col-md-4 a">
+    <label for="state">State:</label> <input type="url" name="address" placeholder="State" />
+  </div>
+  <div class="col-xs-12">
+    <input class="button" type="submit" value="Submit" />
+  </div>
+</div>
+<div class="clearfix"></div>
+<app-footer></app-footer>

@@ -10,6 +10,17 @@ White Label WebSite
 - Ruby 2.3.3 - https://rubyinstaller.org/downloads/
 -               execute the following command after install to append SASS  
 -               gem install sass  
-
 Angular Google Maps API Typings
 -      execute command:    npm install @agm/core --save
+
+Image Upload 
+https://www.npmjs.com/package/angular2-image-upload
+
+Angular Handsontable
+-      npm install ng2-handsontable --save
+-      bower install handsontable
+Angular Handsontable Library Files
+-      <link rel="stylesheet" media="screen" href="bower_components/handsontable/dist/handsontable.full.css">
+
+Bower Package Manager 
+-       npm install -g bower

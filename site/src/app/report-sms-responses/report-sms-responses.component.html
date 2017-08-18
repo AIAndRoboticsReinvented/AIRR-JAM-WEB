@@ -1,4 +1,4 @@
-﻿<div class="container report">
+﻿<!--<div class="container report">
   <div class="row record columnheader">
     <div class="col-xs-4 col-sm-2">
       Date
@@ -26,4 +26,31 @@
     <div class="col-xs-12 col-sm-6 alternate">
       {{row.Body}}
     </div></div>
-</div>
+</div>-->
+<!---->
+<section class="container report">
+
+  <h2>Text SMS</h2>
+
+  <input type="search" class="light-table-filter" data-table="order-table" placeholder="Filter">
+
+  <table class="order-table table record columnheader">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>From</th>
+        <th>On</th>
+        <th>Response</th>
+      </tr>
+    </thead>
+    <tbody class="record" *ngFor="let row of report">
+      <tr>
+        <td>{{row.Received}}</td>
+        <td>{{row.PhoneFrom}}</td>
+        <td>{{row.PhoneIn}}</td>
+        <td>{{row.Body}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>

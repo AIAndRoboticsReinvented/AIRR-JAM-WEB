@@ -75,6 +75,9 @@ import { TestdeskComponent } from './testdesk/testdesk.component';
 import { ProspectComponent } from './prospect/prospect.component';
 import { ImageUploadComponent } from './image-upload/image-upload.component';
 import { LocatorComponent } from './locator/locator.component';
+import { DatatableComponent } from './datatable/datatable.component';
+import { ColumnComponent } from './column/column.component';
+import { HotableComponent } from './hotable/hotable.component';
 
 
 @NgModule({
@@ -87,7 +90,6 @@ import { LocatorComponent } from './locator/locator.component';
       FaqComponent,
       FeaturedComponent,
       FooterComponent,
-
       HeaderComponent,
       HomeComponent,
       HtmlComponent,
@@ -128,6 +130,9 @@ import { LocatorComponent } from './locator/locator.component';
       ProspectComponent,
       ImageUploadComponent,
       LocatorComponent,
+      DatatableComponent,
+      ColumnComponent,
+      HotableComponent,
   ],
   imports: [      
       BrowserModule,

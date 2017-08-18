@@ -24,7 +24,7 @@ import { ModalComponent }                     from './modal/modal.component';
 import { LPUXComponent }                      from './lp-ux/lp-ux.component';
 import { TestdeskComponent }                  from './testdesk/testdesk.component';
 import { ProspectComponent }                  from './prospect/prospect.component';
-import { LocatorComponent }                   from './locator/locator.component' ;
+import { LocatorComponent }                   from './locator/locator.component';
 
 
 const routes: Routes = [
@@ -35,6 +35,7 @@ const routes: Routes = [
     { path: 'faq',                    component: FaqComponent },
     { path: 'featured',               component: FeaturedComponent },
     { path: 'home',                   component: HomeComponent },
+    { path: 'homeweare',              component: HomeweareComponent },
     { path: 'html/:id',               component: HtmlComponent },
     { path: 'investors',              component: InvestorsComponent },
     { path: 'landy',                  component: LandyComponent},
@@ -47,7 +48,6 @@ const routes: Routes = [
     { path: 'testimonials',           component: TestimonialsComponent },
     { path: 'videa/:id',              component: VideaComponent },
     { path: 'wholesale',              component: WholesaleComponent },
-    { path: 'homeweare',              component: HomeweareComponent },
     { path: 'modal',                  component: ModalComponent },
     {path:  'locator',                component: LocatorComponent },
     { path: 'lp-ux/:id',              component: LPUXComponent },

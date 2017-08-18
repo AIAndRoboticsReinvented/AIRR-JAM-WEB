@@ -1,1 +1,10 @@
-﻿
+﻿.record {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  background-color: white;
+}
+td:hover{
+  outline:dashed 2px;
+  outline-color:#6acb6a;
+  background-color:#cffacf;
+}
