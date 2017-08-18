@@ -18,6 +18,25 @@ import 'rxjs/add/operator/switchMap';
 })
 export class ReportDialerSurveyComponent implements OnInit {
 
+    public columns =
+    [
+        { data: 'entry_time', readonly: true },
+        { data: 'sell', readonly: true },
+        { data: 'call', readonly: true },
+        { data: 'first_name', readonly: true },
+        { data: 'last_name', readonly: true },
+        { data: 'Phone', readonly: true },
+        { data: 'address1', readonly: true },
+        { data: 'city', readonly: true },
+        { data: 'state', readonly: true },
+        { data: 'postal_code', readonly: true }
+    ];
+
+
+    public colHeaders = ['When', 'Sell', 'Call', 'First','Last', 'Phone', 'Address', 'City','State','Zip'];
+
+    public options = { columnSorting: true };
+
     report: {};
     visitorid: {};
 

@@ -10,11 +10,11 @@ import { AgmCoreModule } from '@agm/core';
 //import { } from '@types/google-maps';
 
 /// Image Uploader
-import { ImageUploadModule } from 'angular2-image-upload'
+//import { ImageUploadModule } from 'angular2-image-upload'
 
 /// Google maps. 
 ///import { AgmCoreModule } from 'angular2-google-maps/core';
-
+ 
 
 import { TeamService } from './team.service';
 import { ContactRequestService } from './contact-request.service';
@@ -72,12 +72,11 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
 import { LPUXComponent } from './lp-ux/lp-ux.component';
 import { TestdeskComponent } from './testdesk/testdesk.component';
-import { ProspectComponent } from './prospect/prospect.component';
-import { ImageUploadComponent } from './image-upload/image-upload.component';
-import { LocatorComponent } from './locator/locator.component';
-import { DatatableComponent } from './datatable/datatable.component';
-import { ColumnComponent } from './column/column.component';
-import { HotableComponent } from './hotable/hotable.component';
+
+
+//import { ProspectComponent } from './prospect/prospect.component';
+//import { ImageUploadComponent } from './image-upload/image-upload.component';
+//import { LocatorComponent } from './locator/locator.component';
 
 
 @NgModule({
@@ -90,6 +89,7 @@ import { HotableComponent } from './hotable/hotable.component';
       FaqComponent,
       FeaturedComponent,
       FooterComponent,
+
       HeaderComponent,
       HomeComponent,
       HtmlComponent,
@@ -127,12 +127,10 @@ import { HotableComponent } from './hotable/hotable.component';
       LPUXComponent,
       PageNotFoundComponent,
       TestdeskComponent,
-      ProspectComponent,
-      ImageUploadComponent,
-      LocatorComponent,
-      DatatableComponent,
-      ColumnComponent,
-      HotableComponent,
+
+      //ProspectComponent,
+      //ImageUploadComponent,
+      //LocatorComponent,
   ],
   imports: [      
       BrowserModule,
@@ -143,7 +141,7 @@ import { HotableComponent } from './hotable/hotable.component';
       AgmCoreModule.forRoot({
           apiKey: 'AIzaSyCyubuZfrveaznNqBOpts8dHEIGsR0vhj0'
       }),
-      ImageUploadModule.forRoot(),
+      //ImageUploadModule.forRoot(),
   
 ///      AgmCoreModule.forRoot({ apiKey: 'AIzaSyCkiDx9O54GaP1FG2eOzXOjZB-ffqAbEzg'}),  /// Google Maps
 ///      ImageUploadModule.forRoot(),     /// Image Uploader
@@ -161,4 +159,4 @@ import { HotableComponent } from './hotable/hotable.component';
   bootstrap: [AppComponent]
 })
 
-export class AppModule { }
+export class AppModule { } 

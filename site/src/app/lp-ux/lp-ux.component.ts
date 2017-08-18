@@ -41,7 +41,7 @@ export class LPUXComponent implements OnInit {
         Image3: '',
         Image4: '',
         contactrequest: {
-            RequestSource: 'Video Squeeze Page',
+            RequestSource: 'LP-UX Squeeze Page',
             FirstName: '',
             LastName: '',
             EMail: '',

@@ -17,6 +17,14 @@ import { IconAddComponentComponent }    from '../icon-add-component/icon-add-com
 import { IconDeleteComponentComponent } from '../icon-delete-component/icon-delete-component.component';
 import { IconEditComponentComponent }   from '../icon-edit-component/icon-edit-component.component';
 
+
+/// VALOR-SOFTWARE NG2-CHARTS
+import { ChartsModule }                 from 'ng2-charts';
+/// VALOR-SOFTWARE NG2-HANDSONTABLE
+import { HotTableModule }               from 'ng2-handsontable';
+
+
+
 /// Components....
 import { DashboardComponent }           from './dashboard.component';
 import { DashNavComponent }             from '../dash-nav/dash-nav.component';
@@ -25,13 +33,19 @@ import { DashWelcomeComponent }         from '../dash-welcome/dash-welcome.compo
 import { MemberAboutComponent }         from '../member-about/member-about.component';
 import { MemberHeaderComponent }        from '../member-header/member-header.component';
 
+import { PieTextingComponent }         from '../pie-texting/pie-texting.component';
+
 import { PrivacyComponent }             from '../privacy/privacy.component';
 
-import { ReportDialerSurveyComponent }  from '../report-dialer-survey/report-dialer-survey.component';
+import { ReportDialerSurveyComponent } from '../report-dialer-survey/report-dialer-survey.component';
+import { ReportSiteContactrequestsComponent } from '../report-site-contactrequests/report-site-contactrequests.component';
 import { ReportSmsBlockedComponent }    from '../report-sms-blocked/report-sms-blocked.component';
 import { ReportSmsBlockreasonsComponent } from '../report-sms-blockreasons/report-sms-blockreasons.component';
-import { ReportSmsResponsesComponent } from '../report-sms-responses/report-sms-responses.component';
-import { ReportSmsSendStatsComponent } from '../report-sms-send-stats/report-sms-send-stats.component';
+import { ReportSmsResponsesComponent }  from '../report-sms-responses/report-sms-responses.component';
+import { ReportSmsSendStatsComponent }  from '../report-sms-send-stats/report-sms-send-stats.component';
+
+import { TitleComponent }               from '../title/title.component';
+import { ToolBarComponent }             from '../tool-bar/tool-bar.component';
 
 const dashboardRoutes: Routes = [
     {
@@ -41,7 +55,8 @@ const dashboardRoutes: Routes = [
         //    { path: '', redirectTo: '/home', pathMatch:'full' },
             
             { path: 'about',                        component: MemberAboutComponent },
-            { path: 'reportdialersurvey',           component: ReportDialerSurveyComponent},          
+            { path: 'reportdialersurvey',           component: ReportDialerSurveyComponent },          
+            { path: 'reportsitecontactrequests',    component: ReportSiteContactrequestsComponent},
             { path: 'reportsmsresponses',           component: ReportSmsResponsesComponent },
             { path: 'reportsmsblocked',             component: ReportSmsBlockedComponent },
             { path: 'reportsmsblockreasons',        component: ReportSmsBlockreasonsComponent },
@@ -72,16 +87,22 @@ const dashboardRoutes: Routes = [
         DashWelcomeComponent,
         MemberAboutComponent,
         MemberHeaderComponent,
+        PieTextingComponent,
         ReportDialerSurveyComponent,
+        ReportSiteContactrequestsComponent,
         ReportSmsBlockedComponent,
         ReportSmsBlockreasonsComponent,
         ReportSmsResponsesComponent,
         ReportSmsSendStatsComponent,
+        TitleComponent,
+        ToolBarComponent,
     ],
     imports: [
         FormsModule,
         BrowserModule,
         CommonModule,
+        ChartsModule,
+        HotTableModule,
         RouterModule.forChild(dashboardRoutes)
     ],
     exports: [RouterModule]

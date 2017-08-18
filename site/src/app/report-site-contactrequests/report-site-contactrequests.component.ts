@@ -3,35 +3,24 @@
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
-//import { SMSBlocked } from '../datatypes/sms';
-import { ReportService } from '../report.service';
 
-import * as moment from 'moment';
+import { ReportService } from '../report.service';
 
 import 'rxjs/add/operator/switchMap';
 
 @Component({
-  selector: 'app-report-sms-blocked',
-  templateUrl: './report-sms-blocked.component.html',
+  selector: 'app-report-site-contactrequests',
+  templateUrl: './report-site-contactrequests.component.html',
   styleUrls: [
       '../../assets/css/members.css',
-      './report-sms-blocked.component.css'
+      './report-site-contactrequests.component.css'
   ]
 })
-export class ReportSmsBlockedComponent implements OnInit {
+export class ReportSiteContactrequestsComponent implements OnInit {
 
     report: {};
+
     visitorid: {};
-
-
-    public thedate: string = moment().format('YYYY-MM-DD');
-    
-
-    thedateChange(newValue) {
-        this.thedate = newValue;
-        this.getSMSBlocked();
-    }
-
 
 
     constructor(
@@ -41,8 +30,8 @@ export class ReportSmsBlockedComponent implements OnInit {
         private location: Location,
     ) { }
 
-    getSMSBlocked(): void {
-        this.reportService.getSMSBlocked(this.visitorid, this.thedate)
+    getSiteContactRequests(): void {
+        this.reportService.getSiteContactRequests(this.visitorid)
             .subscribe(
             data => this.report = JSON.parse(data.RequestResult),
             error => console.log(error),
@@ -50,6 +39,7 @@ export class ReportSmsBlockedComponent implements OnInit {
                 //console.log('Responses Loaded');
                 //console.log(this.report);
             });
+
     }
 
     setVisitorId(newVisitorID): any {
@@ -63,11 +53,10 @@ export class ReportSmsBlockedComponent implements OnInit {
             this.setVisitorId(params['visitorid']))
             .subscribe(data => { });
         //console.log(this.route.firstChild.params);
-        this.getSMSBlocked();
+        //console.log('Requesting Responses Now!!!');
+        this.getSiteContactRequests();
     }
 
 
+
 }
-
-
-

@@ -1,0 +1,23 @@
+﻿<div class="col-xs-12 toolbar container-fluid">
+  <div class="row">
+    
+    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 tool" *ngIf="showcompany">
+      <label for="companyid" class="col-xs-4">Company</label>
+      <select id="companyid" class="col-xs-8" 
+              [ngModel] ="thecompany"
+              (ngModelChange)="companychange($event)">
+         <option *ngFor="let company of companies" [ngValue]="company.CompanyID">{{company.Company}}</option>
+      </select>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 tool"  *ngIf="showthedate">
+      <label for="thedate" class="col-xs-3">Date</label>
+      <input id="thedate" class="col-xs-9" type="date" [(ngModel)]="thedate" (change)="datechange()" />
+    </div>
+
+
+
+
+  </div>
+
+</div>

@@ -1,56 +1,40 @@
-﻿<!--<div class="container report">
-  <div class="row record columnheader">
-    <div class="col-xs-4 col-sm-2">
-      Date
+﻿<app-title [title]='"SMS Text Responses"'></app-title>
+<div class="clear"><br/></div>
+<div class="container report xs-hide">
+  <hotTable [data]="report"
+            [colHeaders]="colHeaders"
+            [columns]="columns"
+            [options]="options">
+  </hotTable>
+</div>
+
+  <div class="container report sm-hide-up">
+    <div class="row record columnheader">
+      <div class="col-xs-4 col-sm-2">
+        Date
+      </div>
+      <div class="col-xs-4 col-sm-2">
+        From
+      </div>
+      <div class="col-xs-4 col-sm-2">
+        On
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        Response
+      </div>
     </div>
-    <div class="col-xs-4 col-sm-2">
-      From
-    </div>
-    <div class="col-xs-4 col-sm-2">
-      On
-    </div>
-    <div class="col-xs-12 col-sm-6">
-      Response
+    <div class="row record" *ngFor="let row of report">
+      <div class="col-xs-4 col-sm-2">
+        {{row.Received}}
+      </div>
+      <div class="col-xs-4 col-sm-2">
+        {{row.PhoneFrom}}
+      </div>
+      <div class="col-xs-4 col-sm-2">
+        {{row.PhoneIn}}
+      </div>
+      <div class="col-xs-12 col-sm-6 alternate">
+        {{row.Body}}
+      </div>
     </div>
   </div>
-  <div class="row record" *ngFor="let row of report">
-    <div class="col-xs-4 col-sm-2">
-      {{row.Received}}
-    </div>
-    <div class="col-xs-4 col-sm-2">
-      {{row.PhoneFrom}}
-    </div>
-    <div class="col-xs-4 col-sm-2">
-      {{row.PhoneIn}}
-    </div>
-    <div class="col-xs-12 col-sm-6 alternate">
-      {{row.Body}}
-    </div></div>
-</div>-->
-<!---->
-<section class="container report">
-
-  <h2>Text SMS</h2>
-
-  <input type="search" class="light-table-filter" data-table="order-table" placeholder="Filter">
-
-  <table class="order-table table record columnheader">
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>From</th>
-        <th>On</th>
-        <th>Response</th>
-      </tr>
-    </thead>
-    <tbody class="record" *ngFor="let row of report">
-      <tr>
-        <td>{{row.Received}}</td>
-        <td>{{row.PhoneFrom}}</td>
-        <td>{{row.PhoneIn}}</td>
-        <td>{{row.Body}}</td>
-      </tr>
-    </tbody>
-  </table>
-
-</section>
