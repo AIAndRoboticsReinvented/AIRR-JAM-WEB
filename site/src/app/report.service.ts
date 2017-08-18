@@ -7,79 +7,102 @@ export class ReportService {
     constructor(private http: Http) { }
 
     private url = 'http://209.34.232.74/gateway/gateway.svc/Request';
-    private request = { action: '', requested: '', visitorid: '', thedate: '' };
+    private request = { action: '', requested: '', visitorid: '', thedate: '', companyid:'' };
     private therequest = "";
     private answer;
 
 
-
-
+    // Report Contact Requests
     getSiteContactRequests(visitorid) {
-        this.request.action = 'Report Contact Requests';
-        this.request.requested = new Date().getTime().toString();
-        this.request.visitorid = visitorid;
-        this.therequest = JSON.stringify(this.request);
-        return this.http.post(this.url, this.therequest)
+        var request = (this.request);
+        request.action = 'Report Contact Requests';
+        request.requested = new Date().getTime().toString();
+        request.visitorid = visitorid;
+        var therequest = JSON.stringify(request);
+        return this.http.post(this.url, therequest)
             .map(res => res.json());
     }
 
+
+    // Report SMS Blocked
     getSMSBlocked(visitorid, thedate) {
-        this.request.action = 'Report SMS Blocked';
-        this.request.requested = new Date().getTime().toString();
-        this.request.visitorid = visitorid;
-        this.request.thedate = thedate;
-        this.therequest = JSON.stringify(this.request);
-        return this.http.post(this.url, this.therequest)
+        var request = (this.request);
+        request.action = 'Report SMS Blocked';
+        request.requested = new Date().getTime().toString();
+        request.visitorid = visitorid;
+        request.thedate = thedate;
+        var therequest = JSON.stringify(request);
+        return this.http.post(this.url, therequest)
             .map(res => res.json());
     }
 
-    
+    // Report SMS Block Reasons
     getSMSBlockReasons(visitorid) {
-        this.request.action = 'Report SMS Block Reasons';
-        this.request.requested = new Date().getTime().toString();
-        this.request.visitorid = visitorid;
-        this.therequest = JSON.stringify(this.request);
-        return this.http.post(this.url, this.therequest)
+        var request = (this.request);
+        request.action = 'Report SMS Block Reasons';
+        request.requested = new Date().getTime().toString();
+        request.visitorid = visitorid;
+        var therequest = JSON.stringify(request);
+        return this.http.post(this.url, therequest)
             .map(res => res.json());
     }
 
-
+    // Report SMS Responses
     getSMSResponses(visitorid) {
-        this.request.action = 'Report SMS Responses';
-        this.request.requested = new Date().getTime().toString();
-        this.request.visitorid = visitorid;
-        this.therequest = JSON.stringify(this.request);
-        return this.http.post(this.url, this.therequest)
+        var request = (this.request);
+        request.action = 'Report SMS Responses';
+        request.requested = new Date().getTime().toString();
+        request.visitorid = visitorid;
+        var therequest = JSON.stringify(request);
+        return this.http.post(this.url, therequest)
             .map(res => res.json());
     }
 
+    // Report SMS Send Stats
     getSMSSendStats(visitorid) {
-        this.request.action = 'Report SMS Send Stats';
-        this.request.requested = new Date().getTime().toString();
-        this.request.visitorid = visitorid;
-        this.therequest = JSON.stringify(this.request);
-        return this.http.post(this.url, this.therequest)
+        var request = (this.request);
+        request.action = 'Report SMS Send Stats';
+        request.requested = new Date().getTime().toString();
+        request.visitorid = visitorid;
+        var therequest = JSON.stringify(request);
+
+        return this.http.post(this.url, therequest)
             .map(res => res.json());
     }
 
-    getSMSSendStatsToday(visitorid, thedate) {
-        this.request.action = 'Report SMS Send Stats Today';
-        this.request.requested = new Date().getTime().toString();        
-        this.request.visitorid = visitorid;
-        this.request.thedate = thedate;
-        this.therequest = JSON.stringify(this.request);
-        console.log(this.therequest);
-        return this.http.post(this.url, this.therequest)
+    // Report SMS Send Stats Today
+    getSMSSendStatsToday(visitorid, thedate,thecompany) {
+        var request = (this.request);
+        request.action = 'Report SMS Send Stats Today';
+        request.requested = new Date().getTime().toString();        
+        request.visitorid = visitorid;
+        request.thedate = thedate;
+        request.companyid = thecompany;
+        var therequest = JSON.stringify(request);
+        return this.http.post(this.url, therequest)
             .map(res => res.json());
     }
 
-
+    // Report Dialer Survey
     getDialerSurvey(visitorid) {
-        this.request.action = 'Report Dialer Survey';
-        this.request.requested = new Date().getTime().toString();
-        this.request.visitorid = visitorid;
-        this.therequest = JSON.stringify(this.request);
-        return this.http.post(this.url, this.therequest)
+        var request = (this.request);
+        request.action = 'Report Dialer Survey';
+        request.requested = new Date().getTime().toString();
+        request.visitorid = visitorid;
+        var therequest = JSON.stringify(request);
+        return this.http.post(this.url, therequest)
+            .map(res => res.json());
+    }
+
+
+    // Get User Companies
+    getUserCompanies(visitorid) {
+        var request = (this.request);
+        request.action = 'Get User Companies';
+        request.requested = new Date().getTime().toString();
+        request.visitorid = visitorid;
+        var therequest = JSON.stringify(request);
+        return this.http.post(this.url, therequest)
             .map(res => res.json());
     }
 

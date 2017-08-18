@@ -1,5 +1,9 @@
 ﻿<app-title [title]='"SMS Blocked Numbers"'></app-title>
-<app-tool-bar [thedate]="thedate" (newthedate)="thedateChange($event)"></app-tool-bar>
+<app-tool-bar 
+              [visitorid]="visitorid" 
+              [showthedate]="true"
+              [thedate]="thedate" (newthedate)="thedateChange($event)">
+</app-tool-bar>
 <div class="container report">
   <div class="row record columnheader">
     <div class="col-xs-6">
@@ -17,4 +21,4 @@
       {{row.Phone}}
     </div>
   </div>
-</div>
+</div> 

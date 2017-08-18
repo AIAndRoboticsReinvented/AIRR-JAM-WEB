@@ -138,25 +138,31 @@
   vertical-align:middle;*/  
   display:flex;
   align-items:center;
+
 }
 
 .tool label, 
-.tool input{
+.tool input,
+.tool select{
   font-weight:normal;
-  font-size:small;
+  font-size:smaller;
   /*background-color:pink;*/
   margin: auto 0px auto 0px;
 }
 
-  .tool input:focus {
-    background-color: #272B2E;
+  .tool input,
+  .tool select {
+    height:22px;
   }
 
 
-  .tool label
-  {
-    
+
+  .tool input:focus,
+  .tool select:focus{
+    background-color: #FFFFFF;
   }
+
+
 
 
 /* Extra Small Devices, .visible-xs-* */

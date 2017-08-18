@@ -6,22 +6,38 @@ import { Location } from '@angular/common';
 
 import { ReportService } from '../report.service';
 
+
 import 'rxjs/add/operator/switchMap';
 
+
+
+
+
 @Component({
-  selector: 'app-report-sms-responses',
-  templateUrl: './report-sms-responses.component.html',
-  styleUrls: [
-      '../../assets/css/members.css',
-      './report-sms-responses.component.css'
-  ]
+    selector: 'app-report-sms-responses',
+    templateUrl: './report-sms-responses.component.html',
+    styleUrls: [
+        '../../assets/css/members.css',
+        './report-sms-responses.component.css'
+    ]
 })
 export class ReportSmsResponsesComponent implements OnInit {
+    public columns = 
+    [
+        { data: 'Received', readonly:true },
+        { data: 'PhoneFrom', readonly: true },
+        { data: 'PhoneIn', readonly: true },
+        { data: 'Body', readonly: true }
+    ];
+
+
+    public colHeaders = ['Date', 'From', 'On', 'Response'];
+
+    public options = { columnSorting: true };
 
     report: {};
 
     visitorid: {};
-
 
     constructor(
         private router: Router,
@@ -49,6 +65,11 @@ export class ReportSmsResponsesComponent implements OnInit {
 
 
     ngOnInit(): void {
+
+
+
+
+
         this.route.parent.params.switchMap((params: Params) =>
             this.setVisitorId(params['visitorid']))
             .subscribe(data => { });

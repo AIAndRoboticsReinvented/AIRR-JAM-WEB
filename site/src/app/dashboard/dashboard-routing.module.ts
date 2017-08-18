@@ -20,6 +20,10 @@ import { IconEditComponentComponent }   from '../icon-edit-component/icon-edit-c
 
 /// VALOR-SOFTWARE NG2-CHARTS
 import { ChartsModule }                 from 'ng2-charts';
+/// VALOR-SOFTWARE NG2-HANDSONTABLE
+import { HotTableModule }               from 'ng2-handsontable';
+
+
 
 /// Components....
 import { DashboardComponent }           from './dashboard.component';
@@ -98,6 +102,7 @@ const dashboardRoutes: Routes = [
         BrowserModule,
         CommonModule,
         ChartsModule,
+        HotTableModule,
         RouterModule.forChild(dashboardRoutes)
     ],
     exports: [RouterModule]

@@ -1,4 +1,10 @@
 ﻿import { Component, OnInit } from '@angular/core';
+
+import { Router, ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
+
+
+
 import * as moment from 'moment';
 
 
@@ -12,16 +18,37 @@ import * as moment from 'moment';
 })
 export class DashWelcomeComponent implements OnInit {
 
-  constructor() { }
+    visitorid: {};
+    
 
-  public thedate: string = moment().format('YYYY-MM-DD');
+    constructor(
+        private router: Router,
+        private route: ActivatedRoute,
+        private location: Location
+        
+    ) { }
 
-  ngOnInit() {
-  }
+    public thedate: string = moment().format('YYYY-MM-DD');
+    public thecompany: string = "";
 
-  thedateChange(newValue) {
-      this.thedate = newValue;
-  }
+    setVisitorId(newVisitorID): any {
+        this.visitorid = newVisitorID;
+        return this.visitorid;
+    }
+
+    ngOnInit() {
+        this.route.parent.params.switchMap((params: Params) =>
+            this.setVisitorId(params['visitorid']))
+            .subscribe(data => { });
+    }
+
+    thecompanyChange(newValue) {
+        this.thecompany = newValue;
+    }
+
+    thedateChange(newValue) {
+        this.thedate = newValue;
+    }
 
 
 }

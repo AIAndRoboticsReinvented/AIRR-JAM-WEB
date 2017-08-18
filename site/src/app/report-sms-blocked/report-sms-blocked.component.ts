@@ -21,12 +21,11 @@ import 'rxjs/add/operator/switchMap';
 export class ReportSmsBlockedComponent implements OnInit {
 
     report: {};
-
     visitorid: {};
 
 
     public thedate: string = moment().format('YYYY-MM-DD');
-
+    
 
     thedateChange(newValue) {
         this.thedate = newValue;

@@ -16,6 +16,7 @@ import { ReportService } from '../report.service';
 export class PieTextingComponent implements OnInit {
 
     @Input() public thedate: string = '1900-01-01'; //moment().format('YYYY-MM-DD');
+    @Input() public thecompany: string = '';
 
     public report: {};
     public visitorid: {};
@@ -33,11 +34,9 @@ export class PieTextingComponent implements OnInit {
 
     // events 
     public chartClicked(e: any): void {
-        //console.log(e);
     }
 
     public chartHovered(e: any): void {
-        //console.log(e);
     }
 
 
@@ -47,7 +46,6 @@ export class PieTextingComponent implements OnInit {
 
 
     public datechange(): void {
-        //this.getSMSSendStatsToday();
     }
 
 
@@ -66,7 +64,7 @@ export class PieTextingComponent implements OnInit {
 
 
     getSMSSendStatsToday(): void {
-        this.reportService.getSMSSendStatsToday(this.visitorid, this.thedate)
+        this.reportService.getSMSSendStatsToday(this.visitorid, this.thedate, this.thecompany)
             .subscribe(
             data => this.report = JSON.parse(data.RequestResult),
             error => console.log(error),
