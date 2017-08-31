@@ -17,9 +17,13 @@ import 'rxjs/add/operator/switchMap';
 export class DashboardComponent implements OnInit {
 
     visitorid: {};
-    navState = 'Show';
+    companyid: {};
+
+    // When navState is Show the nav bar on the left is hidden
+    navState = 'Show'; 
 
     constructor(
+        private router: Router,
         private route: ActivatedRoute,
         private location: Location,
     ) { }
@@ -30,10 +34,22 @@ export class DashboardComponent implements OnInit {
         return this.visitorid;
     }
 
+    setCompanyId(newCompanyID): any {
+        this.companyid = newCompanyID;
+        return this.companyid;
+    }
+
+
+
     ngOnInit() {
         this.route.params.switchMap((params: Params) =>
             this.setVisitorId(params['visitorid']))
             .subscribe(data => { });        
+
+        this.route.params.switchMap((params: Params) =>
+            this.setCompanyId(params['companyid']))
+            .subscribe(data => { });
+
     }
 
     navStateChange(newValue) {

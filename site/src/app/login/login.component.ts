@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
 
     login: '';
     password: '';
-
+    companyid = '0';
     parentRouter = Router;
 
     response = { message: 'Waiting for user submittion.' };
@@ -43,7 +43,9 @@ export class LoginComponent implements OnInit {
               this.response.message = this.answer[0].response;
               if (this.response.message == 'OK')
               {
-                  this.router.navigate(['/dashboard', this.answer[0].visitorid])               
+                  console.log(["Visitor", this.answer[0].visitorid]);
+                  console.log(["Company", this.companyid]);
+                  this.router.navigate(['/dashboard', this.answer[0].visitorid, this.companyid])               
               }
 
           });    

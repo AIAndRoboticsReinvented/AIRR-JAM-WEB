@@ -31,9 +31,10 @@ import { DashNavComponent }             from '../dash-nav/dash-nav.component';
 import { DashWelcomeComponent }         from '../dash-welcome/dash-welcome.component';
 
 import { MemberAboutComponent }         from '../member-about/member-about.component';
-import { MemberHeaderComponent }        from '../member-header/member-header.component';
+import { MemberHeaderComponent } from '../member-header/member-header.component';
 
-import { PieTextingComponent }         from '../pie-texting/pie-texting.component';
+import { PeopletrackComponent }         from '../peopletrack/peopletrack.component';
+import { PieTextingComponent }          from '../pie-texting/pie-texting.component';
 
 import { PrivacyComponent }             from '../privacy/privacy.component';
 
@@ -46,14 +47,16 @@ import { ReportSmsSendStatsComponent }  from '../report-sms-send-stats/report-sm
 
 import { TitleComponent }               from '../title/title.component';
 import { ToolBarComponent }             from '../tool-bar/tool-bar.component';
+import { TrackedpersonComponent }       from '../trackedperson/trackedperson.component';
+
 
 const dashboardRoutes: Routes = [
     {
-        path: 'dashboard/:visitorid',
+        path: 'dashboard/:visitorid/:companyid',
         component: DashboardComponent,
         children: [
-        //    { path: '', redirectTo: '/home', pathMatch:'full' },
-            
+            //    { path: '', redirectTo: '/home', pathMatch:'full' },
+            { path: 'peopletrack',                  component: PeopletrackComponent },
             { path: 'about',                        component: MemberAboutComponent },
             { path: 'reportdialersurvey',           component: ReportDialerSurveyComponent },          
             { path: 'reportsitecontactrequests',    component: ReportSiteContactrequestsComponent},
@@ -87,6 +90,7 @@ const dashboardRoutes: Routes = [
         DashWelcomeComponent,
         MemberAboutComponent,
         MemberHeaderComponent,
+        PeopletrackComponent,
         PieTextingComponent,
         ReportDialerSurveyComponent,
         ReportSiteContactrequestsComponent,
@@ -96,6 +100,7 @@ const dashboardRoutes: Routes = [
         ReportSmsSendStatsComponent,
         TitleComponent,
         ToolBarComponent,
+        TrackedpersonComponent,
     ],
     imports: [
         FormsModule,

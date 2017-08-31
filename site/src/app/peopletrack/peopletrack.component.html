@@ -1,0 +1,42 @@
+﻿<app-title [title]='"People Track"'></app-title>
+<app-tool-bar [visitorid]="visitorid"
+              [showaction]="true" [theaction]="'Search'" (newactionclick)="newActionClick($event)"
+              [showthedate]="false"
+              [showcompany]="true" [thecompany]="thecompany" (newthecompany)="thecompanyChange($event)">
+</app-tool-bar>
+
+<div class="col-xs-12">
+  <div class="col-xs-12">
+    <div class="col-xs-12">
+      <label class="col-xs-12" for="name">First and Last Name</label>
+      <input class="col-xs-12" type="text" id="name" [(ngModel)]="name" />
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      <label class="col-xs-12" for="addr1">Address Line 1</label>
+      <input class="col-xs-12" type="text" id="addr1" [(ngModel)]="addr1" />
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      <label class="col-xs-12" for="addr2">Address Line 2</label>
+      <input class="col-xs-12" type="text" id="addr2" [(ngModel)]="addr2" />
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+      <label class="col-xs-12" for="city">City</label>
+      <input class="col-xs-12" type="text" id="city" [(ngModel)]="city" />
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <label class="col-xs-12" for="state">State</label>
+      <input class="col-xs-12" type="text" id="state" [(ngModel)]="state" />
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <label class="col-xs-12" for="zip">Zip</label>
+      <input class="col-xs-12" type="text" id="zip" [(ngModel)]="zip" />
+    </div>
+
+    <div class="col-xs-12">
+      <app-trackedperson [person]="person"></app-trackedperson>
+    </div>
+  </div>
+</div>

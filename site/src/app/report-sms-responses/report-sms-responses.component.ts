@@ -1,15 +1,10 @@
 ﻿import { Component, OnInit } from '@angular/core';
-
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
 
 import { ReportService } from '../report.service';
-
-
 import 'rxjs/add/operator/switchMap';
-
-
 
 
 
@@ -52,8 +47,6 @@ export class ReportSmsResponsesComponent implements OnInit {
             data => this.report = JSON.parse(data.RequestResult),
             error => console.log(error),
             () => {
-                //console.log('Responses Loaded');
-                //console.log(this.report);
             });
 
     }
