@@ -1,0 +1,14 @@
+﻿<input type="text" class="form-control" *ngIf=enableFilter [(ngModel)]=query
+       (keyup)=filter() placeholder="Filter" />
+<table class="table">
+  <thead>
+    <tr>
+      <th *ngFor="let column of columns">{{column.header}}</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let row of getData()">
+    <tr>
+      <td *ngFor="let column of columns">{{row[column.value]}}</td>
+    </tr>
+  </tbody>
+</table>

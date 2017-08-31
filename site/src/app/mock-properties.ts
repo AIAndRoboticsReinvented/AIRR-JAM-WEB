@@ -5,13 +5,13 @@ export const PROPERTIES: Property[] = [
     {
         propertyid: '3',
         name: 'Single Family Home',
-        location: 'Riverwood and Hillsborough River',
-        address: '4038 N Riverwood Ave',
+        location: 'River View and Hillsborough River',
+        address: '4038 N River View Ave',
         city: 'Tampa,',
         state: 'FL',
         zip: '33607',
         zillow: 'https://www.zillow.com/homedetails/4038-N-River-View-Ave-Tampa-FL-33607/45044423_zpid/',
-        description: 'Home located in the sought after Riverwood section of Tampa, blocks from the Hillsborough River/Close to city it is being totally rehabed from floor to roof evertyhing brand new.',
+        description: 'Home located in the sought after River View section of Tampa, blocks from the Hillsborough River/Close to city it is being totally rehabed from floor to roof evertyhing brand new.',
         masterimage: 'IMG_0864.JPG',
         images: [
             { img: 'assets/userassets/images/properties/wellshills.jpg', title: '', caption: '', slide: 0 },

@@ -4,16 +4,11 @@ import { NgModule, ApplicationRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { AgmCoreModule } from '@agm/core';
-
 @NgModule({
     imports: [
         BrowserModule,
         CommonModule,
         FormsModule,
-        AgmCoreModule.forRoot({
-            apiKey: 'YOUR_KEY'
-        })
     ],
     providers: [],
     declarations: [ProspectComponent],
@@ -25,16 +20,28 @@ import { AgmCoreModule } from '@agm/core';
     styleUrls: ['./prospect.component.css']
 })
 export class ProspectComponent implements OnInit {
-    title: string = 'My first AGM project';
-    lat: number = 51.678418;
-    lng: number = 7.809007;
-  
+    latitude: number;
+    longitude: number;
+    coords:{};
     constructor() {
+        navigator.geolocation.getCurrentPosition(
+            function (position) {
+                alert('Latitude: ' + position.coords.latitude + ', Longitude: ' + position.coords.longitude);
+                //this.latitude = position.coords.latitude;
+                //this.longitude = position.coords.longitude;
+                this.coords = position.coords;
+                console.log(this.coords);
+                //console.log(this.latitude);
+                //console.log(this.longitude);
 
+            },
+            function () {
+                alert('Error locating your device');
+            },
+            { enableHighAccuracy: true });
     }
 
     ngOnInit() {
 
     }
-
 }

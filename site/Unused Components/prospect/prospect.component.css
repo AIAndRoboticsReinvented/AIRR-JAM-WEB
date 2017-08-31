@@ -1,3 +1,33 @@
-﻿agm-map {
-  height: 300px;
+﻿.ttnav {
+  background-color: #9e9eb0;
+  color: #fff;
+  width: 100%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+i:hover {
+  color: #535371;
+}
+.contactform {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: 2px solid #e8e8ef;
+  border-radius: 8px;
+  background-color: #e8e8ef;
+}
+.a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.coors {
+  color:white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: 2px solid #535371;
+  border-radius: 8px;
+  background-color: #535371;
+}
+h1{
+  color:white;
 }

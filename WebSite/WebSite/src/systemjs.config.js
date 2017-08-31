@@ -1,4 +1,4 @@
-/**
+﻿/**
  * System configuration for Angular samples
  * Adjust as necessary for your application needs.
  */
@@ -6,7 +6,8 @@
   System.config({
     paths: {
       // paths serve as alias
-      'npm:': 'node_modules/'
+        'npm:': 'node_modules/',
+        'ng2-handsontable': 'node_modules/ng2-handsontable/bundles/ng2-handsontable.umd.js'
     },
     // map tells the System loader where to look for things
     map: {

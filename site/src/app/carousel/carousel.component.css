@@ -11,18 +11,15 @@ p{
 }
 h3 {
   font-size: 50px;
-  color: crimson;
-  background-color: white;
-  opacity:.8;
+  color: #ffffff;
 }
 p{
-  color: #000000;
-  background-color:white;
-  opacity:.8;
+  font-size:20px;
+  color:white;
 }
 img {
-  max-height:450px;
-  width:100%
+
+  width: 100%
 }
 .carousel-control {
   color: white;
