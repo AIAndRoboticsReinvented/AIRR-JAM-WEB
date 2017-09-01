@@ -46,7 +46,7 @@ export class PieTextingComponent implements OnInit {
 
 
     public datechange(): void {
-    }
+    } 
 
 
     constructor(
