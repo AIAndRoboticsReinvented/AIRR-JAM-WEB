@@ -1,4 +1,4 @@
-﻿<div id="{{id}}" class="carousel slide" data-ride="carousel">
+<div id="{{id}}" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li [attr.data-target]="fullid()" [attr.data-slide-to]="i" *ngFor="let slide of tiles; let i = index"></li>
@@ -7,7 +7,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div [ngClass] ="j == 0 ? 'item active' : 'item'" *ngFor="let tile of tiles; let j = index">
-      <img [src]="tile.img" [alt]="tile.caption">
+      <img alt="carousel" [src]="tile.img" [alt]="tile.caption">
       <div class="carousel-caption d-none d-md-block text">
         <h3>{{tile.title}}</h3>
         <p>{{tile.caption}}</p>

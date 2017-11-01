@@ -1,4 +1,4 @@
-﻿a:link,
+a:link,
 a:visited,
 a {
   color: white;
@@ -6,8 +6,8 @@ a {
 
 .footer {
   /*background-color: #025c99;*/
-  background-color: #212128;
-  color: white;
+  background-color: #d3d3d3;
+  color: #6d6d6d;
   padding-top: 2px;
   padding-bottom: 2px;
 }

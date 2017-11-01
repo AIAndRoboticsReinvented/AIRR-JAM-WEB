@@ -1,5 +1,5 @@
-﻿<app-topnav></app-topnav>
-<div class="col-xs-12 col-sm-12 hidden-md hidden-lg iconnav">
+<app-topnav></app-topnav>
+<!--<div class="col-xs-12 col-sm-12 hidden-md hidden-lg iconnav">
   <a routerLink="/home" class="col-xs-12 hidden-md hidden-lg center landy" routerLinkActive="active"> <app-landy></app-landy></a>
  <a routerLink="/home" class="col-xs-4 hidden-md hidden-lg center mobi" routerLinkActive="active"><i class="fa fa-home fa-2x"></i><div class="col-xs-12">Home</div></a>
  <a routerLink="/about" class="col-xs-4 col-sm-4 hidden-md hidden-lg center mobi" routerLinkActive="active"><i class="fa fa-users fa-2x"></i><div class="col-xs-12">About</div></a>
@@ -12,14 +12,37 @@
     <div class="col-xs-12 col-md-4">
       <a routerLink="/home" class="hidden-xs hidden-sm center" routerLinkActive="active"> <app-landy></app-landy></a>
     </div>
-    <div class="col-md-8 banner">
+    <div class="col-md-8 banner">-->
       
       <!--<a routerLink="/prospect" class="hidden-xs hidden-sm col-xs-4 col-sm-1 center nav" routerLinkActive="active">Pro *New*</a>-->
+      <!--<a routerLink="/home" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Home</a>
+      <a routerLink="/about" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">About</a>
       <a routerLink="/sell" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Sell</a>
       <a routerLink="/buy" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Buy&nbsp;A&nbsp;Home</a>
       <a routerLink="/wholesale" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">Wholesale</a>
-      <a routerLink="/about" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center nav" routerLinkActive="active">About</a>
       <a href="http://blog.ibuyasis.com/" class="hidden-xs hidden-sm col-xs-4 col-sm-1 center nav">Blog</a>
     </div>
-  </div>
+  </div>-->
   <!--<a routerLink="/home" class="hidden-xs hidden-sm col-xs-4 col-sm-2 center" routerLinkActive="active">HOME</a>-->
+
+<header class="clearfix">
+  <div class="container">
+    <div class="header-left">
+      <div class="col-xs-12"><app-landy></app-landy></div>
+    </div>
+    <div class="header-right">
+      <label for="open" class="col-xs-12">
+        <span class="hidden-desktop"></span>
+      </label>
+      <input type="checkbox" name="" id="open">
+      <nav>
+        <a routerLink="/home"      routerLinkActive="active"><div class="col-xs-12">Home</div></a>
+        <a routerLink="/about"     routerLinkActive="active"><div class="col-xs-12">About</div></a>
+        <a routerLink="/buy"       routerLinkActive="active"><div class="col-xs-12">Buy&nbsp;A&nbsp;Home</div></a>
+        <a routerLink="/wholesale" routerLinkActive="active"><div class="col-xs-12">Wholesale</div></a>
+        <a routerLink="/sell"      routerLinkActive="active"><div class="col-xs-12">Sell</div></a>
+        <a href="http://blog.ibuyasis.com" routerLinkActive="active"><div class="col-xs-12">Blog</div></a>
+      </nav>
+    </div>
+  </div>
+</header>

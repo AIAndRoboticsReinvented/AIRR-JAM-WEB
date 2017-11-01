@@ -23,6 +23,9 @@ import { HomeweareComponent }                 from './homeweare/homeweare.compon
 import { ModalComponent }                     from './modal/modal.component';
 import { LPUXComponent }                      from './lp-ux/lp-ux.component';
 import { TestdeskComponent }                  from './testdesk/testdesk.component';
+import { MobimenuComponent }                  from './mobimenu/mobimenu.component';
+import { TestDesk2Component }                 from './test-desk2/test-desk2.component';
+
 //import { ProspectComponent }                  from './prospect/prospect.component';
 //import { LocatorComponent }                   from './locator/locator.component' ;
 
@@ -43,12 +46,14 @@ const routes: Routes = [
     //{ path:'prospect',                component: ProspectComponent },  
     { path: 'sell',                   component: SellyourhomeComponent },
     { path: 'terms',                  component: TermsComponent },
-    { path: 'testdesk',               component: TestdeskComponent}, 
+    { path: 'testdesk',               component: TestdeskComponent},
+    { path: 'test2',                  component: TestDesk2Component },
     { path: 'testimonials',           component: TestimonialsComponent },
     { path: 'videa/:id',              component: VideaComponent },
     { path: 'wholesale',              component: WholesaleComponent },
     { path: 'homeweare',              component: HomeweareComponent },
     { path: 'modal',                  component: ModalComponent },
+    { path: 'mobi',                   component: MobimenuComponent},
     //{path:  'locator',                component: LocatorComponent },
     { path: 'lp-ux/:id',              component: LPUXComponent },
     { path: '**',                     component: PageNotFoundComponent },

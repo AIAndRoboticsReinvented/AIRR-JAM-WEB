@@ -1,8 +1,8 @@
-﻿h2 {
+h2 {
   color:#000000;
 }
 h3 {
-  color: #ff6a00;
+  color: #1367a7;
   font-weight: bold;
 }
 h4 {
@@ -14,15 +14,23 @@ p {
 }
 .box {
   background-color: white;
-  box-shadow: 2px 5px 10px #572705;
+  box-shadow: 2px 5px 10px #053457;
   padding: 0px 0px 0px 0px;
 }
  .box:hover {
-    box-shadow: 1px 1px 30px #ff6a00;
+    box-shadow: 1px 1px 30px #1367a7;
   }
 img {
   margin: 0px 0px 0px 0px !important;
 }
 .center {
   text-align:center;
+}
+.viewon {
+  padding-top:5px;
+  padding-bottom: 5px;
+  background-color: #1367a7;
+  background-repeat:repeat-x;
+  font-weight:bold;
+  color:#ffffff;
 }

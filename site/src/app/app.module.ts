@@ -1,5 +1,6 @@
-﻿import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+// Import HttpClientModule from @angular/common/http
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -76,6 +77,10 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
 import { LPUXComponent } from './lp-ux/lp-ux.component';
 import { TestdeskComponent } from './testdesk/testdesk.component';
+import { MobimenuComponent } from './mobimenu/mobimenu.component';
+import { TestDesk2Component } from './test-desk2/test-desk2.component';
+import { FileSelectDirective, FileDropDirective } from 'ng2-file-upload';
+import { ImguploadrequestComponent } from './imguploadrequest/imguploadrequest.component';
 
 
 
@@ -93,6 +98,7 @@ import { TestdeskComponent } from './testdesk/testdesk.component';
       ContactusComponent,
       FaqComponent,
       FeaturedComponent,
+      FileSelectDirective,
       FooterComponent,
 
       HeaderComponent,
@@ -132,13 +138,16 @@ import { TestdeskComponent } from './testdesk/testdesk.component';
       LPUXComponent,
       PageNotFoundComponent,
       TestdeskComponent,
+      MobimenuComponent,
+      TestDesk2Component,
+      ImguploadrequestComponent,
 
       //ProspectComponent,
       //ImageUploadComponent,
       //LocatorComponent,
   ],
   imports: [      
-      BrowserModule,
+      BrowserModule.withServerTransition({ appId: 'ang4-seo-pre' }),
       CommonModule,
       FormsModule,
       HttpModule,

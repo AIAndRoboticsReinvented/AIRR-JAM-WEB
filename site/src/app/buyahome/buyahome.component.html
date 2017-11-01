@@ -1,9 +1,13 @@
-﻿<app-header></app-header>
+<app-header></app-header>
 <app-pagetitle [title]='title'></app-pagetitle>
-
-<!--<app-locator></app-locator>-->
-<div class="container">
-  <app-properties></app-properties>
+<div role="banner">
+  <app-featured></app-featured>
 </div>
-<div class="clearfix"></div>
+<body>
+  <!--<app-locator></app-locator>-->
+  <div role="main" class="container">
+    <app-properties></app-properties>
+  </div>
+  <div class="clearfix"></div>
+</body>
 <app-footer></app-footer>

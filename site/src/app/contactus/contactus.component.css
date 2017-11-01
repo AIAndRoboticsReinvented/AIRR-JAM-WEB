@@ -1,4 +1,4 @@
-﻿a:link,
+a:link,
 a:visited,
 h3 {
   color: #9b3434;
@@ -12,8 +12,6 @@ p {
 
 }
 .container {
-  margin-top:20px;
-  background-color: #e0e0e0;
   border-radius: 25px;
 }
 @media screen and (max-width: 500px) {
@@ -24,3 +22,8 @@ p {
     }
 
   }
+.title {
+  text-align:center;
+  color:black;
+  font-weight:bold;
+}

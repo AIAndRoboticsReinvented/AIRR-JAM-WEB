@@ -1,4 +1,4 @@
-﻿.fa-facebook {
+/*.fa-facebook {
   color: #3B5998;
 }
   .fa-facebook:hover {
@@ -32,4 +32,49 @@
   .fa-youtube-play:hover {
     color: crimson;
     text-shadow: 0px 0px 5px #ff4d71;
+  }*/
+.fa-facebook {
+  color: #808080;
+}
+
+  .fa-facebook:hover {
+    color: #3B5998;
+  }
+
+.fa-twitter {
+  color: #808080;
+}
+
+  .fa-twitter:hover {
+    color: #43cbff;
+
+  }
+
+.fa-linkedin {
+  color: #808080;
+}
+
+  .fa-linkedin:hover {
+    color: #007bb6;
+  }
+
+.fa-google-plus {
+  color: #808080;
+}
+
+  .fa-google-plus:hover {
+    color: #ff1c00;
+
+  }
+
+.fa-youtube-play {
+  color: #808080;
+}
+
+  .fa-youtube-play:hover {
+    color: #ff0000;
+  }
+  .social {
+    margin-top:5px;
+    margin-bottom:3px;
   }
