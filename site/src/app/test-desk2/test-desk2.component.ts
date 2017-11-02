@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FileUploader } from 'ng2-file-upload';
+//import { FileUploader } from 'ng2-file-upload';
 
 @Component({
   selector: 'app-test-desk2',
@@ -8,7 +8,7 @@ import { FileUploader } from 'ng2-file-upload';
 })
 export class TestDesk2Component implements OnInit {
     //File Uploader
-    public uploader: FileUploader = new FileUploader({ url: 'http://localhost:4200/test2' });
+    //public uploader: FileUploader = new FileUploader({ url: 'http://localhost:4200/test2' });
     //Long+Lat Location
     location = {};
     setPosition(position) {

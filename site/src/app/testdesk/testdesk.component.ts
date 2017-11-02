@@ -6,20 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testdesk.component.css']
 })
 export class TestdeskComponent implements OnInit {
-    location = {};
-    setPosition(position) {
-        this.location = position.coords;
-        console.log(position.coords);
-        console.log(this.location);
-    }
+    //location = {};
+    //setPosition(position) {
+    //    this.location = position.coords;
+    //    console.log(position.coords);
+    //    console.log(this.location);
+    //}
   constructor() { }
 
   ngOnInit() {
-      if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(position => {
-              this.location = position.coords;
-              console.log(position.coords);
-          });
-      }
+      //if (navigator.geolocation) {
+      //    navigator.geolocation.getCurrentPosition(position => {
+      //        this.location = position.coords;
+      //        console.log(position.coords);
+      //    });
+      //}
   }
 }
