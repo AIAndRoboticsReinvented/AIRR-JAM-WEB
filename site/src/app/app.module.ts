@@ -79,6 +79,7 @@ import { LPUXComponent } from './lp-ux/lp-ux.component';
 import { TestdeskComponent } from './testdesk/testdesk.component';
 import { MobimenuComponent } from './mobimenu/mobimenu.component';
 import { TestDesk2Component } from './test-desk2/test-desk2.component';
+import { NewsrefComponent } from './newsref/newsref.component';
 //import { FileSelectDirective, FileDropDirective } from 'ng2-file-upload';
 //import { ImguploadrequestComponent } from './imguploadrequest/imguploadrequest.component';
 
@@ -140,6 +141,7 @@ import { TestDesk2Component } from './test-desk2/test-desk2.component';
       TestdeskComponent,
       MobimenuComponent,
       TestDesk2Component,
+      NewsrefComponent,
       //ImguploadrequestComponent,
 
       //ProspectComponent,
