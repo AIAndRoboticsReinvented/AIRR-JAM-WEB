@@ -24,6 +24,7 @@ export class DashNavComponent implements OnInit {
     }
 
     @Input() visitorid: {};
+    @Input() companyid: {};
     @Input() navState: {};
 
     constructor(
@@ -63,29 +64,32 @@ export class DashNavComponent implements OnInit {
 
         if (Feature == 'Dashboard')
         {
-            this.router.navigate(['/dashboard', this.visitorid]);
+            this.router.navigate(['/dashboard', this.visitorid, this.companyid]);
         }
         else if (Feature == 'About') {
-            this.router.navigate(['/dashboard', this.visitorid, 'about']);
+            this.router.navigate(['/dashboard', this.visitorid, this.companyid, 'about']);
         }
         else if (Feature == 'Dialer Survey') {
-            this.router.navigate(['/dashboard', this.visitorid, 'reportdialersurvey']);
+            this.router.navigate(['/dashboard', this.visitorid, this.companyid, 'reportdialersurvey']);
+        }
+        else if (Feature == 'PeopleTrack') {
+            this.router.navigate(['/dashboard', this.visitorid, this.companyid, 'peopletrack']);
         }
         else if (Feature == 'Site Contact Requests') {
-            this.router.navigate(['/dashboard', this.visitorid, 'reportsitecontactrequests']);
+            this.router.navigate(['/dashboard', this.visitorid, this.companyid, 'reportsitecontactrequests']);
         }        
         else if (Feature == 'SMS Blocked') {
-            this.router.navigate(['/dashboard', this.visitorid, 'reportsmsblocked']);
+            this.router.navigate(['/dashboard', this.visitorid, this.companyid, 'reportsmsblocked']);
         }
         else if (Feature == 'SMS Block Reasons') {
-            this.router.navigate(['/dashboard', this.visitorid, 'reportsmsblockreasons']);
+            this.router.navigate(['/dashboard', this.visitorid, this.companyid, 'reportsmsblockreasons']);
         }
         else if (Feature == 'SMS Responses')
         {
-            this.router.navigate(['/dashboard', this.visitorid, 'reportsmsresponses']);
+            this.router.navigate(['/dashboard', this.visitorid, this.companyid, 'reportsmsresponses']);
         }
         else if (Feature == 'SMS Send Stats') {
-            this.router.navigate(['/dashboard', this.visitorid, 'reportsmssendstats']);
+            this.router.navigate(['/dashboard', this.visitorid, this.companyid, 'reportsmssendstats']);
         }
 
 

@@ -2,7 +2,7 @@
   <app-member-header [navState]="navState" (newNavState)="navStateChange($event)"  [visitorid]="visitorid"></app-member-header>
   <div class="row">
     <div class="col-xs-12" [ngClass]="{'col-sm-2' : navState != 'Show'}">
-      <app-dash-nav [navState]="navState" [visitorid]="visitorid"></app-dash-nav>
+      <app-dash-nav [navState]="navState" [visitorid]="visitorid" [companyid]="companyid"></app-dash-nav>
     </div>
     <div class="col-xs-12" [ngClass]="{'col-sm-10' : navState != 'Show'}">
       <router-outlet></router-outlet>
