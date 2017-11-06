@@ -1,11 +1,11 @@
-﻿.titlepage {
-  background-color: #40404b;
+.titlepage {
+  background-color: #d0d0d0;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: #a92727;
 }
 h1 {
-  color:white;
+  color:#c85858;
   font-family: 'Trebuchet MS';
   font-size-adjust: inherit;
 }

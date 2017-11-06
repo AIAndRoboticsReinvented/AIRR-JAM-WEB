@@ -1,4 +1,11 @@
-﻿label {
+p{
+  font-size:20px;
+}
+.contitle {
+  font-weight:bold;
+  text-align:center;
+}
+label {
   display: block;
   clear: both;
 }
@@ -15,3 +22,254 @@
     border-radius: 0px;
   }
 }
+.connectedinvestor {
+  width:100%;
+  height:700px;
+}
+
+
+.banner { 
+  background-color: #25262a;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+
+  .banner:before {
+    background-color:grey;
+    background-size: 100%;
+    bottom: 0;
+    content: '';
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .banner > div {
+    margin: 0 auto;
+    max-width: 980px;
+    position: relative;
+    z-index: 2;
+  }
+
+    .banner > div.btn-group {
+      z-index: 1;
+    }
+
+  .banner h1 {
+    color:white;
+    font-family:Arial;
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .banner p {
+    font-size: 1.5rem;
+  }
+
+  .banner .btn-group a {
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 0 0 9999px rgba(197, 164, 126, 0);
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    vertical-align: baseline;
+    word-break: break-word;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+    .banner .btn-group a:hover {
+      background-color: rgba(237, 71, 71, 0.75);
+      box-shadow: 0 0 0 9999px rgba(233, 100, 100, 0.75);
+      color: #ffffff;
+    }
+
+    .banner .btn-group a:active {
+      box-shadow: 0 0 0 9999px #ffffff;
+    }
+
+    /*New Page CSS*/
+
+.danger {
+  background-color: #f67b7b;
+  border-left: 6px solid #e23629;
+  margin-bottom: 15px;
+  padding: 4px 12px;
+  color:#ffffff;
+  text-align:center;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th, td {
+  border: none;
+  text-align: center;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+/* Accordion*/
+half {
+  float: left;
+  width: 50%;
+  padding: 0 1em;
+}
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: #808080;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+
+.tab-content {
+  color:#808080;
+  max-height: 0;
+  overflow: hidden;
+  background: #ffffff;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 100%;
+}
+/* Icon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+input[type=checkbox] + label::after {
+  content: "+";
+}
+
+input[type=radio] + label::after {
+  content: "\25BC";
+}
+
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+
+.tab2 {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+
+input2 {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+label2 {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: #808080;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+
+.tab-content2 {
+  color: #808080;
+  max-height: 0;
+  overflow: hidden;
+  background: #ffffff;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+/* :checked */
+input:checked ~ .tab-content2 {
+  max-height: 100%;
+}
+/* Icon */
+label2::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+input[type=checkbox] + label2::after {
+  content: "+";
+}
+
+input[type=radio] + label2::after {
+  content: "\25BC";
+}
+
+input[type=checkbox]:checked + label2::after {
+  transform: rotate(315deg);
+}
+
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+

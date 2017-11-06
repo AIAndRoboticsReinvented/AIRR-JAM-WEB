@@ -1,14 +1,301 @@
-﻿<app-header></app-header>
+<app-header></app-header>
 <app-pagetitle [title]='title'></app-pagetitle>
-<div class="container">
-    <h2>Are You a Real Estate Investor looking to Lend?</h2>
-    <p>
+<div role="contentinfo" class="hidden-xs hidden-sm">
+  <app-carousel [id]="'investorcarousel'" [tiles]="tiles"></app-carousel>
+</div>
+<div class="col-xs-12 hidden-md hidden-lg hidden-xl">
+  <h2>Are You a Real Estate Investor Looking to Lend?</h2>
+  <img class="col-xs-12" alt="investors image" src="assets/images/slideshow/investorhand.jpg"/>
+</div>
+<br />
+<div class="col-xs-12">
+  <div class="col-xs-12 col-md-4">
+    <div class="danger">
+      <p><strong><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;TARGET INVESTMENTS:</strong></p>
+    </div>
+    <table>
+      <tr>
+        <td>Tampa, FL</td>
+      </tr>
+      <tr>
+        <td>St Petersburg FL</td>
+      </tr>
+      <tr>
+        <td>Clearwater, FL</td>
+      </tr>
+      <tr>
+        <td>Oldsmar, FL</td>
+      </tr>
+      <tr>
+        <td>Pinellas Park, FL</td>
+      </tr>
+    </table>
+    <div class="wrapper">
+      <div class="half">
+        <div class="tab">
+          <input id="tab-one" type="checkbox" name="tabs">
+          <label for="tab-one">View More</label>
+          <div class="tab-content">
+            <table>
+              <tr>
+                <td>Largo, FL</td>
+              </tr>
+              <tr>
+                <td>New Port Richey, FL</td>
+              </tr>
+              <tr>
+                <td>Carrollwood, FL</td>
+              </tr>
+              <tr>
+                <td>Palm Harbor, FL</td>
+              </tr>
+              <tr>
+                <td>Dunedin, FL</td>
+              </tr>
+              <tr>
+                <td>Seminole, FL</td>
+              </tr>
+              <tr>
+                <td>Gulfport, FL</td>
+              </tr>
+              <tr>
+                <td>Tarpon Springs, FL</td>
+              </tr>
+              <tr>
+                <td>Safety Harbor, FL</td>
+              </tr>
+              <tr>
+                <td>Clearwater Beach, FL</td>
+              </tr>
+              <tr>
+                <td>Indian Shores, FL</td>
+              </tr>
+              <tr>
+                <td>Tierra Verde, FL</td>
+              </tr>
+              <tr>
+                <td>Westchase, FL</td>
+              </tr>
+              <tr>
+                <td>Palma Ciea, FL</td>
+              </tr>
+              <tr>
+                <td>South Bay, FL</td>
+              </tr>
+              <tr>
+                <td>Odessa, FL</td>
+              </tr>
+              <tr>
+                <td>Trinity, FL</td>
+              </tr>
+              <tr>
+                <td>Baton Rouge, LA</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-xs-12 col-md-4">
+    <div class="danger">
+      <p><strong><i class="fa fa-usd" aria-hidden="true"></i>&nbsp;INVEST IN:</strong></p>
+    </div>
+    <table>
+      <tr>
+        <td>Rehab Residential</td>
+      </tr>
+      <tr>
+        <td>Wholesale</td>
+      </tr>
+      <tr>
+        <td>Pre-Foreclosures</td>
+      </tr>
+      <tr>
+        <td>Buy and Hold Homes</td>
+      </tr>
+      <tr>
+        <td>Tax Liens</td>
+      </tr>
+      <tr>
+        <td>Real Estate Consulting</td>
+      </tr>
+      <tr>
+        <td>Residential Real Estate</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-xs-12 col-md-4">
+    <div class="danger">
+      <p><strong><i class="fa fa-lightbulb-o" aria-hidden="true"></i>&nbsp;EXPERTISE:</strong></p>
+    </div>
+    <table>
+      <tr>
+        <td>Networking</td>
+      </tr>
+      <tr>
+        <td>Finding Buyers</td>
+      </tr>
+      <tr>
+        <td>Foreclosed Properties</td>
+      </tr>
+      <tr>
+        <td>Foreclosures</td>
+      </tr>
+      <tr>
+        <td>Land Development</td>
+      </tr>
+    </table>
+    <div class="wrapper">
+      <div class="half2">
+        <div class="tab2">
+          <input id="tab-one2" type="checkbox" name="tabs2">
+          <label for="tab-one2">View More</label>
+          <div class="tab-content2">
+            <table>
+              <tr>
+                <td>Lease Options</td>
+              </tr>
+              <tr>
+                <td>Listing Investment Properties</td>
+              </tr>
+              <tr>
+                <td>Probate</td>
+              </tr>
+              <tr>
+                <td>Real Estate Trusts</td>
+              </tr>
+              <tr>
+                <td>Rehabbing</td>
+              </tr>
+              <tr>
+                <td>REOs</td>
+              </tr>
+              <tr>
+                <td>Selling Investment Properties</td>
+              </tr>
+              <tr>
+                <td>Selling Properties</td>
+              </tr>
+              <tr>
+                <td>Short Sales</td>
+              </tr>
+              <tr>
+                <td>Subject To</td>
+              </tr>
+              <tr>
+                <td>Vacant Properties</td>
+              </tr>
+              <tr>
+                <td>Creative Financing</td>
+              </tr>
+              <tr>
+                <td>Estimating Repair Cost</td>
+              </tr>
+              <tr>
+                <td>Evaluating Residential</td>
+              </tr>
+              <tr>
+                <td>Exit Strategy</td>
+              </tr>
+              <tr>
+                <td>Foreclosure Process</td>
+              </tr>
+              <tr>
+                <td>Knowing If a Deal is a Deal</td>
+              </tr>
+              <tr>
+                <td>Negotiation</td>
+              </tr>
+              <tr>
+                <td>Online Records Search</td>
+              </tr>
+              <tr>
+                <td>Bird Dogging</td>
+              </tr>
+              <tr>
+                <td>Creative Problem Solving</td>
+              </tr>
+              <tr>
+                <td>Deal Structuring</td>
+              </tr>
+              <tr>
+                <td>Managing Rehab Teams</td>
+              </tr>
+              <tr>
+                <td>Property Locating</td>
+              </tr>
+              <tr>
+                <td>Stalling Foreclosure</td>
+              </tr>
+              <tr>
+                <td>Stopping Foreclosure</td>
+              </tr>
+              <tr>
+                <td>Connected Investors</td>
+              </tr>
+              <tr>
+                <td>Facebook</td>
+              </tr>
+              <tr>
+                <td>LinkedIn</td>
+              </tr>
+              <tr>
+                <td>Marketing</td>
+              </tr>
+              <tr>
+                <td>Partnership Creation</td>
+              </tr>
+              <tr>
+                <td>Real Estate Contract Review</td>
+              </tr>
+              <tr>
+                <td>Creating Processes</td>
+              </tr>
+              <tr>
+                <td>Real Estate Business Development</td>
+              </tr>
+              <tr>
+                <td>Real Estate Mentoring</td>
+              </tr>
+              <tr>
+                <td>Wholesale</td>
+              </tr>
+              <tr>
+                <td>Pre-Foreclosures</td>
+              </tr>
+              <tr>
+                <td>Residential Real Estate</td>
+              </tr>
+              <tr>
+                <td>Lot Sales</td>
+              </tr>
+              <tr>
+                <td>Residential Real Estate</td>
+              </tr>
+              <tr>
+                <td>Buy and Hold Homes</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div itemscope itemtype="http://schema.org/Person" class="container">
+  <img class="col-xs-12 col-md-4" src="assets/images/logo.jpg" alt="Avatar">
+    <p class="col-xs-12 col-md-8" itemprop="about">
       <!--I Buy As Is Inc has the experience, know-how, and infra-structure to offer 
       you opportunities in your real estate investment endeavors. Whether you are 
       looking for a rehab project to joint venture, or an alternative to investing 
       your money with a company with the certified construction process in place. 
       Please fill in the information below for our detailed plane for our lender 
-      data base.--> 
+      data base.-->
       I Buy As Is Inc has the experience, know-how, and infra-structure in real estate investing that works. 
       Invest your funds with a company that has certified construction processes in place. 
       A company with a proven track record of accomplishing the bottom line results that any investor would be satisfied with. 
@@ -16,8 +303,16 @@
       partners, and move your funds forward to consistent prosperous results.
     </p>
 
+  <div class="banner">
+    <div class="banner-content">
+      <h1>Let's get connected.</h1>
+      <p>Let's get connected through Connected Investors, you will find out a what we can offer you.</p>
+    </div>
+    <div class="btn-group"><a href="http://connectedinvestors.com/member/russ-b"  target="_blank">Let's GO!</a></div>
+  </div>
+  <br /><br />
+  <h2 class="contitle">Interested?</h2>
     <div class="col-xs-12 contact">
-      <h3>Contact Information</h3>
       <app-contact-request [contactrequest]="contactrequest"></app-contact-request>
     </div>
 
@@ -31,5 +326,8 @@
       ** Past performance is no guarantee of future performance or that such investment opportunities will become available. These materials are intended only for discussion purposes and should not be relied upon in evaluating the merits of investing in any investment or security. Potential investors who express an interest in investing, will be provided detailed information. I Buy As Is Inc and its partners want to earn your respect by providing you accurate reporting and total anonymity.
     </sub>
   </div>
+
+
+<!--NEW PAGE-->
 <div class="clearfix"></div>
 <app-footer></app-footer>

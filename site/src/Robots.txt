@@ -1,0 +1,13 @@
+User-Agent: *
+Disallow: /carousel/
+Disallow: /lp-ux/
+Disallow: /videa/
+Disallow: /report*/
+Disallow: /pie-texting/
+Disallow: /peopletrack/
+Disallow: /login/
+Disallow: /*.ts$/
+Disallow: /*.css$/
+Disallow: /*.spec.ts$/
+Disallow: /*.sass$
+Disallow: /*.ajax$

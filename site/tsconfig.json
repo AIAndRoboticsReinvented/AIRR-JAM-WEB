@@ -12,5 +12,9 @@
       "es2016",
       "dom"
     ]
+  },
+  "angularCompilerOptions": { // Here
+    "genDir": "./dist/ngfactory",
+    "entryModule": "./src/app/app.module#AppModule"
   }
 }

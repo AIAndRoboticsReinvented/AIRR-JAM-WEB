@@ -1,4 +1,4 @@
-﻿.innerbox {
+.innerbox {
   background-color: white;
   border: solid 1px white;
   font: normal;
@@ -13,4 +13,19 @@
 
 h1 {
   color: black;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.stressm{
+  margin-bottom: 10px;
+}
+p{
+  font-size:20px;
+}
+ul{
+  font-size:18px;
+  color:crimson;
 }

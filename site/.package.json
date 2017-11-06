@@ -1,14 +1,10 @@
-﻿{
+{
   "name": "site",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "prestart": "ng build --prod && ngc",
+    "start": "ts-node src/server.ts"
   },
   "private": true,
   "dependencies": {
