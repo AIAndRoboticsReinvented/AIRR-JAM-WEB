@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Teammember } from '../teammember';
@@ -22,6 +22,7 @@ export class TeamComponent implements OnInit {
         private teamService: TeamService) { }
 
     getTeam(): void {
+        console.log('REQUESTING TEAM');
         this.teamService.getTeam()
             .subscribe(
             data => this.team = JSON.parse(data.RequestResult),

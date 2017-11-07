@@ -22,7 +22,7 @@ export class PeopletrackComponent implements OnInit {
 
     public person: people;
     public visitorid: {};
-    public thecompany: string = "";
+    public thecompany: string;
 
 
     public name: string = "Amber Stephens";

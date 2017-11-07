@@ -22,6 +22,7 @@ momentjs.com
 
 
 Valor-Software.com/ng2-handsontable
+-		execute command:   npm install ng2-handsontable --save
 
 Valor-Software.com/ng2-file-upload
 -		execute command:   npm install ng2-file-upload --save

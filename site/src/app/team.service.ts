@@ -1,4 +1,4 @@
-﻿import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Headers, Http } from '@angular/http'
 import 'rxjs/add/operator/map';       // Required to use map function 
 //import 'rxjs/add/operator/toPromise';
@@ -18,6 +18,8 @@ export class TeamService {
     getTeam() {
         this.request.requested = new Date().getTime().toString();
         this.therequest = JSON.stringify(this.request);
+
+        console.log(this.therequest);
         return this.http.post(this.url, this.therequest)
             .map(res => res.json());
     }
