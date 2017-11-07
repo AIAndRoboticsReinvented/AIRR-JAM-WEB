@@ -8,7 +8,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.FirstName)"
-           [(ngModel)]="contactrequest.FirstName" 
+           [(ngModel)]="contactrequest.FirstName"
+            type="text"
            id="first_name" class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.FirstName) ? contactrequest.alternate.FirstName : 'First Name'" />
   </div> 
@@ -20,7 +21,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.LastName)"
-           [(ngModel)]="contactrequest.LastName" 
+           [(ngModel)]="contactrequest.LastName"
+           type="text"
            id="last_name" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.LastName) ? contactrequest.alternate.LastName : 'Last Name'" />
@@ -34,7 +36,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.EMail)"
-           [(ngModel)]="contactrequest.EMail" 
+           [(ngModel)]="contactrequest.EMail"
+            type="text"
            id="email" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.EMail) ? contactrequest.alternate.EMail : 'EMail'" />
@@ -48,7 +51,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.PhoneHome)"
-           [(ngModel)]="contactrequest.PhoneHome" 
+           [(ngModel)]="contactrequest.PhoneHome"
+            type="text"
            id="phonehome" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.PhoneHome) ? contactrequest.alternate.PhoneHome : 'Home&nbsp;Phone'" />
@@ -61,7 +65,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.PhoneCell)"
-           [(ngModel)]="contactrequest.PhoneCell" 
+           [(ngModel)]="contactrequest.PhoneCell"
+           type="text"
            id="phonecell" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.PhoneCell) ? contactrequest.alternate.PhoneCell : 'Cell&nbsp;Phone'" />
@@ -74,7 +79,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.PhoneWork)"
-           [(ngModel)]="contactrequest.PhoneWork" 
+           [(ngModel)]="contactrequest.PhoneWork"
+           type="text"
            id="phonework" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.PhoneWork) ? contactrequest.alternate.PhoneWork : 'Work&nbsp;Phone'" />
@@ -87,7 +93,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.PhoneFax)"
-           [(ngModel)]="contactrequest.PhoneFax" 
+           [(ngModel)]="contactrequest.PhoneFax"
+           type="text"
            id="phonefax" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.PhoneFax) ? contactrequest.alternate.PhoneFax : 'Fax&nbsp;Phone'" />
@@ -100,7 +107,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.MailingAddress1)"
-           [(ngModel)]="contactrequest.MailingAddress1" 
+           [(ngModel)]="contactrequest.MailingAddress1"
+           type="text"
            id="mailingaddress1" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.MailingAddress1) ? contactrequest.alternate.MailingAddress1 : 'Mailing&nbsp;Address&nbsp;1'" />
@@ -113,7 +121,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.MailingAddress2)"
-           [(ngModel)]="contactrequest.MailingAddress2" 
+           [(ngModel)]="contactrequest.MailingAddress2"
+           type="text"
            id="mailingaddress2" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.MailingAddress2) ? contactrequest.alternate.MailingAddress2 : 'Mailing&nbsp;Address&nbsp;2'" />
@@ -126,7 +135,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.MailingCity)"
-           [(ngModel)]="contactrequest.MailingCity" 
+           [(ngModel)]="contactrequest.MailingCity"
+           type="text"
            id="mailingcity" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.MailingCity) ? contactrequest.alternate.MailingCity : 'Mailing&nbsp;City'" />
@@ -139,7 +149,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.MailingState)"
-           [(ngModel)]="contactrequest.MailingState" 
+           [(ngModel)]="contactrequest.MailingState"
+           type="text"
            id="mailingstate" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.MailingState) ? contactrequest.alternate.MailingState : 'Mailing&nbsp;State'" />
@@ -152,7 +163,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.MailingZip)"
-           [(ngModel)]="contactrequest.MailingZip" 
+           [(ngModel)]="contactrequest.MailingZip"
+           type="text"
            id="mailingzip" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.MailingZip) ? contactrequest.alternate.MailingZip : 'Mailing&nbsp;Zip'" />
@@ -165,7 +177,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.PropertyAddress1)"
-           [(ngModel)]="contactrequest.PropertyAddress1" 
+           [(ngModel)]="contactrequest.PropertyAddress1"
+           type="text"
            id="propertyaddress1" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.PropertyAddress1) ? contactrequest.alternate.PropertyAddress1 : 'Property&nbsp;Address&nbsp;1'" />
@@ -178,7 +191,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.PropertyAddress2)"
-           [(ngModel)]="contactrequest.PropertyAddress2" 
+           [(ngModel)]="contactrequest.PropertyAddress2"
+           type="text"
            id="propertyaddress2" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.PropertyAddress2) ? contactrequest.alternate.PropertyAddress2 : 'Property&nbsp;Address&nbsp;2'" />
@@ -191,7 +205,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.PropertyCity)"
-           [(ngModel)]="contactrequest.PropertyCity" 
+           [(ngModel)]="contactrequest.PropertyCity"
+           type="text"
            id="propertycity" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.PropertyCity) ? contactrequest.alternate.PropertyCity : 'Property&nbsp;City'" />
@@ -204,7 +219,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.PropertyState)"
-           [(ngModel)]="contactrequest.PropertyState" 
+           [(ngModel)]="contactrequest.PropertyState"
+           type="text"
            id="propertystate" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.PropertyState) ? contactrequest.alternate.PropertyState : 'Property&nbsp;State'" />
@@ -217,7 +233,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.PropertyZip)"
-           [(ngModel)]="contactrequest.PropertyZip" 
+           [(ngModel)]="contactrequest.PropertyZip"
+           type="text"
            id="propertyzip" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.PropertyZip) ? contactrequest.alternate.PropertyZip : 'Property&nbsp;Zip'" />
@@ -232,7 +249,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.Funds)"
-           [(ngModel)]="contactrequest.Funds" 
+           [(ngModel)]="contactrequest.Funds"
+           type="text"
            id="funds" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.Funds) ? contactrequest.alternate.Funds : 'Funds'" />
@@ -245,7 +263,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.Personal)"
-           [(ngModel)]="contactrequest.Personal" 
+           [(ngModel)]="contactrequest.Personal"
+           type="text"
            id="personal" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.Personal) ? contactrequest.alternate.Personal : 'Personal Funds'" />
@@ -258,7 +277,8 @@
     </label>
     <input 
            [required]="isRequired(contactrequest.required.IRA)"
-           [(ngModel)]="contactrequest.IRA" 
+           [(ngModel)]="contactrequest.IRA"
+           type="text"
            id="ira" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.IRA) ? contactrequest.alternate.IRA : 'IRA&nbsp;Funds'" />
@@ -272,6 +292,7 @@
     <input 
            [required]="isRequired(contactrequest.required.Business)"
            [(ngModel)]="contactrequest.Business" 
+           type="text"
            id="business" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.Business) ? contactrequest.alternate.Business : 'Business&nbsp;Funds'" />
@@ -285,6 +306,7 @@
     <input 
            [required]="isRequired(contactrequest.required.Available)"
            [(ngModel)]="contactrequest.Available" 
+           type="text"
            id="available" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.Available) ? contactrequest.alternate.Available : 'Available'" />
@@ -298,6 +320,7 @@
     <input 
            [required]="isRequired(contactrequest.required.Terms)"
            [(ngModel)]="contactrequest.Terms" 
+           type="text"
            id="Terms" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.Terms) ? contactrequest.alternate.Terms : 'Terms'" />
@@ -311,6 +334,7 @@
     <input 
            [required]="isRequired(contactrequest.required.Payments)"
            [(ngModel)]="contactrequest.Payments" 
+           type="text"
            id="payments" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.Payments) ? contactrequest.alternate.Payments : 'Payment&nbsp;Preference'" />
@@ -324,6 +348,7 @@
     <input 
            [required]="isRequired(contactrequest.required.Learn)"
            [(ngModel)]="contactrequest.Learn" 
+           type="text"
            id="learn" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.Learn) ? contactrequest.alternate.Learn : 'Self&nbsp;Directed&nbsp;IRAs'" />
@@ -337,6 +362,7 @@
     <input 
            [required]="isRequired(contactrequest.required.Comments)"
            [(ngModel)]="contactrequest.Comments" 
+           type="text"
            id="comments" 
            class="col-xs-12" 
            [placeholder]="isAlternate(contactrequest.alternate.Comments) ? contactrequest.alternate.Comments : 'Comments'" />

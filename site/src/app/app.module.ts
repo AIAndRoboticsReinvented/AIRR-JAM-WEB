@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 ///Google Maps Component//
-import { AgmCoreModule } from '@agm/core';
+//import { AgmCoreModule } from '@agm/core';
 //import { LocationAutocompleteComponent } from 'ng2-location-autocomplete';
 //Google Maps API 
 //import { } from '@types/google-maps';
@@ -154,9 +154,9 @@ import { NewsrefComponent } from './newsref/newsref.component';
       FormsModule,
       HttpModule,
       ///GoogleMaps///
-      AgmCoreModule.forRoot({
-          apiKey: 'AIzaSyCyubuZfrveaznNqBOpts8dHEIGsR0vhj0'
-      }),
+      //AgmCoreModule.forRoot({
+      //    apiKey: 'AIzaSyCyubuZfrveaznNqBOpts8dHEIGsR0vhj0'
+      //}),
       //ImageUploadModule.forRoot(),
   
 ///      AgmCoreModule.forRoot({ apiKey: 'AIzaSyCkiDx9O54GaP1FG2eOzXOjZB-ffqAbEzg'}),  /// Google Maps

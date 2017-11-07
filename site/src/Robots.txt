@@ -1,5 +1,6 @@
 User-Agent: *
 Disallow: /carousel/
+Disallow: /newsref/
 Disallow: /lp-ux/
 Disallow: /videa/
 Disallow: /report*/
