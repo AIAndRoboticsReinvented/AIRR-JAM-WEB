@@ -1,4 +1,4 @@
-.button {
+/*.button {
   background-color: #dc3838;
   border: none;
   border-radius: 10px;
@@ -12,4 +12,106 @@
 
   .button:hover {
     background-color: #b72323;
+  }*/
+
+/*  
+Thanks to: Usama Tahir
+https://medium.com/@AmJustSam
+*/
+
+/* CSS which you need for blurred box */
+.bodybox {
+  height:100%;
+  background-size: 100%;
+  font-family: Arial, Helvetica;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  background-image: url("/assets/images/loginbg.jpg");
+  color: white;
+}
+
+label{
+  color:white;
+}
+.blacktype{
+  color:black;
+}
+.blurred-box {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  background: inherit;
+  overflow: hidden;
+}
+
+  .blurred-box:after {
+    content: '';
+    width: 300px;
+    height: 400px;
+    background: inherit;
+    position: absolute;
+    left: -25px;
+    /*left position right: 0;*/
+    top: -25px;
+    /*top position bottom: 0;*/
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+    filter: blur(20px);
+  }
+
+
+/* Form which you dont need */
+.user-login-box{
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  z-index: 1;
+}
+.user-login-box > *{
+  display: inline-block;
+  width: 200px;
+}
+
+.usericon{
+  color:white;
+}
+
+
+input.username {
+  width: 140px;
+  height: 18px;
+  opacity: 0.5;
+  border-radius: 2px;
+  padding: 5px 15px;
+  border: 0;
+}
+input.password{
+  width: 140px;
+  height: 18px;
+  opacity: 0.5;
+  border-radius: 2px;
+  padding: 5px 15px;
+  border: 0;
+}
+
+/*button styling*/
+.button {
+  background-color: #f03d3d;
+  color: white;
+  border: 10px solid #f03d3d;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+  .button:after {
+    content: "";
+  }
+
+  .button:hover,
+  button:focus {
+    background-color: #ce2626;
+    border: 10px solid #ce2626;
+    border-radius: 4px;
   }

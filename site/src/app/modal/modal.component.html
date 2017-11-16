@@ -1,1 +1,16 @@
-﻿DUH WHAT?
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-container">
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <div class="content">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <app-property-summary [property]="property" *ngFor="let property of properties">
+        </app-property-summary>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

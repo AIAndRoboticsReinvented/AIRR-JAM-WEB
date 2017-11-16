@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
     companyid = '0';
     parentRouter = Router;
 
-    response = { message: 'Waiting for user submittion.' };
+    response = { message: 'Waiting For User Submittion.' };
     answer = {};
     private displayresponse = false;
 

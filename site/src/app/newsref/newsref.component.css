@@ -1,0 +1,252 @@
+.banner {
+  background-image: url('/assets/images/slideshow/sellhome.jpg');
+  background-size: 100%;
+  background-color: #cacaca;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 500px) {
+  [class*="banner"] {
+    background-image:none!important;
+  }
+}
+.banner2 {
+  background-image: url('/assets/images/slideshow/home.jpg');
+  background-size: 100%;
+  background-color: #cacaca;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.banner3 {
+  background-image: url('/assets/images/slideshow/investorhand2.png');
+  background-size: 100%;
+  background-color: #cacaca;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+  .banner:before {
+    background-color: grey;
+    background-size: 100%;
+    bottom: 0;
+    content: '';
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+.banner2:before {
+  background-color: grey;
+  background-size: 100%;
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.banner3:before {
+  background-color: grey;
+  background-size: 100%;
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+  .banner > div {
+    margin: 0 auto;
+    max-width: 980px;
+    position: relative;
+    z-index: 2;
+  }
+
+    .banner > div.btn-group {
+      z-index: 1;
+    }
+
+.banner h1 {
+  color: white;
+  font-family: Arial;
+  font-size: 2rem;
+  font-weight: bold!important;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.banner p {
+  font-weight: bold !important;
+  font-size: 1.5rem;
+}
+
+  .banner .btn-group a {
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 0 0 9999px rgba(197, 164, 126, 0);
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    vertical-align: baseline;
+    word-break: break-word;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+    .banner .btn-group a:hover {
+      background-color: rgba(237, 71, 71, 0.75);
+      box-shadow: 0 0 0 9999px rgba(233, 100, 100, 0.75);
+      color: #ffffff;
+    }
+
+    .banner .btn-group a:active {
+      box-shadow: 0 0 0 9999px #ffffff;
+    }
+
+    /* Banner 2*/
+.banner2 > div {
+  margin: 0 auto;
+  max-width: 980px;
+  position: relative;
+  z-index: 2;
+}
+
+  .banner2 > div.btn-group {
+    z-index: 1;
+  }
+
+.banner2 h1 {
+  color: white;
+  font-family: Arial;
+  font-size: 2rem;
+  font-weight: bold !important;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.banner2 p {
+  font-weight: bold !important;
+  font-size: 1.5rem;
+}
+
+.banner2 .btn-group a {
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 0 0 9999px rgba(197, 164, 126, 0);
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  vertical-align: baseline;
+  word-break: break-word;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+  .banner2 .btn-group a:hover {
+    background-color: rgba(237, 71, 71, 0.75);
+    box-shadow: 0 0 0 9999px rgba(233, 100, 100, 0.75);
+    color: #ffffff;
+  }
+
+  .banner2 .btn-group a:active {
+    box-shadow: 0 0 0 9999px #ffffff;
+  }
+  /* Banner 3*/
+.banner3 > div {
+  margin: 0 auto;
+  max-width: 980px;
+  position: relative;
+  z-index: 2;
+}
+
+  .banner3 > div.btn-group {
+    z-index: 1;
+  }
+
+.banner3 h1 {
+  color: white;
+  font-family: Arial;
+  font-size: 2rem;
+  font-weight: bold !important;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.banner3 p {
+  font-size: 1.5rem;
+  font-weight: bold !important;
+}
+
+.banner3 .btn-group a {
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 0 0 9999px rgba(197, 164, 126, 0);
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  vertical-align: baseline;
+  word-break: break-word;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+  .banner3 .btn-group a:hover {
+    background-color: rgba(237, 71, 71, 0.75);
+    box-shadow: 0 0 0 9999px rgba(233, 100, 100, 0.75);
+    color: #ffffff;
+  }
+
+  .banner3 .btn-group a:active {
+    box-shadow: 0 0 0 9999px #ffffff;
+  }

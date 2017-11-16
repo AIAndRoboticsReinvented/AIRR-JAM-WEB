@@ -1,5 +1,5 @@
-p{
-  font-size:20px;
+.aboutus{
+  margin-top:10px;
 }
 .contitle {
   font-weight:bold;
@@ -9,10 +9,17 @@ label {
   display: block;
   clear: both;
 }
-.contact {
-  margin-top: 20px;
-  background-color: #e0e0e0;
-  border-radius: 25px;
+.innerbox {
+  background-color: white;
+  border: solid 1px white;
+  font: normal;
+  /*-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+  box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.75);*/
+  border-radius: 35px;
+  background: #e8e8e8;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 500px) {
