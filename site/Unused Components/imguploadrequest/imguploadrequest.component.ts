@@ -1,7 +1,6 @@
 import { Component, OnInit, NgModule } from '@angular/core';
 
-@NgModule({
-})
+
 @Component({
   selector: 'app-imguploadrequest',
   templateUrl: './imguploadrequest.component.html',
@@ -9,9 +8,9 @@ import { Component, OnInit, NgModule } from '@angular/core';
 })
 export class ImguploadrequestComponent implements OnInit {
 
-  constructor() { }
+constructor() { }
 
-  ngOnInit() {
-  }
-
+ngOnInit() {
 }
+
+
