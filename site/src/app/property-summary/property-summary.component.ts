@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
+import { FilterPipe } from '../filter.pipe';
 
 import { PropertyService } from '../property.service';
 import { PropertyAttributes, Property } from '../property';
@@ -10,7 +11,8 @@ import 'rxjs/add/operator/switchMap';
 @Component({
   selector: 'app-property-summary',
   templateUrl: './property-summary.component.html',
-  styleUrls: ['./property-summary.component.css']
+  styleUrls: ['./property-summary.component.css'],
+  providers: [FilterPipe]
 })
 
 

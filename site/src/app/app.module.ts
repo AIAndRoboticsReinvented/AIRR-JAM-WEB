@@ -80,6 +80,7 @@ import { TestdeskComponent } from './testdesk/testdesk.component';
 import { MobimenuComponent } from './mobimenu/mobimenu.component';
 import { TestDesk2Component } from './test-desk2/test-desk2.component';
 import { NewsrefComponent } from './newsref/newsref.component';
+import { FilterPipe } from './filter.pipe';
 //import { FileSelectDirective, FileDropDirective } from 'ng2-file-upload';
 //import { ImguploadrequestComponent } from './imguploadrequest/imguploadrequest.component';
 
@@ -143,6 +144,7 @@ import { NewsrefComponent } from './newsref/newsref.component';
       MobimenuComponent,
       TestDesk2Component,
       NewsrefComponent,
+      FilterPipe,
       //ImguploadrequestComponent,
 
       //ProspectComponent,
