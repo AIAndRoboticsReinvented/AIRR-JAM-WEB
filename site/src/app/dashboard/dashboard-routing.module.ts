@@ -1,4 +1,4 @@
-﻿import { NgModule }                     from '@angular/core';
+import { NgModule }                     from '@angular/core';
 import { RouterModule, Routes }         from '@angular/router';
 import { BrowserModule }                from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
@@ -21,7 +21,7 @@ import { IconEditComponentComponent }   from '../icon-edit-component/icon-edit-c
 /// VALOR-SOFTWARE NG2-CHARTS
 import { ChartsModule }                 from 'ng2-charts';
 /// VALOR-SOFTWARE NG2-HANDSONTABLE
-import { HotTableModule }               from 'ng2-handsontable';
+//import { HotTableModule }               from 'ng2-handsontable';
 
 
 
@@ -107,7 +107,7 @@ const dashboardRoutes: Routes = [
         BrowserModule,
         CommonModule,
         ChartsModule,
-        HotTableModule,
+  //      HotTableModule,
         RouterModule.forChild(dashboardRoutes)
     ],
     exports: [RouterModule]

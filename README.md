@@ -20,7 +20,7 @@ Valor-Software.com/ng2-charts
 momentjs.com
 -		execute command:   npm install moment --save
 
-
+ 
 Valor-Software.com/ng2-handsontable
 -		execute command:   npm install ng2-handsontable --save
 
@@ -29,3 +29,4 @@ Valor-Software.com/ng2-file-upload
 
 Update Angular
 -		npm install @angular/common@latest @angular/compiler@latest @angular/compiler-cli@latest @angular/core@latest @angular/forms@latest @angular/http@latest @angular/platform-browser@latest @angular/platform-browser-dynamic@latest @angular/platform-server@latest @angular/router@latest @angular/animations@latest typescript@latest --save
+
