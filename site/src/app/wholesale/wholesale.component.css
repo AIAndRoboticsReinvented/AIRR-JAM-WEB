@@ -11,8 +11,12 @@
   margin-bottom: 10px;
 }
 
-h1 {
+h3 {
   color: black;
+  font-weight:bold;
+}
+p{
+  color:black;
 }
 img{
   display: block;
@@ -22,10 +26,6 @@ img{
 .stressm{
   margin-bottom: 10px;
 }
-p{
-  font-size:20px;
-}
 ul{
-  font-size:18px;
   color:crimson;
 }

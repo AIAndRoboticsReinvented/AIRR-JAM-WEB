@@ -21,9 +21,11 @@
 }
 .login {
   text-align: center;
-  color: #808080;
+  color: #808080!important;
 }
-
+a {
+  color: #808080 !important;
+}
 .topnav {
   margin: 0px 5px 0px 5px;
 }

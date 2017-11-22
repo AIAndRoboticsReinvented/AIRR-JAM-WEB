@@ -108,7 +108,7 @@ html {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -297,7 +297,7 @@ nav > a {
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   body {
     padding: 0 .5em;
   }

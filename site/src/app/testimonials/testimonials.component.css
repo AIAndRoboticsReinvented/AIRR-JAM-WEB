@@ -1,9 +1,7 @@
 /* Style the container with a rounded border, grey background and some padding and margin */
 .container {
   background-color: #fff;
-  border-radius: 20px;
-  padding: 16px;
-  margin: 16px 0;
+  text-align:center;
 }
 
   /* Clear floats after containers */
@@ -22,9 +20,6 @@
   .container {
     text-align: center;
   }
-}
-.container a:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 p{
   color:black;

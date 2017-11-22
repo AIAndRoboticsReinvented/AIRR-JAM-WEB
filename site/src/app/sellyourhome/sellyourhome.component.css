@@ -40,3 +40,7 @@ img {
   height: 200px;
   width: auto;
 }
+h3 {
+  color: black;
+  font-weight: bold;
+}
