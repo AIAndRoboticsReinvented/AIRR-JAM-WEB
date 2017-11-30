@@ -84,8 +84,14 @@ export const PROPERTIES: Property[] = [
         description: 'Home located in the sought after River View section of Tampa, blocks from the Hillsborough River/Close to city it is being totally rehabed from floor to roof evertyhing brand new.',
         masterimage: 'IMG_0864.JPG',
         images: [
-            { img: 'assets/userassets/images/properties/wellshills.jpg', title: '', caption: '', slide: 0 },
-            { img: 'assets/userassets/images/properties/wellshills2.jpg', title: '', caption: '', slide: 1 }
+            { img: 'assets/userassets/images/properties/4038RV.jpg', title: '', caption: '', slide: 0 },
+            { img: 'assets/userassets/images/properties/4038RV2.jpg', title: '', caption: '', slide: 1 },
+            { img: 'assets/userassets/images/properties/4038RV3.jpg', title: '', caption: '', slide: 1 },
+            { img: 'assets/userassets/images/properties/4038RV4.jpg', title: '', caption: '', slide: 1 },
+            { img: 'assets/userassets/images/properties/4038RV5.jpg', title: '', caption: '', slide: 1 },
+            { img: 'assets/userassets/images/properties/4038RV6.jpg', title: '', caption: '', slide: 1 },
+            { img: 'assets/userassets/images/properties/4038RV7.jpg', title: '', caption: '', slide: 1 },
+            { img: 'assets/userassets/images/properties/4038RV8.jpg', title: '', caption: '', slide: 1 }
         ],
         propertyattributes: [
             { key: 'Structure Type ', value: 'Contemporary' },
