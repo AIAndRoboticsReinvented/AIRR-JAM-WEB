@@ -1,6 +1,8 @@
 <app-header></app-header>
 <app-pagetitle [title]='title'></app-pagetitle>
-
+<div class="hidden-xs hidden-sm">
+  <app-carousel [id]="'aboutcarousel'" [tiles]="tiles"></app-carousel>
+</div>
 <div role="main" class="container">
   <app-team></app-team>
 </div>

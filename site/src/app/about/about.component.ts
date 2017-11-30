@@ -11,7 +11,7 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 
 export class AboutComponent implements OnInit {
-
+    tiles: {};
     title = "About";
     constructor(meta: Meta, title: Title) {
         meta.addTags([
@@ -30,6 +30,11 @@ export class AboutComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.tiles = [
+            {
+                img: 'assets/images/slideshow/WWA-2-nologo.jpg', title: '', caption: '', slide: 0
+            },
+        ];
   }
 
 }
