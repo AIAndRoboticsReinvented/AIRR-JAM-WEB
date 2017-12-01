@@ -10,9 +10,20 @@
       "assets": [
         "assets",
         "favicon.ico",
-        "robots.txt"
+        "robots.txt",
+        "home.html",
+        "about.html",
+        "buy.html",
+        "contactus.html",
+        "login.html",
+        "investors.html",
+        "faq.html",
+        "sell.html",
+        "wholesale.html"
+
       ],
       "index": "index.html",
+      "home": "home.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",

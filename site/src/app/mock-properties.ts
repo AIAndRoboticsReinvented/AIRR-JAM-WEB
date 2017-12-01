@@ -10,7 +10,7 @@ export const PROPERTIES: Property[] = [
         state: 'FL',
         zip: '33755',
         zillow: 'https://www.zillow.com/homedetails/1759-Thames-St-Clearwater-FL-33755/46954253_zpid/',
-        description: 'Do you have a large family? Pets? Home office? 4 Bedrooms w/ Den, 2 Bathrooms, screened in Porch w/ Hot Tub; Fenced in yard, room for all!! Nice neighborhood, public records show 1531 sq ft.',
+        description: 'Completely remodeled 3/2 with new flooring, brand new bathrooms including all fixtures and cabinetry, new lighting throughout including designer remote controlled fans, kitchen granite counter tops, bright cabinetry, canned lights, new doors and base boards. Newer windows, roof, electrical and AC. Brand new interior and exterior paint.',
         masterimage: 'THAMESstreetview.jpg',
         images: [
             { img: 'assets/userassets/images/properties/THAMESstreetview.jpg', title: '', caption: '', slide: 0 }
@@ -33,7 +33,7 @@ export const PROPERTIES: Property[] = [
         state: 'FL',
         zip: '33781',
         zillow: 'https://www.zillow.com/homedetails/5585-85th-Ter-N-Pinellas-Park-FL-33781/47204943_zpid/',
-        description: 'Tucked away in a winding low traffic Pinellas Park neighborhood you will find this 1500+ sq ft 4 bedroom 2 bath block home. Large tiled kitchen with extra full wall of counters & cabinets opens to the living area. Dual windowed & tiled dining area with 2 pantry/storage closets. Split bedrooms for privacy. Large fenced backyard. This home is priced to move!',
+        description: ' Newly remodeled.  Newer roof in 2016. Gulf Beaches are minutes away. Great home for a large family or second home/vacation destination! Easy access to points East and West! You are in the heart of it all! Live the Dream, Make the Move!   85th terrace SFR home  Greendale Estates!',
         masterimage: 'TERstreetview.jpg',
         images: [
             { img: 'assets/userassets/images/properties/TERstreetview.jpg', title: '', caption: '', slide: 0 },
@@ -51,7 +51,7 @@ export const PROPERTIES: Property[] = [
     }, {
         propertyid: '5',
         name: 'Single Family Home',
-        location: 'Aragon Way S',
+        location: 'Skyway Marina District - Lakewood Estates',
         address: '5131 Aragon Way S',
         city: 'Saint Petersburg',
         state: 'FL',
@@ -344,7 +344,7 @@ export const FEATUREDPROPERTIES: Property[] = [
     {
         propertyid: '17',
         name: 'Single Family Home',
-        location: 'Aragon Way S',
+        location: 'Lakewood Estates',
         address: '5131 Aragon Way S',
         city: 'Saint Petersburg',
         state: 'FL',
