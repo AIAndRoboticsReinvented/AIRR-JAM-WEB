@@ -1,29 +1,33 @@
-.carousel-caption {
-  /*max-width: 100%;
+.bottom-carousel-caption {
+  color: white;
+  position: absolute;
+  max-width: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity 
-  left: 0;*/
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  left: 0;
+  transform: translateY(-15px);
+  -webkit-animation: para 1.5s;
+}
+.ncarousel-caption {
 }
 h3 {
   font-size: 37px !important;
   color: white;
-  background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */
-  -webkit-animation: para 1.5s;
-  transform: translateY(-15px);
-  
-}
 
+}
+p {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+/*
 p {
   font-size: 20px;
   color: white;
-  background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */
+  background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity 
   -webkit-animation: para 1.5s;
   transform: translateY(-15px);
 
-}
-p{
-  /*text-align:left;*/
-}
+}*/
 /*.text {
   /*color: white;
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity 
@@ -59,12 +63,12 @@ p{
 .carousel-control {
   color: white;
 }
-  .carousel-control:hover {
+  /*.carousel-control:hover {
     opacity:.6;
     background:#000000;
     color:white;
  
-  }
+  }*/
   /*Carousel Fade Transition*/
 
 .carousel-fade .carousel-inner .item {

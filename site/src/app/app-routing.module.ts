@@ -1,4 +1,4 @@
-﻿import { NgModule }                           from '@angular/core';
+import { NgModule }                           from '@angular/core';
 import { RouterModule, Routes }               from '@angular/router';
 
 import { AboutComponent }                     from './about/about.component';
@@ -31,7 +31,8 @@ import { TestDesk2Component }                 from './test-desk2/test-desk2.comp
 
  
 const routes: Routes = [
-    { path: '',                       redirectTo: '/home',                                pathMatch: 'full' },
+    { path: '',                      redirectTo: '/home',                                pathMatch: 'full' },
+    { path:'home.html',                       redirectTo: '/home',                                pathMatch:'full'},
     { path: 'about',                  component: AboutComponent },
     { path: 'buy',                    component: BuyahomeComponent },
     { path: 'contactus',              component: ContactusComponent },

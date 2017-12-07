@@ -172,7 +172,7 @@ export class WholesaleComponent implements OnInit {
       this.tiles = [
           {
               img: 'assets/images/slideshow/stress1.jpg', title: 'Take ALL Of The Stress Out Of Your Next Investment Property.',
-              caption: '', slide: 0
+              caption: '', slide: 0, bottom: 1,
           },
       ];
   }

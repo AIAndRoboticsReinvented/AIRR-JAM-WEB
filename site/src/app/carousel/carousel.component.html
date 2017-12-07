@@ -8,7 +8,7 @@
   <div class="carousel-inner" role="listbox">
     <div [ngClass] ="j == 0 ? 'item active' : 'item'" *ngFor="let tile of tiles; let j = index">
       <img alt="carousel" [src]="tile.img" [alt]="tile.caption">
-      <div class="carousel-caption d-none d-md-block block">
+      <div class="carousel-caption d-none d-md-block block" [ngClass]="tile.bottom == 1 ? 'bottom-carousel-caption' : 'ncarousel-caption'">
         <h3 class="text">{{tile.title}}</h3>
         <p class="text">{{tile.caption}}</p>
       </div>

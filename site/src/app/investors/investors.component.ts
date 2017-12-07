@@ -175,7 +175,7 @@ export class InvestorsComponent implements OnInit {
         this.tiles = [
             {
                 img: 'assets/images/slideshow/investorhand.jpg', title: 'Are You a Real Estate Investor Looking to Lend?',
-                caption: '', slide: 0
+                caption: '', slide: 0, bottom: 1
             },
         ];
     }

@@ -3,7 +3,7 @@ import { PropertyAttributes, PropertyImgAttributes, Property } from './property'
 export const PROPERTIES: Property[] = [
     {
         propertyid: '3',
-        name: 'Condo',
+        name: 'Single Family Home',
         location: 'Thames St',
         address: '1759 Thames St',
         city: 'Clearwater',
@@ -294,7 +294,7 @@ export const PROPERTIES: Property[] = [
 export const FEATUREDPROPERTIES: Property[] = [
     {
         propertyid: '15',
-        name: 'Condo',
+        name: 'Single Family Home',
         location: 'Thames St',
         address: '1759 Thames St',
         city: 'Clearwater',

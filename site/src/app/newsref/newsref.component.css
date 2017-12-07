@@ -1,6 +1,7 @@
 .banner {
   background-image: url('/assets/images/slideshow/sellhome.jpg');
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
   background-color: #cacaca;
   color: #ffffff;
   overflow: hidden;
@@ -10,14 +11,10 @@
   margin-bottom: 10px;
   margin-top: 10px;
 }
-@media only screen and (max-width: 500px) {
-  [class*="banner"] {
-    background-image:none!important;
-  }
-}
 .banner2 {
   background-image: url('/assets/images/slideshow/home.jpg');
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
   background-color: #cacaca;
   color: #ffffff;
   overflow: hidden;
@@ -29,8 +26,9 @@
 }
 
 .banner3 {
-  background-image: url('/assets/images/slideshow/investorhand2.png');
-  background-size: 100%;
+  background-image: url('/assets/images/slideshow/investorhands2.png');
+  background-repeat: no-repeat;
+  background-size: auto;
   background-color: #cacaca;
   color: #ffffff;
   overflow: hidden;
@@ -42,20 +40,18 @@
 }
 
 
-  .banner:before {
-    background-color: grey;
-    background-size: 100%;
-    bottom: 0;
-    content: '';
-    left: 0;
-    opacity: 0.5;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+.banner:before {
+  background-color: grey;
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .banner2:before {
   background-color: grey;
-  background-size: 100%;
   bottom: 0;
   content: '';
   left: 0;
@@ -65,8 +61,9 @@
   top: 0;
 }
 .banner3:before {
+  background-size:100%;
+  background-size:cover;
   background-color: grey;
-  background-size: 100%;
   bottom: 0;
   content: '';
   left: 0;
@@ -100,6 +97,8 @@
 .banner p {
   font-weight: bold !important;
   font-size: 1.5rem;
+  min-height: 40px;
+  max-height: 40px;
 }
 
   .banner .btn-group a {
@@ -159,6 +158,8 @@
 .banner2 p {
   font-weight: bold !important;
   font-size: 1.5rem;
+  min-height: 40px;
+  max-height: 40px;
 }
 
 .banner2 .btn-group a {
@@ -217,6 +218,8 @@
 .banner3 p {
   font-size: 1.5rem;
   font-weight: bold !important;
+  min-height: 40px;
+  max-height: 40px;
 }
 
 .banner3 .btn-group a {
