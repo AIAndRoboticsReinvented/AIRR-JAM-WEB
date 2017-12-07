@@ -15,11 +15,9 @@ p {
   border-radius: 25px;
 }
 @media screen and (max-width: 500px) {
-.container {
-    background-color: #e0e0e0;
-    margin-top: 0px;
-    border-radius:0px;
-    }
+  .devidebar {
+    border-top: 1px solid red;
+  }
 
   }
 .title {
