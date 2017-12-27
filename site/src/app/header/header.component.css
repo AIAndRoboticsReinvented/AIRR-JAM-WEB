@@ -199,7 +199,7 @@ nav > a {
 
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 863px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 979px) {
   .box {
     width: 49%;
     margin-bottom: 5%;
@@ -249,7 +249,7 @@ nav > a {
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 863px) {
+@media (max-width: 767px) {
   .container {
     width: 95%;
   }
@@ -297,7 +297,7 @@ nav > a {
 }
 
 /* Landscape phones and down */
-@media (max-width: 863px) {
+@media (max-width: 768px) {
   body {
     padding: 0 .5em;
   }
@@ -312,8 +312,8 @@ nav > a {
     -webkit-transition: all .3s ease;
   }
 
-  input[type="checkbox"]:checked + nav {
-    height: 290px;
+  input[type="checkbox"]:checked + nav { 
+    height: 250px; /*Change Menu Height ! Must be done when adding new page*/
   }
 
   nav > a {
