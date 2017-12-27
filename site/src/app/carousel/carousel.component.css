@@ -56,6 +56,23 @@ p {
     background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */
   }
 }
+@keyframes param {
+  0% {
+    transform: translate(0);
+    background: none; /* Black background with 0.5 opacity */
+  }
+
+  50% {
+    transform-origin: 2px;
+    transform-origin: bottom;
+    transform: scale3d(200px);
+  }
+
+  100% {
+    transform: translateY(-15px);
+    background: none; /* Black background with 0.5 opacity */
+  }
+}
   img {
 
   width: 100%
@@ -99,4 +116,25 @@ p {
 
 .carousel-fade .carousel-control {
   z-index: 2;
+}
+@media screen and (max-width: 1000px) {
+  .bottom-carousel-caption {
+    color: black;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    background: none;/* Black background with 0.5 opacity */
+    left: auto;
+    right:auto;
+    transform: translateY(-15px);
+    -webkit-animation: param 1.5s;
+  }
+  .carousel-control {
+    color: #ff0000;
+  }
+  h3 {
+    font-size: 25px !important;
+    color: black;
+  }
+
 }

@@ -19,7 +19,9 @@
         "investors.html",
         "faq.html",
         "sell.html",
-        "wholesale.html"
+        "wholesale.html",
+        "BingSiteAuth.xml",
+        "sitemap.xml"
 
       ],
       "index": "index.html",

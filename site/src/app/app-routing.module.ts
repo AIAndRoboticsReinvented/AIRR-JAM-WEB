@@ -25,6 +25,7 @@ import { LPUXComponent }                      from './lp-ux/lp-ux.component';
 import { TestdeskComponent }                  from './testdesk/testdesk.component';
 import { MobimenuComponent }                  from './mobimenu/mobimenu.component';
 import { TestDesk2Component }                 from './test-desk2/test-desk2.component';
+import { WhyusComponent }                     from './whyus/whyus.component';
 
 //import { ProspectComponent }                  from './prospect/prospect.component';
 //import { LocatorComponent }                   from './locator/locator.component' ;
@@ -52,6 +53,7 @@ const routes: Routes = [
     { path: 'testimonials',           component: TestimonialsComponent },
     { path: 'videa/:id',              component: VideaComponent },
     { path: 'wholesale',              component: WholesaleComponent },
+    { path: 'whyus',                  component: WhyusComponent },
     { path: 'homeweare',              component: HomeweareComponent },
     { path: 'modal',                  component: ModalComponent },
     { path: 'mobi',                   component: MobimenuComponent},

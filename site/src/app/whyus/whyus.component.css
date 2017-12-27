@@ -1,0 +1,93 @@
+/* Centered text */
+.centered {
+  font-size: 16px;
+  font-size: 4vw;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  color: black;
+}
+
+.diagram {
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.bgy {
+  background-color: #e5e5e5;
+  background-size: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.bgn {
+  background-color: #f1f1f1;
+  background-size: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.txt-container1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.header-container1 .txt-container1 {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.image {
+  -moz-box-shadow: 10px 10px 50px #808080;
+  -webkit-box-shadow: 10px 10px 50px #808080;
+  box-shadow: 10px 10px 50px #808080;
+}
+
+p {
+  text-align: left;
+}
+
+h3 {
+  text-align: center !important;
+  color: black;
+}
+/*button styling*/
+.button {
+  background-color: #ea3a3a;
+  color: white;
+  border: 10px solid #ea3a3a;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+  .button:after {
+    content: "";
+  }
+
+  .button:hover,
+  .button:focus {
+    background-color: #c72323;
+    ;
+    border: 10px solid #c72323;
+    border-radius: 4px;
+  }
+
+/*Header Image*/
+/* Container holding the image and the text */
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 992px) {
+  p{
+    text-align:center;
+  }
+}
