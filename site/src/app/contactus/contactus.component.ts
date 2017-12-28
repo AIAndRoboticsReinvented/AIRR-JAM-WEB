@@ -159,6 +159,9 @@ export class ContactusComponent implements OnInit {
         {
             name: 'description', content: 'I Buy As Is, Inc. is a premier real estate solutions company, and since our inception we have been helping homeowners along with improving communities in each city we work in.'
         },
+        {
+            name:'format-detection', content:'telephone=no'
+        },
         ])
     }
 

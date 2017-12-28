@@ -118,6 +118,13 @@ p {
   z-index: 2;
 }
 @media screen and (max-width: 1000px) {
+  p {
+    font-family: 'Montserrat', sans-serif!important;
+  }
+  .carousel-control.left, .carousel-control.right {
+    background-image: none !important; /*Removed Black Shaddow Under Gliph*/
+    filter: none !important;
+  }
   .bottom-carousel-caption {
     color: black;
     position: relative;
