@@ -54,7 +54,6 @@ ul {
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
-  margin-top: 80px;
 }
 
   .footer-distributed .footer-left,
@@ -130,7 +129,7 @@ ul {
 
     .footer-distributed .footer-center p {
       display: inline-block;
-      color: #ffffff;
+      color: #dc3f3f;
       vertical-align: middle;
       margin: 0;
     }
@@ -143,7 +142,7 @@ ul {
       }
 
       .footer-distributed .footer-center p a {
-        color: #5383d3;
+        color: #dc3f3f;
         text-decoration: none;
         ;
       }
